@@ -1,3 +1,18 @@
 .img-block{
     display: inline-block;
 }
+figure{
+    display: inline-block;
+}
+.div-table{
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    align-self: center;
+}
+table{
+    border: 1px solid black;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
