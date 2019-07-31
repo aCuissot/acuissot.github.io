@@ -1,0 +1,71 @@
+body {
+	width: 60%;
+	display: table;
+	border-collapse: separate; /* pour apercevoir les séparations */
+	border-spacing: 2px;
+	border: 1px solid #000;
+	font-family: "Arial", Arial, serif;
+}
+
+#VBoxH {
+	width: 100%;
+	display: table-row;
+	background-color: #abc;
+	border: 1px solid #000;
+
+}
+
+#HBox{
+
+	width: 100%;
+
+}
+
+#VBoxG,#VBoxD {
+	vertical-align: top;
+	display: table-cell;
+	background-color: #abc;
+	border: 1px solid #000;
+}
+
+#VBoxG {
+	width: 60%;
+}
+
+
+/* formulaire */
+input {
+	display : block;
+	width: 60%;
+	padding: 4px;
+	border: 1px solid #555;
+}
+
+legend {
+	
+	color: #fff;
+	font-size : 15;
+	font-weight: bold;
+}
+
+h1{
+	text-align :  center;
+}
+
+legend#formTitle{
+	font-size :14;
+	color: #fff;
+	padding-left :5;
+	width :50%;
+	height :23;
+}
+
+select#SongList{
+	width :100%;
+}
+
+.whitep{
+	background-color: white;
+	border: 1px solid #555;
+
+}

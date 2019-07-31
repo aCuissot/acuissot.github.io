@@ -1,0 +1,135 @@
+ <!DOCTYPE HTML>
+<html>
+  <head><title>Jeu de raquette</title>
+    
+  </head>
+
+  <body onload="JeuSVG();">
+    <h1>SVG balle de raquette</h1>
+    <svg height="300" width="300">
+    <title>cat</title>
+	<desc>Chat</desc>
+	  <!-- Panneau
+			un panneau (carre) : coordonnées 1,1, largeur et hauteur 300, gris
+		-->
+		<rect x="1" y="1" width="300" height="300" fill="blue"/>
+      <!--balle
+			une balle (cercle) : coordonnées 150,150, rayon 15, jaune
+      -->
+        <circle id="Balle" cx="150" cy="150" r="15" stroke="black" stroke-width="4" fill="yellow" />
+      <!-- raquette
+			une raquette (rectangle) : coordonnées 150, 290, largeur 150, hauteur 10, marron
+        -->
+		<rect id="ENSICAEN" x="150" y="290" width="150" height="10" style="fill:rgb(153, 102, 51);stroke-width:3;stroke:rgb(0,0,0)"/>
+    </svg>
+	<p id="SCORRRRRRRE">Score 0</p>
+	<script type="text/javascript">
+      // Variables globales
+      //Balle
+        var balle = document.getElementById('Balle');
+		var score = 0;
+        var balleR = 15;              // balle rayon
+        var balleDX = 2; // delta x de la balle
+        var balleDY = 4; // delta y de la balle
+
+      //Panneau
+        var panneauL=300; // largeur panneau
+        var panneauH=300; // hauteur panneau
+
+      //Raquette
+        var raq=document.getElementById('ENSICAEN');
+		var raqL=150;               // largeur de la raquette
+		var raqDX=20;   // delta x de la raquette
+
+        function JeuSVG() {
+//      recuperer infos sur la balle
+//      ...
+//      recuperer infos sur le panneau
+//      ...
+//      recuperer infos sur la raquette
+//      ...
+//      Jouer jusqu'a ce que la balle soit stoppee
+        gameLoop = setInterval(animer, 1000/50);
+
+                //Ajouter un écouteur d'evenement au clavier
+        window.addEventListener('keydown', touche, true); // ou autre technique
+        }
+
+		function animer() {	
+			var x = parseInt(balle.getAttribute("cx"));
+			var y = parseInt(balle.getAttribute("cy"));
+			
+			balle.setAttributeNS(null, "cx", x+balleDX);
+			balle.setAttributeNS(null, "cy", y+balleDY);
+
+			if (x-15<1){
+				balleDX = 2;
+			}
+			if (x+15>300){
+				balleDX = -2;
+			}
+			if (y-15<1){
+				balleDY = 4;
+			}
+			if (y+15>300){
+
+				xr = parseInt(raq.getAttribute("x"));
+				console.log(xr+raqL/2);
+				if ((xr+raqL)>x-15 && xr<x+15){
+					
+					balleDY = -4;
+					score+=1
+					document.getElementById("SCORRRRRRRE").innerHTML = "Score " + score/3 + ""; 
+				} else {
+					clearInterval(gameLoop);
+					alert("Game over!");
+				}
+			}
+
+			
+			
+															//      ...
+	// si la balle sort à droite ou sort à gauche alors inverser le déplacement finsi
+									//      ...
+	// si la balle tape le haut, alors inverser le déplacement.
+							//      ...
+	//      sinon
+			   // si la balle tape le bas
+						 //...
+					 // si la balle tape la raquette, inverser le déplacement.
+				   // ...
+
+				 // Sinon, perdu!
+				 // ...
+				// ...
+      }
+
+      // Gestion des touches
+      function touche(evt) {
+	   var rx= parseInt(raq.getAttribute("x"));
+        switch (evt.keyCode) {
+
+        case 37:        // fleche gauche
+			if (rx-raqDX<=0){
+				raq.setAttributeNS(null, "x", 0);
+
+			} else {
+				raq.setAttributeNS(null, "x", rx-raqDX);
+			}
+			
+			break;
+        case 39:        // fleche droite
+			if (rx+raqDX>300){
+				raq.setAttributeNS(null, "x", 300);
+
+			} else {
+				raq.setAttributeNS(null, "x", rx+raqDX);
+
+			}
+			
+			break;
+        }
+      }
+    </script>
+  </body>
+</html>
