@@ -1,0 +1,31 @@
+.img-block{
+    display: inline-block;
+}
+figure{
+    display: inline-block;
+}
+.div-table{
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    align-self: center;
+}
+table{
+    border: 1px solid black;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imgHeadContainer{
+    display: inline-block;
+    position: relative;
+    /*width:100%;*/
+    /*height:1000px;*/
+    /*overflow:hidden;*/
+}
+
+#rectangular {
+    -webkit-clip-path: inset(30px 10px 30px 10px);
+    clip-path: inset(30px 10px 30px 10px);
+}
