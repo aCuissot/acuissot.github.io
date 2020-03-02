@@ -2,10 +2,12 @@ var c = document.getElementById("myCanvas");
 var clife = document.getElementById("lifeCanvas");
 var ctx = c.getContext("2d");
 var ctxLife = clife.getContext("2d");
+ctxLife.fillStyle = "red";
+
 var niveau = 1;
-var corbeille_img = document.getElementById("pomme");//??
+var corbeille_img = document.getElementById("papppppillon");//??
 var pomme_img = document.getElementById("panier");//?????
-var papppppppp = document.getElementById("papppppppp");//?????
+var papppppppp = document.getElementById("pomme2pin");//?????
 
 var corbeille;
 var time = 1000;
@@ -62,7 +64,8 @@ function animer() {
 		ctx.fillText(corbeille.score, 450, 30)
 		ctxLife.clearRect(0,0,clife.width, clife.height);
 		ctxLife.rect(0, life*clife.height/10,clife.width, clife.height, life*clife.height/10);
-		ctxLife.fill();
+        ctxLife.fillStyle = "red";
+        ctxLife.fill();
 		for (var i=0; i<pommes.length; i++) {
 
 		  var pomme = pommes[i];
@@ -88,7 +91,8 @@ function animer() {
 		ctx.clearRect(0, 0, c.width, c.width);
 		ctx.fillText("GAME OVER", 10, 100);
 		ctxLife.rect(0, 0,clife.width, clife.height);
-		ctxLife.fill();
+        ctxLife.fillStyle = "red";
+        ctxLife.fill();
 
 	}
 }

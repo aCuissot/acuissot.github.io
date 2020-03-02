@@ -17,12 +17,12 @@ var TabSongGenres=[];
 function initApp(){
 	var SongGenres = document.getElementById("songgenre");
 	var SongList = document.getElementById("songlist");
-	TabSongList.push(new Song("Nessun Dorma", "Luciano Pavarotti", 1990, "nessundorma.mp3",["90's","Opera"]));
-	TabSongList.push(new Song("Come Undone", "Duran Duran", 1993, "comeundone.mp3",["90's", "Pop"]));
-	TabSongList.push(new Song("Think of Me", "Sarah Brightman", 1987, "thinkofme.mp3",["Showtunes"]));
-	TabSongList.push(new Song("Unbelievable", "EMF", 1991, "unbelievable.mp3", ["90's", "Pop"]));
+	TabSongList.push(new Song("Nessun Dorma", "Luciano Pavarotti", 1990, "Media/nessundorma.mp3",["90's","Opera"]));
+	TabSongList.push(new Song("Come Undone", "Duran Duran", 1993, "Media/comeundone.mp3",["90's", "Pop"]));
+	TabSongList.push(new Song("Think of Me", "Sarah Brightman", 1987, "Media/thinkofme.mp3",["Showtunes"]));
+	TabSongList.push(new Song("Unbelievable", "EMF", 1991, "Media/unbelievable.mp3", ["90's", "Pop"]));
 	remplir_List_Song(TabSongList, SongList);
-	TabSongGenres= new Array("90's","Classical","Country","Hip-hop","Opera","Pop","Rock","Showtunes");
+	TabSongGenres= ["90's","Classical","Country","Hip-hop","Opera","Pop","Rock","Showtunes"];
 	remplir_List_Genre(TabSongGenres, SongGenres);
 }
 
