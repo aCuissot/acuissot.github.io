@@ -1,58 +1,59 @@
-<!DOCTYPE html> 
-<html> 
+<!DOCTYPE html>
+<html>
 <head>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-<style>
-body  {
-  background-image: url("Media/background.jpg");
-  background-color: #cccccc;
-}
-</style>
-	</head>
-<body> 
+    <meta charset="UTF-8">
+    <title>Lecteur vidéo de qualité</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url("Media/background.jpg");
+            background-color: #cccccc;
+        }
+    </style>
+</head>
+<body>
 
 
-<div style="text-align:center"> 
+<div style="text-align:center">
 
-  <button class="btn btn-default btn-sm" onclick="playPause()">
-	 <span id="playBtn" class="glyphicon glyphicon-play"></span>
-  </button> 
+    <button class="btn btn-default btn-sm" onclick="playPause()">
+        <span id="playBtn" class="glyphicon glyphicon-play"></span>
+    </button>
     <button class="btn btn-default btn-sm" onclick="restart()">
-	 <span class="glyphicon glyphicon-step-backward"></span>
-  </button> 
+        <span class="glyphicon glyphicon-step-backward"></span>
+    </button>
     <button class="btn btn-default btn-sm" id="muteBtn" onclick="mute()">
-	 <span class="glyphicon glyphicon-volume-off"></span>
-  </button> 
+        <span class="glyphicon glyphicon-volume-off"></span>
+    </button>
     <button class="btn btn-default btn-sm" onclick="soundDown()">
-	 <span class="glyphicon glyphicon-volume-down"></span>
-  </button> 
+        <span class="glyphicon glyphicon-volume-down"></span>
+    </button>
     <button class="btn btn-default btn-sm" onclick="soundUp()">
-	 <span class="glyphicon glyphicon-volume-up"></span>
-  </button> 
-  <button class="btn btn-default btn-sm" onclick="temps()">
-	Temps
-  </button> 
+        <span class="glyphicon glyphicon-volume-up"></span>
+    </button>
+    <button class="btn btn-default btn-sm" onclick="temps()">
+        Temps
+    </button>
     <button class="btn btn-default btn-sm" onclick="duree()">
-	 Durée
-  </button> 
-      <button class="btn btn-default btn-sm" onclick="fullscreen()">
-	 <span class="glyphicon glyphicon-fullscreen"></span>
-  </button> 
-  <br><br>
-  
-  
-  <video id="video1" width="720">
-    <source src="Media/The_Offspring_Self_Esteem.mp4" type="video/mp4">
-	<!-- <source src="windowsill.ogv" type="video/ogg"> -->
-    Your browser does not support HTML5 video.
-  </video>
-
-  <p id="time"></p>
-  </div> 
-
-	<script src="scripts/scriptTP1_1.js"></script>
+        Durée
+    </button>
+    <button class="btn btn-default btn-sm" onclick="fullscreen()">
+        <span class="glyphicon glyphicon-fullscreen"></span>
+    </button>
+    <br><br>
 
 
+    <video id="video1" width="720">
+        <source src="Media/The_Offspring_Self_Esteem.mp4" type="video/mp4">
+        <!-- <source src="windowsill.ogv" type="video/ogg"> -->
+        Your browser does not support HTML5 video.
+    </video>
 
-</body> 
+    <p id="time"></p>
+</div>
+
+<script src="scripts/scriptTP1_1.js"></script>
+
+
+</body>
 </html>

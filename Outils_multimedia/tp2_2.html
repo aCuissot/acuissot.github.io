@@ -1,121 +1,121 @@
-
 <!DOCTYPE HTML>
 <html>
 
 <head>
-	<style>
-		img {
-			display:none;
-		}
-	</style>
+    <title>Ne la laisse pas tomber</title>
+    <meta charset="UTF-8">
+    <style>
+        img {
+            display: none;
+        }
+    </style>
 </head>
 
 <body onload="init()">
-	
-	<canvas id="myCanvas" style="border:1px solid black;">
+
+<canvas id="myCanvas" style="border:1px solid black;">
     Votre navigateur ne supporte pas canvas.
-	</canvas>
-	<canvas id="lifeCanvas" style="border:1px solid black;">
+</canvas>
+<canvas id="lifeCanvas" style="border:1px solid black;">
     Votre navigateur ne supporte pas canvas. (oui je sais tu as sans doutes compris la première fois)
-	</canvas>
-	<img id="panier" width="30" height="30" src="./Media/pomme.png" alt="PAPILLON">
-	<img id="papppppillon" width="40" height="40" src="./Media/corbeille.png" alt="¨POMME">
-	<img id="pomme2pin" width="30" height="30" src="./Media/papillon.png" alt="CORBEILLE">
-	<br>
-	<button onclick="init()">Restart</button>
-	<button onclick="aaaaaaaaaaa()">AAAAAAAA</button>
-  <script type="text/javascript" src="scripts/scriptTP2_2.js"></script>
+</canvas>
+<img id="panier" width="30" height="30" src="./Media/pomme.png" alt="PAPILLON">
+<img id="papppppillon" width="40" height="40" src="./Media/corbeille.png" alt="¨POMME">
+<img id="pomme2pin" width="30" height="30" src="./Media/papillon.png" alt="CORBEILLE">
+<br>
+<button onclick="init()">Restart</button>
+<button onclick="aaaaaaaaaaa()">AAAAAAAA</button>
+<script type="text/javascript" src="scripts/scriptTP2_2.js"></script>
 
-	<script type="text/javascript">
-	
+<script type="text/javascript">
 
 
-	/*
-	var ball;
-	var balls =[];
-	balls.push(ball);
-	var score = 0;
-	var niveau = 1; // le niveau
-	var newPommmmmmmmmmmmmmmmmmmmmmmmme = 0;
-	var newPommmmmmmmmmmmmmmmmmmmmmmmmeSeuil = 50;
-	var pomme = document.getElementById("pomme") ; // image de la corbeille
-	var corbeille = document.getElementById("panier") ; 
-	function start() {
-		  balls.push(new component(15, 15));
-		  bouncingArea.start();
-	}
+    /*
+    var ball;
+    var balls =[];
+    balls.push(ball);
+    var score = 0;
+    var niveau = 1; // le niveau
+    var newPommmmmmmmmmmmmmmmmmmmmmmmme = 0;
+    var newPommmmmmmmmmmmmmmmmmmmmmmmmeSeuil = 50;
+    var pomme = document.getElementById("pomme") ; // image de la corbeille
+    var corbeille = document.getElementById("panier") ;
+    function start() {
+          balls.push(new component(15, 15));
+          bouncingArea.start();
+    }
 
-	var bouncingArea = {
-		  canvas : document.getElementById("myCanvas"),
-		  start : function() {
-		      this.canvas.width = 500;
-		      this.canvas.height = 500;
-		      this.context = this.canvas.getContext("2d");
-		      this.interval = setInterval(updateArea, 20);        
-		  },
-		  stop : function() {
-		      clearInterval(this.interval);
-		  },    
-		  clear : function() {
-		      this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
-		  }
-	}
+    var bouncingArea = {
+          canvas : document.getElementById("myCanvas"),
+          start : function() {
+              this.canvas.width = 500;
+              this.canvas.height = 500;
+              this.context = this.canvas.getContext("2d");
+              this.interval = setInterval(updateArea, 20);
+          },
+          stop : function() {
+              clearInterval(this.interval);
+          },
+          clear : function() {
+              this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+          }
+    }
 
-	function component(x, y) {
-		  this.x = x;
-		  this.y = y;
-		  var speed = niveau;   
+    function component(x, y) {
+          this.x = x;
+          this.y = y;
+          var speed = niveau;
 
-		  this.speedY = speed;    
-		  this.update = function() {
-		      ctx = bouncingArea.context;
+          this.speedY = speed;
+          this.update = function() {
+              ctx = bouncingArea.context;
           ctx.drawImage(pomme, this.x, this.y);
-		  }
-		  this.newPos = function() {
-		      //this.x += this.speedX;
-		      this.y += this.speedY;
-		      this.hitFace();
-		  }
+          }
+          this.newPos = function() {
+              //this.x += this.speedX;
+              this.y += this.speedY;
+              this.hitFace();
+          }
 
-		  this.hitFace = function() {
-		      var areabottom = bouncingArea.canvas.height;
+          this.hitFace = function() {
+              var areabottom = bouncingArea.canvas.height;
 
-		      if (this.y > areabottom) {
-		  			//this.delete;
-		  			score-=2;
-		  			
-		      }
+              if (this.y > areabottom) {
+                      //this.delete;
+                      score-=2;
 
-		  }
-	}
+              }
 
-	function updateArea() {
-			newPommmmmmmmmmmmmmmmmmmmmmmmme +=1;
-			if (newPommmmmmmmmmmmmmmmmmmmmmmmme>newPommmmmmmmmmmmmmmmmmmmmmmmmeSeuil){
-				//ball = new component(Math.floor(Math.random() * Math.floor(460)) + 20, 15);
-				newPommmmmmmmmmmmmmmmmmmmmmmmme = 0;
-				newPommmmmmmmmmmmmmmmmmmmmmmmmeSeuil = Math.floor(Math.random() * Math.floor(100-2*niveau));
-				balls.push(new component(Math.floor(Math.random() * Math.floor(460)) + 20, 15));
-			}
-			bouncingArea.clear();
-			for (var i=0; i < balls.length; ++i){
-				console.log(balls[i]);
-				balls[i].newPos();
-				balls[i].update();
-			}*/
-			/*
-		  balls.forEach(function(item, index, array) {
-  			item.newPos();
-			});
-		  balls.forEach(function(item, index, array) {
-  			item.update();
-			});*/
-			//ball.newPos();
-			//ball.update();
-	/*}
-	*/
+          }
+    }
 
-	</script>
-	</body>
+    function updateArea() {
+            newPommmmmmmmmmmmmmmmmmmmmmmmme +=1;
+            if (newPommmmmmmmmmmmmmmmmmmmmmmmme>newPommmmmmmmmmmmmmmmmmmmmmmmmeSeuil){
+                //ball = new component(Math.floor(Math.random() * Math.floor(460)) + 20, 15);
+                newPommmmmmmmmmmmmmmmmmmmmmmmme = 0;
+                newPommmmmmmmmmmmmmmmmmmmmmmmmeSeuil = Math.floor(Math.random() * Math.floor(100-2*niveau));
+                balls.push(new component(Math.floor(Math.random() * Math.floor(460)) + 20, 15));
+            }
+            bouncingArea.clear();
+            for (var i=0; i < balls.length; ++i){
+                console.log(balls[i]);
+                balls[i].newPos();
+                balls[i].update();
+            }*/
+    /*
+  balls.forEach(function(item, index, array) {
+      item.newPos();
+    });
+  balls.forEach(function(item, index, array) {
+      item.update();
+    });*/
+    //ball.newPos();
+    //ball.update();
+    /*}
+    */
+
+</script>
+</body>
 </html>
 

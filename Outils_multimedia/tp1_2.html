@@ -1,31 +1,34 @@
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" media="screen" href="style.css" type="text/css" />
-	</head>
+<head>
+    <title>Joke Box</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" media="screen" href="style.css" type="text/css"/>
+</head>
 
 <body onload=initApp()>
-	<audio id="myAudio">
-	  <source type="audio/mpeg">
-	</audio>
-	<h1>Ma liste de Chansons</h1>
-	<section id="VBoxH">            <!--zone du haut-->
-			<select id="songlist" name="song" size="10" onclick="afficherInfo()">
-				
-			</select>
-	</section>
-	<section id="HBox">                     <!--zone du bas-->
-		<section id="VBoxG">    <!--zone de gauche-->
-		<h3 style="color:white">Détails de la chanson</h3>
-		<div id="info"></div>
-		</section>
-		<section id="VBoxD">    <!--zone de droite-->
-		<h3 style="color:white">Genres:</h3>
-			<select multiple id="songgenre" name="genre" size="8">
-				
-			</select>
-		</section>
-	</section>
-	<script src="scripts/scriptTP1_2.js"></script>
+<audio id="myAudio">
+    <source type="audio/mpeg">
+</audio>
+<h1>Ma liste de Chansons</h1>
+<section id="VBoxH">            <!--zone du haut-->
+    <label for="songlist">Selectionner la musique que vous voulez écouter:</label>
+    <select id="songlist" name="song" size="10" onclick="afficherInfo()">
+
+    </select>
+</section>
+<section id="HBox">                     <!--zone du bas-->
+    <section id="VBoxG">    <!--zone de gauche-->
+        <h3 style="color:white">Détails de la chanson</h3>
+        <div id="info"></div>
+    </section>
+    <section id="VBoxD">    <!--zone de droite-->
+        <h3 style="color:white">Genres:</h3>
+        <label for="songgenre">Selectionner le genre:</label>
+        <select multiple id="songgenre" name="genre" size="8">
+
+        </select>
+    </section>
+</section>
+<script src="scripts/scriptTP1_2.js"></script>
 </body>
 </html>

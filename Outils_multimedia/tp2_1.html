@@ -1,86 +1,90 @@
-
 <!DOCTYPE HTML>
 <html>
+<head>
+    <title>La balle rebondissante</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" media="screen" href="style.css" type="text/css"/>
+</head>
 <body onload="start()">
-	<canvas id="myCanvas" style="border:1px solid black;">
+<canvas id="myCanvas" style="border:1px solid black;">
     Votre navigateur ne supporte pas canvas. CANVAPA! : )
-	</canvas>
+</canvas>
 
-	<script type="text/javascript">
-	var ball;
+<script type="text/javascript">
+    var ball;
 
-	function start() {
-		  ball = new component(30,"red", 15, 15);
-		  bouncingArea.start();
-	}
+    function start() {
+        ball = new component(30, "red", 15, 15);
+        bouncingArea.start();
+    }
 
-	var bouncingArea = {
-		  canvas : document.getElementById("myCanvas"),
-		  start : function() {
-		      this.canvas.width = 480;
-		      this.canvas.height = 270;
-		      this.context = this.canvas.getContext("2d");
-		      this.interval = setInterval(updateArea, 20);        
-		  },
-		  stop : function() {
-		      clearInterval(this.interval);
-		  },    
-		  clear : function() {
-		      this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
-		  }
-	}
+    var bouncingArea = {
+        canvas: document.getElementById("myCanvas"),
+        start: function () {
+            this.canvas.width = 480;
+            this.canvas.height = 270;
+            this.context = this.canvas.getContext("2d");
+            this.interval = setInterval(updateArea, 20);
+        },
+        stop: function () {
+            clearInterval(this.interval);
+        },
+        clear: function () {
+            this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+        }
+    }
 
-	function component(radius, color, x, y) {
+    function component(radius, color, x, y) {
 
-		  this.radius = radius;
-		  this.x = x;
-		  this.y = y;
-		  var speed = 3;   
-		  this.speedX = speed;
-		  this.speedY = speed;    
-		  this.update = function() {
-		      ctx = bouncingArea.context;
-		      ctx.fillStyle = color;
-		          ctx.beginPath();
+        this.radius = radius;
+        this.x = x;
+        this.y = y;
+        var speed = 3;
+        this.speedX = speed;
+        this.speedY = speed;
+        this.update = function () {
+            ctx = bouncingArea.context;
+            ctx.fillStyle = color;
+            ctx.beginPath();
 
-          ctx.arc(this.x, this.y, this.radius, 0, Math.PI*2);
-              ctx.closePath();
+            ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+            ctx.closePath();
 
-					ctx.fill();
-		  }
-		  this.newPos = function() {
+            ctx.fill();
+        }
+        this.newPos = function () {
 
-		      this.x += this.speedX;
-		      this.y += this.speedY;
-		      this.hitFace();
-		  }
-		  this.hitFace = function() {
-		      var areabottom = bouncingArea.canvas.height - this.radius;
-		      var areatop = this.radius;
-		      var arealeft = this.radius;
-		      var arearight = bouncingArea.canvas.width - this.radius;
-		      
-		      if (this.y > areabottom) {
-		          this.speedY=-speed;
-		      }
-		      if (this.y < areatop) {
-		          this.speedY=speed;
-		      }
-		      if (this.x < arealeft) {
-		          this.speedX=speed;
-		      }
-		      if (this.x > arearight) {
-		          this.speedX=-speed;
-		      }
-		  }
-	}
+            this.x += this.speedX;
+            this.y += this.speedY;
+            this.hitFace();
+        }
+        this.hitFace = function () {
+            var areabottom = bouncingArea.canvas.height - this.radius;
+            var areatop = this.radius;
+            var arealeft = this.radius;
+            var arearight = bouncingArea.canvas.width - this.radius;
 
-	function updateArea() {
-		  bouncingArea.clear();
-		  ball.newPos();
-		  ball.update();
-	}
+            if (this.y > areabottom) {
+                this.speedY = -speed;
+            }
+            if (this.y < areatop) {
+                this.speedY = speed;
+            }
+            if (this.x < arealeft) {
+                this.speedX = speed;
+            }
+            if (this.x > arearight) {
+                this.speedX = -speed;
+            }
+        }
+    }
 
-	</script>
-	</body>
+    function updateArea() {
+        bouncingArea.clear();
+        ball.newPos();
+        ball.update();
+    }
+
+</script>
+</body>
 </html>
