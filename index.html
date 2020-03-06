@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
-<title>Homepage</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+    <title>Homepage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+    <!--<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">-->
+    <link rel="stylesheet" href="Styles/w3css_4_w3.css">
+    <link rel="stylesheet" href="Styles/w3-theme-blue-grey.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 <style>
     html, body, h1, h2, h3, h4, h5 {
         font-family: "Open Sans", sans-serif
@@ -60,7 +64,7 @@
             <!-- Accordion -->
             <div class="w3-card w3-round">
                 <div class="w3-white">
-                    <button onclick="location.href='https://github.com/acuissot '"
+                    <button onclick="window.open('https://github.com/acuissot','_blank')"
                             class="w3-button w3-block w3-theme-l1 w3-left-align"><i
                             class="fa fa-circle-o-notch fa-fw w3-margin-right"></i>Mon Git
                     </button>
@@ -70,7 +74,8 @@
                     <div id="Demo2" class="w3-hide w3-container">
                         <p>Je sais pas encore quoi mettre mais j'ai bien envie de le garder</p>
                     </div>
-                    <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align w3-theme-d1"><i
+                    <button onclick="myFunction('Demo3')"
+                            class="w3-button w3-block w3-theme-l1 w3-left-align w3-theme-d1"><i
                             class="fa fa-users fa-fw w3-margin-right"></i> Liens importants
                     </button>
                     <div id="Demo3" class="w3-hide w3-container w3-show">
@@ -292,11 +297,13 @@
                         <img src="Media/" style="width:100%" alt="victory screen"
                              class="w3-margin-bottom">
                     </div>
-                </div><p>Cette application permet également de gérer les utilisateurs des machines (leurs droits par exemple).
+                </div>
+                <p>Cette application permet également de gérer les utilisateurs des machines (leurs droits par exemple).
                     Je n'en dis pas plus la vidéo de présentation parle d'elle même:</p>
                 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/DXvAGZll1m0"
                         frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe><br>
+                        allowfullscreen></iframe>
+                <br>
 
                 <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>
                      Like
@@ -305,7 +312,6 @@
                      Comment
                 </button>
             </div>
-
 
 
             <!-- End Middle Column -->
