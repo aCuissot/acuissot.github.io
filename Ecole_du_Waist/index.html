@@ -3,7 +3,7 @@
 <title>Ecole du Waist</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 <body>
 
 <!-- Navbar (sit on top) -->
@@ -98,9 +98,9 @@
             l'Est de la France, au coeur du massif Alpin.</p>
     </div>
 
-    <div class="w3-row-padding w3-grayscale">
+    <div class="w3-row-padding">
         <div class="w3-col l3 m6 w3-margin-bottom">
-            <img src="Media/ProfOptique.jpg" alt="John" style="width:100%">
+            <img class="w3-grayscale imgGray" src="Media/Personnes/ProfOptique.jpg" alt="John" style="width:100%">
             <h3>John Doe</h3>
             <p class="w3-opacity">Professeur d'optique</p>
             <p>Un des chercheur et professeur les plus reconnus dans le domaine de l'optique.</p>
@@ -109,7 +109,7 @@
             </p>
         </div>
         <div class="w3-col l3 m6 w3-margin-bottom">
-            <img src="Media/Directeur.jpg" alt="Jane" style="width:100%">
+            <img  class="w3-grayscale imgGray" src="Media/Personnes/Directeur.jpg" alt="Jane" style="width:100%">
             <h3>Jane Doe</h3>
             <p class="w3-opacity">Directeur</p>
             <p>Fondateur et directeur de l'EIW.</p>
@@ -118,7 +118,7 @@
             </p>
         </div>
         <div class="w3-col l3 m6 w3-margin-bottom">
-            <img src="Media/Dir_adj.jpg" alt="Mike" style="width:100%">
+            <img  class="w3-grayscale imgGray" src="Media/Personnes/Dir_adj.jpg" alt="Mike" style="width:100%">
             <h3>Mike Ross</h3>
             <p class="w3-opacity">Directrice adjointe</p>
             <p>Ancienne chercheuse de l'équipe d'Arthur Ashkin, prix Nobel de physique 2018</p>
@@ -127,7 +127,7 @@
             </p>
         </div>
         <div class="w3-col l3 m6 w3-margin-bottom">
-            <img src="Media/ProfMath.jpg" alt="Dan" style="width:100%">
+            <img  class="w3-grayscale imgGray" src="Media/Personnes/ProfMath.jpg" alt="Dan" style="width:100%">
             <h3>Dan Star</h3>
             <p class="w3-opacity">Professeur de mathématiques</p>
             <p></p>
@@ -166,6 +166,23 @@
     <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
                      class="w3-hover-text-green">w3.css</a></p>
 </footer>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script>
+    const grayImgs = document.querySelectorAll(".imgGray");
 
+
+    for (var i=0; i<grayImgs.length; i++){
+        grayImgs[i].addEventListener('mouseover', function(){
+            console.log("jaaj");
+            console.log(grayImgs[i])
+            grayImgs[i].classList.toogle("w3-grayscake");
+        });
+        // grayImgs[i].addEventListener('mouseout', e => {
+        //     grayImgs[i].style.filter = "grayscale(75%)";
+        // });
+        // grayImg.onmouseover = function(){this.removeClass("w3-grayscale")};
+        // grayImg.onmouseout = function(){console.log("jaaj")};
+    }
+</script>
 </body>
 </html>
