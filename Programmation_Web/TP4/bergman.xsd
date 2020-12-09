@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="filmographie">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="resumes"/>
+        <xs:element ref="aliases"/>
+        <xs:element ref="perso"/>
+        <xs:element ref="roles"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="resumes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="resume" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="resume">
+    <xs:complexType mixed="true">
+      <xs:sequence minOccurs="0">
+        <xs:element ref="liste" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="filmref" type="xs:string" use="required"/>
+      <xs:attribute name="img" type="xs:string"/>
+      <xs:attribute name="pdf" type="xs:string"/>
+      <xs:attribute name="realisateur" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="liste">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="entree" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="aliases">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="alias" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="alias">
+    <xs:complexType mixed="true">
+      <xs:attribute name="date" type="xs:string" use="required"/>
+      <xs:attribute name="filmref" type="xs:string" use="required"/>
+      <xs:attribute name="pays" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="perso">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nom" type="xs:string"/>
+        <xs:element ref="naissance"/>
+        <xs:element ref="mort"/>
+        <xs:element ref="biographie"/>
+        <xs:element ref="mariages"/>
+        <xs:element ref="infos"/>
+        <xs:element ref="citations"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="naissance">
+    <xs:complexType>
+      <xs:attribute name="annee" type="xs:string" use="required"/>
+      <xs:attribute name="jour" type="xs:string" use="required"/>
+      <xs:attribute name="lieu" type="xs:string" use="required"/>
+      <xs:attribute name="mois" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="mort">
+    <xs:complexType>
+      <xs:attribute name="annee" type="xs:string" use="required"/>
+      <xs:attribute name="jour" type="xs:string" use="required"/>
+      <xs:attribute name="lieu" type="xs:string" use="required"/>
+      <xs:attribute name="mois" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="biographie">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="p" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="p">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element name="i" type="xs:string"/>
+        <xs:element ref="citation" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="citation">
+    <xs:complexType mixed="true">
+      <xs:attribute name="auteur" type="xs:string"/>
+      <xs:attribute name="id" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="mariages">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="mariage" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="mariage">
+    <xs:complexType mixed="true">
+      <xs:attribute name="conclusion" type="xs:string" use="required"/>
+      <xs:attribute name="debut" type="xs:string" use="required"/>
+      <xs:attribute name="fin" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="infos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="info" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="info">
+    <xs:complexType mixed="true">
+      <xs:attribute name="date" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="citations">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="citation" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="roles">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="role" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="role">
+    <xs:complexType mixed="true">
+      <xs:attribute name="date" type="xs:string" use="required"/>
+      <xs:attribute name="filmref" type="xs:string" use="required"/>
+      <xs:attribute name="misc" type="xs:string"/>
+      <xs:attribute name="personnage" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

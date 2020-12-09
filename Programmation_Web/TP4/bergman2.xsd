@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="filmographie">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="film" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="film">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="titre" type="xs:string"/>
+        <xs:element name="resume" type="xs:string"/>
+        <xs:element ref="alias" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="date" type="xs:string" use="required"/>
+      <xs:attribute name="filmref" type="xs:string" use="required"/>
+      <xs:attribute name="img" type="xs:string"/>
+      <xs:attribute name="misc" type="xs:string"/>
+      <xs:attribute name="pdf" type="xs:string"/>
+      <xs:attribute name="personnage" type="xs:string" use="required"/>
+      <xs:attribute name="realisateur" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="alias">
+    <xs:complexType mixed="true">
+      <xs:attribute name="date" type="xs:string" use="required"/>
+      <xs:attribute name="pays" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
