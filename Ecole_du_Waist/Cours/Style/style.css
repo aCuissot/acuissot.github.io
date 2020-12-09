@@ -1,0 +1,64 @@
+
+p {
+    text-align: justify;
+}
+
+.remarqueT {
+    font-style: italic;
+    font-weight: bold;
+    color: darkblue;
+}
+
+.remarqueC {
+    background-color: #68b7ff;
+    border: 2px solid darkblue;
+    padding: 4px;
+}
+
+.definitionT {
+    font-style: italic;
+    font-weight: bold;
+    color: darkred;
+}
+
+.definitionC {
+    background-color: #ffc616;
+    border: 2px solid darkred;
+    padding: 4px;
+}
+
+.exempleT {
+    font-style: italic;
+    font-weight: bold;
+    color: darkgreen;
+}
+
+.exempleC {
+    background-color: #b0ff1d;
+    border: 2px solid darkgreen;
+    padding: 4px;
+}
+
+.important {
+    font-weight: bold;
+    color: orangered;
+}
+
+.emphase {
+    font-style: italic;
+}
+
+.subtitle {
+    font-weight: bold;
+    text-decoration: underline orangered;
+}
+
+.center_img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center_text{
+    text-align: center
+}
