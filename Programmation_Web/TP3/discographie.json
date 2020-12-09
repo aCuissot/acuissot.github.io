@@ -1,0 +1,656 @@
+{
+  "groupes": {
+    "groupe": [
+      {
+        "musiciens": {
+          "musicien": [
+            {
+              "instruments": "Voix",
+              "bio": {
+                "_mort": "-",
+                "_naissance": "1945"
+              },
+              "_groupe": "deep-purple",
+              "_id": "m1",
+              "__text": "Ian Gillan"
+            },
+            {
+              "instruments": "Percussion",
+              "bio": {
+                "_mort": "-",
+                "_naissance": "1948"
+              },
+              "_groupe": "deep-purple",
+              "_id": "m2",
+              "__text": "Ian Paice"
+            },
+            {
+              "instruments": "Guitare",
+              "bio": {
+                "_mort": "-",
+                "_naissance": "1945"
+              },
+              "_groupe": "deep-purple",
+              "_id": "m3",
+              "__text": "Ritchie Blackmore"
+            },
+            {
+              "instruments": "Voix",
+              "bio": {
+                "_mort": "-",
+                "_naissance": "1947"
+              },
+              "_groupe": "deep-purple",
+              "_id": "m4",
+              "__text": "Rod Evans"
+            },
+            {
+              "instruments": "Clavier",
+              "bio": {
+                "_mort": "-",
+                "_naissance": "1941"
+              },
+              "_groupe": "deep-purple",
+              "_id": "m5",
+              "__text": "Jon Lord"
+            },
+            {
+              "instruments": "Guitare basse",
+              "bio": {
+                "_mort": "-",
+                "_naissance": "1945"
+              },
+              "_groupe": "deep-purple",
+              "_id": "m6",
+              "__text": "Nick Simper"
+            }
+          ]
+        },
+        "disques": {
+          "disque": [
+            {
+              "_annee": "1968",
+              "_groupe": "deep-purple",
+              "_id": "d1",
+              "_img": "dp1.jpg",
+              "__text": "Shades of Deep Purple"
+            },
+            {
+              "_annee": "1968",
+              "_groupe": "deep-purple",
+              "_id": "d2",
+              "_img": "dp2.jpg",
+              "__text": "The Book of Taliesyn"
+            },
+            {
+              "_annee": "1969",
+              "_groupe": "deep-purple",
+              "_id": "d3",
+              "_img": "dp3.jpg",
+              "__text": "Deep Purple"
+            },
+            {
+              "_annee": "1969",
+              "_groupe": "deep-purple",
+              "_id": "d4",
+              "_img": "dp11.jpg",
+              "__text": "Concerto for Group and Orchestra"
+            },
+            {
+              "_annee": "1970",
+              "_groupe": "deep-purple",
+              "_id": "d5",
+              "_img": "dp4.jpg",
+              "__text": "Deep Purple in Rock"
+            },
+            {
+              "_annee": "1971",
+              "_groupe": "deep-purple",
+              "_id": "d6",
+              "_img": "dp5.jpg",
+              "__text": "Fireball"
+            },
+            {
+              "_annee": "1972",
+              "_groupe": "deep-purple",
+              "_id": "d7",
+              "_img": "dp6.jpg",
+              "__text": "Machine Head"
+            },
+            {
+              "_annee": "1973",
+              "_groupe": "deep-purple",
+              "_id": "d8",
+              "_img": "dp7.jpg",
+              "__text": "Who Do We Think We Are"
+            },
+            {
+              "_annee": "1974",
+              "_groupe": "deep-purple",
+              "_id": "d9",
+              "_img": "dp8.jpg",
+              "__text": "Burn"
+            },
+            {
+              "_annee": "1974",
+              "_groupe": "deep-purple",
+              "_id": "d10",
+              "_img": "dp9.jpg",
+              "__text": "Stormbringer"
+            },
+            {
+              "_annee": "1975",
+              "_groupe": "deep-purple",
+              "_id": "d11",
+              "_img": "dp10.jpg",
+              "__text": "The House of Blue Light"
+            }
+          ]
+        },
+        "_id": "deep-purple",
+        "_img": "dp-photo.jpg",
+        "_url": "http://www.thehighwaystar.com",
+        "__text": "Deep Purple"
+      },
+      {
+        "musiciens": {
+          "musicien": [
+            {
+              "instruments": "Voix",
+              "bio": {
+                "_mort": "1971",
+                "_naissance": "1943"
+              },
+              "_groupe": "doors",
+              "_id": "m1",
+              "__text": "Jim Morrison"
+            },
+            {
+              "instruments": "Clavier",
+              "bio": {
+                "_mort": "-",
+                "_naissance": "1939"
+              },
+              "_groupe": "doors",
+              "_id": "m2",
+              "__text": "Ray Manzarek"
+            },
+            {
+              "instruments": "Guitare",
+              "bio": {
+                "_mort": "-",
+                "_naissance": "1946"
+              },
+              "_groupe": "doors",
+              "_id": "m3",
+              "__text": "Robby Krieger"
+            },
+            {
+              "instruments": "Percussion",
+              "bio": {
+                "_mort": "-",
+                "_naissance": "1944"
+              },
+              "_groupe": "doors",
+              "_id": "m4",
+              "__text": "John Densmore"
+            }
+          ]
+        },
+        "disques": {
+          "disque": [
+            {
+              "_annee": "1967",
+              "_groupe": "doors",
+              "_id": "d1",
+              "_img": "doors1.jpg",
+              "__text": "The Doors"
+            },
+            {
+              "_annee": "1967",
+              "_groupe": "doors",
+              "_id": "d2",
+              "_img": "doors2.jpg",
+              "__text": "Strange Days"
+            },
+            {
+              "_annee": "1968",
+              "_groupe": "doors",
+              "_id": "d3",
+              "_img": "doors3.jpg",
+              "__text": "Waiting for the Sun"
+            },
+            {
+              "_annee": "1969",
+              "_groupe": "doors",
+              "_id": "d4",
+              "_img": "doors4.jpg",
+              "__text": "The Soft Parade"
+            },
+            {
+              "_annee": "1970",
+              "_groupe": "doors",
+              "_id": "d5",
+              "_img": "doors5.jpg",
+              "__text": "Morrison Hotel"
+            },
+            {
+              "_annee": "1971",
+              "_groupe": "doors",
+              "_id": "d6",
+              "_img": "doors6.jpg",
+              "__text": "L.A. Woman"
+            },
+            {
+              "_annee": "1978",
+              "_groupe": "doors",
+              "_id": "d7",
+              "_img": "doors7.jpg",
+              "__text": "An American Prayer"
+            }
+          ]
+        },
+        "_id": "doors",
+        "_img": "doors-photo.jpg",
+        "_url": "http://www.thedoors.com",
+        "__text": "The Doors"
+      },
+      {
+        "musiciens": {
+          "musicien": [
+            {
+              "instruments": "Clavier",
+              "bio": {
+                "_mort": "-",
+                "_naissance": "1946"
+              },
+              "_groupe": "iron-butterfly",
+              "_id": "m1",
+              "__text": "Doug Ingle"
+            },
+            {
+              "instruments": "Guitare basse",
+              "bio": {
+                "_mort": "-",
+                "_naissance": "1942"
+              },
+              "_groupe": "iron-butterfly",
+              "_id": "m2",
+              "__text": "Lee Dorman"
+            },
+            {
+              "instruments": "Percussion",
+              "bio": {
+                "_mort": "-",
+                "_naissance": "1945"
+              },
+              "_groupe": "iron-butterfly",
+              "_id": "m3",
+              "__text": "Ron Bushy"
+            },
+            {
+              "instruments": "Guitare",
+              "bio": {
+                "_mort": "2003",
+                "_naissance": "1950"
+              },
+              "_groupe": "iron-butterfly",
+              "_id": "m4",
+              "__text": "Erik Bra[u]nn"
+            }
+          ]
+        },
+        "disques": {
+          "disque": [
+            {
+              "_annee": "1968",
+              "_groupe": "iron-butterfly",
+              "_id": "d1",
+              "_img": "iron1.jpg",
+              "__text": "Heavy"
+            },
+            {
+              "_annee": "1968",
+              "_groupe": "iron-butterfly",
+              "_id": "d2",
+              "_img": "iron2.jpg",
+              "__text": "In-a-gadda-da-vida"
+            },
+            {
+              "_annee": "1969",
+              "_groupe": "iron-butterfly",
+              "_id": "d3",
+              "_img": "iron3.jpg",
+              "__text": "Ball"
+            },
+            {
+              "_annee": "1970",
+              "_groupe": "iron-butterfly",
+              "_id": "d4",
+              "_img": "iron4.jpg",
+              "__text": "Live"
+            },
+            {
+              "_annee": "1970",
+              "_groupe": "iron-butterfly",
+              "_id": "d5",
+              "_img": "iron5.jpg",
+              "__text": "Metamorphosis"
+            },
+            {
+              "_annee": "1975",
+              "_groupe": "iron-butterfly",
+              "_id": "d6",
+              "_img": "iron6.jpg",
+              "__text": "Scorching Beauty"
+            },
+            {
+              "_annee": "1975",
+              "_groupe": "iron-butterfly",
+              "_id": "d7",
+              "_img": "iron7.jpg",
+              "__text": "Sun and Steel"
+            }
+          ]
+        },
+        "_id": "iron-butterfly",
+        "_img": "iron-photo.jpg",
+        "_url": "http://starling.rinet.ru/music/iron.htm",
+        "__text": "Iron Butterfly"
+      },
+      {
+        "musiciens": {
+          "musicien": [
+            {
+              "instruments": "Percussion",
+              "bio": {
+                "_mort": "1980",
+                "_naissance": "1948"
+              },
+              "_groupe": "led-zeppelin",
+              "_id": "m1",
+              "__text": "John Bonham"
+            },
+            {
+              "instruments": "Guitare basse",
+              "bio": {
+                "_mort": "-",
+                "_naissance": "1946"
+              },
+              "_groupe": "led-zeppelin",
+              "_id": "m2",
+              "__text": "John Paul Jones"
+            },
+            {
+              "instruments": "Guitare",
+              "bio": {
+                "_mort": "-",
+                "_naissance": "1944"
+              },
+              "_groupe": "led-zeppelin",
+              "_id": "m3",
+              "__text": "Jimmy Page"
+            },
+            {
+              "instruments": "Voix",
+              "bio": {
+                "_mort": "-",
+                "_naissance": "1948"
+              },
+              "_groupe": "led-zeppelin",
+              "_id": "m4",
+              "__text": "Robert Plant"
+            }
+          ]
+        },
+        "disques": {
+          "disque": [
+            {
+              "_annee": "1969",
+              "_groupe": "led-zeppelin",
+              "_id": "d1",
+              "_img": "lz1.jpg",
+              "__text": "Led Zeppelin"
+            },
+            {
+              "_annee": "1969",
+              "_groupe": "led-zeppelin",
+              "_id": "d2",
+              "_img": "lz2.jpg",
+              "__text": "Led Zeppelin II"
+            },
+            {
+              "_annee": "1970",
+              "_groupe": "led-zeppelin",
+              "_id": "d3",
+              "_img": "lz3.jpg",
+              "__text": "Led Zeppelin III"
+            },
+            {
+              "_annee": "1971",
+              "_groupe": "led-zeppelin",
+              "_id": "d4",
+              "_img": "lz4.jpg",
+              "__text": "Led Zeppelin IV"
+            },
+            {
+              "_annee": "1973",
+              "_groupe": "led-zeppelin",
+              "_id": "d5",
+              "_img": "lz5.jpg",
+              "__text": "Houses of the Holy"
+            },
+            {
+              "_annee": "1975",
+              "_groupe": "led-zeppelin",
+              "_id": "d6",
+              "_img": "lz6.jpg",
+              "__text": "Physical Graffiti"
+            },
+            {
+              "_annee": "1976",
+              "_groupe": "led-zeppelin",
+              "_id": "d7",
+              "_img": "lz7.jpg",
+              "__text": "Presence"
+            },
+            {
+              "_annee": "1979",
+              "_groupe": "led-zeppelin",
+              "_id": "d8",
+              "_img": "lz8.jpg",
+              "__text": "In Through the Out Door"
+            },
+            {
+              "_annee": "1982",
+              "_groupe": "led-zeppelin",
+              "_id": "d9",
+              "_img": "lz9.jpg",
+              "__text": "Coda"
+            }
+          ]
+        },
+        "_id": "led-zeppelin",
+        "_img": "lz-photo.jpg",
+        "_url": "http://www.ledzeppelin.com",
+        "__text": "Led Zeppelin"
+      },
+      {
+        "musiciens": {
+          "musicien": [
+            {
+              "instruments": "Guitare",
+              "bio": {
+                "_mort": "-",
+                "_naissance": "1946"
+              },
+              "_groupe": "pink-floyd",
+              "_id": "m1",
+              "__text": "David Gilmour"
+            },
+            {
+              "instruments": "Guitare, voix",
+              "bio": {
+                "_mort": "-",
+                "_naissance": "1946"
+              },
+              "_groupe": "pink-floyd",
+              "_id": "m2",
+              "__text": "Syd Barrett"
+            },
+            {
+              "instruments": "Guitare basse, voix",
+              "bio": {
+                "_mort": "-",
+                "_naissance": "1943"
+              },
+              "_groupe": "pink-floyd",
+              "_id": "m3",
+              "__text": "Roger Waters"
+            },
+            {
+              "instruments": "Clavier",
+              "bio": {
+                "_mort": "-",
+                "_naissance": "1945"
+              },
+              "_groupe": "pink-floyd",
+              "_id": "m4",
+              "__text": "Richard Wright"
+            },
+            {
+              "instruments": "Percussion",
+              "bio": {
+                "_mort": "-",
+                "_naissance": "1944"
+              },
+              "_groupe": "pink-floyd",
+              "_id": "m5",
+              "__text": "Nick Mason"
+            }
+          ]
+        },
+        "disques": {
+          "disque": [
+            {
+              "_annee": "1967",
+              "_groupe": "pink-floyd",
+              "_id": "d1",
+              "_img": "pf1.jpg",
+              "__text": "The Piper at the Gates of Dawn"
+            },
+            {
+              "_annee": "1968",
+              "_groupe": "pink-floyd",
+              "_id": "d2",
+              "_img": "pf2.jpg",
+              "__text": "A Saucerful of Secrets"
+            },
+            {
+              "_annee": "1969",
+              "_groupe": "pink-floyd",
+              "_id": "d3",
+              "_img": "pf3.jpg",
+              "__text": "More"
+            },
+            {
+              "_annee": "1969",
+              "_groupe": "pink-floyd",
+              "_id": "d4",
+              "_img": "pf4.jpg",
+              "__text": "Ummagumma"
+            },
+            {
+              "_annee": "1970",
+              "_groupe": "pink-floyd",
+              "_id": "d5",
+              "_img": "pf5.jpg",
+              "__text": "Atom Heart Mother"
+            },
+            {
+              "_annee": "1971",
+              "_groupe": "pink-floyd",
+              "_id": "d6",
+              "_img": "pf6.jpg",
+              "__text": "Meddle"
+            },
+            {
+              "_annee": "1972",
+              "_groupe": "pink-floyd",
+              "_id": "d7",
+              "_img": "pf7.jpg",
+              "__text": "Obscured by Clouds"
+            },
+            {
+              "_annee": "1973",
+              "_groupe": "pink-floyd",
+              "_id": "d8",
+              "_img": "pf8.jpg",
+              "__text": "Dark Side of the Moon"
+            },
+            {
+              "_annee": "1975",
+              "_groupe": "pink-floyd",
+              "_id": "d9",
+              "_img": "pf9.jpg",
+              "__text": "Wish You Were Here"
+            },
+            {
+              "_annee": "1977",
+              "_groupe": "pink-floyd",
+              "_id": "d10",
+              "_img": "pf10.jpg",
+              "__text": "Animals"
+            },
+            {
+              "_annee": "1979",
+              "_groupe": "pink-floyd",
+              "_id": "d11",
+              "_img": "pf11.jpg",
+              "__text": "The Wall"
+            },
+            {
+              "_annee": "1983",
+              "_groupe": "pink-floyd",
+              "_id": "d12",
+              "_img": "pf12.jpg",
+              "__text": "The Final Cut"
+            },
+            {
+              "_annee": "1987",
+              "_groupe": "pink-floyd",
+              "_id": "d13",
+              "_img": "pf13.jpg",
+              "__text": "A Momentary Lapse of Reason"
+            },
+            {
+              "_annee": "1988",
+              "_groupe": "pink-floyd",
+              "_id": "d14",
+              "_img": "pf14.jpg",
+              "__text": "Delicate Sound of Thunder"
+            },
+            {
+              "_annee": "1994",
+              "_groupe": "pink-floyd",
+              "_id": "d15",
+              "_img": "pf15.jpg",
+              "__text": "The Division Bell"
+            },
+            {
+              "_annee": "1995",
+              "_groupe": "pink-floyd",
+              "_id": "d16",
+              "_img": "pf16.jpg",
+              "__text": "P-U-L-S-E"
+            }
+          ]
+        },
+        "_id": "pink-floyd",
+        "_img": "pf-photo.jpg",
+        "_url": "http://ourworld.compuserve.com/homepages/PFArchives/webindex.htm",
+        "__text": "Pink Floyd"
+      }
+    ]
+  }
+}

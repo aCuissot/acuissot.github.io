@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<!-- CUISSOT.html -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<title> Bonjoir 2.0 </title>
+	</head>
+	
+	<style>
+		table,th,td {
+			border : 1px solid black;
+			border-collapse: collapse;
+		}
+		th,td {
+			padding: 5px;
+		}
+	</style>
+	<body>
+
+		<h1><a style="text-decoration:none" href="https://fr.wikipedia.org/wiki/Sept_et_Demi">7.5</a></h1>
+		<select id="selector">
+			<option value="1970" id="b70">Avant 1970</option>
+			<option value="1980" id="b80">Avant 1980</option>
+			<option value="2100" id="all">Tous les albums</option>
+		</select>
+  	<br>
+		<button type="button" onclick="loadDoc()">Get my CD collection</button>
+		<br><br>
+		<table id="demo"></table>
+		<script>
+		function loadDoc() {
+			var xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200) {
+				  myFunction(this);
+				}
+			};
+			xhttp.open("GET", "discographie.json", true);
+			xhttp.send();
+		}
+		function myFunction(xml) {
+			var i;
+			var xmlDoc = JSON.parse(xml.responseText);//json en fait
+			var table="<tr><th>Groupe</th><th>Musiciens</th><th>Disques</th></tr>";
+			var x = xmlDoc.groupes.groupe;
+			var gr;
+			for (i = 0; i <x.length; i++) { 
+				gr = x[i];
+				table += "<tr><td>" +	"<a href=\"" + 	gr._url + "\">"+		gr.__text + "</a><br>" +
+				"<img src=img_disco/" +	gr._img + " style=\"width:128px;\">" +
+				"</td><td><ul>";
+				for (j=0; j<gr.musiciens.musicien.length; j++){
+				table += "<li>" + gr.musiciens.musicien[j].__text + ", "+ gr.musiciens.musicien[j].instruments  + ", " + gr.musiciens.musicien[j].bio._naissance;
+				if (gr.musiciens.musicien[j].bio._mort!="-"){
+					table+="-"+gr.musiciens.musicien[j].bio._mort;
+				}
+				table+="</li>";
+				}
+
+				table+="</ul></td><td>";
+				for (j=0; j<gr.disques.disque.length; j++){
+					var e=document.getElementById("selector");
+					if (gr.disques.disque[j]._annee<=e.options[e.selectedIndex].value){
+					
+						table += "<img src=img_disco/" + gr.disques.disque[j]._img + " style=\"width:128px;\">" + "<figcaption>"+ gr.disques.disque[j].__text +", " + gr.disques.disque[j]._annee + "</figcaption>";
+					}
+				}
+				"</td></tr>"; 
+			}
+			document.getElementById("demo").innerHTML = table;
+		}
+		</script>
+	</body>
+</html>
