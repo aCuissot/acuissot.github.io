@@ -191,98 +191,160 @@
     <i class="fa fa-bars w3-button w3-white w3-hide-large w3-xlarge w3-margin-left w3-margin-top"
        onclick="w3_open()"></i>
 
-    <div class="w3-container">
+    <p class="w3-container">
         <br>
-        <h5 class="w3-opacity">Optique des LASER et faisceaux gaussiens</h5>
-        <h2 class="subtitle">I. Les résonateurs ouverts</h2>
-        <h4 class="subtitle">2. Intérêt et description des résonateurs ouverts</h4>
-        <hr>
-        <h5 class="subtitle">Introduction</h5>
-        <p>
-            Le rôle de la cavité laser est de permettre l'amplification répétée de l'onde optique grâce à un système
-            réfléchissant (la plupart du temps des miroirs). C'est aussi la cavité qui permet, via ses pertes (un des
-            miroirs utilisé n'est que partiellement réfléchissant), d'extraire le faisceau laser utile. Enfin la
-            géométrie de la cavité détermine en grande partie les caractéristiques spatiales et spectrales du
-            rayonnement laser émis.
-        </p>
-        <h5 class="subtitle">Pourquoi un résonateur ouvert ?</h5>
+    <h5 class="w3-opacity">Optique des LASER et faisceaux gaussiens</h5>
+    <h2 class="subtitle">II. Stabilité des cavités lasers</h2>
+    <h4 class="subtitle">3. Matrices de transfert et loi ABCD</h4>
+    <hr>
+    <h5 class="subtitle">Introduction</h5>
+    <p>
+        Même s'il est possible d'obtenir un laser avec des cavités instables dans certains cas bien particuliers
+        (voir plus loin), il est en général préférable d'avoir une cavité stable. L'étude théorique de la stabilité
+        est indispensable pour dimensionner la cavité (choix des rayons de courbure, des distances) avant de
+        commencer à la construire.
+    </p>
+    <h5 class="subtitle">Les matrices de transfert</h5>
 
-        <p>Le résonateur le plus simple que l'on puisse imaginer est une boite parallélépipédique (fermée, donc) dont
-            toutes les parois sont métallisées. Cette cavité possède un certain nombre de modes susceptibles d'osciller,
-            et ces modes sont définis par les conditions aux limites sur les parois pour les vecteurs d'ondes (un mode
-            est associé à un vecteur d'onde \(\vec k_{mnq}\) avec \(k_x = m \frac \pi a, k_y = n \frac \pi b, k_z = q
-            \frac \pi d\) où \(a, b, d\) sont les dimensions du parallélépipède).</p>
-        <p>
-            Si on insère un milieu amplificateur dans une telle cavité, les modes vont se mettre à osciller et on aura
-            amplification. Cependant, pour que l'onde produite soit cohérente, il faut que le nombre de modes
-            susceptibles d'osciller, c'est à dire compris dans la bande spectrale d'amplification du milieu
-            amplificateur, soit faible.
-        </p>
-        <p>
-            Si on calcule le nombre de modes dans cette bande de fréquence \( \Delta \nu\), on trouve qu'il est
-            proportionnel au volume
-            de la cavité et inversement proportionnel à la longueur d'onde au carré. Numériquement, si la longueur
-            d'onde vaut 10 cm (domaine des micro-ondes), alors une dizaine de modes sont susceptibles d'osciller dans
-            une bande de 1 GHz et une cavité de dimensions raisonnables (10 cm de côté). Par contre, si la longueur
-            d'onde appartient au domaine optique (par exemple 1 µm), alors on trouve pour cette cavité environ
-            \(10^{11}\)
-            modes dans la même bande spectrale.
-        </p>
-        <p>
-            C'est pour cela que de tels résonateurs sont très bien adaptés pour réaliser des MASERS (Microwave
-            Amplification by Stimulated Emission of Radiation) mais ne sont pas utilisables avec de la lumière visible :
-            un trop grand nombre de modes vont osciller simultanément, ou, en d'autres termes, la taille de la cavité
-            nécessaire pour obtenir un fonctionnement quasi-monomode est micrométrique.
-        </p>
-
-        <h6 class="remarqueT">Remarque:</h6>
-        <p class="remarqueC">
-            Avec la technologie actuelle, ce type de micro-cavité est réalisable – ce qui n'était pas le cas en 1960 –
-            néanmoins, le milieu amplificateur est dans ce cas trop petit pour espérer réaliser des sources puissantes.
-        </p>
-
-        <p>Il est donc nécessaire de modifier la géométrie du résonateur : l'idée proposée et développée, entre autre
-            par Schallow et Townes dans les années 50, consiste à utiliser un résonateur quasi-linéaire où une seule
-            direction d'oscillation est permise : c'est le <span class="important">résonateur ouvert</span>, constitué
-            dans sa forme la plus simple de
-            deux miroirs face à face dans une configuration d'interféromètre de Fabry-Pérot.</p>
-        <p>En première approche, les modes d'un tel résonateurs sont similaires à ceux décrits pour la cavité fermée si
-            on fait l'hypothèse que \(d\gt\gt a, b\). Une telle structure réduit considérablement le nombre de modes
-            susceptibles
-            d'osciller, comme on s'en rend compte avec le Fabry-Pérot : tous les rayons qui présentent un angle trop
-            important par rapport à l'axe de la cavité vont rapidement sortir de cette dernière. Dans le cas du
-            Fabry-Pérot, néanmoins, le moindre défaut de parallélisme va faire sortir tout faisceau de la cavité après
-            quelques aller-retours seulement. Pour qu'un laser fonctionne efficacement, et que la cavité joue son rôle
-            de filtre spatial et spectral, il faut que certains rayons restent dans la cavité assez longtemps : on a
-            besoin de cavités <span class="emphase">stables</span>, nous y reviendrons.</p>
-        <h5 class="subtitle">Description des résonateurs</h5>
-
-        <p>
-            La cavité la plus simple pouvant être stable est la cavité linéaire constituée de deux miroirs face à face,
-            de rayons de courbure \(R_1\) et \(R_2\), distants d'une distance (\L\), et de diamètres respectifs \(D_1\)
-            et \(D_2\) (voir figure 1). Dans ce type de cavité, une onde stationnaire est formée. Elle peut également
-            contenir divers éléments optiques (des lentilles, des éléments polarisants, des composants actifs...) : on
-            appelle « cavité passive » la cavité sans son milieu amplificateur, par opposition à la cavité active où le
-            milieu amplificateur est présent.
-        </p>
-        <div class="w3-large">
-        <img src="../Images/fig01.jpg" class="center_img">
+    <p>L'étude de la stabilité de la cavité sera faite en utilisant la notion de matrice de transfert (ou matrices
+        ABCD).</p>
+    <p>Le principe de cette méthode est d'associer à chaque élément optique au sens large (simple propagation dans
+        un milieu donné, lentille, miroir...) une matrice 2x2 spécifique. On pourra ainsi déterminer les
+        caractéristiques liées à la propagation par simple multiplication des matrices élémentaires.
+    </p>
+    <p>
+        Considérons une propagation dans le plan \(yOz\), l'axe \(z\) étant celui de la cavité. Dans ce plan, un
+        rayon donné
+        est caractérisé par son ordonnée de départ \(h\) et par la pente \(\Theta\) de la droite qui supporte le
+        rayon paraxial
+        (voir figure 5).
+    </p>
+    <div class="w3-large">
+        <img src="../Images/fig05.jpg" class="center_img">
         <p class="w3-opacity center_text">
-				Figure 1 : Cavité linéaire et cavité en anneau
-		</p>
-        </div>
-        <h6 class="remarqueT">Remarque:</h6>
-        <p class="remarqueC">Ce qui nous intéressera par la suite est le chemin optique [d] parcouru par la lumière lors
-            d'un aller-retour dans la cavité, Ce chemin optique est défini comme le produit de la distance parcourue par
-            l'indice de réfraction rencontré par la lumière.
-
-        </p>
-        <h6 class="remarqueT">Remarque:</h6>
-        <p class="remarqueC">Un autre type de cavité répandu est la cavité en anneau (voir figure 1), où la lumière ne
-            revient pas sur elle-même mais forme une onde progressive. Dans ce cours, on se limitera en général à la
-            cavité linéaire, mais les raisonnements et les méthodes utilisés sont valables pour tout résonateur.
+            Figure 5 : Définition des paramètres
         </p>
     </div>
+
+    <p>
+        Dans les conditions de Gauss, les relations entre \( (h_1 , \Theta_1)\) avant la traversée d'un système
+        optique donné et \( (h_2 , \Theta_2)\) après
+        cette traversée sont linéaires et peuvent s'écrire sous forme matricielle : \[ \begin{pmatrix}
+        h_2 \\
+        \Theta_2 \\
+        \end{pmatrix} = \begin{pmatrix}
+        A & B \\
+        C & D \\
+        \end{pmatrix} \begin{pmatrix}
+        h_1 \\
+        \Theta_1 \\
+        \end{pmatrix}\] où les termes diagonaux sont
+        sans dimension, B et C ayant respectivement les dimensions d'une longueur et de l'inverse d'une longueur.
+    </p>
+    <p>La matrice \( T = \begin{pmatrix}
+        A & B \\
+        C & D \\
+        \end{pmatrix}\) caractérise complètement le système optique traversé.
+
+    </p>
+
+    <p>Nous allons maintenant déterminer les matrices ABCD pour quelques composants essentiels d'une cavité, et montrer
+        comment obtenir la matrice ABCD du système complet à partir de ces composants élémentaires.</p>
+    <h6>Propagation sur une distance d :</h6>
+    <p>
+        \( T = \begin{pmatrix}
+        1 & d \\
+        0 & 1 \\
+        \end{pmatrix}\), la démonstration est évidente (voir figure 5) :
+    </p>
+    <p> \(h_2=h_1 + d \Theta_2\) et \(\Theta_2 =\Theta_1\)(les rayons étant paraxiaux, on assimile l'angle à sa
+        tangente).</p>
+    <p>Or en développant l'expression matricielle ci-dessus: \( \begin{matrix}
+        h_2=Ah_1+B\Theta_1 \\
+        \Theta_2 = Ch_1 +D\Theta_1 \\
+        \end{matrix}\)</p>
+    <p>On en déduit par identification termes à termes : \(A =1, B=d, C=0, D=1\).
+    </p>
+    <p>Nous ne démontrerons pas les autres relations (le raisonnement est exactement le même) : cela pourra être fait
+        sous forme d'exercice.
+
+    </p>
+    <h6>Propagation sur une distance d dans un milieu d'indice \(n\):</h6>
+    <p> \[ T = \begin{pmatrix}
+        1 & \frac d n \\
+        0 & 1 \\
+        \end{pmatrix}\]</p>
+    <h6>Dioptre plan entre deux milieux d'indices \(n_1\) et \(n_2\):</h6>
+    <p> \[ T = \begin{pmatrix}
+        1 &0 \\
+        0 & {\frac{n_1}{n_2}} \\
+        \end{pmatrix}\]</p>
+    <h6>Lentille mince de distance focale \(f\):</h6>
+    <p> \[ T = \begin{pmatrix}
+        1 & 0 \\
+        -\frac 1 f & 1 \\
+        \end{pmatrix}\]</p>
+    <h6>Miroir concave ou convexe de courbure \(R\):</h6>
+    <p> \[ T = \begin{pmatrix}
+        1 & 0 \\
+        {-\frac{2}{R}} & 1 \\
+        \end{pmatrix}\]</p>
+
+    <p>On retrouve bien sûr l'équivalence miroir-lentille avec \(R=2f\) (voir plus haut).
+
+    </p>
+
+    <h6 class="attentionT">Attention:</h6>
+    <div class="attentionC">
+        <p>De manière générale, pour \(N\) systèmes optiques successifs \(S_i (i=1,2,...,N)\) ayant chacun une matrice
+            \(T_i\), la
+            matrice de l'ensemble est le produit des matrices dans l'ordre inverse : \(T_{systeme}=
+            T_N...T_i...T_3T_2T_1</p>
+        <p>Attention, en général les matrices ne commutent pas et l'ordre doit être strictement conservé.</p>
+        <p>La matrice \(T\) est unitaire (son déterminant vaut 1), sauf dans le cas (rare) où le milieu de départ et le
+            milieu d'arrivé ont des indices différents.
+        </p>
+        <p>On verra par la suite que cette méthode matricielle s'applique non seulement en optique géométrique
+            mais également pour les faisceaux gaussiens</p>
+    </div>
+    <h6 class="remarqueT">Remarque:</h6>
+    <p class="remarqueC">Il arrive souvent que des systèmes astigmates soient introduits dans les cavités lasers
+        (miroirs sphériques hors d'axe, lames à incidence de Brewster, lentilles cylindriques, prismes...). Dans ce cas,
+        il existe un comportement différent suivant les deux directions orthogonales. Il faut alors distinguer les
+        matrices ABCD dans la direction \(x\) et celles dans la direction \(y\).</p>
+
+    <h5 class="subtitle">La loi ABCD</h5>
+
+    <p>
+        Elle permet de décrire la propagation d'une onde sphérique dans un système optique.
+    </p>
+    <p>
+        Considérons une onde sphérique issue d'un point \(O_1\), avec un rayon de courbure \(R_1\) à l'entrée d'un
+        système optique
+        donné et convergeant en un point \(O_2\) avec un rayon de courbure \(R_2\) à la sortie de ce système. On prendra
+        comme
+        convention : \(R>0\) lorsque l'onde diverge et R<0 lorsque l'onde converge.
+    </p>
+    <p>
+        On a dans ces conditions \(R_1 \approx \frac {h_1}{\Theta_1}\) et \(R_2 \approx \frac {h_2}{\Theta_2}\) (voir
+        figure 6)
+    </p>
+
+    <div class="w3-large">
+        <img src="../Images/fig06.jpg" class="center_img">
+        <p class="w3-opacity center_text">
+            Figure 6 : Paramètres pour la démonstration de la loi ABCD
+        </p>
+    </div>
+    <p>On peut donc déduire à partir de la définition de la matrice ABCD :\[R_2 = \frac{AR_1 + B}{CR_1 + D}\]
+
+    </p>
+    <p class="center_text w3-opacity">C'est la loi ABCD
+    </p>
+    <p><span class="important">Cette loi est très importante</span>, notamment parce qu'on la généralisera au cas des rayons de courbure complexes
+        (voir plus loin le chapitre sur les faisceaux gaussiens).
+    </p>
+</div>
 
 </div>
 

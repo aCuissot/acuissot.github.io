@@ -194,94 +194,26 @@
     <div class="w3-container">
         <br>
         <h5 class="w3-opacity">Optique des LASER et faisceaux gaussiens</h5>
-        <h2 class="subtitle">I. Les résonateurs ouverts</h2>
-        <h4 class="subtitle">2. Intérêt et description des résonateurs ouverts</h4>
+        <h2 class="subtitle">II. Stabilité des cavités lasers</h2>
+        <h4 class="subtitle">1. Introduction</h4>
         <hr>
-        <h5 class="subtitle">Introduction</h5>
         <p>
-            Le rôle de la cavité laser est de permettre l'amplification répétée de l'onde optique grâce à un système
-            réfléchissant (la plupart du temps des miroirs). C'est aussi la cavité qui permet, via ses pertes (un des
-            miroirs utilisé n'est que partiellement réfléchissant), d'extraire le faisceau laser utile. Enfin la
-            géométrie de la cavité détermine en grande partie les caractéristiques spatiales et spectrales du
-            rayonnement laser émis.
-        </p>
-        <h5 class="subtitle">Pourquoi un résonateur ouvert ?</h5>
+            Nous allons décrire ici une approche simple fondée sur l'optique géométrique avant d'aborder la description
+            plus exacte basée sur les équations de Maxwell (voir paragraphe sur les faisceaux gaussiens).
 
-        <p>Le résonateur le plus simple que l'on puisse imaginer est une boite parallélépipédique (fermée, donc) dont
-            toutes les parois sont métallisées. Cette cavité possède un certain nombre de modes susceptibles d'osciller,
-            et ces modes sont définis par les conditions aux limites sur les parois pour les vecteurs d'ondes (un mode
-            est associé à un vecteur d'onde \(\vec k_{mnq}\) avec \(k_x = m \frac \pi a, k_y = n \frac \pi b, k_z = q
-            \frac \pi d\) où \(a, b, d\) sont les dimensions du parallélépipède).</p>
-        <p>
-            Si on insère un milieu amplificateur dans une telle cavité, les modes vont se mettre à osciller et on aura
-            amplification. Cependant, pour que l'onde produite soit cohérente, il faut que le nombre de modes
-            susceptibles d'osciller, c'est à dire compris dans la bande spectrale d'amplification du milieu
-            amplificateur, soit faible.
-        </p>
-        <p>
-            Si on calcule le nombre de modes dans cette bande de fréquence \( \Delta \nu\), on trouve qu'il est
-            proportionnel au volume
-            de la cavité et inversement proportionnel à la longueur d'onde au carré. Numériquement, si la longueur
-            d'onde vaut 10 cm (domaine des micro-ondes), alors une dizaine de modes sont susceptibles d'osciller dans
-            une bande de 1 GHz et une cavité de dimensions raisonnables (10 cm de côté). Par contre, si la longueur
-            d'onde appartient au domaine optique (par exemple 1 µm), alors on trouve pour cette cavité environ
-            \(10^{11}\)
-            modes dans la même bande spectrale.
-        </p>
-        <p>
-            C'est pour cela que de tels résonateurs sont très bien adaptés pour réaliser des MASERS (Microwave
-            Amplification by Stimulated Emission of Radiation) mais ne sont pas utilisables avec de la lumière visible :
-            un trop grand nombre de modes vont osciller simultanément, ou, en d'autres termes, la taille de la cavité
-            nécessaire pour obtenir un fonctionnement quasi-monomode est micrométrique.
-        </p>
-
-        <h6 class="remarqueT">Remarque:</h6>
-        <p class="remarqueC">
-            Avec la technologie actuelle, ce type de micro-cavité est réalisable – ce qui n'était pas le cas en 1960 –
-            néanmoins, le milieu amplificateur est dans ce cas trop petit pour espérer réaliser des sources puissantes.
-        </p>
-
-        <p>Il est donc nécessaire de modifier la géométrie du résonateur : l'idée proposée et développée, entre autre
-            par Schallow et Townes dans les années 50, consiste à utiliser un résonateur quasi-linéaire où une seule
-            direction d'oscillation est permise : c'est le <span class="important">résonateur ouvert</span>, constitué
-            dans sa forme la plus simple de
-            deux miroirs face à face dans une configuration d'interféromètre de Fabry-Pérot.</p>
-        <p>En première approche, les modes d'un tel résonateurs sont similaires à ceux décrits pour la cavité fermée si
-            on fait l'hypothèse que \(d\gt\gt a, b\). Une telle structure réduit considérablement le nombre de modes
-            susceptibles
-            d'osciller, comme on s'en rend compte avec le Fabry-Pérot : tous les rayons qui présentent un angle trop
-            important par rapport à l'axe de la cavité vont rapidement sortir de cette dernière. Dans le cas du
-            Fabry-Pérot, néanmoins, le moindre défaut de parallélisme va faire sortir tout faisceau de la cavité après
-            quelques aller-retours seulement. Pour qu'un laser fonctionne efficacement, et que la cavité joue son rôle
-            de filtre spatial et spectral, il faut que certains rayons restent dans la cavité assez longtemps : on a
-            besoin de cavités <span class="emphase">stables</span>, nous y reviendrons.</p>
-        <h5 class="subtitle">Description des résonateurs</h5>
-
-        <p>
-            La cavité la plus simple pouvant être stable est la cavité linéaire constituée de deux miroirs face à face,
-            de rayons de courbure \(R_1\) et \(R_2\), distants d'une distance (\L\), et de diamètres respectifs \(D_1\)
-            et \(D_2\) (voir figure 1). Dans ce type de cavité, une onde stationnaire est formée. Elle peut également
-            contenir divers éléments optiques (des lentilles, des éléments polarisants, des composants actifs...) : on
-            appelle « cavité passive » la cavité sans son milieu amplificateur, par opposition à la cavité active où le
-            milieu amplificateur est présent.
-        </p>
-        <div class="w3-large">
-        <img src="../Images/fig01.jpg" class="center_img">
-        <p class="w3-opacity center_text">
-				Figure 1 : Cavité linéaire et cavité en anneau
-		</p>
-        </div>
-        <h6 class="remarqueT">Remarque:</h6>
-        <p class="remarqueC">Ce qui nous intéressera par la suite est le chemin optique [d] parcouru par la lumière lors
-            d'un aller-retour dans la cavité, Ce chemin optique est défini comme le produit de la distance parcourue par
-            l'indice de réfraction rencontré par la lumière.
 
         </p>
-        <h6 class="remarqueT">Remarque:</h6>
-        <p class="remarqueC">Un autre type de cavité répandu est la cavité en anneau (voir figure 1), où la lumière ne
-            revient pas sur elle-même mais forme une onde progressive. Dans ce cours, on se limitera en général à la
-            cavité linéaire, mais les raisonnements et les méthodes utilisés sont valables pour tout résonateur.
-        </p>
+
+        <p>
+            Nous considérerons des cavités passives, les cavités réelles pouvant en général au premier ordre y être
+            ramenées (en modélisant par exemple les effets thermiques dus à l'échauffement - créé par l'absorption de la
+            pompe - dans le milieu amplificateur par une simple lentille). Comme de coutume en optique géométrique, la
+            propagation de la lumière sera donc décrite en termes de « rayons » définis en chaque point d'une onde comme
+            la normale au front d'onde. C'est aussi la direction de propagation de l'énergie (colinéaire au vecteur de
+            Poynting). Enfin on se limitera aux systèmes centrés à symétrie axiale : la plupart des cavités réelles
+            peuvent en première approximation s'y ramener. On travaillera avec des rayons paraxiaux, c'est à dire
+            quasi—parallèles à l'axe optique \(Oz\) de la cavité. On pourra travailler en projection dans le plan \(yOz\), les
+            raisonnements pouvant se répéter à l'identique dans \(xOz\).</p>
     </div>
 
 </div>
