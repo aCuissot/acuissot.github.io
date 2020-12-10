@@ -194,148 +194,202 @@
     <div class="w3-container">
         <br>
         <h5 class="w3-opacity">Optique des LASER et faisceaux gaussiens</h5>
-        <h2 class="subtitle">I. Les résonateurs ouverts</h2>
-        <h4 class="subtitle">2. Intérêt et description des résonateurs ouverts</h4>
+        <h2 class="subtitle">II. Stabilité des cavités Lasers</h2>
+        <h4 class="subtitle">4. Stabilité d'une cavité</h4>
         <hr>
-        <h5 class="subtitle">Introduction</h5>
+        <h5 class="subtitle">Étude générale</h5>
         <p>
-            Le rôle de la cavité laser est de permettre l'amplification répétée de l'onde optique grâce à un système
-            réfléchissant (la plupart du temps des miroirs). C'est aussi la cavité qui permet, via ses pertes (un des
-            miroirs utilisé n'est que partiellement réfléchissant), d'extraire le faisceau laser utile. Enfin la
-            géométrie de la cavité détermine en grande partie les caractéristiques spatiales et spectrales du
-            rayonnement laser émis.
-        </p>
-        <h5 class="subtitle">Pourquoi un résonateur ouvert ?</h5>
-
-        <p>Le résonateur le plus simple que l'on puisse imaginer est une boite parallélépipédique (fermée, donc) dont
-            toutes les parois sont métallisées. Cette cavité possède un certain nombre de modes susceptibles d'osciller,
-            et ces modes sont définis par les conditions aux limites sur les parois pour les vecteurs d'ondes (un mode
-            est associé à un vecteur d'onde \(\vec k_{mnq}\) avec \(k_x = m \frac \pi a, k_y = n \frac \pi b, k_z = q
-            \frac \pi d\) où \(a, b, d\) sont les dimensions du parallélépipède).</p>
-        <p>
-            Si on insère un milieu amplificateur dans une telle cavité, les modes vont se mettre à osciller et on aura
-            amplification. Cependant, pour que l'onde produite soit cohérente, il faut que le nombre de modes
-            susceptibles d'osciller, c'est à dire compris dans la bande spectrale d'amplification du milieu
-            amplificateur, soit faible.
-        </p>
-        <p>
-            Si on calcule le nombre de modes dans cette bande de fréquence \( \Delta \nu\), on trouve qu'il est
-            proportionnel au volume
-            de la cavité et inversement proportionnel à la longueur d'onde au carré. Numériquement, si la longueur
-            d'onde vaut 10 cm (domaine des micro-ondes), alors une dizaine de modes sont susceptibles d'osciller dans
-            une bande de 1 GHz et une cavité de dimensions raisonnables (10 cm de côté). Par contre, si la longueur
-            d'onde appartient au domaine optique (par exemple 1 µm), alors on trouve pour cette cavité environ
-            \(10^{11}\)
-            modes dans la même bande spectrale.
-        </p>
-        <p>
-            C'est pour cela que de tels résonateurs sont très bien adaptés pour réaliser des MASERS (Microwave
-            Amplification by Stimulated Emission of Radiation) mais ne sont pas utilisables avec de la lumière visible :
-            un trop grand nombre de modes vont osciller simultanément, ou, en d'autres termes, la taille de la cavité
-            nécessaire pour obtenir un fonctionnement quasi-monomode est micrométrique.
+            Considérons une cavité représentée par une structure périodique d'éléments optiques. La matrice de transfert
+            de l'ensemble est \( T = \begin{pmatrix}
+            A & B \\
+            C & D \\
+            \end{pmatrix}\).
         </p>
 
-        <h6 class="remarqueT">Remarque:</h6>
-        <p class="remarqueC">
-            Avec la technologie actuelle, ce type de micro-cavité est réalisable – ce qui n'était pas le cas en 1960 –
-            néanmoins, le milieu amplificateur est dans ce cas trop petit pour espérer réaliser des sources puissantes.
+        <p>Pour \(n\) périodes, soit \(n\) aller-retours dans le cas d'une cavité linéaire, la matrice de transfert est
+            \(T^n\). Si
+            on note \(p_0 = \begin{pmatrix}h_0 \\ \Theta_0 \end{pmatrix}\) le vecteur représentant un rayon à l'entrée
+            de la séquence, et \(p_n = \begin{pmatrix}h_n \\ \Theta_n \end{pmatrix}\) le vecteur à la sortie, on a
+            \(p_n = T^n p_0\).
+        </p>
+        <p>
+            La matrice \(T\) est diagonalisable, et si on note \(P\) la matrice de passage unitaire et \(x_{1,2 }\) les
+            deux valeurs
+            propres de \(T\), on a \(T=P \begin{pmatrix} x_1 & 0 \\ 0 & x_2 \end{pmatrix} P^{-1}\).
+        </p>
+        <p>On en déduit donc que \[p_n=P \begin{pmatrix} x_1^n & 0 \\ 0 & x_2^n \end{pmatrix} P^{-1}p_0\]
+        </p>
+        <p>
+            Pour que la cavité soit stable, il faut que les rayons restent au voisinage de l'axe optique au cours de la
+            propagation à travers les n éléments quand n tend vers l'infini. Autrement dit, il faut que \(p_n\) soit
+            borné
+            supérieurement, ou encore que \(\lvert {x_1} \rvert \leq 1\) et \(\lvert{x_2}\rvert \leq 1\)</p>
+        <p>
+            Par ailleurs, les valeurs propres \(x_1\) et \(x_2\) de \(T\) obéissent aux relations suivantes (voir cours
+            d'algèbre
+            linéaire): \[x_1x_2 = \lvert T \rvert = 1\ (T\ est\ unitaire)\] \[x_1+x_2=Trace(T)=A+D\]
         </p>
 
-        <p>Il est donc nécessaire de modifier la géométrie du résonateur : l'idée proposée et développée, entre autre
-            par Schallow et Townes dans les années 50, consiste à utiliser un résonateur quasi-linéaire où une seule
-            direction d'oscillation est permise : c'est le <span class="important">résonateur ouvert</span>, constitué
-            dans sa forme la plus simple de
-            deux miroirs face à face dans une configuration d'interféromètre de Fabry-Pérot.</p>
-        <p>En première approche, les modes d'un tel résonateurs sont similaires à ceux décrits pour la cavité fermée si
-            on fait l'hypothèse que \(d\gt\gt a, b\). Une telle structure réduit considérablement le nombre de modes
-            susceptibles
-            d'osciller, comme on s'en rend compte avec le Fabry-Pérot : tous les rayons qui présentent un angle trop
-            important par rapport à l'axe de la cavité vont rapidement sortir de cette dernière. Dans le cas du
-            Fabry-Pérot, néanmoins, le moindre défaut de parallélisme va faire sortir tout faisceau de la cavité après
-            quelques aller-retours seulement. Pour qu'un laser fonctionne efficacement, et que la cavité joue son rôle
-            de filtre spatial et spectral, il faut que certains rayons restent dans la cavité assez longtemps : on a
-            besoin de cavités <span class="emphase">stables</span>, nous y reviendrons.</p>
-        <h5 class="subtitle">Description des résonateurs</h5>
+        <p>
+            Comme \(x_1\) est à priori un complexe, on pose \(x_1 = \lvert x_1 \rvert e^{i\Phi}\) et par suite \(x_2 =
+            \lvert x_1 \rvert ^1 e^{i\Phi}\)
+        </p>
 
         <p>
-            La cavité la plus simple pouvant être stable est la cavité linéaire constituée de deux miroirs face à face,
-            de rayons de courbure \(R_1\) et \(R_2\), distants d'une distance (\L\), et de diamètres respectifs \(D_1\)
-            et \(D_2\) (voir figure 1). Dans ce type de cavité, une onde stationnaire est formée. Elle peut également
-            contenir divers éléments optiques (des lentilles, des éléments polarisants, des composants actifs...) : on
-            appelle « cavité passive » la cavité sans son milieu amplificateur, par opposition à la cavité active où le
-            milieu amplificateur est présent.
+            Donc comme \(\lvert {x_1} \rvert \leq 1\) et \(\lvert{x_2}\rvert \leq 1\), on a forcément \(\lvert {x_1}
+            \rvert = \lvert{x_2}\rvert = 1\). Ensuite, la relation faisant intervenir la trace de \(T\) conduit à \(2
+            cos\Phi=A+D\).
+        </p>
+
+
+        <p>On en déduit <span class="important">la condition de stabilité applicable à toute cavité :</span>, \[-1\leq
+            \frac{A+D} 2 \leq 1\] ou encore \[0 \leq \frac {A+D+2} 4 \leq 1\]</p>
+
+        <h6 class="definitionT">Définition:</h6>
+        <p class="definitionC">Une cavité est stable quand les coefficients de sa matrice vérifient la condition de
+            stabilité énoncée ci-dessus.
+        </p>
+
+
+        <h5 class="subtitle">Exemple d'application</h5>
+
+        <p>
+            Prenons une cavité linéaire simple de longueur \(d\) à deux miroirs de rayons de courbures \(R_1\) et
+            \(R_2\), équivalente
+            à une séquence périodique de deux lentilles minces de focales \(f_1 = \frac {R_1} 2 \) et \(f2 = \frac {R_2}
+            2\), séparées d'une
+            distance \(d\).
+        </p>
+        <p>
+            La matrice T vaut (voir figure 4): \[ T = \begin{pmatrix} 1 & 0 \\ \frac {-1}{f_1} & 1 \end{pmatrix}
+            \begin{pmatrix} 1 & d \\ 0 & 1 \end{pmatrix} \begin{pmatrix} 1 & 0 \\ \frac {-1}{f_2} & 1 \end{pmatrix}
+            \begin{pmatrix} 1 & d \\ 0 & 1 \end{pmatrix} = \begin{pmatrix} 1-\frac d {f_2} & d\left(2-\frac d
+            {f_2}\right) \\ \frac {-1}{f_1}-\frac {1}{f_2}+\frac {d}{f_1f_2} & \left(1-\frac d {f_1}\right)\left(1-\frac
+            d {f_2}\right) - \frac d {f_1} \end{pmatrix}\]
+        </p>
+        <p>On montre alors facilement que\[\frac{A+D+2}4=\left(1-\frac d{R_1}\right)\left(1-\frac d{R_2}\right)\]
+        </p>
+        <p>On a l'habitude de poser \(g_i=1-\frac d {R_i}\) et on obtient <span class="important">la condition de stabilité de la cavité pour une cavité linéaire à deux miroirs :</span>
+            \[0\leq g_1g_2 \leq 1\] </p>
+        <p>On visualise classiquement cette condition de stabilité sur un diagramme représentant l'espace \(g_2(g_1)\),
+            c'est
+            à dire en prenant \(g_2\) comme axe des ordonnées et \(g_1\) comme axe des abscisses (figure 7).
+
         </p>
         <div class="w3-large">
-            <img src="../Images/fig01.jpg" class="center_img">
+            <img src="../Images/fig07.jpg" class="center_img">
             <p class="w3-opacity center_text">
-                Figure 1 : Cavité linéaire et cavité en anneau
+                Figure 7 : Conditions de stabilité pour une cavité linéaire à deux miroirs et exemple de cavités
+                classiques.
             </p>
         </div>
-        <h6 class="remarqueT">Remarque:</h6>
-        <p class="remarqueC">Ce qui nous intéressera par la suite est le chemin optique [d] parcouru par la lumière lors
-            d'un aller-retour dans la cavité, Ce chemin optique est défini comme le produit de la distance parcourue par
-            l'indice de réfraction rencontré par la lumière.
+        <p>
+            La condition de stabilité est alors représentée par deux hyperboles, et les zones d'instabilité sont
+            hachurées sur la figure.
+        </p>
+        <p>
+            Quelques cas particuliers sont remarquables :
+        </p>
+        <ul>
+            <li>Sur l'hyperbole \(g_1g_2=1\): on a alors \(d=R_1+R_2\), ce sont les cavités dites concentriques.</li>
+            <li>Les droites \(g_1=1\) et \(g_2=1\) correspondent à des cavités où l'un des miroirs est plan (rayon de
+                courbure infini). La cavité Fabry-Pérot (2 miroirs plans) est obtenue pour \(g_1=g_2=1\).
+            </li>
+            <li>Pour \(R_1 = R_2 = d\ (g_1 = g_2 = 0)\), on a une cavité dite « confocale ».</li>
+        </ul>
 
-        </p>
         <h6 class="remarqueT">Remarque:</h6>
-        <p class="remarqueC">Un autre type de cavité répandu est la cavité en anneau (voir figure 1), où la lumière ne
-            revient pas sur elle-même mais forme une onde progressive. Dans ce cours, on se limitera en général à la
-            cavité linéaire, mais les raisonnements et les méthodes utilisés sont valables pour tout résonateur.
+        <div class="remarqueC">
+            <p>Il existe une méthode graphique, dite « méthode des cercles de Deschamps », qui permet de savoir si une
+                cavité à deux miroirs sphériques est stable : il suffit de vérifier que les deux cercles de diamètres
+                \(R_1\)
+                et \(R_2\) centrés sur les points focaux \(F_1\) et \(F_2\) se coupent (voir figure 8). Si c'est le cas,
+                la cavité est
+                stable (on peut vérifier que cela est une conséquence directe de la formule établie plus haut).</p>
+            <p>Les cercles de Deschamps permettent également d'avoir accès (voir figure 8) à la position du « waist »
+                (intersection des cercles) et à la « longueur de Rayleigh » \(Z_R\) , deux paramètres qui seront définis
+                dans
+                la suite de ce cours.</p>
+            <div class="w3-large">
+                <img src="../Images/fig08.jpg" class="center_img">
+                <p class="w3-opacity center_text">
+                    Figure 8 : Cercles de Deschamps
+                </p>
+            </div>
+
+        </div>
+        <p>Il n'est pas obligatoire de disposer d'une cavité stable pour obtenir un effet laser. Dans certains cas,
+            lorsque le gain du milieu laser est suffisant pour permettre des pertes très élevées, les résonateurs
+            instables présentent des avantages importants. C'est en particulier le cas des lasers de très haute
+            puissance.</p>
+        <h5 class="subtitle">Cavités instables</h5>
+        <div class="w3-large">
+            <img src="../Images/fig09.jpg" class="center_img">
+            <p class="w3-opacity center_text">
+                Figure 9 : Exemple de cavité instable hémisphérique
+            </p>
+        </div>
+        <p>L'avantage principal de ces cavités est que le volume du mode dans la cavité peut être important, ce qui
+            diminue la densité de puissance sur les miroirs (important pour les lasers de fortes puissances, où les
+            seuils de dommage sont rapidement atteints). De plus, les modes transverses subissent de très fortes pertes,
+            et ces cavités oscillent donc naturellement sur leur mode fondamental en général.</p>
+        <p>
+            Ces cavités ne sont possibles qu'avec des milieux à très fort gain puisqu'un rayon donné ne fait que
+            quelques passages dans le milieu amplificateur avant de s'échapper de la cavité.
         </p>
+
     </div>
 
-</div>
+    <script>
+        var openInbox = document.getElementById("coursBtn");
+        openInbox.click();
 
-<script>
-    var openInbox = document.getElementById("coursBtn");
-    openInbox.click();
-
-    function w3_open() {
-        document.getElementById("mySidebar").style.display = "block";
-        document.getElementById("myOverlay").style.display = "block";
-    }
-
-    function w3_close() {
-        document.getElementById("mySidebar").style.display = "none";
-        document.getElementById("myOverlay").style.display = "none";
-    }
-
-    // Je sais je peux joindre ces 3 fonctions mais pour le moment c'est pas ma priorité
-    function funcCours(id) {
-        var x = document.getElementById(id);
-        if (x.className.indexOf("w3-show") == -1) {
-            x.className += " w3-show";
-            x.previousElementSibling.className += " w3-red";
-        } else {
-            x.className = x.className.replace(" w3-show", "");
-            x.previousElementSibling.className =
-                x.previousElementSibling.className.replace(" w3-red", "");
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
         }
-    }
 
-    function funcEC(id) {
-        var x = document.getElementById(id);
-        if (x.className.indexOf("w3-show") == -1) {
-            x.className += " w3-show";
-            x.previousElementSibling.className += " w3-green";
-        } else {
-            x.className = x.className.replace(" w3-show", "");
-            x.previousElementSibling.className =
-                x.previousElementSibling.className.replace(" w3-green", "");
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
         }
-    }
 
-    function funcEx(id) {
-        var x = document.getElementById(id);
-        if (x.className.indexOf("w3-show") == -1) {
-            x.className += " w3-show";
-            x.previousElementSibling.className += " w3-blue";
-        } else {
-            x.className = x.className.replace(" w3-show", "");
-            x.previousElementSibling.className =
-                x.previousElementSibling.className.replace(" w3-blue", "");
+        // Je sais je peux joindre ces 3 fonctions mais pour le moment c'est pas ma priorité
+        function funcCours(id) {
+            var x = document.getElementById(id);
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += " w3-red";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace(" w3-red", "");
+            }
         }
-    }
-</script>
+
+        function funcEC(id) {
+            var x = document.getElementById(id);
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += " w3-green";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace(" w3-green", "");
+            }
+        }
+
+        function funcEx(id) {
+            var x = document.getElementById(id);
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += " w3-blue";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace(" w3-blue", "");
+            }
+        }
+    </script>
 </body>
 </html>

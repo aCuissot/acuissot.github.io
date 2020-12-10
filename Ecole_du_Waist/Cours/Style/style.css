@@ -27,6 +27,18 @@ p {
     padding: 4px;
 }
 
+.attentionT {
+    font-style: italic;
+    font-weight: bold;
+    color: red;
+}
+
+.attentionC {
+    background-color: #ff8582;
+    border: 2px solid red;
+    padding: 4px;
+}
+
 .exempleT {
     font-style: italic;
     font-weight: bold;
