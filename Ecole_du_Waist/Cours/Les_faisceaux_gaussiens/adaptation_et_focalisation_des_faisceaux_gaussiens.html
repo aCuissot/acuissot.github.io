@@ -1,10 +1,388 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
+<title>Optique des LASERS et faisceaux gaussiens</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href='https://fonts.googleapis.com/css?family=RobotoDraft' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../Style/style.css">
+<link rel="shortcut icon" href="../../Media/laser.ico">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<style>
+    html, body, h1, h2, h3, h4, h5 {
+        font-family: "RobotoDraft", "Roboto", sans-serif
+    }
+
+    .w3-bar-block .w3-bar-item {
+        padding: 16px
+    }
+
+</style>
 <body>
 
+<!-- Side Navigation -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-white w3-animate-left w3-card" style="z-index:3;width:320px;"
+     id="mySidebar">
+    <a href="../../index.html" class="w3-bar-item w3-button w3-border-bottom w3-large"
+       style="background-color: #48cd2b"><img
+            src="../../Media/logo.png" title="Accueil"
+            style="width:30%; display: block; margin-left: auto; margin-right: auto"></a>
+    <h3 class="w3-bar-item w3-button">Optique des LASERS et faisceaux gaussiens</h3>
+    <a id="coursBtn" onclick="funcCours('planCours')" href="javascript:void(0)" class="w3-bar-item w3-button"><i
+            class="fa fa-book w3-margin-right"></i>Cours<i class="fa fa-caret-down w3-margin-left"></i></a>
+    <div id="planCours" class="w3-hide w3-animate-left">
+        <div class="w3-container">
+            <h4>1. Les résonateurs ouverts</h4>
+            <ul>
+                <li><a href="../Les_resonateurs_ouverts/introduction.html">1.1 Introduction</a></li>
+                <li>
+                    <a href="../Les_resonateurs_ouverts/interet_et_description_des_resonateurs_ouverts.html">1.2
+                        Interêt
+                        et description des résonateurs ouverts</a></li>
+                <li><a href="../Les_resonateurs_ouverts/modes_spectraux_et_longitudinaux.html">1.3
+                    Modes spectraux et
+                    modes longitudinaux</a></li>
+            </ul>
+        </div>
+        <div class="w3-container">
+            <h4>2. Stabilité des cavités LASERS</h4>
+            <ul>
+                <li><a href="../Stabilite_des_cavites_lasers/introduction.html">2.1 Introduction</a>
+                </li>
+                <li>
+                    <a href="../Stabilite_des_cavites_lasers/structure_periodique_des_cavites_lasers.html">2.2
+                        Structure
+                        périodique des cavités Lasers</a></li>
+                <li><a href="../Stabilite_des_cavites_lasers/matrices_de_transfert_et_loi_ABCD.html">2.3
+                    Matrices de
+                    transfert et loi ABCD</a></li>
+                <li><a href="../Stabilite_des_cavites_lasers/stabilite_dune_cavite.html">2.4 Stabilité
+                    d'une cavité</a>
+                </li>
+            </ul>
+        </div>
+        <div class="w3-container">
+            <h4>3. Les faisceaux gaussiens</h4>
+            <ul>
+                <li>
+                    <a href="../Les_faisceaux_gaussiens/equation_donde_paraxiale_et_onde_spherique.html">3.1
+                        Équation
+                        d'onde paraxiale et onde sphérique</a></li>
+                <li><a href="../Les_faisceaux_gaussiens/onde_sperique_gaussienne.html">3.2 Onde
+                    sphérique gaussienne</a>
+                </li>
+                <li><a href="../Les_faisceaux_gaussiens/proprietes_des_faisceaux_gaussiens.html">3.3
+                    Propriétés des
+                    faisceaux gaussiens</a></li>
+                <li>
+                    <a href="../Les_faisceaux_gaussiens/adaptation_et_focalisation_des_faisceaux_gaussiens.html">3.4
+                        Adaptation et focalisation des faisceaux gaussiens</a></li>
+            </ul>
+        </div>
+        <div class="w3-container">
+            <h4>4. Mode fondamental Gaussien et cavité LASER</h4>
+            <ul>
+                <li>
+                    <a href="../Mode_fondamental_gaussien_et_cavite_laser/loi_ABCD_appliquee_aux_faisceaux_gaussiens.html">4.1
+                        Loi ABCD appliquée aux faisceaux gaussiens</a></li>
+                <li><a href="../Mode_fondamental_gaussien_et_cavite_laser/cavite_a_2_miroirs.html">4.2
+                    Cavité à deux
+                    miroirs</a></li>
+                <li><a href="../Mode_fondamental_gaussien_et_cavite_laser/autres_cavites.html">3.3
+                    Autres cavités</a>
+                </li>
+            </ul>
+        </div>
+        <div class="w3-container">
+            <h4>5. Les modes d'ordre supérieur</h4>
+            <ul>
+                <li><a href="../Les_modes_dordre_superieur/introduction.html">5.1 Introduction</a>
+                </li>
+                <li><a href="../Les_modes_dordre_superieur/modes_Hermite-Gaussiens.html">5.2 Modes
+                    Hermite-Gaussiens</a>
+                </li>
+                <li><a href="../Les_modes_dordre_superieur/modes_Laguerre_Gaussiens.html">5.3 Modes
+                    Laguerre-Gaussiens</a></li>
+                <li>
+                    <a href="../Les_modes_dordre_superieur/propagation_des_faisceaux_multimodes_et_facteur_m2.html">5.4
+                        Propagation des faisceaux multimodes et facteurs M²</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <a id="etudeCasBtn" onclick="funcEC('etudeCasPlan')" href="javascript:void(0)" class="w3-bar-item w3-button"><i
+            class="fa fa-pencil w3-margin-right"></i>Étude de cas<i class="fa fa-caret-down w3-margin-left"></i></a>
+    <div id="etudeCasPlan" class="w3-hide w3-animate-left">
+        <div class="w3-container">
+            <h4><a href="../Etude_de_cas/introduction.html">1. Introduction</a></h4>
+        </div>
+        <div class="w3-container">
+            <h4>2. Étude préliminaire de la cavité hémisphérique</h4>
+            <ul>
+                <li>
+                    <a href="../Etude_de_cas/Etude_preliminaire_de_la_cavite_hemispherique/stabilite_de_la_cavite.html">2.1
+                        Stabilité de la cavité</a></li>
+                <li>
+                    <a href="../Etude_de_cas/Etude_preliminaire_de_la_cavite_hemispherique/structure_du_faisceau_dans_la_cavite.html">2.2
+                        Structure du faisceau dans la cavité</a></li>
+            </ul>
+        </div>
+        <div class="w3-container">
+            <h4>3. Cavité réelle</h4>
+            <ul>
+                <li><a href="../Etude_de_cas/Cavite_reelle/optimisation_de_la_cavite.html">3.1
+                    Optimisation de la
+                    cavité</a></li>
+                <li><a href="../Etude_de_cas/Cavite_reelle/faisceau_en_sortie.html">3.2 Faisceau en
+                    sortie</a>
+                </li>
+                <li><a href="../Etude_de_cas/Cavite_reelle/effet_de_lentille_thermique.html">3.3
+                    Effet de lentille
+                    thermique</a></li>
+            </ul>
+        </div>
+        <div class="w3-container">
+            <h4><a href="../Etude_de_cas/modes_longitundinaux.html">4. Modes longitudinaux</a></h4>
+        </div>
+    </div>
+
+
+    <a id="exemplesBtn" onclick="funcEx('exemplesPlan')" href="javascript:void(0)" class="w3-bar-item w3-button"><i
+            class="fa fa-pencil-square-o w3-margin-right"></i>Exercices<i
+            class="fa fa-caret-down w3-margin-left"></i></a>
+    <div id="exemplesPlan" class="w3-hide w3-animate-left">
+        <div class="w3-container">
+            <h4><a href="../Exercices/transformation_de_faisceau_laser.html">1. Transformation de
+                faisceau LASER</a></h4>
+        </div>
+        <div class="w3-container">
+            <h4><a href="../Exercices/caracteristiques_dun_faisceau_laser.html">2. Caractéristiques
+                d'un faisceau
+                LASER</a></h4>
+        </div>
+        <div class="w3-container">
+            <h4><a href="../Exercices/stabilite.html">3. Stabilité</a></h4>
+        </div>
+        <div class="w3-container">
+            <h4><a href="../Exercices/energie.html">4. Énergie</a></h4>
+        </div>
+        <div class="w3-container">
+            <h4><a href="../Exercices/repartition_spectrale_des_modes_longitudinaux.html">5.
+                Répartition spectrale des
+                modes longitudinaux</a></h4>
+        </div>
+    </div>
+
+    <a class="w3-bar-item w3-button w3-dark-grey w3-button w3-hover-black w3-left-align"
+       download><i class="w3-padding fa fa-file-pdf-o"></i>Télécharger au format PDF<i
+            class="w3-padding fa fa-download"></i></a>
+</nav>
+
+<!-- Overlay effect when opening the side navigation on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
+     title="Close Sidemenu" id="myOverlay"></div>
+
+<!-- Page content -->
+<div id="topofthepop" class="w3-main" style="margin-left:320px;">
+    <i class="fa fa-bars w3-button w3-white w3-hide-large w3-xlarge w3-margin-left w3-margin-top"
+       onclick="w3_open()"></i>
+
+    <p class="w3-container">
+        <br>
+    <h5 class="w3-opacity">Optique des LASER et faisceaux gaussiens</h5>
+    <h2 class="subtitle">III. Les faisceaux gaussiens</h2>
+    <h4 class="subtitle">4. Adaptation et focalisation des faisceaux gaussiens</h4>
+    <hr>
+    <p>
+        La transformation subie par un faisceau gaussien lors de son passage dans une lentille est très souvent
+        rencontrée expérimentalement. Lorsque l'on veut par exemple injecter un faisceau laser donné dans un autre laser
+        pour le pomper, il importe que le faisceau soit convenablement «adapté» au résonateur du second laser.
+    </p>
+
+    <p>Un faisceau gaussien est transformé en un autre faisceau gaussien par une lentille; nous allons maintenant voir
+        comment.
+
+    </p>
+    <p>En utilisant la loi ABCD (voir paragraphe sur "Les matrices de transfert et loi ABCD") appliquée à un système
+        optique centré avec origines aux foyers, on peut trouver les relations entre les positions et les tailles d'un
+        waist objet situé avant le système optique et celles du waist image obtenu après traversée du système.
+
+    </p>
+    <p>
+        Le « waist objet » \(w_0\) est situé sur le plan repéré par l'abscisse \(\sigma\) par rapport au foyer objet
+        tandis que le «
+        waist image » \(w'_0\) est repéré par l'abscisse \(\sigma '\)par rapport au foyer image (cf. figure 13).
+    </p>
+    <h6 class="remarqueT">Remarque :</h6>
+    <p class="remarqueC">Il est en toute rigueur abusif de parler de waists objet et image puisqu'au sens strict les
+        deux waists ne sont pas conjugués l'un de l'autre. En d'autres termes, le waist du faisceau image n'est pas
+        l'image du waist du faisceau objet. On conservera néanmoins cette terminologie dans la suite.
+    </p>
+    <p>
+        Le rayon de courbure complexe correspondant au waist objet est imaginaire pur et vaut:
+        \[q_0=i\frac{\pi w_0^2}{\lambda} \]
+    </p>
+    <p>Les éléments de la matrice de transfert du système optique valent (à vérifier à titre d'exercice) :
+        \[A=\frac {-\sigma '}{f'};\ B=-f+\frac{\sigma \sigma '}{f'};\ C=\frac{-1}{f'};\ D=\frac \sigma {f'}\]
+
+    </p>
+    <div class="w3-large">
+        <img src="../Images/fig13.jpg" class="center_img">
+        <p class="w3-opacity center_text">
+            Figure 13 : Relations de conjugaison pour les faisceaux gaussiens
+        </p>
+    </div>
+    <p>En appliquant la loi ABCD et sachant que \(q_0\) et \(q_0'\) sont tous les deux des imaginaires purs, on trouve
+        les relations suivantes :
+        \[\sigma \sigma ' = f f'-q_0q_0'\]
+        \[-\sigma q_0' = \sigma ' q_0\]
+        ou encore
+        \[\sigma \sigma ' = f f'-Z_RZ_R'\]
+        \[\frac {-\sigma}{Z_R} = \frac {\sigma '}{Z_R'}\]
+    </p>
+    <p>
+        Ces relations démontrent que la position du waist image dépend non seulement de la position du waist objet mais
+        aussi de sa taille. De la même façon, la taille du waist image est fonction de la taille du waist objet et de sa
+        position.
+    </p>
+    <ul>
+        <li>Lorsque \(\sigma \gg Z_R\), l'onde au niveau du foyer objet est quasi-sphérique (celui-ci est dans le champ
+            lointain du
+            faisceau). L'onde vue par la lentille semble donc être émise par un point source et on obtient : \(\sigma
+            \sigma ' = f f'\). On
+            retrouve ici les relations conjugaison de Newton de l'optique géométrique.
+        </li>
+        <li>Un autre cas particulier est le cas \(\sigma = 0\), c'est à dire que le waist objet est placé au foyer de la
+            lentille. En
+            optique géométrique, on s'attend à avoir alors un faisceau collimaté (rayons parallèles) en sortie de la
+            lentille. En optique gaussienne, dans ce cas, on a aussi \( \sigma ' = 0\): le waist image est situé
+            exactement sur le foyer
+            image.
+        </li>
+    </ul>
+    <h6 class="attentionT">Attention :</h6>
+    <p class="attentionC">On voit ici que les « relations de conjugaisons » gaussiennes diffèrent sensiblement de celles
+        de l'optique géométrique dès lors que l'on se trouve à des distances comparables à \(Z_R\) . C'est dû au fait
+        (voir
+        remarque précédente) que ce qu'on appelle « relation de conjugaison » ici n'en est pas une au sens de l'optique
+        géométrique.
+    </p>
+    <p>
+        La relation de grandissement entre les waists est donnée dans ce cas par :
+
+        \[w_0' = \frac{\lambda f}{\pi w_0}\]
+    </p>
+    <p><span class="important">C'est une relation d'une grande importance pratique</span> car cette configuration se
+        retrouve souvent
+        expérimentalement. Elle permet très souvent d'obtenir un ordre de grandeur satisfaisant pour répondre à la
+        question suivante : « quelle va être la taille du waist d'un faisceau laser après focalisation par une lentille
+        de focale \(f\) si je connais la taille du faisceau avant la lentille ? »</p>
+    <div class="w3-large">
+        <img src="../Images/fig14.jpg" class="center_img">
+        <p class="w3-opacity center_text">
+            Figure 14 : Evolution de la position du waist image en fonction de la position du waist objet(pour
+            différentes tailles du waist objet)
+        </p>
+    </div>
+    <div class="w3-large">
+        <img src="../Images/fig15.jpg" class="center_img">
+        <p class="w3-opacity center_text">
+            Figure 15 : Evolution de la taille du waist image en fonction de la position du waist objet (pour
+            différentes tailles du waist objet)
+        </p>
+    </div>
+    <p>En observant les figures 14 et 15 qui décrivent les équations ci-dessus, on peut faire quelques commentaires :
+    <ul>
+        <li>Sur la figure 14, lorsque la taille du waist objet est importante, on a \(\sigma ' = 0\) quelque soit
+            \(\sigma\): c'est le cas de
+            l'optique géométrique où un faisceau collimaté (équivalent pour un faisceau gaussien à un faisceau de grand
+            rayon \(w\) comme on l'a souligné plus haut) vient se focaliser dans le plan focal image de la lentille. La
+            position du waist objet a peu de sens ici puisque la distance de Rayleigh correspondant à un grand \(w\) est
+            très grande («collimation»).
+        </li>
+        <li>Lorsque la taille du waist objet est très petite (quasi ponctuelle), on se rapproche également de l'optique
+            géométrique: on tend vers les asymptotes données par \(\sigma \sigma ' = f^2\).
+        </li>
+        <li>En dehors des deux cas limite précédents, le comportement s'éloigne considérablement de l'optique
+            géométrique: ainsi pour \(w_0\) =10 µm et \(\sigma = 0\) (waist objet de petite taille au foyer objet de la
+            lentille), on n'a
+            pas une image à l'infini comme en optique géométrique mais une image située en \(\sigma ' = 0\), c'est à
+            dire sur le foyer
+            image !
+        </li>
+        <li>Ce « paradoxe » n'en est pas un si on regarde la figure 15 : ainsi pour \(w_0\) =10 µm et \(\sigma = 0\) (waist objet au foyer
+            objet de la lentille), le waist image est certes sur le foyer image, mais sa taille est très importante : le
+            faisceau est donc quasiment collimaté et on retrouve un comportement « semblable à » celui de l'optique
+            géométrique.
+        </li>
+    </ul>
+
+    </p>
+</div>
+
+<footer class="w3-container w3-theme-dark w3-padding-16">
+    <div style="position:relative;bottom:10px;" class="w3-tooltip w3-right w3-theme-dark">
+        <span class="w3-text w3-theme-light w3-padding">Go To Top</span> 
+        <a class="w3-text-white" href="#topofthepop"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+    </div>
+</footer>
+
+<script>
+    var openInbox = document.getElementById("coursBtn");
+    openInbox.click();
+
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+    }
+
+    // Je sais je peux joindre ces 3 fonctions mais pour le moment c'est pas ma priorité
+    function funcCours(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+            x.previousElementSibling.className += " w3-red";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+            x.previousElementSibling.className =
+                x.previousElementSibling.className.replace(" w3-red", "");
+        }
+    }
+
+    function funcEC(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+            x.previousElementSibling.className += " w3-green";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+            x.previousElementSibling.className =
+                x.previousElementSibling.className.replace(" w3-green", "");
+        }
+    }
+
+    function funcEx(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+            x.previousElementSibling.className += " w3-blue";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+            x.previousElementSibling.className =
+                x.previousElementSibling.className.replace(" w3-blue", "");
+        }
+    }
+</script>
 </body>
 </html>
