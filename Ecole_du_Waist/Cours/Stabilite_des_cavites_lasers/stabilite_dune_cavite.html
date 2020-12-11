@@ -187,7 +187,7 @@
      title="Close Sidemenu" id="myOverlay"></div>
 
 <!-- Page content -->
-<div class="w3-main" style="margin-left:320px;">
+<div id="topofthepop" class="w3-main" style="margin-left:320px;">
     <i class="fa fa-bars w3-button w3-white w3-hide-large w3-xlarge w3-margin-left w3-margin-top"
        onclick="w3_open()"></i>
 
@@ -208,8 +208,8 @@
 
         <p>Pour \(n\) périodes, soit \(n\) aller-retours dans le cas d'une cavité linéaire, la matrice de transfert est
             \(T^n\). Si
-            on note \(p_0 = \begin{pmatrix}h_0 \\ \Theta_0 \end{pmatrix}\) le vecteur représentant un rayon à l'entrée
-            de la séquence, et \(p_n = \begin{pmatrix}h_n \\ \Theta_n \end{pmatrix}\) le vecteur à la sortie, on a
+            on note \(p_0 = \begin{pmatrix}h_0 \\ \theta_0 \end{pmatrix}\) le vecteur représentant un rayon à l'entrée
+            de la séquence, et \(p_n = \begin{pmatrix}h_n \\ \theta_n \end{pmatrix}\) le vecteur à la sortie, on a
             \(p_n = T^n p_0\).
         </p>
         <p>
@@ -339,7 +339,14 @@
         </p>
 
     </div>
-
+</div>
+    <footer class="w3-container w3-theme-dark w3-padding-16">
+        <div style="position:relative;bottom:10px;" class="w3-tooltip w3-right w3-theme-dark">
+            <span class="w3-text w3-theme-light w3-padding">Go To Top</span> 
+            <a class="w3-text-white" href="#topofthepop"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+        </div>
+    </footer>
     <script>
         var openInbox = document.getElementById("coursBtn");
         openInbox.click();

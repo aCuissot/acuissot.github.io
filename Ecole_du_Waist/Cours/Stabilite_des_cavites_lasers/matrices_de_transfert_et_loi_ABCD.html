@@ -187,7 +187,7 @@
      title="Close Sidemenu" id="myOverlay"></div>
 
 <!-- Page content -->
-<div class="w3-main" style="margin-left:320px;">
+<div id="topofthepop" class="w3-main" style="margin-left:320px;">
     <i class="fa fa-bars w3-button w3-white w3-hide-large w3-xlarge w3-margin-left w3-margin-top"
        onclick="w3_open()"></i>
 
@@ -215,7 +215,7 @@
     <p>
         Considérons une propagation dans le plan \(yOz\), l'axe \(z\) étant celui de la cavité. Dans ce plan, un
         rayon donné
-        est caractérisé par son ordonnée de départ \(h\) et par la pente \(\Theta\) de la droite qui supporte le
+        est caractérisé par son ordonnée de départ \(h\) et par la pente \(\theta\) de la droite qui supporte le
         rayon paraxial
         (voir figure 5).
     </p>
@@ -227,17 +227,17 @@
     </div>
 
     <p>
-        Dans les conditions de Gauss, les relations entre \( (h_1 , \Theta_1)\) avant la traversée d'un système
-        optique donné et \( (h_2 , \Theta_2)\) après
+        Dans les conditions de Gauss, les relations entre \( (h_1 , \theta_1)\) avant la traversée d'un système
+        optique donné et \( (h_2 , \theta_2)\) après
         cette traversée sont linéaires et peuvent s'écrire sous forme matricielle : \[ \begin{pmatrix}
         h_2 \\
-        \Theta_2 \\
+        \theta_2 \\
         \end{pmatrix} = \begin{pmatrix}
         A & B \\
         C & D \\
         \end{pmatrix} \begin{pmatrix}
         h_1 \\
-        \Theta_1 \\
+        \theta_1 \\
         \end{pmatrix}\] où les termes diagonaux sont
         sans dimension, B et C ayant respectivement les dimensions d'une longueur et de l'inverse d'une longueur.
     </p>
@@ -257,11 +257,11 @@
         0 & 1 \\
         \end{pmatrix}\), la démonstration est évidente (voir figure 5) :
     </p>
-    <p> \(h_2=h_1 + d \Theta_2\) et \(\Theta_2 =\Theta_1\)(les rayons étant paraxiaux, on assimile l'angle à sa
+    <p> \(h_2=h_1 + d \theta_2\) et \(\theta_2 =\theta_1\)(les rayons étant paraxiaux, on assimile l'angle à sa
         tangente).</p>
     <p>Or en développant l'expression matricielle ci-dessus: \( \begin{matrix}
-        h_2=Ah_1+B\Theta_1 \\
-        \Theta_2 = Ch_1 +D\Theta_1 \\
+        h_2=Ah_1+B\theta_1 \\
+        \theta_2 = Ch_1 +D\theta_1 \\
         \end{matrix}\)</p>
     <p>On en déduit par identification termes à termes : \(A =1, B=d, C=0, D=1\).
     </p>
@@ -326,7 +326,7 @@
         convention : \(R>0\) lorsque l'onde diverge et R<0 lorsque l'onde converge.
     </p>
     <p>
-        On a dans ces conditions \(R_1 \approx \frac {h_1}{\Theta_1}\) et \(R_2 \approx \frac {h_2}{\Theta_2}\) (voir
+        On a dans ces conditions \(R_1 \approx \frac {h_1}{\theta_1}\) et \(R_2 \approx \frac {h_2}{\theta_2}\) (voir
         figure 6)
     </p>
 
@@ -346,7 +346,13 @@
     </p>
 </div>
 
-</div>
+<footer class="w3-container w3-theme-dark w3-padding-16">
+    <div style="position:relative;bottom:10px;" class="w3-tooltip w3-right w3-theme-dark">
+        <span class="w3-text w3-theme-light w3-padding">Go To Top</span> 
+        <a class="w3-text-white" href="#topofthepop"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+    </div>
+</footer>
 
 <script>
     var openInbox = document.getElementById("coursBtn");

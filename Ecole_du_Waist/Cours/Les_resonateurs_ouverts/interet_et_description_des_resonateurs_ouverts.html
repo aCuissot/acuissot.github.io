@@ -187,7 +187,7 @@
      title="Close Sidemenu" id="myOverlay"></div>
 
 <!-- Page content -->
-<div class="w3-main" style="margin-left:320px;">
+<div id="topofthepop" class="w3-main" style="margin-left:320px;">
     <i class="fa fa-bars w3-button w3-white w3-hide-large w3-xlarge w3-margin-left w3-margin-top"
        onclick="w3_open()"></i>
 
@@ -259,7 +259,7 @@
 
         <p>
             La cavité la plus simple pouvant être stable est la cavité linéaire constituée de deux miroirs face à face,
-            de rayons de courbure \(R_1\) et \(R_2\), distants d'une distance (\L\), et de diamètres respectifs \(D_1\)
+            de rayons de courbure \(R_1\) et \(R_2\), distants d'une distance \(L\), et de diamètres respectifs \(D_1\)
             et \(D_2\) (voir figure 1). Dans ce type de cavité, une onde stationnaire est formée. Elle peut également
             contenir divers éléments optiques (des lentilles, des éléments polarisants, des composants actifs...) : on
             appelle « cavité passive » la cavité sans son milieu amplificateur, par opposition à la cavité active où le
@@ -285,7 +285,13 @@
     </div>
 
 </div>
-
+<footer class="w3-container w3-theme-dark w3-padding-16">
+    <div style="position:relative;bottom:10px;" class="w3-tooltip w3-right w3-theme-dark">
+        <span class="w3-text w3-theme-light w3-padding">Go To Top</span> 
+        <a class="w3-text-white" href="#topofthepop"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+    </div>
+</footer>
 <script>
     var openInbox = document.getElementById("coursBtn");
     openInbox.click();
