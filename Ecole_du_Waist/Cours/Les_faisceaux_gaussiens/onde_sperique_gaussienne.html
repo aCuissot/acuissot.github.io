@@ -1,10 +1,404 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
+<title>Optique des LASERS et faisceaux gaussiens</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href='https://fonts.googleapis.com/css?family=RobotoDraft' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../Style/style.css">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<style>
+    html, body, h1, h2, h3, h4, h5 {
+        font-family: "RobotoDraft", "Roboto", sans-serif
+    }
+
+    .w3-bar-block .w3-bar-item {
+        padding: 16px
+    }
+
+</style>
 <body>
 
+<!-- Side Navigation -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-white w3-animate-left w3-card" style="z-index:3;width:320px;"
+     id="mySidebar">
+    <a href="../../index.html" class="w3-bar-item w3-button w3-border-bottom w3-large"
+       style="background-color: #48cd2b"><img
+            src="../../Media/logo.png" title="Accueil"
+            style="width:30%; display: block; margin-left: auto; margin-right: auto"></a>
+    <h3 class="w3-bar-item w3-button">Optique des LASERS et faisceaux gaussiens</h3>
+    <a id="coursBtn" onclick="funcCours('planCours')" href="javascript:void(0)" class="w3-bar-item w3-button"><i
+            class="fa fa-book w3-margin-right"></i>Cours<i class="fa fa-caret-down w3-margin-left"></i></a>
+    <div id="planCours" class="w3-hide w3-animate-left">
+        <div class="w3-container">
+            <h4>1. Les résonateurs ouverts</h4>
+            <ul>
+                <li><a href="../Les_resonateurs_ouverts/introduction.html">1.1 Introduction</a></li>
+                <li>
+                    <a href="../Les_resonateurs_ouverts/interet_et_description_des_resonateurs_ouverts.html">1.2
+                        Interêt
+                        et description des résonateurs ouverts</a></li>
+                <li><a href="../Les_resonateurs_ouverts/modes_spectraux_et_longitudinaux.html">1.3
+                    Modes spectraux et
+                    modes longitudinaux</a></li>
+            </ul>
+        </div>
+        <div class="w3-container">
+            <h4>2. Stabilité des cavités LASERS</h4>
+            <ul>
+                <li><a href="../Stabilite_des_cavites_lasers/introduction.html">2.1 Introduction</a>
+                </li>
+                <li>
+                    <a href="../Stabilite_des_cavites_lasers/structure_periodique_des_cavites_lasers.html">2.2
+                        Structure
+                        périodique des cavités Lasers</a></li>
+                <li><a href="../Stabilite_des_cavites_lasers/matrices_de_transfert_et_loi_ABCD.html">2.3
+                    Matrices de
+                    transfert et loi ABCD</a></li>
+                <li><a href="../Stabilite_des_cavites_lasers/stabilite_dune_cavite.html">2.4 Stabilité
+                    d'une cavité</a>
+                </li>
+            </ul>
+        </div>
+        <div class="w3-container">
+            <h4>3. Les faisceaux gaussiens</h4>
+            <ul>
+                <li>
+                    <a href="../Les_faisceaux_gaussiens/equation_donde_paraxiale_et_onde_spherique.html">3.1
+                        Équation
+                        d'onde paraxiale et onde sphérique</a></li>
+                <li><a href="../Les_faisceaux_gaussiens/onde_sperique_gaussienne.html">3.2 Onde
+                    sphérique gaussienne</a>
+                </li>
+                <li><a href="../Les_faisceaux_gaussiens/proprietes_des_faisceaux_gaussiens.html">3.3
+                    Propriétés des
+                    faisceaux gaussiens</a></li>
+                <li>
+                    <a href="../Les_faisceaux_gaussiens/adaptation_et_focalisation_des_faisceaux_gaussiens.html">3.4
+                        Adaptation et focalisation des faisceaux gaussiens</a></li>
+            </ul>
+        </div>
+        <div class="w3-container">
+            <h4>4. Mode fondamental Gaussien et cavité LASER</h4>
+            <ul>
+                <li>
+                    <a href="../Mode_fondamental_gaussien_et_cavite_laser/loi_ABCD_appliquee_aux_faisceaux_gaussiens.html">4.1
+                        Loi ABCD appliquée aux faisceaux gaussiens</a></li>
+                <li><a href="../Mode_fondamental_gaussien_et_cavite_laser/cavite_a_2_miroirs.html">4.2
+                    Cavité à deux
+                    miroirs</a></li>
+                <li><a href="../Mode_fondamental_gaussien_et_cavite_laser/autres_cavites.html">3.3
+                    Autres cavités</a>
+                </li>
+            </ul>
+        </div>
+        <div class="w3-container">
+            <h4>5. Les modes d'ordre supérieur</h4>
+            <ul>
+                <li><a href="../Les_modes_dordre_superieur/introduction.html">5.1 Introduction</a>
+                </li>
+                <li><a href="../Les_modes_dordre_superieur/modes_Hermite-Gaussiens.html">5.2 Modes
+                    Hermite-Gaussiens</a>
+                </li>
+                <li><a href="../Les_modes_dordre_superieur/modes_Laguerre_Gaussiens.html">5.3 Modes
+                    Laguerre-Gaussiens</a></li>
+                <li>
+                    <a href="../Les_modes_dordre_superieur/propagation_des_faisceaux_multimodes_et_facteur_m2.html">5.4
+                        Propagation des faisceaux multimodes et facteurs M²</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <a id="etudeCasBtn" onclick="funcEC('etudeCasPlan')" href="javascript:void(0)" class="w3-bar-item w3-button"><i
+            class="fa fa-pencil w3-margin-right"></i>Étude de cas<i class="fa fa-caret-down w3-margin-left"></i></a>
+    <div id="etudeCasPlan" class="w3-hide w3-animate-left">
+        <div class="w3-container">
+            <h4><a href="../Etude_de_cas/introduction.html">1. Introduction</a></h4>
+        </div>
+        <div class="w3-container">
+            <h4>2. Étude préliminaire de la cavité hémisphérique</h4>
+            <ul>
+                <li>
+                    <a href="../Etude_de_cas/Etude_preliminaire_de_la_cavite_hemispherique/stabilite_de_la_cavite.html">2.1
+                        Stabilité de la cavité</a></li>
+                <li>
+                    <a href="../Etude_de_cas/Etude_preliminaire_de_la_cavite_hemispherique/structure_du_faisceau_dans_la_cavite.html">2.2
+                        Structure du faisceau dans la cavité</a></li>
+            </ul>
+        </div>
+        <div class="w3-container">
+            <h4>3. Cavité réelle</h4>
+            <ul>
+                <li><a href="../Etude_de_cas/Cavite_reelle/optimisation_de_la_cavite.html">3.1
+                    Optimisation de la
+                    cavité</a></li>
+                <li><a href="../Etude_de_cas/Cavite_reelle/faisceau_en_sortie.html">3.2 Faisceau en
+                    sortie</a>
+                </li>
+                <li><a href="../Etude_de_cas/Cavite_reelle/effet_de_lentille_thermique.html">3.3
+                    Effet de lentille
+                    thermique</a></li>
+            </ul>
+        </div>
+        <div class="w3-container">
+            <h4><a href="../Etude_de_cas/modes_longitundinaux.html">4. Modes longitudinaux</a></h4>
+        </div>
+    </div>
+
+
+    <a id="exemplesBtn" onclick="funcEx('exemplesPlan')" href="javascript:void(0)" class="w3-bar-item w3-button"><i
+            class="fa fa-pencil-square-o w3-margin-right"></i>Exercices<i
+            class="fa fa-caret-down w3-margin-left"></i></a>
+    <div id="exemplesPlan" class="w3-hide w3-animate-left">
+        <div class="w3-container">
+            <h4><a href="../Exercices/transformation_de_faisceau_laser.html">1. Transformation de
+                faisceau LASER</a></h4>
+        </div>
+        <div class="w3-container">
+            <h4><a href="../Exercices/caracteristiques_dun_faisceau_laser.html">2. Caractéristiques
+                d'un faisceau
+                LASER</a></h4>
+        </div>
+        <div class="w3-container">
+            <h4><a href="../Exercices/stabilite.html">3. Stabilité</a></h4>
+        </div>
+        <div class="w3-container">
+            <h4><a href="../Exercices/energie.html">4. Énergie</a></h4>
+        </div>
+        <div class="w3-container">
+            <h4><a href="../Exercices/repartition_spectrale_des_modes_longitudinaux.html">5.
+                Répartition spectrale des
+                modes longitudinaux</a></h4>
+        </div>
+    </div>
+
+    <a class="w3-bar-item w3-button w3-dark-grey w3-button w3-hover-black w3-left-align"
+       download><i class="w3-padding fa fa-file-pdf-o"></i>Télécharger au format PDF<i
+            class="w3-padding fa fa-download"></i></a>
+</nav>
+
+<!-- Overlay effect when opening the side navigation on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
+     title="Close Sidemenu" id="myOverlay"></div>
+
+<!-- Page content -->
+<div class="w3-main" style="margin-left:320px;">
+    <i class="fa fa-bars w3-button w3-white w3-hide-large w3-xlarge w3-margin-left w3-margin-top"
+       onclick="w3_open()"></i>
+
+    <p class="w3-container">
+        <br>
+    <h5 class="w3-opacity">Optique des LASER et faisceaux gaussiens</h5>
+    <h2 class="subtitle">III. Les faisceaux gaussiens</h2>
+    <h4 class="subtitle">2. Onde sphérique gaussienne</h4>
+    <hr>
+    <p>
+        Nous allons introduire ici une généralisation des solutions mathématiques de l'équation de Helmholtz, dont nous
+        détaillerons par la suite la signification physique.
+    </p>
+
+    <p>Considérons les solutions de l'équation de Helmholtz correspondant à des faisceaux qui se propagent globalement
+        selon \(Oz\), avec des rayons paraxiaux.</p>
+    <p>La solution s'écrit de façon générale sous la forme suivante :
+        \[E(x, y, z) = \Psi (x, y, z) e^{-ikz}\]
+
+        où \(\Psi (x, y, z)\) est une fonction complexe lentement variable qui représente les différences entre un
+        faisceau laser et une
+        onde plane homogène.
+    </p>
+    <p>
+        En remplaçant cette solution dans l'équation de Helmholtz et en faisant l'hypothèse que les variations de \(\Psi
+        (x, y, z)\) dans
+        la direction \(Oz\) sont négligeables sur une distance de l'ordre de la longueur d'onde (soit \(\lambda \lvert
+        \frac {\partial \Psi}{\partial z}\rvert \lt \lt \lvert \Psi \rvert\) et \(\lambda \lvert \frac {\partial ^2
+        \Psi}{\partial z^2}\rvert \lt \lt \lvert \frac {\partial \Psi}{\partial z}\rvert\)), on peut réécrire
+        <span class="important">l'équation d'onde paraxiale</span> sous la forme : \[\frac {\partial ^2 \Psi}{\partial
+        x^2}+\frac {\partial ^2 \Psi}{\partial y^2} -2ik \frac {\partial \Psi}{\partial z}=0\]
+
+    </p>
+    <h6 class="remarqueT">Remarque:</h6>
+    <p class="remarqueC">On retrouve ici la forme de l'équation d'onde de Schrödinger pour une particule libre dans un
+        espace à 2D \((x,y)\) avec le temps \(t\) remplacé par \(z\).
+    </p>
+
+    <p>
+        Les solutions de l'équation d'onde paraxiale sont connues. On peut ainsi vérifier facilement qu'une fonction (il
+        en existe d'autres) de la forme :
+        \[\Psi (x, y, z) = e^{-i\left(\Delta \Phi (z) + \frac k {2q(z)}(x^2+y^2)\right)}\]
+        est solution, avec :
+    </p>
+    <ul>
+        <li>\(\Delta\Phi(z)\) est un déphasage complexe (déphasage réel et changement d'amplitude avec \(z\))</li>
+        <li>\(q(z)\) représente un rayon de courbure complexe, ou encore la variation transverse de l'amplitude et la
+            courbure du front d'onde.
+
+        </li>
+    </ul>
+    <p>
+        Cette solution particulière, appelée <span class="important">« Mode fondamental Gaussien »</span>, est la plus
+        importante en pratique dans les
+        résonateurs lasers. Nous allons donc la traiter en détails par la suite.
+    </p>
+    <p>En substituant l'expression de \(\Psi(x, y, z)\) dans l'équation d'onde paraxiale, on obtient que pour tout
+        \((x,y)\) :
+        \[\left( \frac {k^2}{q^2} (x^2+y^2) \left(\frac {dq}{dz} -1 \right) -2k \left( \frac{d\Delta\Phi}{dz} + \frac i
+        q\right)\right)\Psi = 0\]
+    </p>
+
+
+    <p>On en déduit que \(q(z)\) et \(\Phi(z)\) doivent vérifier : \[\frac{dq}{dz}=1 \Rightarrow q(z)=q_0+z\ avec\
+        q_0=q(0)\]
+        \[\frac{d\Delta \Phi}{dz}=-\frac i q \Rightarrow \Delta\Phi(z)=-i\ ln\left(\frac{q_0+z}{q_0}\right)\ si\ \Delta
+        \Phi(0)=0\]
+    </p>
+    <p>
+        De plus on pose \(\frac 1 {q(z)}=\frac 1 {R(z)}-i\frac {\lambda}{\pi w^2(z)}\)
+    </p>
+    <p> On a alors \[e^{-i\Delta\Phi(z)} = \frac 1 {1 + \frac z {q_0}}=\frac 1 {1+\frac z {R_0}-\frac{i\lambda z}{\pi
+        w_0^2}}\] où les indices 0 indiquent les valeurs en \(z=0\). Si on choisit à l'origine un rayon de courbure
+        infini
+        (c'est à dire une surface d'onde plane), on a \(q_0=i\frac{\pi w_0^2}{\lambda}\). On peut alors facilement
+        montrer que :
+        \[\frac 1 {q(z)}=\frac 1 {q_0 + z} = \frac {\frac{1}{q_0}} {1+\frac z {q_0}}= \frac 1 {1+\left(\frac {\lambda
+        z}{\pi w_0^2}\right)^2}\left(\frac 1 z \left( \frac {\lambda z}{\pi w_0^2} \right)^2-i \frac \lambda {\pi w_0^2}
+        \right)\]
+    </p>
+
+    <p>
+        En identifiant cette dernière relation avec \(\frac 1 R -i \frac \lambda {\pi w^2(z)}\) on déduit :
+        \[R(z)=z+\frac{Z_R^2}{z}\ avec\ Z_R=\frac {\pi w_0^2} \lambda\]
+        \[w(z) = w_0\sqrt{1+\left(\frac z {Z_R}\right)}\]
+    </p>
+    <p>
+        D'autre part:
+        \[e^{-i\Delta \Phi (z)}=\frac 1 {1-\frac {iz}{Z_R}}=\frac 1 {\sqrt{1+\left( \frac z {Z_R}\right)^2}}e^{i\zeta
+        (z)} \ ou \ tan(\zeta (z))=\frac z {Z_R}\]
+        avec :
+    <ul>
+        <li>\(\frac K {w(z)}\) est un facteur de normalisation</li>
+        <li> la première exponentielle est le terme propagatif</li>
+        <li> la seconde exponentielle est un déphasage dit « de Gouy »
+        </li>
+        <li> la troisième exponentielle peut être décomposée en un terme « onde sphérique » et un terme « gaussienne »
+            en remplaçant \(q\) par son expression en fonction de \(R\) :
+        </li>
+    </ul>
+    \[e^{-ik\frac {r^2}{2q}} = e^{-ik \frac {r^2}{2R}}e^{-\frac {r^2}{w^2}}\]
+
+    où on est passé en coordonnées cylindriques (\(r^2=x^2 + y^2\))
+    </p>
+    <h6 class="fondamentalT">Fondamental</h6>
+    <p class="fondamentalC">
+        Finalement, en regroupant toutes ces expressions, on obtient la relation suivante, qui est l'expression
+        fondamentale de l'onde sphérique gaussienne :
+        \[E(x, y, z)=K \frac 1 {w(z)} e^{-ik(z)} e^{i\zeta(z)} e^{-ik \frac {x^2+y^2}{2q} }\]
+    </p>
+    <p>C'est là qu'apparaît le profil transverse gaussien en tout point \(z\) de l'onde considéré. Le profil d'intensité
+        (proportionnelle au carré du champ) du faisceau gaussien sera donc (voir figure 10) :
+        \[I(r, z) = I_0(z)e^{\frac {-2r^2}{w^2(z)}}\]
+    </p>
+    <div class="w3-large">
+        <img src="../Images/fig10.jpg" class="center_img">
+        <p class="w3-opacity center_text">
+            Figure 10 : Profil d'intensité gaussien.
+        </p>
+    </div>
+
+    <ul>
+        <li>
+            \(R(z) = z\left(1+\left(\frac{\pi w_0^2}{\lambda z}\right)^2\right)\) est le rayon de courbure du front
+            d'onde qui coupe l'axe en \(z\).
+        </li>
+        <li>\(w(z) = w_0 \sqrt{1+\left(\frac{\lambda z}{\pi w_0^2}\right)^2}\) est une mesure de la décroissance –
+            gaussienne - de l'amplitude du champ avec la distance à l'axe \(z\) (voir figure 10). Le paramètre \(w\) est
+            la distance au bout de laquelle l'amplitude est égale à \( \frac 1 e\) fois sa valeur sur l'axe (\(\frac 1
+            {e^2}\) si on considère les intensités).
+        </li>
+    </ul>
+    <h6 class="definitionT">Définition :</h6>
+    <p class="definitionC">Ce paramètre \(w\) est minimal à l'origine \(z=0\), où le rayon de courbure \(R\) est infini.
+        Sa valeur
+        est alors notée \(w_0\) et on parle du « waist » du faisceau (on dit parfois « col » en français)
+
+    </p>
+    <h6 class="definitionT">Définition :</h6>
+    <p class="definitionC"> \(Z_R = \frac {\pi w_0^2}{\lambda}\)est appelée la longueur de Rayleigh et décrit la
+        divergence du faisceau (voir plus loin).
+    </p>
+    <p>
+        On rappel aussi que :
+    <ul>
+        <li>\(q=q_0+z\) et \(\frac 1 q = \frac 1 R -i \frac \lambda {\pi w^2}\)</li>
+        <li>Ce déphasage signifie que l'onde gaussienne est déphasée de \(\zeta (z)\) sur l'axe \(z\) par rapport à une onde plane de même
+            longueur d'onde « partie » depuis l'origine \(z=0\) au même instant. Ce déphasage sur l'axe spécifique à l'onde
+            gaussienne tend vers \(\frac \pi 2\) lorsque \(z\) tend vers l'infini. Lorsque l'onde passe par \(z=0\), elle subit un déphasage
+            global de \(\pi\).
+        </li>
+    </ul>
+    </p>
+    <h6 class="definitionT">Définition :</h6>
+    <p class="definitionC">\(tan(\zeta)=\frac {\lambda z}{\pi w_0^2}\) et \(\zeta (z)\) est souvent appelé « déphasage de Gouy ».
+
+    </p>
+</div>
+
+</div>
+
+<script>
+    var openInbox = document.getElementById("coursBtn");
+    openInbox.click();
+
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+    }
+
+    // Je sais je peux joindre ces 3 fonctions mais pour le moment c'est pas ma priorité
+    function funcCours(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+            x.previousElementSibling.className += " w3-red";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+            x.previousElementSibling.className =
+                x.previousElementSibling.className.replace(" w3-red", "");
+        }
+    }
+
+    function funcEC(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+            x.previousElementSibling.className += " w3-green";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+            x.previousElementSibling.className =
+                x.previousElementSibling.className.replace(" w3-green", "");
+        }
+    }
+
+    function funcEx(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+            x.previousElementSibling.className += " w3-blue";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+            x.previousElementSibling.className =
+                x.previousElementSibling.className.replace(" w3-blue", "");
+        }
+    }
+</script>
 </body>
 </html>
