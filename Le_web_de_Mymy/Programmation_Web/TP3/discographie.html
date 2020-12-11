@@ -4,6 +4,8 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<title> Bonjoir </title>
+		<link rel="shortcut icon" href="../../Media/mymy.ico">
+
 	</head>
 
 	<style>
@@ -44,7 +46,7 @@
 			var table="<tr><th>Groupe</th><th>Musiciens</th><th>Disques</th></tr>";
 			var x = xmlDoc.getElementsByTagName("groupe");
 			var gr;
-			for (i = 0; i <x.length; i++) { 
+			for (i = 0; i <x.length; i++) {
 				gr = x[i];
 				table += "<tr><td>" +	"<a href=\"" + 	gr.getAttribute("url") + "\">"+		gr.childNodes[0].nodeValue + "</a><br>" +
 				"<img src=img_disco/" +	gr.getAttribute("img") + " style=\"width:128px;\">" +
@@ -61,11 +63,11 @@
 				for (j=0; j<gr.getElementsByTagName("disque").length; j++){
 					var e=document.getElementById("selector");
 					if (gr.getElementsByTagName("disque")[j].getAttribute("annee")<=e.options[e.selectedIndex].value){
-					
+
 						table += "<img src=img_disco/" + gr.getElementsByTagName("disque")[j].getAttribute("img") + " style=\"width:128px;\">" + "<figcaption>"+ gr.getElementsByTagName("disque")[j].childNodes[0].nodeValue +", " + gr.getElementsByTagName("disque")[j].getAttribute("annee") + "</figcaption>";
 					}
 				}
-				"</td></tr>"; 
+				"</td></tr>";
 			}
 			document.getElementById("demo").innerHTML = table;
 		}

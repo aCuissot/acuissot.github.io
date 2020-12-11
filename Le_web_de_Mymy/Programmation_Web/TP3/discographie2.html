@@ -6,8 +6,10 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<title> Bonjoir 2.0 </title>
+		<link rel="shortcut icon" href="../../Media/mymy.ico">
+
 	</head>
-	
+
 	<style>
 		table,th,td {
 			border : 1px solid black;
@@ -46,7 +48,7 @@
 			var table="<tr><th>Groupe</th><th>Musiciens</th><th>Disques</th></tr>";
 			var x = xmlDoc.groupes.groupe;
 			var gr;
-			for (i = 0; i <x.length; i++) { 
+			for (i = 0; i <x.length; i++) {
 				gr = x[i];
 				table += "<tr><td>" +	"<a href=\"" + 	gr._url + "\">"+		gr.__text + "</a><br>" +
 				"<img src=img_disco/" +	gr._img + " style=\"width:128px;\">" +
@@ -63,11 +65,11 @@
 				for (j=0; j<gr.disques.disque.length; j++){
 					var e=document.getElementById("selector");
 					if (gr.disques.disque[j]._annee<=e.options[e.selectedIndex].value){
-					
+
 						table += "<img src=img_disco/" + gr.disques.disque[j]._img + " style=\"width:128px;\">" + "<figcaption>"+ gr.disques.disque[j].__text +", " + gr.disques.disque[j]._annee + "</figcaption>";
 					}
 				}
-				"</td></tr>"; 
+				"</td></tr>";
 			}
 			document.getElementById("demo").innerHTML = table;
 		}

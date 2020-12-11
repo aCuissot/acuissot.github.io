@@ -2,7 +2,7 @@
 <html>
   <head>
       <title>Jeu de raquette</title>
-      <link rel="shortcut icon" href="Media/mymy.ico">
+      <link rel="shortcut icon" href="../Media/mymy.ico">
   </head>
 
   <body onload="JeuSVG();">
@@ -56,10 +56,10 @@
         window.addEventListener('keydown', touche, true); // ou autre technique
         }
 
-		function animer() {	
+		function animer() {
 			var x = parseInt(balle.getAttribute("cx"));
 			var y = parseInt(balle.getAttribute("cy"));
-			
+
 			balle.setAttributeNS(null, "cx", x+balleDX);
 			balle.setAttributeNS(null, "cy", y+balleDY);
 
@@ -77,18 +77,18 @@
 				xr = parseInt(raq.getAttribute("x"));
 				console.log(xr+raqL/2);
 				if ((xr+raqL)>x-15 && xr<x+15){
-					
+
 					balleDY = -4;
 					score+=1
-					document.getElementById("SCORRRRRRRE").innerHTML = "Score " + score/3 + ""; 
+					document.getElementById("SCORRRRRRRE").innerHTML = "Score " + score/3 + "";
 				} else {
 					clearInterval(gameLoop);
 					alert("Game over!");
 				}
 			}
 
-			
-			
+
+
 															//      ...
 	// si la balle sort à droite ou sort à gauche alors inverser le déplacement finsi
 									//      ...
@@ -117,7 +117,7 @@
 			} else {
 				raq.setAttributeNS(null, "x", rx-raqDX);
 			}
-			
+
 			break;
         case 39:        // fleche droite
 			if (rx+raqDX>300){
@@ -127,7 +127,7 @@
 				raq.setAttributeNS(null, "x", rx+raqDX);
 
 			}
-			
+
 			break;
         }
       }
