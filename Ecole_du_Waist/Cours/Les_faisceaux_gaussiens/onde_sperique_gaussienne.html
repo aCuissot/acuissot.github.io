@@ -207,20 +207,20 @@
     <p>Considérons les solutions de l'équation de Helmholtz correspondant à des faisceaux qui se propagent globalement
         selon \(Oz\), avec des rayons paraxiaux.</p>
     <p>La solution s'écrit de façon générale sous la forme suivante :
-        \[E(x, y, z) = \Psi (x, y, z) e^{-ikz}\]
+        \[E(x, y, z) = \psi (x, y, z) e^{-ikz}\]
 
-        où \(\Psi (x, y, z)\) est une fonction complexe lentement variable qui représente les différences entre un
+        où \(\psi (x, y, z)\) est une fonction complexe lentement variable qui représente les différences entre un
         faisceau laser et une
         onde plane homogène.
     </p>
     <p>
-        En remplaçant cette solution dans l'équation de Helmholtz et en faisant l'hypothèse que les variations de \(\Psi
+        En remplaçant cette solution dans l'équation de Helmholtz et en faisant l'hypothèse que les variations de \(\psi
         (x, y, z)\) dans
         la direction \(Oz\) sont négligeables sur une distance de l'ordre de la longueur d'onde (soit \(\lambda \lvert
-        \frac {\partial \Psi}{\partial z}\rvert \lt \lt \lvert \Psi \rvert\) et \(\lambda \lvert \frac {\partial ^2
-        \Psi}{\partial z^2}\rvert \lt \lt \lvert \frac {\partial \Psi}{\partial z}\rvert\)), on peut réécrire
-        <span class="important">l'équation d'onde paraxiale</span> sous la forme : \[\frac {\partial ^2 \Psi}{\partial
-        x^2}+\frac {\partial ^2 \Psi}{\partial y^2} -2ik \frac {\partial \Psi}{\partial z}=0\]
+        \frac {\partial \psi}{\partial z}\rvert \lt \lt \lvert \psi \rvert\) et \(\lambda \lvert \frac {\partial ^2
+        \psi}{\partial z^2}\rvert \lt \lt \lvert \frac {\partial \psi}{\partial z}\rvert\)), on peut réécrire
+        <span class="important">l'équation d'onde paraxiale</span> sous la forme : \[\frac {\partial ^2 \psi}{\partial
+        x^2}+\frac {\partial ^2 \psi}{\partial y^2} -2ik \frac {\partial \psi}{\partial z}=0\]
 
     </p>
     <h6 class="remarqueT">Remarque:</h6>
@@ -231,11 +231,11 @@
     <p>
         Les solutions de l'équation d'onde paraxiale sont connues. On peut ainsi vérifier facilement qu'une fonction (il
         en existe d'autres) de la forme :
-        \[\Psi (x, y, z) = e^{-i\left(\Delta \Phi (z) + \frac k {2q(z)}(x^2+y^2)\right)}\]
+        \[\psi (x, y, z) = e^{-i\left(\Delta \phi (z) + \frac k {2q(z)}(x^2+y^2)\right)}\]
         est solution, avec :
     </p>
     <ul>
-        <li>\(\Delta\Phi(z)\) est un déphasage complexe (déphasage réel et changement d'amplitude avec \(z\))</li>
+        <li>\(\Delta\phi(z)\) est un déphasage complexe (déphasage réel et changement d'amplitude avec \(z\))</li>
         <li>\(q(z)\) représente un rayon de courbure complexe, ou encore la variation transverse de l'amplitude et la
             courbure du front d'onde.
 
@@ -246,22 +246,22 @@
         importante en pratique dans les
         résonateurs lasers. Nous allons donc la traiter en détails par la suite.
     </p>
-    <p>En substituant l'expression de \(\Psi(x, y, z)\) dans l'équation d'onde paraxiale, on obtient que pour tout
+    <p>En substituant l'expression de \(\psi(x, y, z)\) dans l'équation d'onde paraxiale, on obtient que pour tout
         \((x,y)\) :
-        \[\left( \frac {k^2}{q^2} (x^2+y^2) \left(\frac {dq}{dz} -1 \right) -2k \left( \frac{d\Delta\Phi}{dz} + \frac i
-        q\right)\right)\Psi = 0\]
+        \[\left( \frac {k^2}{q^2} (x^2+y^2) \left(\frac {dq}{dz} -1 \right) -2k \left( \frac{d\Delta\phi}{dz} + \frac i
+        q\right)\right)\psi = 0\]
     </p>
 
 
-    <p>On en déduit que \(q(z)\) et \(\Phi(z)\) doivent vérifier : \[\frac{dq}{dz}=1 \Rightarrow q(z)=q_0+z\ avec\
+    <p>On en déduit que \(q(z)\) et \(\phi(z)\) doivent vérifier : \[\frac{dq}{dz}=1 \Rightarrow q(z)=q_0+z\ avec\
         q_0=q(0)\]
-        \[\frac{d\Delta \Phi}{dz}=-\frac i q \Rightarrow \Delta\Phi(z)=-i\ ln\left(\frac{q_0+z}{q_0}\right)\ si\ \Delta
-        \Phi(0)=0\]
+        \[\frac{d\Delta \phi}{dz}=-\frac i q \Rightarrow \Delta\phi(z)=-i\ ln\left(\frac{q_0+z}{q_0}\right)\ si\ \Delta
+        \phi(0)=0\]
     </p>
     <p>
         De plus on pose \(\frac 1 {q(z)}=\frac 1 {R(z)}-i\frac {\lambda}{\pi w^2(z)}\)
     </p>
-    <p> On a alors \[e^{-i\Delta\Phi(z)} = \frac 1 {1 + \frac z {q_0}}=\frac 1 {1+\frac z {R_0}-\frac{i\lambda z}{\pi
+    <p> On a alors \[e^{-i\Delta\phi(z)} = \frac 1 {1 + \frac z {q_0}}=\frac 1 {1+\frac z {R_0}-\frac{i\lambda z}{\pi
         w_0^2}}\] où les indices 0 indiquent les valeurs en \(z=0\). Si on choisit à l'origine un rayon de courbure
         infini
         (c'est à dire une surface d'onde plane), on a \(q_0=i\frac{\pi w_0^2}{\lambda}\). On peut alors facilement
@@ -278,7 +278,7 @@
     </p>
     <p>
         D'autre part:
-        \[e^{-i\Delta \Phi (z)}=\frac 1 {1-\frac {iz}{Z_R}}=\frac 1 {\sqrt{1+\left( \frac z {Z_R}\right)^2}}e^{i\zeta
+        \[e^{-i\Delta \phi (z)}=\frac 1 {1-\frac {iz}{Z_R}}=\frac 1 {\sqrt{1+\left( \frac z {Z_R}\right)^2}}e^{i\zeta
         (z)} \ ou \ tan(\zeta (z))=\frac z {Z_R}\]
         avec :
     <ul>

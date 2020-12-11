@@ -1,10 +1,390 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
+<title>Optique des LASERS et faisceaux gaussiens</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href='https://fonts.googleapis.com/css?family=RobotoDraft' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../Style/style.css">
+<link rel="shortcut icon" href="../../Media/laser.ico">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<style>
+    html, body, h1, h2, h3, h4, h5 {
+        font-family: "RobotoDraft", "Roboto", sans-serif
+    }
+
+    .w3-bar-block .w3-bar-item {
+        padding: 16px
+    }
+
+</style>
 <body>
 
+<!-- Side Navigation -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-white w3-animate-left w3-card" style="z-index:3;width:320px;"
+     id="mySidebar">
+    <a href="../../index.html" class="w3-bar-item w3-button w3-border-bottom w3-large"
+       style="background-color: #48cd2b"><img
+            src="../../Media/logo.png" title="Accueil"
+            style="width:30%; display: block; margin-left: auto; margin-right: auto"></a>
+    <h3 class="w3-bar-item w3-button">Optique des LASERS et faisceaux gaussiens</h3>
+    <a id="coursBtn" onclick="funcCours('planCours')" href="javascript:void(0)" class="w3-bar-item w3-button"><i
+            class="fa fa-book w3-margin-right"></i>Cours<i class="fa fa-caret-down w3-margin-left"></i></a>
+    <div id="planCours" class="w3-hide w3-animate-left">
+        <div class="w3-container">
+            <h4>1. Les résonateurs ouverts</h4>
+            <ul>
+                <li><a href="../Les_resonateurs_ouverts/introduction.html">1.1 Introduction</a></li>
+                <li>
+                    <a href="../Les_resonateurs_ouverts/interet_et_description_des_resonateurs_ouverts.html">1.2
+                        Interêt
+                        et description des résonateurs ouverts</a></li>
+                <li><a href="../Les_resonateurs_ouverts/modes_spectraux_et_longitudinaux.html">1.3
+                    Modes spectraux et
+                    modes longitudinaux</a></li>
+            </ul>
+        </div>
+        <div class="w3-container">
+            <h4>2. Stabilité des cavités LASERS</h4>
+            <ul>
+                <li><a href="../Stabilite_des_cavites_lasers/introduction.html">2.1 Introduction</a>
+                </li>
+                <li>
+                    <a href="../Stabilite_des_cavites_lasers/structure_periodique_des_cavites_lasers.html">2.2
+                        Structure
+                        périodique des cavités Lasers</a></li>
+                <li><a href="../Stabilite_des_cavites_lasers/matrices_de_transfert_et_loi_ABCD.html">2.3
+                    Matrices de
+                    transfert et loi ABCD</a></li>
+                <li><a href="../Stabilite_des_cavites_lasers/stabilite_dune_cavite.html">2.4 Stabilité
+                    d'une cavité</a>
+                </li>
+            </ul>
+        </div>
+        <div class="w3-container">
+            <h4>3. Les faisceaux gaussiens</h4>
+            <ul>
+                <li>
+                    <a href="../Les_faisceaux_gaussiens/equation_donde_paraxiale_et_onde_spherique.html">3.1
+                        Équation
+                        d'onde paraxiale et onde sphérique</a></li>
+                <li><a href="../Les_faisceaux_gaussiens/onde_sperique_gaussienne.html">3.2 Onde
+                    sphérique gaussienne</a>
+                </li>
+                <li><a href="../Les_faisceaux_gaussiens/proprietes_des_faisceaux_gaussiens.html">3.3
+                    Propriétés des
+                    faisceaux gaussiens</a></li>
+                <li>
+                    <a href="../Les_faisceaux_gaussiens/adaptation_et_focalisation_des_faisceaux_gaussiens.html">3.4
+                        Adaptation et focalisation des faisceaux gaussiens</a></li>
+            </ul>
+        </div>
+        <div class="w3-container">
+            <h4>4. Mode fondamental Gaussien et cavité LASER</h4>
+            <ul>
+                <li>
+                    <a href="../Mode_fondamental_gaussien_et_cavite_laser/loi_ABCD_appliquee_aux_faisceaux_gaussiens.html">4.1
+                        Loi ABCD appliquée aux faisceaux gaussiens</a></li>
+                <li><a href="../Mode_fondamental_gaussien_et_cavite_laser/cavite_a_2_miroirs.html">4.2
+                    Cavité à deux
+                    miroirs</a></li>
+                <li><a href="../Mode_fondamental_gaussien_et_cavite_laser/autres_cavites.html">3.3
+                    Autres cavités</a>
+                </li>
+            </ul>
+        </div>
+        <div class="w3-container">
+            <h4>5. Les modes d'ordre supérieur</h4>
+            <ul>
+                <li><a href="../Les_modes_dordre_superieur/introduction.html">5.1 Introduction</a>
+                </li>
+                <li><a href="../Les_modes_dordre_superieur/modes_Hermite-Gaussiens.html">5.2 Modes
+                    Hermite-Gaussiens</a>
+                </li>
+                <li><a href="../Les_modes_dordre_superieur/modes_Laguerre_Gaussiens.html">5.3 Modes
+                    Laguerre-Gaussiens</a></li>
+                <li>
+                    <a href="../Les_modes_dordre_superieur/propagation_des_faisceaux_multimodes_et_facteur_m2.html">5.4
+                        Propagation des faisceaux multimodes et facteurs M²</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <a id="etudeCasBtn" onclick="funcEC('etudeCasPlan')" href="javascript:void(0)" class="w3-bar-item w3-button"><i
+            class="fa fa-pencil w3-margin-right"></i>Étude de cas<i class="fa fa-caret-down w3-margin-left"></i></a>
+    <div id="etudeCasPlan" class="w3-hide w3-animate-left">
+        <div class="w3-container">
+            <h4><a href="../Etude_de_cas/introduction.html">1. Introduction</a></h4>
+        </div>
+        <div class="w3-container">
+            <h4>2. Étude préliminaire de la cavité hémisphérique</h4>
+            <ul>
+                <li>
+                    <a href="../Etude_de_cas/Etude_preliminaire_de_la_cavite_hemispherique/stabilite_de_la_cavite.html">2.1
+                        Stabilité de la cavité</a></li>
+                <li>
+                    <a href="../Etude_de_cas/Etude_preliminaire_de_la_cavite_hemispherique/structure_du_faisceau_dans_la_cavite.html">2.2
+                        Structure du faisceau dans la cavité</a></li>
+            </ul>
+        </div>
+        <div class="w3-container">
+            <h4>3. Cavité réelle</h4>
+            <ul>
+                <li><a href="../Etude_de_cas/Cavite_reelle/optimisation_de_la_cavite.html">3.1
+                    Optimisation de la
+                    cavité</a></li>
+                <li><a href="../Etude_de_cas/Cavite_reelle/faisceau_en_sortie.html">3.2 Faisceau en
+                    sortie</a>
+                </li>
+                <li><a href="../Etude_de_cas/Cavite_reelle/effet_de_lentille_thermique.html">3.3
+                    Effet de lentille
+                    thermique</a></li>
+            </ul>
+        </div>
+        <div class="w3-container">
+            <h4><a href="../Etude_de_cas/modes_longitundinaux.html">4. Modes longitudinaux</a></h4>
+        </div>
+    </div>
+
+
+    <a id="exemplesBtn" onclick="funcEx('exemplesPlan')" href="javascript:void(0)" class="w3-bar-item w3-button"><i
+            class="fa fa-pencil-square-o w3-margin-right"></i>Exercices<i
+            class="fa fa-caret-down w3-margin-left"></i></a>
+    <div id="exemplesPlan" class="w3-hide w3-animate-left">
+        <div class="w3-container">
+            <h4><a href="../Exercices/transformation_de_faisceau_laser.html">1. Transformation de
+                faisceau LASER</a></h4>
+        </div>
+        <div class="w3-container">
+            <h4><a href="../Exercices/caracteristiques_dun_faisceau_laser.html">2. Caractéristiques
+                d'un faisceau
+                LASER</a></h4>
+        </div>
+        <div class="w3-container">
+            <h4><a href="../Exercices/stabilite.html">3. Stabilité</a></h4>
+        </div>
+        <div class="w3-container">
+            <h4><a href="../Exercices/energie.html">4. Énergie</a></h4>
+        </div>
+        <div class="w3-container">
+            <h4><a href="../Exercices/repartition_spectrale_des_modes_longitudinaux.html">5.
+                Répartition spectrale des
+                modes longitudinaux</a></h4>
+        </div>
+    </div>
+
+    <a class="w3-bar-item w3-button w3-dark-grey w3-button w3-hover-black w3-left-align"
+       download><i class="w3-padding fa fa-file-pdf-o"></i>Télécharger au format PDF<i
+            class="w3-padding fa fa-download"></i></a>
+</nav>
+
+<!-- Overlay effect when opening the side navigation on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
+     title="Close Sidemenu" id="myOverlay"></div>
+
+<!-- Page content -->
+<div id="topofthepop" class="w3-main" style="margin-left:320px;">
+    <i class="fa fa-bars w3-button w3-white w3-hide-large w3-xlarge w3-margin-left w3-margin-top"
+       onclick="w3_open()"></i>
+
+    <p class="w3-container">
+        <br>
+    <h5 class="w3-opacity">Optique des LASER et faisceaux gaussiens</h5>
+    <h2 class="subtitle">IV. Mode fondamental Gaussien et cavité laser</h2>
+    <h4 class="subtitle">2. Cavité à deux miroirs</h4>
+    <hr>
+    <h5 class="subtitle">Introduction</h5>
+    <p>
+        Nous allons étudier plus en détail la cavité classique à deux miroirs sphériques de rayons de courbure \(R_1\)
+        et \(R_2\)
+        distants de \(d\).
+
+    </p>
+    <h5 class="subtitle">Géométrie de la cavité</h5>
+
+    <p>Si un faisceau gaussien est un mode d'un tel résonateur, alors nécessairement son rayon de courbure est égal (en
+        valeur absolue) au rayon de courbure des miroirs au niveau de ces derniers. C'est une condition indispensable
+        pour assurer le retour sur lui-même du faisceau.
+    </p>
+    <p>Si on appelle \(z_1\) et \(z_2\) les positions des miroirs \(M_1\) et \(M_2\) respectivement, on a donc \(R(z_1)
+        = -R_1\) et \(R(z_2) = R_2\).
+    </p>
+    <h6 class="remarqueT">Remarque :</h6>
+    <p class="remarqueC">Attention aux conventions de signe: ici on prend \(R>0\) pour une onde divergente et \(R<0\)
+        pour une onde convergente
+
+    </p>
+    <div class="w3-large">
+        <img src="../Images/fig16.jpg" class="center_img">
+        <p class="w3-opacity center_text">
+            Figure 16 : Géométrie de la cavité utilisée pour la démonstration
+        </p>
+    </div>
+    <p>
+        Grâce à cette propriété, on peut déterminer la géométrie du mode dans la cavité sans passer par la loi ABCD
+        générale : il suffit d'appliquer les relations démontrées pour l'onde sphérique gaussienne (fin du paragraphe
+        sur l'"Onde Sphérique Gaussienne") en choisissant comme origine le waist du faisceau (qu'on cherche à
+        déterminer).
+
+    </p>
+
+    <p>
+        On écrit alors
+        \[-R_1=R(z_1)=z_1\left(1+\left(\frac{\pi w_0^2}{\lambda z_1}\right)^2\right)=z_1+\frac{Z_R^2}{z_1}\]
+
+        et
+        \[R_2 = R(z_2) = z_2+\frac{Z_R^2}{z_2}\]
+
+        qui sont les conditions aux limites sur les miroirs. On a également \(z_2-z_1=d\). Il suffit de résoudre ce
+        système de trois
+        équations à trois inconnues \(z_1\), \(z_2\) et \(Z_R\) afin d'obtenir leurs valeurs en fonction des rayons de
+        courbure des
+        deux miroirs et de la distance \(d\).
+    </p>
+    <p>En faisant (c'est un bon exercice) le calcul in extenso, et en notant à nouveau \(g_i=1-\frac d{R_i}\) avec
+        \(i=1, 2\), on obtient l'ensemble
+        des relations suivantes :
+        \[z_1 = \frac{d(d-R_2)}{R_1+R_2-2d} = \frac{-dg_2(1-g_1)}{g_1+g_2-2g_1g_2}\]
+        \[z_2 = \frac{d(R_1-d)}{R_1+R_2-2d} = \frac{-dg_1(1-g_2)}{g_1+g_2-2g_1g_2}=z_1+d\]
+        \[Z_R^2 = \frac {d(R_1+R_2-d)(R_1-d)(R_2-d)}{(R_1+R_2-2d)^2}=\frac {d^2g_1g_2(1-g_1g_2)}{(g_1+g_2-2g_1g_2)^2}\]
+        \[w_0 = \sqrt \frac \lambda \pi \sqrt[4]{\frac {d(R_1+R_2-d)(R_1-d)(R_2-d)}{(R_1+R_2-2d)^2}}=\sqrt \frac{\lambda
+        d}\pi \sqrt[4]{\frac {g_1g_2(1-g_1g_2)}{(g_1+g_2-2g_1g_2)^2}}\]
+    </p>
+    <p>
+        On peut retrouver ici la condition de stabilité pour une cavité à deux miroirs déjà démontrée précédemment, à
+        savoir \(0\lt g_1g_2\lt 1\) avec cette fois-ci des inégalités strictes.
+
+
+    </p>
+    <p>
+        Pour généraliser le diagramme de stabilité de la figure 7 aux faisceaux gaussiens, il faut donc exclure
+        l'hyperbole elle-même et les axes \(g_i = 0\).
+
+    </p>
+
+    <p>
+        L'exemple le plus simple est la cavité Fabry-Pérot à deux miroirs plans dont les éléments de matrice \(A\) et
+        \(D\)
+        valent 1 (ou encore \(g_1 = g_2 = 1\)): la condition de stabilité est vérifiée dans ce cas si on utilise
+        l'expression
+        de l'optique géométrique, mais ne l'est pas pour des faisceaux gaussiens. Une telle cavité n'est pas un
+        résonateur laser stable en tant que tel.
+    </p>
+    <p class="important">Il est néanmoins possible d'obtenir un laser stable avec une cavité Fabry-Pérot plan-plan, car
+        d'autres éléments peuvent stabiliser la cavité – par exemple le milieu amplificateur lui-même peut souvent se
+        modéliser par une lentille (d'origine thermique, due au pompage) convergente qui stabilise la cavité.
+    </p>
+    <p class="important">Il existe une méthode graphique pour déterminer facilement la position et la taille du waist
+        dans une cavité à deux miroirs, basée sur les cercles de Deschamps (voir figure 8).
+    </p>
+    <h5 class="subtitle">Fréquence des modes \(TEM_{00}\) dans la cavité</h5>
+    <p>La condition de résonance d'un mode est que le champ ne change pas au bout d'un aller-retour dans la cavité. En
+        d'autres termes, la variation de phase dans cet aller-retour doit être un multiple entier de \(2\pi\);
+    </p>
+    <p>Le terme de phase pour une onde sphérique gaussienne vaut (voir paragraphe sur l'"Onde Sphérique Gaussienne")
+        \(e^{ikz}e^{i\zeta (z)}\) où
+        on rappelle que \(tan(\zeta (z)) = \frac z {Z_R}\). La première exponentielle est simplement le déphasage dû à
+        la
+        propagation, tandis que la
+        deuxième est spécifique au faisceau gaussien.
+
+    </p>
+    <p>Si \(\phi (z)\) est la phase en \(z\), on doit donc avoir :
+        \[\Delta \phi = \phi (z_2) - \phi(z_1)=-k(z_2-z_1)+(\zeta(z_2)- \zeta(z_1))=-q\pi\]
+        \(q\) est ici un nombre entier égal au nombre de demi-longueurs d'onde contenu sur la longueur \(d\) (rien à
+        voir avec
+        le rayon de courbure complexe !): il y a \((q-1)\) noeuds et \(q\) ventres dans la cavité (NB : les cavités de
+        taille
+        standard, c'est à dire macroscopique (entre le cm et le mètre), ont un \(q\) gigantesque).</p>
+    <p>Les fréquences de résonance des modes gaussiens fondamentaux \(TEM_{00q}\) dans la cavité à deux miroirs valent
+        donc (en
+        remplaçant \(k\) par \(\frac {2\pi \nu}c\)):
+        \[\nu_q=\frac c{2d}\left(q+\frac
+        1\pi\left(arctan\left(\frac{z_2}{Z_R}\right)-arctan\left(\frac{z_1}{Z_R}\right)\right)\right)\]
+    </p>
+    <p>Cette expression peut être reformulée en utilisant
+        \[arctan(a)+arctan(b) = arctan\left(\frac{a+b}{1-ab}\right)\]
+        ce qui donne après quelques calculs :
+        \[\nu_q=\frac c{2d}\left(q+\frac 1\pi arccos(\pm\sqrt{g_1g_2})\right)\]
+    </p>
+    <h6 class="remarqueT">Remarque :</h6>
+    <p class="remarqueC">
+        \(g_1\) et \(g_2\) sont de même signe à cause du critère de stabilité. Si ce signe commun est positif, il faut
+        prendre le signe \(+\) dans la formule et vice versa.
+    </p>
+    <p>On remarque que la formule obtenue ressemble à celle donnée au paragraphe "Modes spectraux et modes
+        longitudinaux" pour une onde plane, mais possède un terme supplémentaire \(\frac c{2d}\left(\frac 1\pi arccos(\pm\sqrt{g_1g_2})\right)\). Ce terme étant ajouté à toutes les
+        fréquences \(\nu_q\), elles sont toutes décalées de la même quantité et l'on a toujours \(\Delta \nu_q=\frac c{2d}\).
+
+    </p>
+    <p>On a fait l'étude précédente dans le cas simple d'une cavité linéaire à deux miroirs. Pour des cavités plus
+        complexes (voir figure 17 et 18) il faut calculer pour chaque faisceau gaussien se propageant librement la
+        variation de phase sur sa longueur, et ensuite additionner les déphasages sur un aller-retour ou un tour.</p>
+</div>
+
+<footer class="w3-container w3-theme-dark w3-padding-16">
+    <div style="position:relative;bottom:10px;" class="w3-tooltip w3-right w3-theme-dark">
+        <span class="w3-text w3-theme-light w3-padding">Go To Top</span> 
+        <a class="w3-text-white" href="#topofthepop"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+    </div>
+</footer>
+
+<script>
+    var openInbox = document.getElementById("coursBtn");
+    openInbox.click();
+
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+    }
+
+    // Je sais je peux joindre ces 3 fonctions mais pour le moment c'est pas ma priorité
+    function funcCours(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+            x.previousElementSibling.className += " w3-red";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+            x.previousElementSibling.className =
+                x.previousElementSibling.className.replace(" w3-red", "");
+        }
+    }
+
+    function funcEC(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+            x.previousElementSibling.className += " w3-green";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+            x.previousElementSibling.className =
+                x.previousElementSibling.className.replace(" w3-green", "");
+        }
+    }
+
+    function funcEx(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+            x.previousElementSibling.className += " w3-blue";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+            x.previousElementSibling.className =
+                x.previousElementSibling.className.replace(" w3-blue", "");
+        }
+    }
+</script>
 </body>
 </html>
