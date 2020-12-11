@@ -8,21 +8,11 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="../Style/style.css">
 <link rel="shortcut icon" href="../../Media/laser.ico">
-
+<script src="../Scripts/script.js"></script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async
         src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </script>
-<style>
-    html, body, h1, h2, h3, h4, h5 {
-        font-family: "RobotoDraft", "Roboto", sans-serif
-    }
-
-    .w3-bar-block .w3-bar-item {
-        padding: 16px
-    }
-
-</style>
 <body>
 
 <!-- Side Navigation -->
@@ -93,7 +83,7 @@
                 <li><a href="../Mode_fondamental_gaussien_et_cavite_laser/cavite_a_2_miroirs.html">4.2
                     Cavité à deux
                     miroirs</a></li>
-                <li><a href="../Mode_fondamental_gaussien_et_cavite_laser/autres_cavites.html">3.3
+                <li><a href="../Mode_fondamental_gaussien_et_cavite_laser/autres_cavites.html">4.3
                     Autres cavités</a>
                 </li>
             </ul>
@@ -323,53 +313,6 @@
 <script>
     var openInbox = document.getElementById("coursBtn");
     openInbox.click();
-
-    function w3_open() {
-        document.getElementById("mySidebar").style.display = "block";
-        document.getElementById("myOverlay").style.display = "block";
-    }
-
-    function w3_close() {
-        document.getElementById("mySidebar").style.display = "none";
-        document.getElementById("myOverlay").style.display = "none";
-    }
-
-    // Je sais je peux joindre ces 3 fonctions mais pour le moment c'est pas ma priorité
-    function funcCours(id) {
-        var x = document.getElementById(id);
-        if (x.className.indexOf("w3-show") == -1) {
-            x.className += " w3-show";
-            x.previousElementSibling.className += " w3-red";
-        } else {
-            x.className = x.className.replace(" w3-show", "");
-            x.previousElementSibling.className =
-                x.previousElementSibling.className.replace(" w3-red", "");
-        }
-    }
-
-    function funcEC(id) {
-        var x = document.getElementById(id);
-        if (x.className.indexOf("w3-show") == -1) {
-            x.className += " w3-show";
-            x.previousElementSibling.className += " w3-green";
-        } else {
-            x.className = x.className.replace(" w3-show", "");
-            x.previousElementSibling.className =
-                x.previousElementSibling.className.replace(" w3-green", "");
-        }
-    }
-
-    function funcEx(id) {
-        var x = document.getElementById(id);
-        if (x.className.indexOf("w3-show") == -1) {
-            x.className += " w3-show";
-            x.previousElementSibling.className += " w3-blue";
-        } else {
-            x.className = x.className.replace(" w3-show", "");
-            x.previousElementSibling.className =
-                x.previousElementSibling.className.replace(" w3-blue", "");
-        }
-    }
 </script>
 </body>
 </html>
