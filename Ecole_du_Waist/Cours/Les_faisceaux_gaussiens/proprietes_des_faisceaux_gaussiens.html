@@ -1,10 +1,373 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
+<title>Optique des LASERS et faisceaux gaussiens</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href='https://fonts.googleapis.com/css?family=RobotoDraft' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../Style/style.css">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<style>
+    html, body, h1, h2, h3, h4, h5 {
+        font-family: "RobotoDraft", "Roboto", sans-serif
+    }
+
+    .w3-bar-block .w3-bar-item {
+        padding: 16px
+    }
+
+</style>
 <body>
 
+<!-- Side Navigation -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-white w3-animate-left w3-card" style="z-index:3;width:320px;"
+     id="mySidebar">
+    <a href="../../index.html" class="w3-bar-item w3-button w3-border-bottom w3-large"
+       style="background-color: #48cd2b"><img
+            src="../../Media/logo.png" title="Accueil"
+            style="width:30%; display: block; margin-left: auto; margin-right: auto"></a>
+    <h3 class="w3-bar-item w3-button">Optique des LASERS et faisceaux gaussiens</h3>
+    <a id="coursBtn" onclick="funcCours('planCours')" href="javascript:void(0)" class="w3-bar-item w3-button"><i
+            class="fa fa-book w3-margin-right"></i>Cours<i class="fa fa-caret-down w3-margin-left"></i></a>
+    <div id="planCours" class="w3-hide w3-animate-left">
+        <div class="w3-container">
+            <h4>1. Les résonateurs ouverts</h4>
+            <ul>
+                <li><a href="../Les_resonateurs_ouverts/introduction.html">1.1 Introduction</a></li>
+                <li>
+                    <a href="../Les_resonateurs_ouverts/interet_et_description_des_resonateurs_ouverts.html">1.2
+                        Interêt
+                        et description des résonateurs ouverts</a></li>
+                <li><a href="../Les_resonateurs_ouverts/modes_spectraux_et_longitudinaux.html">1.3
+                    Modes spectraux et
+                    modes longitudinaux</a></li>
+            </ul>
+        </div>
+        <div class="w3-container">
+            <h4>2. Stabilité des cavités LASERS</h4>
+            <ul>
+                <li><a href="../Stabilite_des_cavites_lasers/introduction.html">2.1 Introduction</a>
+                </li>
+                <li>
+                    <a href="../Stabilite_des_cavites_lasers/structure_periodique_des_cavites_lasers.html">2.2
+                        Structure
+                        périodique des cavités Lasers</a></li>
+                <li><a href="../Stabilite_des_cavites_lasers/matrices_de_transfert_et_loi_ABCD.html">2.3
+                    Matrices de
+                    transfert et loi ABCD</a></li>
+                <li><a href="../Stabilite_des_cavites_lasers/stabilite_dune_cavite.html">2.4 Stabilité
+                    d'une cavité</a>
+                </li>
+            </ul>
+        </div>
+        <div class="w3-container">
+            <h4>3. Les faisceaux gaussiens</h4>
+            <ul>
+                <li>
+                    <a href="../Les_faisceaux_gaussiens/equation_donde_paraxiale_et_onde_spherique.html">3.1
+                        Équation
+                        d'onde paraxiale et onde sphérique</a></li>
+                <li><a href="../Les_faisceaux_gaussiens/onde_sperique_gaussienne.html">3.2 Onde
+                    sphérique gaussienne</a>
+                </li>
+                <li><a href="../Les_faisceaux_gaussiens/proprietes_des_faisceaux_gaussiens.html">3.3
+                    Propriétés des
+                    faisceaux gaussiens</a></li>
+                <li>
+                    <a href="../Les_faisceaux_gaussiens/adaptation_et_focalisation_des_faisceaux_gaussiens.html">3.4
+                        Adaptation et focalisation des faisceaux gaussiens</a></li>
+            </ul>
+        </div>
+        <div class="w3-container">
+            <h4>4. Mode fondamental Gaussien et cavité LASER</h4>
+            <ul>
+                <li>
+                    <a href="../Mode_fondamental_gaussien_et_cavite_laser/loi_ABCD_appliquee_aux_faisceaux_gaussiens.html">4.1
+                        Loi ABCD appliquée aux faisceaux gaussiens</a></li>
+                <li><a href="../Mode_fondamental_gaussien_et_cavite_laser/cavite_a_2_miroirs.html">4.2
+                    Cavité à deux
+                    miroirs</a></li>
+                <li><a href="../Mode_fondamental_gaussien_et_cavite_laser/autres_cavites.html">3.3
+                    Autres cavités</a>
+                </li>
+            </ul>
+        </div>
+        <div class="w3-container">
+            <h4>5. Les modes d'ordre supérieur</h4>
+            <ul>
+                <li><a href="../Les_modes_dordre_superieur/introduction.html">5.1 Introduction</a>
+                </li>
+                <li><a href="../Les_modes_dordre_superieur/modes_Hermite-Gaussiens.html">5.2 Modes
+                    Hermite-Gaussiens</a>
+                </li>
+                <li><a href="../Les_modes_dordre_superieur/modes_Laguerre_Gaussiens.html">5.3 Modes
+                    Laguerre-Gaussiens</a></li>
+                <li>
+                    <a href="../Les_modes_dordre_superieur/propagation_des_faisceaux_multimodes_et_facteur_m2.html">5.4
+                        Propagation des faisceaux multimodes et facteurs M²</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <a id="etudeCasBtn" onclick="funcEC('etudeCasPlan')" href="javascript:void(0)" class="w3-bar-item w3-button"><i
+            class="fa fa-pencil w3-margin-right"></i>Étude de cas<i class="fa fa-caret-down w3-margin-left"></i></a>
+    <div id="etudeCasPlan" class="w3-hide w3-animate-left">
+        <div class="w3-container">
+            <h4><a href="../Etude_de_cas/introduction.html">1. Introduction</a></h4>
+        </div>
+        <div class="w3-container">
+            <h4>2. Étude préliminaire de la cavité hémisphérique</h4>
+            <ul>
+                <li>
+                    <a href="../Etude_de_cas/Etude_preliminaire_de_la_cavite_hemispherique/stabilite_de_la_cavite.html">2.1
+                        Stabilité de la cavité</a></li>
+                <li>
+                    <a href="../Etude_de_cas/Etude_preliminaire_de_la_cavite_hemispherique/structure_du_faisceau_dans_la_cavite.html">2.2
+                        Structure du faisceau dans la cavité</a></li>
+            </ul>
+        </div>
+        <div class="w3-container">
+            <h4>3. Cavité réelle</h4>
+            <ul>
+                <li><a href="../Etude_de_cas/Cavite_reelle/optimisation_de_la_cavite.html">3.1
+                    Optimisation de la
+                    cavité</a></li>
+                <li><a href="../Etude_de_cas/Cavite_reelle/faisceau_en_sortie.html">3.2 Faisceau en
+                    sortie</a>
+                </li>
+                <li><a href="../Etude_de_cas/Cavite_reelle/effet_de_lentille_thermique.html">3.3
+                    Effet de lentille
+                    thermique</a></li>
+            </ul>
+        </div>
+        <div class="w3-container">
+            <h4><a href="../Etude_de_cas/modes_longitundinaux.html">4. Modes longitudinaux</a></h4>
+        </div>
+    </div>
+
+
+    <a id="exemplesBtn" onclick="funcEx('exemplesPlan')" href="javascript:void(0)" class="w3-bar-item w3-button"><i
+            class="fa fa-pencil-square-o w3-margin-right"></i>Exercices<i
+            class="fa fa-caret-down w3-margin-left"></i></a>
+    <div id="exemplesPlan" class="w3-hide w3-animate-left">
+        <div class="w3-container">
+            <h4><a href="../Exercices/transformation_de_faisceau_laser.html">1. Transformation de
+                faisceau LASER</a></h4>
+        </div>
+        <div class="w3-container">
+            <h4><a href="../Exercices/caracteristiques_dun_faisceau_laser.html">2. Caractéristiques
+                d'un faisceau
+                LASER</a></h4>
+        </div>
+        <div class="w3-container">
+            <h4><a href="../Exercices/stabilite.html">3. Stabilité</a></h4>
+        </div>
+        <div class="w3-container">
+            <h4><a href="../Exercices/energie.html">4. Énergie</a></h4>
+        </div>
+        <div class="w3-container">
+            <h4><a href="../Exercices/repartition_spectrale_des_modes_longitudinaux.html">5.
+                Répartition spectrale des
+                modes longitudinaux</a></h4>
+        </div>
+    </div>
+
+    <a class="w3-bar-item w3-button w3-dark-grey w3-button w3-hover-black w3-left-align"
+       download><i class="w3-padding fa fa-file-pdf-o"></i>Télécharger au format PDF<i
+            class="w3-padding fa fa-download"></i></a>
+</nav>
+
+<!-- Overlay effect when opening the side navigation on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
+     title="Close Sidemenu" id="myOverlay"></div>
+
+<!-- Page content -->
+<div id="topofthepop" class="w3-main" style="margin-left:320px;">
+    <i class="fa fa-bars w3-button w3-white w3-hide-large w3-xlarge w3-margin-left w3-margin-top"
+       onclick="w3_open()"></i>
+
+    <p class="w3-container">
+        <br>
+    <h5 class="w3-opacity">Optique des LASER et faisceaux gaussiens</h5>
+    <h2 class="subtitle">III. Les faisceaux gaussiens</h2>
+    <h4 class="subtitle">3. Propriétés des faisceaux gaussiens</h4>
+    <hr>
+    <p>
+        La plupart des relations fondamentales liées aux faisceaux gaussiens ont été mathématiquement obtenues au
+        paragraphe précédent. Nous allons maintenant voir leur signification physique.
+    </p>
+
+    <p>Prenons comme précédemment l'origine au « waist » \(w_0\), qui correspond à l'onde plane gaussienne de rayon de
+        courbure infini. On a défini la longueur de Rayleigh par la relation \(Z_R = \frac {\pi w_0^2}\lambda\).
+
+    </p>
+    <p>On a également obtenu la loi d'évolution de \(w\) en fonction de \(z\) :
+        \[w(z) = w_0 \sqrt{1+\left(\frac z {Z_R}\right)^2}\]
+        \(w(z)\) est une hyperbole (on peut réécrire la relation précédente \(\frac {w^2}{w_0^2}-\frac{z^2}{Z_R^2} =
+        1\)).
+
+    </p>
+    <h5 class="subtitle">Les principaux paramètres utiles</h5>
+
+    <p>
+        Rappelons les principaux paramètres utiles et leur définitions :
+
+
+    </p>
+
+    <ul>
+        <li>\(w(z)\) est la dimension (le rayon) de la tache laser dans un plan perpendiculaire à la propagation à une
+            distance \(z\) de l'origine. Plus précisément, c'est le rayon à \(\frac 1 e\) du profil gaussien d'amplitude
+            transverse
+            dans le plan d'abscisse \(z\) (à \(\frac 1 {e^2}\) si on considère le profil d'intensité : dans la formule
+            ci-dessous,
+            \(I=\frac {I_0}{e^2}\) pour \(r = w\)). \[I(r, z) = I_0(z)e^{\frac{-2r^2}{w^2(z)}}\]
+        </li>
+        <li>Le faisceau « s'étale » transversalement au cours de la propagation, tandis que son amplitude sur l'axe
+            diminue (conservation de l'énergie). Le profil reste toujours gaussien.
+        </li>
+        <li>La taille du faisceau à l'origine, \(w_0\), est la taille minimale du faisceau qui diverge à partir de ce
+            point
+            (voir figure 11). On appelle « <span class="important">waist</span> », ou encore « col » ou « taille »,
+            cette dimension minimale (NB : le
+            waist désigne bien le <span class="emphase">rayon</span> minimal du faisceau. Le diamètre est évidemment
+            donné par \(2 w_0\))
+        </li>
+        <li>Au waist, on a vu que le front d'onde était localement plan (de rayon de courbure infini).
+
+        </li>
+        <div class="w3-large">
+            <img src="../Images/fig11.jpg" class="center_img">
+            <p class="w3-opacity center_text">
+                Figure 11 : Propriétés d'un faisceau gaussien
+            </p>
+        </div>
+        <li>
+            La divergence du faisceau est mesurée par la limite pour \(z\) tendant vers l'infini de \(\frac w z\) :
+            \(\lim_{z \to \infty} \frac w z = \frac {w_0}{Z_R} = \frac \lambda {\pi w_0}=tan(\theta)\) soit
+            pour une faible divergence \(tan(\theta) = \frac \lambda {\pi w_0} \approx \theta\)
+        </li>
+        <li>
+            Les propriétés « gaussiennes » du faisceau laser s'expriment essentiellement à proximité du waist. En effet,
+            lorsque \(z\) tend vers l'infini, le rayon de courbure complexe s'identifie à \(R\) et on retrouve une onde
+            sphérique.
+        </li>
+        <li>
+            La longueur de Rayleigh est la distance (comptée en partant du waist) au bout de laquelle la taille du
+            faisceau a augmenté d'un facteur \(\sqrt 2\) (ou encore que sa surface a doublé). C'est un paramètre
+            important car il
+            défini (un peu arbitrairement) la distance sur laquelle le faisceau laser garde une taille relativement
+            constante (comprise entre \(w_0\) et \(w_0 \sqrt 2\)) - voir figure 11.
+        </li>
+    </ul>
+    <h5 class="subtitle">Ordre de grandeur</h5>
+
+    <h6 class="remarqueT">Remarque :</h6>
+    <div class="remarqueC">
+        <p>Pour un faisceau laser focalisé «assez efficacement » \(-w_0\) = 10 µm, et une longueur d'onde de 1 µm, on
+            trouve
+            alors \(Z_R\) = 314 µm et une divergence (demi-angle) de 1,8 degrés.
+
+        </p>
+        <p>
+            Si on prend un « gros waist » de 1 mm, on trouve alors \(Z_R\) = 3,14 m et une divergence (demi-angle) de
+            0,018
+            degrés. On a alors un faisceau que l'on qualifie généralement de « collimaté ».
+        </p>
+
+    </div>
+    <h6 class="fondamentalT">Fondametal :</h6>
+    <div class="fondamentalC">
+        <p>Plus un faisceau est gros, moins il diverge. En optique gaussienne, « collimater un faisceau » est équivalent
+            à « obtenir un faisceau de grand waist ».
+
+        </p>
+        <p>
+            On observe l'évolution de la longueur de Rayleigh et de la divergence sur la figure 12 pour une longueur
+            d'onde de 1 µm.
+        </p>
+
+        <div class="w3-large">
+            <img src="../Images/fig12.jpg" class="center_img">
+            <p class="w3-opacity center_text">
+                Figure 12 : Evolution de la longueur de Rayleigh et de la divergence sur la figure 12 pour une longueur
+                d'onde de 1 µm.
+            </p>
+        </div>
+    </div>
+    <h5 class="subtitle">Autres relations utiles</h5>
+
+    <p>On peut déduire des relations précédentes d'autres équations utiles, comme par exemple :
+        \[w_0^2 = \frac {w^2}{1+\left(\frac{\pi w^2}{\lambda R}\right)^2}\] et
+        \[z = \frac {R}{1+\left(\frac{\lambda R}{\pi w^2}\right)^2}\]
+        qui permettent de retrouver la taille du waist et sa position en connaissant \(R\) et \(w\).
+    </p>
+
+
+</div>
+
+<footer class="w3-container w3-theme-dark w3-padding-16">
+    <div style="position:relative;bottom:10px;" class="w3-tooltip w3-right w3-theme-dark">
+        <span class="w3-text w3-theme-light w3-padding">Go To Top</span> 
+        <a class="w3-text-white" href="#topofthepop"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+    </div>
+</footer>
+<script>
+    var openInbox = document.getElementById("coursBtn");
+    openInbox.click();
+
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+    }
+
+    // Je sais je peux joindre ces 3 fonctions mais pour le moment c'est pas ma priorité
+    function funcCours(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+            x.previousElementSibling.className += " w3-red";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+            x.previousElementSibling.className =
+                x.previousElementSibling.className.replace(" w3-red", "");
+        }
+    }
+
+    function funcEC(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+            x.previousElementSibling.className += " w3-green";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+            x.previousElementSibling.className =
+                x.previousElementSibling.className.replace(" w3-green", "");
+        }
+    }
+
+    function funcEx(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+            x.previousElementSibling.className += " w3-blue";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+            x.previousElementSibling.className =
+                x.previousElementSibling.className.replace(" w3-blue", "");
+        }
+    }
+</script>
 </body>
 </html>
