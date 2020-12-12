@@ -9,8 +9,11 @@
 <link rel="stylesheet" href="./Style/style.css">
 <link rel="shortcut icon" href="../Media/laser.ico">
 <script src="Scripts/script.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 <body>
-
 <!-- Side Navigation -->
 <nav class="w3-sidebar w3-bar-block w3-collapse w3-white w3-animate-left w3-card" style="z-index:3;width:320px;"
      id="mySidebar">
@@ -158,20 +161,42 @@
 
     <div class="w3-container">
         <br>
-        <!--<h5 class="w3-opacity">Subject: Remember Me</h5>-->
-        <h4>Optique des LASERS et faisceaux gaussiens</h4>
+        <h5 class="w3-opacity">Optique des LASER et faisceaux gaussiens</h5>
+        <h2 class="subtitle">Conclusion</h2>
 
         <hr>
-        <p>Bienvenue sur le cours d'optique des LASERS et faisceaux gaussiens. Ce cours est dispensé au sein de l'École
-            Internationale du Waist, il est mis à disposition des curieux pour leur offrir un aperçu des cours enseignés
-            dans notre établissement.</p>
-        <p>Ce cours est grandement inspiré, pour ne pas dire complétement, d'un cours de l'OPI que vous pouvez retrouver
-            <a href="http://www.optique-ingenieur.org/fr/cours/OPI_fr_M01_C03/co/Grain_OPI_fr_M01_C03.html">ici</a>.
-            Cependant, ce cours original n'étant plus mis à jour, les formules ne sont plus accessibles tandis qu'elles
-            le resteront sur notre site. Notez que chaque cours est disponible au format PDF, pour le télécharger il
-            suffit d'aller sur la page du cours en question et de cliquer sur "Télécharger au format PDF" en bas de la
-            barre de gauche.</p>
-        <p>Bonne lecture, <br>Ema Gresal, professeure d'optique à l'EIW</p>
+        <p>L'étude des cavités est un préalable indispensable à toute construction de laser. Dans ce cours, nous n'avons
+            abordé que les structures passives simples : pour des architectures plus complexes, il existe de nombreux
+            logiciels sur le marché permettant de simuler toutes sortes de cavités laser. Dans certains, il est
+            également possible de prendre en compte les effets que nous avons négligés ou passé sous silence ici :</p>
+        <ul>
+            <li>influence de la taille finie des miroirs : la diffraction joue alors un rôle important si les miroirs
+                sont de dimensions très faibles. Le facteur intéressant dans ce cadre est le nombre de Fresnel
+                \(N=\frac{a_1a_2}{\lambda d}\) où \(a_1\) et
+                \(a_2\) sont les rayons (pas les rayons de courbure !) des miroirs de la cavité. Si \(N \gg 1\), la
+                diffraction est
+                négligeable.
+            </li>
+            <li>Astigmatisme pour les systèmes non-centrés ou comportant des miroirs utilisés hors d'axe (comme les
+                cavités en V par exemple).
+            </li>
+            <li>Effets liés à la cavité active, c'est à dire à la présence du milieu amplificateur pompé qui s'échauffe,
+                se déforme...
+            </li>
+            <li>Effets de la polarisation
+            </li>
+        </ul>
+        <p>Pour compléter ce cours, vous pouvez consulter les références suivantes:
+        </p>
+        <ul>
+            <li>SIEGMAN Anthony, Lasers, University Science Books, USA, 1990, Optical beams and resonators - ISBN-10:
+                0935702113.
+            </li>
+            <li>Kogelnik Herwig, Laser Beams and resonators, Applied Optics, 1966Octobre-, Vol.5, pages 1550 et
+                suivantes,.
+            </li>
+            <li>Timothy Zahn, Heir of the Empire, Bantam Spectra, 1er mai 1991, ISBN 978-0553073270</li>
+        </ul>
     </div>
 
 </div>

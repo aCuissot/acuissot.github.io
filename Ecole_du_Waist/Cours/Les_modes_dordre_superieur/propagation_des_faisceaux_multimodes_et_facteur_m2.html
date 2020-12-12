@@ -103,6 +103,9 @@
                         Propagation des faisceaux multimodes et facteurs M²</a></li>
             </ul>
         </div>
+        <div class="w3-container">
+            <h4><a href="../conclusion.html">Conclusion</a></h4>
+        </div>
     </div>
 
 
@@ -183,69 +186,79 @@
     <i class="fa fa-bars w3-button w3-white w3-hide-large w3-xlarge w3-margin-left w3-margin-top"
        onclick="w3_open()"></i>
 
-    <p class="w3-container">
+    <div class="w3-container">
         <br>
-    <h5 class="w3-opacity">Optique des LASER et faisceaux gaussiens</h5>
-    <h2 class="subtitle">V. Les modes d'ordre superieur</h2>
-    <h4 class="subtitle">4. Propagation des faisceaux multimodes et facteur M²</h4>
-    <hr>
-    <p>
-        L'extension radiale des modes d'ordre supérieur est toujours plus importante que celle du mode fondamental d'un
-        facteur constant \(M\). On définit par conséquent:
-        \[w_{mn}(z)=Mw_{00}z\]
-        où \(w_{mn}\) et \(w_{00}\) représentent les rayons des faisceaux d'ordre supérieur et fondamental,
-        respectivement.
-    </p>
-    <p>
-        En injectant cette équation dans la définition du rayon de courbure complexe on obtient :
-        \[\frac 1{q(z)}=\frac 1{R(z)}-i\frac{M^2\lambda}{\pi w_{mn}^2}\]
-    </p>
-    On retrouve ensuite toutes les formules démontrées précédemment en remplaçant partout \(\lambda\) par
-    \(M^2\lambda\). Pour \(M^2=1\), on retrouve
-    bien sûr les expressions relatives au mode fondamental.
-    </p>
-    <p>
-        Le « facteur \(M^2\) » supérieur à 1 mesure donc la « dégradation » de la qualité du faisceau par rapport au
-        mode
-        fondamental pris comme référence.
-    </p>
-    <h6 class="definitionT">Définition:</h6>
-    <p class="definitionC">
-        Plus précisément, \(M^2\) est le facteur par lequel est multiplié l'angle de divergence du faisceau pour un
-        rayon
-        donné :
-        \[\theta = M^2\frac\lambda{\pi w_0} = M^2\theta_{00}\]
-        où \(\frac \lambda{\pi w_0}\) est la divergence d'un faisceau gaussien de même waist que le faisceau
-        considéré.</p>
-    <p>
-        En pratique, il est rare que l'on ait à faire à des modes d'ordre supérieur (on essaie souvent d'avoir un beau
-        faisceau gaussien \(TEM_{00}\)). Pour un faisceau «monolobe», d'allure gaussienne, on mesure le facteur \(M^2\)
-        pour savoir
-        si on est proche ou pas d'un faisceau \(TEM_{00}\) parfait. En d'autres termes, le facteur \(M^2\) donne une
-        mesure de
-        l'écart à la limite théorique de la diffraction.
-    </p>
-    <p>Le principe de la mesure est simple : il s'agit de mesurer la divergence et le waist \(w_0\) du faisceau
-        considéré, et
-        de comparer la divergence mesurée avec \(\frac \lambda{\pi w_0}\): le rapport des deux donne la valeur de
-        \(M^2\), et on a ainsi un faisceau «
-        \(M^2\) » fois limité par la diffraction.
-    </p>
-    <p>Techniquement, on focalise le faisceau à caractériser avec une lentille, puis on mesure avec une méthode adaptée
-        (caméra, mesure d'énergie passant par un diaphragme...) la taille de \(w\) pour différentes positions le long de
-        l'axe \(z\). On obtient une courbe qui ressemble à celle de la figure 11, que l'on ajuste avec la formule
-        donnant
-        \(w(z)\) incluant \(M^2\) comme paramètre d'ajustement.
-    </p>
-    <p>Les faisceaux sortant des lasers tels que les lasers \(He-Ne\) ou les lasers solides pompés par diode de faible
-        puissance sont généralement limités par la diffraction (\(M^2=1\) ou presque). Les lasers de puissance (par exemples
-        les lasers \(Nd:YAG\) pompés par flash) ont souvent une structure transverse hétérogène et le facteur \(M^2\) grimpe
-        jusqu'à quelques unités. Il se peut également qu'il soit différent suivant le choix des axes \(x\) et \(y\). Enfin pour
-        des faisceaux non-gaussiens, comme ceux sortant des diodes lasers de puissance, on peut avoir des \(M^2\) de
-        plusieurs dizaines d'unités: la signification physique du paramètre \(M^2\) dans ce cas est néanmoins discutable.
-    </p>
+        <h5 class="w3-opacity">Optique des LASER et faisceaux gaussiens</h5>
+        <h2 class="subtitle">V. Les modes d'ordre superieur</h2>
+        <h4 class="subtitle">4. Propagation des faisceaux multimodes et facteur M²</h4>
+        <hr>
+        <p>
+            L'extension radiale des modes d'ordre supérieur est toujours plus importante que celle du mode fondamental
+            d'un
+            facteur constant \(M\). On définit par conséquent:
+            \[w_{mn}(z)=Mw_{00}z\]
+            où \(w_{mn}\) et \(w_{00}\) représentent les rayons des faisceaux d'ordre supérieur et fondamental,
+            respectivement.
+        </p>
+        <p>
+            En injectant cette équation dans la définition du rayon de courbure complexe on obtient :
+            \[\frac 1{q(z)}=\frac 1{R(z)}-i\frac{M^2\lambda}{\pi w_{mn}^2}\]
+        </p>
+        On retrouve ensuite toutes les formules démontrées précédemment en remplaçant partout \(\lambda\) par
+        \(M^2\lambda\). Pour \(M^2=1\), on retrouve
+        bien sûr les expressions relatives au mode fondamental.
+        </p>
+        <p>
+            Le « facteur \(M^2\) » supérieur à 1 mesure donc la « dégradation » de la qualité du faisceau par rapport au
+            mode
+            fondamental pris comme référence.
+        </p>
+        <h6 class="definitionT">Définition:</h6>
+        <p class="definitionC">
+            Plus précisément, \(M^2\) est le facteur par lequel est multiplié l'angle de divergence du faisceau pour un
+            rayon
+            donné :
+            \[\theta = M^2\frac\lambda{\pi w_0} = M^2\theta_{00}\]
+            où \(\frac \lambda{\pi w_0}\) est la divergence d'un faisceau gaussien de même waist que le faisceau
+            considéré.</p>
+        <p>
+            En pratique, il est rare que l'on ait à faire à des modes d'ordre supérieur (on essaie souvent d'avoir un
+            beau
+            faisceau gaussien \(TEM_{00}\)). Pour un faisceau «monolobe», d'allure gaussienne, on mesure le facteur
+            \(M^2\)
+            pour savoir
+            si on est proche ou pas d'un faisceau \(TEM_{00}\) parfait. En d'autres termes, le facteur \(M^2\) donne une
+            mesure de
+            l'écart à la limite théorique de la diffraction.
+        </p>
+        <p>Le principe de la mesure est simple : il s'agit de mesurer la divergence et le waist \(w_0\) du faisceau
+            considéré, et
+            de comparer la divergence mesurée avec \(\frac \lambda{\pi w_0}\): le rapport des deux donne la valeur de
+            \(M^2\), et on a ainsi un faisceau «
+            \(M^2\) » fois limité par la diffraction.
+        </p>
+        <p>Techniquement, on focalise le faisceau à caractériser avec une lentille, puis on mesure avec une méthode
+            adaptée
+            (caméra, mesure d'énergie passant par un diaphragme...) la taille de \(w\) pour différentes positions le
+            long de
+            l'axe \(z\). On obtient une courbe qui ressemble à celle de la figure 11, que l'on ajuste avec la formule
+            donnant
+            \(w(z)\) incluant \(M^2\) comme paramètre d'ajustement.
+        </p>
+        <p>Les faisceaux sortant des lasers tels que les lasers \(He-Ne\) ou les lasers solides pompés par diode de
+            faible
+            puissance sont généralement limités par la diffraction (\(M^2=1\) ou presque). Les lasers de puissance (par
+            exemples
+            les lasers \(Nd:YAG\) pompés par flash) ont souvent une structure transverse hétérogène et le facteur
+            \(M^2\) grimpe
+            jusqu'à quelques unités. Il se peut également qu'il soit différent suivant le choix des axes \(x\) et \(y\).
+            Enfin pour
+            des faisceaux non-gaussiens, comme ceux sortant des diodes lasers de puissance, on peut avoir des \(M^2\) de
+            plusieurs dizaines d'unités: la signification physique du paramètre \(M^2\) dans ce cas est néanmoins
+            discutable.
+        </p>
+    </div>
 </div>
-
 <footer class="w3-container w3-theme-dark w3-padding-16">
     <div style="position:relative;bottom:10px;" class="w3-tooltip w3-right w3-theme-dark">
         <span class="w3-text w3-theme-light w3-padding">Go To Top</span> 

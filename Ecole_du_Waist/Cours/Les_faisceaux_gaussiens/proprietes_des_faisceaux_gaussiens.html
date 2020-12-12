@@ -103,6 +103,9 @@
                         Propagation des faisceaux multimodes et facteurs M²</a></li>
             </ul>
         </div>
+        <div class="w3-container">
+            <h4><a href="../conclusion.html">Conclusion</a></h4>
+        </div>
     </div>
 
 
@@ -183,124 +186,135 @@
     <i class="fa fa-bars w3-button w3-white w3-hide-large w3-xlarge w3-margin-left w3-margin-top"
        onclick="w3_open()"></i>
 
-    <p class="w3-container">
+    <div class="w3-container">
         <br>
-    <h5 class="w3-opacity">Optique des LASER et faisceaux gaussiens</h5>
-    <h2 class="subtitle">III. Les faisceaux gaussiens</h2>
-    <h4 class="subtitle">3. Propriétés des faisceaux gaussiens</h4>
-    <hr>
-    <p>
-        La plupart des relations fondamentales liées aux faisceaux gaussiens ont été mathématiquement obtenues au
-        paragraphe précédent. Nous allons maintenant voir leur signification physique.
-    </p>
+        <h5 class="w3-opacity">Optique des LASER et faisceaux gaussiens</h5>
+        <h2 class="subtitle">III. Les faisceaux gaussiens</h2>
+        <h4 class="subtitle">3. Propriétés des faisceaux gaussiens</h4>
+        <hr>
+        <p>
+            La plupart des relations fondamentales liées aux faisceaux gaussiens ont été mathématiquement obtenues au
+            paragraphe précédent. Nous allons maintenant voir leur signification physique.
+        </p>
 
-    <p>Prenons comme précédemment l'origine au « waist » \(w_0\), qui correspond à l'onde plane gaussienne de rayon de
-        courbure infini. On a défini la longueur de Rayleigh par la relation \(Z_R = \frac {\pi w_0^2}\lambda\).
+        <p>Prenons comme précédemment l'origine au « waist » \(w_0\), qui correspond à l'onde plane gaussienne de rayon
+            de
+            courbure infini. On a défini la longueur de Rayleigh par la relation \(Z_R = \frac {\pi w_0^2}\lambda\).
 
-    </p>
-    <p>On a également obtenu la loi d'évolution de \(w\) en fonction de \(z\) :
-        \[w(z) = w_0 \sqrt{1+\left(\frac z {Z_R}\right)^2}\]
-        \(w(z)\) est une hyperbole (on peut réécrire la relation précédente \(\frac {w^2}{w_0^2}-\frac{z^2}{Z_R^2} =
-        1\)).
+        </p>
+        <p>On a également obtenu la loi d'évolution de \(w\) en fonction de \(z\) :
+            \[w(z) = w_0 \sqrt{1+\left(\frac z {Z_R}\right)^2}\]
+            \(w(z)\) est une hyperbole (on peut réécrire la relation précédente \(\frac {w^2}{w_0^2}-\frac{z^2}{Z_R^2} =
+            1\)).
 
-    </p>
-    <h5 class="subtitle">Les principaux paramètres utiles</h5>
+        </p>
+        <h5 class="subtitle">Les principaux paramètres utiles</h5>
 
-    <p>
-        Rappelons les principaux paramètres utiles et leur définitions :
+        <p>
+            Rappelons les principaux paramètres utiles et leur définitions :
 
 
-    </p>
+        </p>
 
-    <ul>
-        <li>\(w(z)\) est la dimension (le rayon) de la tache laser dans un plan perpendiculaire à la propagation à une
-            distance \(z\) de l'origine. Plus précisément, c'est le rayon à \(\frac 1 e\) du profil gaussien d'amplitude
-            transverse
-            dans le plan d'abscisse \(z\) (à \(\frac 1 {e^2}\) si on considère le profil d'intensité : dans la formule
-            ci-dessous,
-            \(I=\frac {I_0}{e^2}\) pour \(r = w\)). \[I(r, z) = I_0(z)e^{\frac{-2r^2}{w^2(z)}}\]
-        </li>
-        <li>Le faisceau « s'étale » transversalement au cours de la propagation, tandis que son amplitude sur l'axe
-            diminue (conservation de l'énergie). Le profil reste toujours gaussien.
-        </li>
-        <li>La taille du faisceau à l'origine, \(w_0\), est la taille minimale du faisceau qui diverge à partir de ce
-            point
-            (voir figure 11). On appelle « <span class="important">waist</span> », ou encore « col » ou « taille »,
-            cette dimension minimale (NB : le
-            waist désigne bien le <span class="emphase">rayon</span> minimal du faisceau. Le diamètre est évidemment
-            donné par \(2 w_0\))
-        </li>
-        <li>Au waist, on a vu que le front d'onde était localement plan (de rayon de courbure infini).
+        <ul>
+            <li>\(w(z)\) est la dimension (le rayon) de la tache laser dans un plan perpendiculaire à la propagation à
+                une
+                distance \(z\) de l'origine. Plus précisément, c'est le rayon à \(\frac 1 e\) du profil gaussien
+                d'amplitude
+                transverse
+                dans le plan d'abscisse \(z\) (à \(\frac 1 {e^2}\) si on considère le profil d'intensité : dans la
+                formule
+                ci-dessous,
+                \(I=\frac {I_0}{e^2}\) pour \(r = w\)). \[I(r, z) = I_0(z)e^{\frac{-2r^2}{w^2(z)}}\]
+            </li>
+            <li>Le faisceau « s'étale » transversalement au cours de la propagation, tandis que son amplitude sur l'axe
+                diminue (conservation de l'énergie). Le profil reste toujours gaussien.
+            </li>
+            <li>La taille du faisceau à l'origine, \(w_0\), est la taille minimale du faisceau qui diverge à partir de
+                ce
+                point
+                (voir figure 11). On appelle « <span class="important">waist</span> », ou encore « col » ou « taille »,
+                cette dimension minimale (NB : le
+                waist désigne bien le <span class="emphase">rayon</span> minimal du faisceau. Le diamètre est évidemment
+                donné par \(2 w_0\))
+            </li>
+            <li>Au waist, on a vu que le front d'onde était localement plan (de rayon de courbure infini).
 
-        </li>
-        <div class="w3-large">
-            <img src="../Images/fig11.jpg" class="center_img">
-            <p class="w3-opacity center_text">
-                Figure 11 : Propriétés d'un faisceau gaussien
+            </li>
+            <div class="w3-large">
+                <img src="../Images/fig11.jpg" class="center_img">
+                <p class="w3-opacity center_text">
+                    Figure 11 : Propriétés d'un faisceau gaussien
+                </p>
+            </div>
+            <li>
+                La divergence du faisceau est mesurée par la limite pour \(z\) tendant vers l'infini de \(\frac w z\) :
+                \(\lim_{z \to \infty} \frac w z = \frac {w_0}{Z_R} = \frac \lambda {\pi w_0}=tan(\theta)\) soit
+                pour une faible divergence \(tan(\theta) = \frac \lambda {\pi w_0} \approx \theta\)
+            </li>
+            <li>
+                Les propriétés « gaussiennes » du faisceau laser s'expriment essentiellement à proximité du waist. En
+                effet,
+                lorsque \(z\) tend vers l'infini, le rayon de courbure complexe s'identifie à \(R\) et on retrouve une
+                onde
+                sphérique.
+            </li>
+            <li>
+                La longueur de Rayleigh est la distance (comptée en partant du waist) au bout de laquelle la taille du
+                faisceau a augmenté d'un facteur \(\sqrt 2\) (ou encore que sa surface a doublé). C'est un paramètre
+                important car il
+                défini (un peu arbitrairement) la distance sur laquelle le faisceau laser garde une taille relativement
+                constante (comprise entre \(w_0\) et \(w_0 \sqrt 2\)) - voir figure 11.
+            </li>
+        </ul>
+        <h5 class="subtitle">Ordre de grandeur</h5>
+
+        <h6 class="remarqueT">Remarque :</h6>
+        <div class="remarqueC">
+            <p>Pour un faisceau laser focalisé «assez efficacement » \(-w_0\) = 10 µm, et une longueur d'onde de 1 µm,
+                on
+                trouve
+                alors \(Z_R\) = 314 µm et une divergence (demi-angle) de 1,8 degrés.
+
             </p>
+            <p>
+                Si on prend un « gros waist » de 1 mm, on trouve alors \(Z_R\) = 3,14 m et une divergence (demi-angle)
+                de
+                0,018
+                degrés. On a alors un faisceau que l'on qualifie généralement de « collimaté ».
+            </p>
+
         </div>
-        <li>
-            La divergence du faisceau est mesurée par la limite pour \(z\) tendant vers l'infini de \(\frac w z\) :
-            \(\lim_{z \to \infty} \frac w z = \frac {w_0}{Z_R} = \frac \lambda {\pi w_0}=tan(\theta)\) soit
-            pour une faible divergence \(tan(\theta) = \frac \lambda {\pi w_0} \approx \theta\)
-        </li>
-        <li>
-            Les propriétés « gaussiennes » du faisceau laser s'expriment essentiellement à proximité du waist. En effet,
-            lorsque \(z\) tend vers l'infini, le rayon de courbure complexe s'identifie à \(R\) et on retrouve une onde
-            sphérique.
-        </li>
-        <li>
-            La longueur de Rayleigh est la distance (comptée en partant du waist) au bout de laquelle la taille du
-            faisceau a augmenté d'un facteur \(\sqrt 2\) (ou encore que sa surface a doublé). C'est un paramètre
-            important car il
-            défini (un peu arbitrairement) la distance sur laquelle le faisceau laser garde une taille relativement
-            constante (comprise entre \(w_0\) et \(w_0 \sqrt 2\)) - voir figure 11.
-        </li>
-    </ul>
-    <h5 class="subtitle">Ordre de grandeur</h5>
+        <h6 class="fondamentalT">Fondametal :</h6>
+        <div class="fondamentalC">
+            <p>Plus un faisceau est gros, moins il diverge. En optique gaussienne, « collimater un faisceau » est
+                équivalent
+                à « obtenir un faisceau de grand waist ».
 
-    <h6 class="remarqueT">Remarque :</h6>
-    <div class="remarqueC">
-        <p>Pour un faisceau laser focalisé «assez efficacement » \(-w_0\) = 10 µm, et une longueur d'onde de 1 µm, on
-            trouve
-            alors \(Z_R\) = 314 µm et une divergence (demi-angle) de 1,8 degrés.
-
-        </p>
-        <p>
-            Si on prend un « gros waist » de 1 mm, on trouve alors \(Z_R\) = 3,14 m et une divergence (demi-angle) de
-            0,018
-            degrés. On a alors un faisceau que l'on qualifie généralement de « collimaté ».
-        </p>
-
-    </div>
-    <h6 class="fondamentalT">Fondametal :</h6>
-    <div class="fondamentalC">
-        <p>Plus un faisceau est gros, moins il diverge. En optique gaussienne, « collimater un faisceau » est équivalent
-            à « obtenir un faisceau de grand waist ».
-
-        </p>
-        <p>
-            On observe l'évolution de la longueur de Rayleigh et de la divergence sur la figure 12 pour une longueur
-            d'onde de 1 µm.
-        </p>
-
-        <div class="w3-large">
-            <img src="../Images/fig12.jpg" class="center_img">
-            <p class="w3-opacity center_text">
-                Figure 12 : Evolution de la longueur de Rayleigh et de la divergence sur la figure 12 pour une longueur
+            </p>
+            <p>
+                On observe l'évolution de la longueur de Rayleigh et de la divergence sur la figure 12 pour une longueur
                 d'onde de 1 µm.
             </p>
+
+            <div class="w3-large">
+                <img src="../Images/fig12.jpg" class="center_img">
+                <p class="w3-opacity center_text">
+                    Figure 12 : Evolution de la longueur de Rayleigh et de la divergence sur la figure 12 pour une
+                    longueur
+                    d'onde de 1 µm.
+                </p>
+            </div>
         </div>
+        <h5 class="subtitle">Autres relations utiles</h5>
+
+        <p>On peut déduire des relations précédentes d'autres équations utiles, comme par exemple :
+            \[w_0^2 = \frac {w^2}{1+\left(\frac{\pi w^2}{\lambda R}\right)^2}\] et
+            \[z = \frac {R}{1+\left(\frac{\lambda R}{\pi w^2}\right)^2}\]
+            qui permettent de retrouver la taille du waist et sa position en connaissant \(R\) et \(w\).
+        </p>
+
     </div>
-    <h5 class="subtitle">Autres relations utiles</h5>
-
-    <p>On peut déduire des relations précédentes d'autres équations utiles, comme par exemple :
-        \[w_0^2 = \frac {w^2}{1+\left(\frac{\pi w^2}{\lambda R}\right)^2}\] et
-        \[z = \frac {R}{1+\left(\frac{\lambda R}{\pi w^2}\right)^2}\]
-        qui permettent de retrouver la taille du waist et sa position en connaissant \(R\) et \(w\).
-    </p>
-
-
 </div>
 
 <footer class="w3-container w3-theme-dark w3-padding-16">

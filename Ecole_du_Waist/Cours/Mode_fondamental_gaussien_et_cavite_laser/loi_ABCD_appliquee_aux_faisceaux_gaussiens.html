@@ -103,6 +103,9 @@
                         Propagation des faisceaux multimodes et facteurs M²</a></li>
             </ul>
         </div>
+        <div class="w3-container">
+            <h4><a href="../conclusion.html">Conclusion</a></h4>
+        </div>
     </div>
 
 
@@ -183,85 +186,92 @@
     <i class="fa fa-bars w3-button w3-white w3-hide-large w3-xlarge w3-margin-left w3-margin-top"
        onclick="w3_open()"></i>
 
-    <p class="w3-container">
+    <div class="w3-container">
         <br>
-    <h5 class="w3-opacity">Optique des LASER et faisceaux gaussiens</h5>
-    <h2 class="subtitle">IV. Mode fondamental Gaussien et cavité laser</h2>
-    <h4 class="subtitle">1. Loi ABCD appliquée aux faisceaux gaussiens</h4>
-    <hr>
-    <p>
-        Un mode de cavité stable est caractérisé par le fait que le faisceau garde la même structure transverse et la
-        même phase (modulo \(2 \pi\)) après un aller-retour dans la cavité (ou après un tour pour une cavité en anneau).
-    </p>
+        <h5 class="w3-opacity">Optique des LASER et faisceaux gaussiens</h5>
+        <h2 class="subtitle">IV. Mode fondamental Gaussien et cavité laser</h2>
+        <h4 class="subtitle">1. Loi ABCD appliquée aux faisceaux gaussiens</h4>
+        <hr>
+        <p>
+            Un mode de cavité stable est caractérisé par le fait que le faisceau garde la même structure transverse et
+            la
+            même phase (modulo \(2 \pi\)) après un aller-retour dans la cavité (ou après un tour pour une cavité en
+            anneau).
+        </p>
 
-    <p>Plus précisément, le rayon de courbure complexe \(q(M)\) doit être conservé quelque soit le point \(M\)
-        considéré.
-        Autrement dit, si \(T(M)= \begin{pmatrix}
-        A & B \\
-        C & D \\
-        \end{pmatrix}\) est la matrice de transfert à partir du point \(M\) (attention, \(T(M)\) est
-        différente en fonction du
-        point \(M\) choisi), on doit avoir par application de la loi ABCD (voir paragraphe sur "les matrices de
-        transfert et
-        loi ABCD") et quelque soit \(M\) :
-        \[q(M) = \frac {Aq(M)+B}{Cq(M) + D}\]
+        <p>Plus précisément, le rayon de courbure complexe \(q(M)\) doit être conservé quelque soit le point \(M\)
+            considéré.
+            Autrement dit, si \(T(M)= \begin{pmatrix}
+            A & B \\
+            C & D \\
+            \end{pmatrix}\) est la matrice de transfert à partir du point \(M\) (attention, \(T(M)\) est
+            différente en fonction du
+            point \(M\) choisi), on doit avoir par application de la loi ABCD (voir paragraphe sur "les matrices de
+            transfert et
+            loi ABCD") et quelque soit \(M\) :
+            \[q(M) = \frac {Aq(M)+B}{Cq(M) + D}\]
 
-    </p>
-    <p><span class="important">C'est une condition complètement générale</span> qui s'applique à toute cavité résonante.
-        En identifiant les parties
-        réelles et imaginaires de cette relation, on obtient deux équations qui définissent respectivement la géométrie
-        du système (en particulier la position des waists) et les fréquences de résonance de la cavité.
-    </p>
-    <p>
-        La condition de stabilité découle également de la loi ABCD ci-dessus. On peut en effet la réécrire :
-        \[Cq^2+(D-A)q-B = 0\]
+        </p>
+        <p><span class="important">C'est une condition complètement générale</span> qui s'applique à toute cavité
+            résonante.
+            En identifiant les parties
+            réelles et imaginaires de cette relation, on obtient deux équations qui définissent respectivement la
+            géométrie
+            du système (en particulier la position des waists) et les fréquences de résonance de la cavité.
+        </p>
+        <p>
+            La condition de stabilité découle également de la loi ABCD ci-dessus. On peut en effet la réécrire :
+            \[Cq^2+(D-A)q-B = 0\]
 
-        ou encore
-        \[B \left(\frac 1 q \right)^2 + (A-D) \frac 1 q -C=0\]
+            ou encore
+            \[B \left(\frac 1 q \right)^2 + (A-D) \frac 1 q -C=0\]
 
-        soit
-        \[\frac 1q=\frac1{2B}\left(D-A\pm\sqrt{(D-A)^2+4BC}\right)\]
+            soit
+            \[\frac 1q=\frac1{2B}\left(D-A\pm\sqrt{(D-A)^2+4BC}\right)\]
 
-        qui vaut aussi
-        \[\frac 1R-i\frac\lambda{\pi w^2}\]</p>
+            qui vaut aussi
+            \[\frac 1R-i\frac\lambda{\pi w^2}\]</p>
 
-    <p>
-        Pour que le faisceau existe, il faut que \(w\) soit fini, ou encore que \((D-A)^2+4BC\) soit strictement négatif
-        (afin
-        que la partie imaginaire de \(\frac 1q\) soit non nulle).
+        <p>
+            Pour que le faisceau existe, il faut que \(w\) soit fini, ou encore que \((D-A)^2+4BC\) soit strictement
+            négatif
+            (afin
+            que la partie imaginaire de \(\frac 1q\) soit non nulle).
 
-    </p>
-    <p>Comme la matrice \(T\) est unitaire, on a \(AD-BC = 1\) et la condition se réécrit donc:
+        </p>
+        <p>Comme la matrice \(T\) est unitaire, on a \(AD-BC = 1\) et la condition se réécrit donc:
 
-        \((D+A)^2\lt 4\) ou encore \(-1\lt \frac{A+D}2\lt 1\) soit \(0\lt \frac{A+D+2}4\lt 1\)
+            \((D+A)^2\lt 4\) ou encore \(-1\lt \frac{A+D}2\lt 1\) soit \(0\lt \frac{A+D+2}4\lt 1\)
 
-    </p>
-    <p>On retrouve la <span class="important">condition de stabilité</span> démontrée précédemment dans le cadre de
-        l'optique géométrique, mais ici on
-        remarque que l'inégalité est stricte : on exclut donc les cas limites où \(\lvert A+D\rvert =2\) qui
-        représentent des cavités instables
-        pour les faisceaux gaussiens.
+        </p>
+        <p>On retrouve la <span class="important">condition de stabilité</span> démontrée précédemment dans le cadre de
+            l'optique géométrique, mais ici on
+            remarque que l'inégalité est stricte : on exclut donc les cas limites où \(\lvert A+D\rvert =2\) qui
+            représentent des cavités instables
+            pour les faisceaux gaussiens.
 
-    </p>
-    <p>
-        La loi ABCD donne également les caractéristiques du faisceau gaussien au point \(M\):
-        \[R = \frac{2B}{D-A}\]
+        </p>
+        <p>
+            La loi ABCD donne également les caractéristiques du faisceau gaussien au point \(M\):
+            \[R = \frac{2B}{D-A}\]
 
-        et
+            et
 
-        \[w^2 = \frac \lambda \pi \lvert B\rvert \sqrt{1-\left( \frac{A+D}2\right)^2}\]
+            \[w^2 = \frac \lambda \pi \lvert B\rvert \sqrt{1-\left( \frac{A+D}2\right)^2}\]
 
-    </p>
+        </p>
 
-    <p>
-        On choisit souvent \(M\) à un waist du faisceau, c'est à dire à un endroit où le rayon de courbure \(R\) est infini. On
-        constate alors que \(A=D\) dans la matrice \(T(M)\). Inversement, si \(A=D\) alors le point \(M\) est à un waist de la cavité.
+        <p>
+            On choisit souvent \(M\) à un waist du faisceau, c'est à dire à un endroit où le rayon de courbure \(R\) est
+            infini. On
+            constate alors que \(A=D\) dans la matrice \(T(M)\). Inversement, si \(A=D\) alors le point \(M\) est à un
+            waist de la cavité.
 
 
-    </p>
+        </p>
 
+    </div>
 </div>
-
 <footer class="w3-container w3-theme-dark w3-padding-16">
     <div style="position:relative;bottom:10px;" class="w3-tooltip w3-right w3-theme-dark">
         <span class="w3-text w3-theme-light w3-padding">Go To Top</span> 

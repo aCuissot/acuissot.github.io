@@ -103,6 +103,9 @@
                         Propagation des faisceaux multimodes et facteurs M²</a></li>
             </ul>
         </div>
+        <div class="w3-container">
+            <h4><a href="../conclusion.html">Conclusion</a></h4>
+        </div>
     </div>
 
 
@@ -183,65 +186,74 @@
     <i class="fa fa-bars w3-button w3-white w3-hide-large w3-xlarge w3-margin-left w3-margin-top"
        onclick="w3_open()"></i>
 
-    <p class="w3-container">
+    <div class="w3-container">
         <br>
-    <h5 class="w3-opacity">Optique des LASER et faisceaux gaussiens</h5>
-    <h2 class="subtitle">III. Les faisceaux gaussiens</h2>
-    <h4 class="subtitle">1. Équation d'onde paraxiale et onde sphérique</h4>
-    <hr>
-    <p>
-        Une onde électromagnétique se propageant dans un milieu homogène est soumise aux équations de Maxwell. On déduit
-        classiquement de ces équations que l'onde se propageant en milieu isotrope doit vérifier l'équation de
-        propagation suivante \[\Delta \overrightarrow E-\frac 1{c^2}\frac{\partial ^2 \overrightarrow E}{\partial t^2}=0
-        \]
-    </p>
+        <h5 class="w3-opacity">Optique des LASER et faisceaux gaussiens</h5>
+        <h2 class="subtitle">III. Les faisceaux gaussiens</h2>
+        <h4 class="subtitle">1. Équation d'onde paraxiale et onde sphérique</h4>
+        <hr>
+        <p>
+            Une onde électromagnétique se propageant dans un milieu homogène est soumise aux équations de Maxwell. On
+            déduit
+            classiquement de ces équations que l'onde se propageant en milieu isotrope doit vérifier l'équation de
+            propagation suivante \[\Delta \overrightarrow E-\frac 1{c^2}\frac{\partial ^2 \overrightarrow E}{\partial
+            t^2}=0
+            \]
+        </p>
 
-    <p>Si on considère la propagation d'un rayonnement électromagnétique monochromatique de fréquence \(\nu = \frac
-        \omega {2\pi}\), on peut réécrire
-        ces équations sous une forme différente et montrer que l'onde doit vérifier <span class="important">l'équation de Helmholtz</span>:\[\Delta
-        E(x, y, z) + k^2E(x, y, z) = 0\] où \(k=\frac \omega c\) est le vecteur d'onde.</p>
-    <p>Cette équation admet en particulier pour solution bien connue l'onde sphérique divergente dont la forme peut
-        s'écrire : \[E(x, y, z) = \frac {E_0} r e^{-ikr}\] au point d'observation situé à une distance \(r\) du point
-        source
-        placé à l'origine du repère \((x,y,z)\).
-    </p>
-    <p>
-        Dans le cadre de l'approximation paraxiale, on considère que le champ s'est propagé suivant une direction
-        privilégiée, celle de l'axe \(z\), et l'observation s'effectue donc sur un point peu éloigné de cet axe. Dans ce
-        cas
-        on peut effectuer un développement limité sur la distance entre le point source et le point d'observation :
-        \[r=\sqrt{x^2+y^2+z^2}\approx z + \frac {x^2 + y^2}{2z}\]
-    </p>
+        <p>Si on considère la propagation d'un rayonnement électromagnétique monochromatique de fréquence \(\nu = \frac
+            \omega {2\pi}\), on peut réécrire
+            ces équations sous une forme différente et montrer que l'onde doit vérifier <span class="important">l'équation de Helmholtz</span>:\[\Delta
+            E(x, y, z) + k^2E(x, y, z) = 0\] où \(k=\frac \omega c\) est le vecteur d'onde.</p>
+        <p>Cette équation admet en particulier pour solution bien connue l'onde sphérique divergente dont la forme peut
+            s'écrire : \[E(x, y, z) = \frac {E_0} r e^{-ikr}\] au point d'observation situé à une distance \(r\) du
+            point
+            source
+            placé à l'origine du repère \((x,y,z)\).
+        </p>
+        <p>
+            Dans le cadre de l'approximation paraxiale, on considère que le champ s'est propagé suivant une direction
+            privilégiée, celle de l'axe \(z\), et l'observation s'effectue donc sur un point peu éloigné de cet axe.
+            Dans ce
+            cas
+            on peut effectuer un développement limité sur la distance entre le point source et le point d'observation :
+            \[r=\sqrt{x^2+y^2+z^2}\approx z + \frac {x^2 + y^2}{2z}\]
+        </p>
 
-    <p>
-        Le champ électrique au point d'observation devient alors :
-        \[E_{paraxial}(x, y, z) = \frac {E_0} z e^{-ikz}e^{-ik \frac {x^2 + y^2}{2z}}\]
+        <p>
+            Le champ électrique au point d'observation devient alors :
+            \[E_{paraxial}(x, y, z) = \frac {E_0} z e^{-ikz}e^{-ik \frac {x^2 + y^2}{2z}}\]
 
-    </p>
-    <p>Il s'agit du champ d'une "onde sphérique paraxiale", qui n'est qu'une solution approchée de l'équation de
-        Helmholtz où l'on reconnaît le facteur de propagation en \(e^{-ikz}\) et le facteur de variation transverse
-        d'amplitude : \[\frac 1 z e^{-ik \frac {x^2 + y^2}{2z}}\]
-    </p>
+        </p>
+        <p>Il s'agit du champ d'une "onde sphérique paraxiale", qui n'est qu'une solution approchée de l'équation de
+            Helmholtz où l'on reconnaît le facteur de propagation en \(e^{-ikz}\) et le facteur de variation transverse
+            d'amplitude : \[\frac 1 z e^{-ik \frac {x^2 + y^2}{2z}}\]
+        </p>
 
-    <p>D'un point de vue strictement mathématique, l'onde sphérique est solution de l'équation de propagation et du
-        point de vue physique, l'onde sphérique paraxiale est une solution approchée convenable pour décrire la
-        propagation des ondes dans un espace libre. Néanmoins, dans le cas qui nous occupe, à savoir les lasers, cette
-        onde est une solution peu avantageuse car l'énergie se répandant dans tout l'espace, on doit diaphragmer le
-        faisceau pour en isoler une portion proche de l'axe. On a donc des pertes importantes ce qui est incompatible
-        avec l'émission laser.</p>
-    <p>
-        En effet, la structure du champ électromagnétique à l'intérieur d'une cavité laser doit vérifier les conditions
-        suivantes :
-    </p>
-    <ul>
-        <li>Satisfaire aux équations de Maxwell</li>
-        <li>Le champ doit décroître lorsque l'on s'éloigne de l'axe de la cavité en raison de la taille finie des miroirs et du milieu à gain.</li>
-        <li>Le front d'onde doit être adapté au rayon de courbure des miroirs (ce qui exclu les ondes planes)</li>
-    </ul>
-    <p>Nous allons maintenant décrire les solutions adaptées aux résonateurs lasers.
-    </p>
+        <p>D'un point de vue strictement mathématique, l'onde sphérique est solution de l'équation de propagation et du
+            point de vue physique, l'onde sphérique paraxiale est une solution approchée convenable pour décrire la
+            propagation des ondes dans un espace libre. Néanmoins, dans le cas qui nous occupe, à savoir les lasers,
+            cette
+            onde est une solution peu avantageuse car l'énergie se répandant dans tout l'espace, on doit diaphragmer le
+            faisceau pour en isoler une portion proche de l'axe. On a donc des pertes importantes ce qui est
+            incompatible
+            avec l'émission laser.</p>
+        <p>
+            En effet, la structure du champ électromagnétique à l'intérieur d'une cavité laser doit vérifier les
+            conditions
+            suivantes :
+        </p>
+        <ul>
+            <li>Satisfaire aux équations de Maxwell</li>
+            <li>Le champ doit décroître lorsque l'on s'éloigne de l'axe de la cavité en raison de la taille finie des
+                miroirs et du milieu à gain.
+            </li>
+            <li>Le front d'onde doit être adapté au rayon de courbure des miroirs (ce qui exclu les ondes planes)</li>
+        </ul>
+        <p>Nous allons maintenant décrire les solutions adaptées aux résonateurs lasers.
+        </p>
+    </div>
 </div>
-
 <footer class="w3-container w3-theme-dark w3-padding-16">
     <div style="position:relative;bottom:10px;" class="w3-tooltip w3-right w3-theme-dark">
         <span class="w3-text w3-theme-light w3-padding">Go To Top</span> 
