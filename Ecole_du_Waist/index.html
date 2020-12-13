@@ -10,19 +10,19 @@
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
     <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-        <a href="#home" class="w3-bar-item w3-button"><b>BR</b> Architects</a>
         <!-- Float links to the right. Hide them on small screens -->
         <div class="w3-right w3-hide-small">
-            <a href="#projects" class="w3-bar-item w3-button">Quelques cours</a>
-            <a href="#about" class="w3-bar-item w3-button">A propos</a>
-            <a href="#contact" class="w3-bar-item w3-button">Projets</a>
+            <a href="./Cours/index.html" class="w3-bar-item w3-button">Quelques cours</a>
+            <a href="./avis.html" class="w3-bar-item w3-button">Quelques avis</a>
+            <a href="#projects" class="w3-bar-item w3-button">Projets</a>
+            <a href="#contact" class="w3-bar-item w3-button">Nous contacter</a>
         </div>
     </div>
 </div>
 
 <!-- Header -->
 <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
-    <img class="w3-image" src="Media/EIW.png" alt="La belle ecole" width="1500" height="800">
+    <img class="w3-image" src="Media/EIW.jpg" alt="La belle ecole" width="1500" height="800">
     <div class="w3-display-middle w3-margin-top w3-center">
         <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>EIW</b></span> <span
                 class="w3-hide-small w3-text-light-grey">Ecole Internationale du Waist</span></h1>
@@ -96,7 +96,11 @@
         <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
         <p>L'École Internationale du Waist est une école superieure qui enseigne la physique, principalement l'optique,
             et est la seule au monde à s'être spécialisée dans les LASERS. Elle est situé non pas à l'Waist mais dans
-            l'Est de la France, au coeur du massif Alpin.</p>
+            l'Est de la France, au coeur du massif Alpin et beneficient d'un campus très vivant et d'une proximité avec
+            des entreprises innovantes</p>
+        <p>Ici on propose des formations sur-mesure, qui collent avec les envies professionnel et les compétences
+            individuelles des étudiants afin de vous faire vivre une experience scolaire hors du commun et vous garantir
+            un avenir car 100% de nos étudiant sont embauchés dans l'année suivant leur dimplôme.</p>
     </div>
 
     <div class="w3-row-padding">
@@ -110,7 +114,7 @@
             </p>
         </div>
         <div class="w3-col l3 m6 w3-margin-bottom">
-            <img  class="w3-grayscale imgGray" src="Media/Personnes/Directeur.jpg" alt="Jane" style="width:100%">
+            <img class="w3-grayscale imgGray" src="Media/Personnes/Directeur.jpg" alt="Jane" style="width:100%">
             <h3>Jane Doe</h3>
             <p class="w3-opacity">Directeur</p>
             <p>Fondateur et directeur de l'EIW.</p>
@@ -119,7 +123,7 @@
             </p>
         </div>
         <div class="w3-col l3 m6 w3-margin-bottom">
-            <img  class="w3-grayscale imgGray" src="Media/Personnes/Dir_adj.jpg" alt="Mike" style="width:100%">
+            <img class="w3-grayscale imgGray" src="Media/Personnes/Dir_adj.jpg" alt="Mike" style="width:100%">
             <h3>Mike Ross</h3>
             <p class="w3-opacity">Directrice adjointe</p>
             <p>Ancienne chercheuse de l'équipe d'Arthur Ashkin, prix Nobel de physique 2018</p>
@@ -128,7 +132,7 @@
             </p>
         </div>
         <div class="w3-col l3 m6 w3-margin-bottom">
-            <img  class="w3-grayscale imgGray" src="Media/Personnes/ProfMath.jpg" alt="Dan" style="width:100%">
+            <img class="w3-grayscale imgGray" src="Media/Personnes/ProfMath.jpg" alt="Dan" style="width:100%">
             <h3>Dan Star</h3>
             <p class="w3-opacity">Professeur de mathématiques</p>
             <p></p>
@@ -141,7 +145,9 @@
     <!-- Contact Section -->
     <div class="w3-container w3-padding-32" id="contact">
         <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
-        <p>Lets get in touch and talk about your next project.</p>
+        <p>Que ce soit pour des renseignement, postuler en tant qu'enseignant ou enseignant chercheur à l'école, ou
+            encore si vous être un loboratoire ou une entreprise ou tout autr établissement et que vous voulez
+            collaborer avec nous, n'hésitez pas à nous contacter via ce formulaire.</p>
         <form action="/action_page.php" target="_blank">
             <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
             <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
@@ -155,7 +161,7 @@
 
     <!-- Image of location/map -->
     <div class="w3-container">
-        <img src="/w3images/map.jpg" class="w3-image" style="width:100%">
+        <img src="Media/campus.jpg" class="w3-image" style="width:100%">
     </div>
 
     <!-- End page content -->
@@ -178,12 +184,12 @@
     //         console.log(grayImgs[i])
     //         grayImgs[i].classList.toogle("w3-grayscake");
     //     });
-        // grayImgs[i].addEventListener('mouseout', e => {
-        //     grayImgs[i].style.filter = "grayscale(75%)";
-        // });
-        // grayImg.onmouseover = function(){this.removeClass("w3-grayscale")};
-        // grayImg.onmouseout = function(){console.log("jaaj")};
-    }
+    // grayImgs[i].addEventListener('mouseout', e => {
+    //     grayImgs[i].style.filter = "grayscale(75%)";
+    // });
+    // grayImg.onmouseover = function(){this.removeClass("w3-grayscale")};
+    // grayImg.onmouseout = function(){console.log("jaaj")};
+    // }
 </script>
 </body>
 </html>
