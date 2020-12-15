@@ -70,6 +70,18 @@ p li ul {
     padding: 4px;
 }
 
+.complementT {
+    font-style: italic;
+    font-weight: bold;
+    color: darkblue;
+}
+
+.complementC {
+    background-color: #68b7ff;
+    border: 2px solid darkblue;
+    padding: 4px;
+}
+
 .important {
     font-weight: bold;
     color: orangered;
@@ -118,4 +130,20 @@ body {
     padding-right: 2.5rem;
 }
 
+.questionT {
+    font-weight: bold;
+    text-decoration: underline;
+    font-style: italic;
+}
 
+.reponseC {
+    background-color: rgba(255, 187, 36, 0.27);
+    border: 2px solid #ffcc00;
+    padding: 4px;
+}
+
+.reponseT {
+    font-style: italic;
+    font-weight: bold;
+    color: #ffbc00;
+}
