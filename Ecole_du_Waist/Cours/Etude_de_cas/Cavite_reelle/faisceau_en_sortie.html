@@ -1,10 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
+<title>Optique des LASERS et faisceaux gaussiens</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href='https://fonts.googleapis.com/css?family=RobotoDraft' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../../Style/style.css">
+<link rel="shortcut icon" href="../../../Media/laser.ico">
+<script src="../../Scripts/script.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 <body>
 
+<!-- Side Navigation -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-white w3-animate-left w3-card" style="z-index:3;width:320px;"
+     id="mySidebar">
+    <a href="../../../index.html" class="w3-bar-item w3-button w3-border-bottom w3-large"
+       style="background-color: #48cd2b"><img
+            src="../../../Media/logo.png" title="Accueil"
+            style="width:30%; display: block; margin-left: auto; margin-right: auto"></a>
+    <h3 class="w3-bar-item w3-button">Optique des LASERS et faisceaux gaussiens</h3>
+    <a id="coursBtn" onclick="funcCours('planCours')" href="javascript:void(0)" class="w3-bar-item w3-button"><i
+            class="fa fa-book w3-margin-right"></i>Cours<i class="fa fa-caret-down w3-margin-left"></i></a>
+    <div id="planCours" class="w3-hide w3-animate-left">
+        <div class="w3-container">
+            <h4>1. Les résonateurs ouverts</h4>
+            <ul>
+                <li><a href="../../Les_resonateurs_ouverts/introduction.html">1.1 Introduction</a></li>
+                <li>
+                    <a href="../../Les_resonateurs_ouverts/interet_et_description_des_resonateurs_ouverts.html">1.2
+                        Interêt
+                        et description des résonateurs ouverts</a></li>
+                <li><a href="../../Les_resonateurs_ouverts/modes_spectraux_et_longitudinaux.html">1.3
+                    Modes spectraux et
+                    modes longitudinaux</a></li>
+            </ul>
+        </div>
+        <div class="w3-container">
+            <h4>2. Stabilité des cavités LASERS</h4>
+            <ul>
+                <li><a href="../../Stabilite_des_cavites_lasers/introduction.html">2.1 Introduction</a>
+                </li>
+                <li>
+                    <a href="../../Stabilite_des_cavites_lasers/structure_periodique_des_cavites_lasers.html">2.2
+                        Structure
+                        périodique des cavités Lasers</a></li>
+                <li><a href="../../Stabilite_des_cavites_lasers/matrices_de_transfert_et_loi_ABCD.html">2.3
+                    Matrices de
+                    transfert et loi ABCD</a></li>
+                <li><a href="../../Stabilite_des_cavites_lasers/stabilite_dune_cavite.html">2.4 Stabilité
+                    d'une cavité</a>
+                </li>
+            </ul>
+        </div>
+        <div class="w3-container">
+            <h4>3. Les faisceaux gaussiens</h4>
+            <ul>
+                <li>
+                    <a href="../../Les_faisceaux_gaussiens/equation_donde_paraxiale_et_onde_spherique.html">3.1
+                        Équation
+                        d'onde paraxiale et onde sphérique</a></li>
+                <li><a href="../../Les_faisceaux_gaussiens/onde_sperique_gaussienne.html">3.2 Onde
+                    sphérique gaussienne</a>
+                </li>
+                <li><a href="../../Les_faisceaux_gaussiens/proprietes_des_faisceaux_gaussiens.html">3.3
+                    Propriétés des
+                    faisceaux gaussiens</a></li>
+                <li>
+                    <a href="../../Les_faisceaux_gaussiens/adaptation_et_focalisation_des_faisceaux_gaussiens.html">3.4
+                        Adaptation et focalisation des faisceaux gaussiens</a></li>
+            </ul>
+        </div>
+        <div class="w3-container">
+            <h4>4. Mode fondamental Gaussien et cavité LASER</h4>
+            <ul>
+                <li>
+                    <a href="../../Mode_fondamental_gaussien_et_cavite_laser/loi_ABCD_appliquee_aux_faisceaux_gaussiens.html">4.1
+                        Loi ABCD appliquée aux faisceaux gaussiens</a></li>
+                <li><a href="../../Mode_fondamental_gaussien_et_cavite_laser/cavite_a_2_miroirs.html">4.2
+                    Cavité à deux
+                    miroirs</a></li>
+                <li><a href="../../Mode_fondamental_gaussien_et_cavite_laser/autres_cavites.html">4.3
+                    Autres cavités</a>
+                </li>
+            </ul>
+        </div>
+        <div class="w3-container">
+            <h4>5. Les modes d'ordre supérieur</h4>
+            <ul>
+                <li><a href="../../Les_modes_dordre_superieur/introduction.html">5.1 Introduction</a>
+                </li>
+                <li><a href="../../Les_modes_dordre_superieur/modes_Hermite-Gaussiens.html">5.2 Modes
+                    Hermite-Gaussiens</a>
+                </li>
+                <li><a href="../../Les_modes_dordre_superieur/modes_Laguerre_Gaussiens.html">5.3 Modes
+                    Laguerre-Gaussiens</a></li>
+                <li>
+                    <a href="../../Les_modes_dordre_superieur/propagation_des_faisceaux_multimodes_et_facteur_m2.html">5.4
+                        Propagation des faisceaux multimodes et facteurs M²</a></li>
+            </ul>
+        </div>
+        <div class="w3-container">
+            <h4><a href="../../conclusion.html">Conclusion</a></h4>
+        </div>
+    </div>
+
+
+    <a id="etudeCasBtn" onclick="funcEC('etudeCasPlan')" href="javascript:void(0)" class="w3-bar-item w3-button"><i
+            class="fa fa-pencil w3-margin-right"></i>Étude de cas<i class="fa fa-caret-down w3-margin-left"></i></a>
+    <div id="etudeCasPlan" class="w3-hide w3-animate-left">
+        <div class="w3-container">
+            <h4><a href="../../Etude_de_cas/introduction.html">1. Introduction</a></h4>
+        </div>
+        <div class="w3-container">
+            <h4>2. Étude préliminaire de la cavité hémisphérique</h4>
+            <ul>
+                <li>
+                    <a href="../../Etude_de_cas/Etude_preliminaire_de_la_cavite_hemispherique/stabilite_de_la_cavite.html">2.1
+                        Stabilité de la cavité</a></li>
+                <li>
+                    <a href="../../Etude_de_cas/Etude_preliminaire_de_la_cavite_hemispherique/structure_du_faisceau_dans_la_cavite.html">2.2
+                        Structure du faisceau dans la cavité</a></li>
+            </ul>
+        </div>
+        <div class="w3-container">
+            <h4>3. Cavité réelle</h4>
+            <ul>
+                <li><a href="../../Etude_de_cas/Cavite_reelle/optimisation_de_la_cavite.html">3.1
+                    Optimisation de la
+                    cavité</a></li>
+                <li><a href="../../Etude_de_cas/Cavite_reelle/faisceau_en_sortie.html">3.2 Faisceau en
+                    sortie</a>
+                </li>
+                <li><a href="../../Etude_de_cas/Cavite_reelle/effet_de_lentille_thermique.html">3.3
+                    Effet de lentille
+                    thermique</a></li>
+            </ul>
+        </div>
+        <div class="w3-container">
+            <h4><a href="../../Etude_de_cas/modes_longitundinaux.html">4. Modes longitudinaux</a></h4>
+        </div>
+    </div>
+
+
+    <a id="exercicesBtn" onclick="funcEx('exercicesPlan')" href="javascript:void(0)" class="w3-bar-item w3-button"><i
+            class="fa fa-pencil-square-o w3-margin-right"></i>Exercices<i
+            class="fa fa-caret-down w3-margin-left"></i></a>
+    <div id="exercicesPlan" class="w3-hide w3-animate-left">
+        <div class="w3-container">
+            <h4><a href="../../Exercices/transformation_de_faisceau_laser.html">1. Transformation de
+                faisceau LASER</a></h4>
+        </div>
+        <div class="w3-container">
+            <h4><a href="../../Exercices/caracteristiques_dun_faisceau_laser.html">2. Caractéristiques
+                d'un faisceau
+                LASER</a></h4>
+        </div>
+        <div class="w3-container">
+            <h4><a href="../../Exercices/stabilite.html">3. Stabilité</a></h4>
+        </div>
+        <div class="w3-container">
+            <h4><a href="../../Exercices/energie.html">4. Énergie</a></h4>
+        </div>
+        <div class="w3-container">
+            <h4><a href="../../Exercices/repartition_spectrale_des_modes_longitudinaux.html">5.
+                Répartition spectrale des
+                modes longitudinaux</a></h4>
+        </div>
+    </div>
+
+    <a class="w3-bar-item w3-button w3-dark-grey w3-button w3-hover-black w3-left-align"
+       download><i class="w3-padding fa fa-file-pdf-o"></i>Télécharger au format PDF<i
+            class="w3-padding fa fa-download"></i></a>
+</nav>
+
+<!-- Overlay effect when opening the side navigation on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
+     title="Close Sidemenu" id="myOverlay"></div>
+
+<!-- Page content -->
+<div class="w3-main" id="topofthepop" style="margin-left:320px;">
+    <i class="fa fa-bars w3-button w3-white w3-hide-large w3-xlarge w3-margin-left w3-margin-top"
+       onclick="w3_open()"></i>
+
+    <div class="w3-container">
+        <br>
+        <h5 class="w3-opacity">Étude de cas</h5>
+        <h2 class="subtitle">III. Cavité réelle</h2>
+        <h4 class="subtitle">2. Faisceau en sortie</h4>
+        <hr>
+        <p>
+            A quoi va ressembler le faisceau à la sortie du laser, à travers le miroir sphérique ?
+        </p>
+        <p>Ce miroir est partiellement transparent, et possède une face sphérique concave (c'est la face utile pour la
+            cavité) et une face plane (l'arrière du substrat sur lequel est déposé le miroir).
+        </p>
+        <div class="w3-large">
+            <img src="../../Images/EC_Fig6.jpg" class="center_img">
+            <p class="w3-opacity center_text">
+                Figure 6 : Miroir de sortie
+            </p>
+        </div>
+        <p>Le miroir de sortie se comporte donc vis-à vis du faisceau laser sortant comme une lentille divergente.
+        </p>
+        <p>Sa focale \(f'\) est donnée par la « formule des opticiens » (voir cours d'optique géométrique) :
+        </p>
+        <p>\(\frac 1 {f'}=(n_M-1)\left(\frac 1{R'}-\frac 1R\right)\) avec \(R'\) = rayon de la face plane = \(\infty\)
+            et \(n_M\)
+            l'indice du substrat sur lequel est déposé le miroir.
+        </p>
+        <p>On a donc \(f'=\frac R {1-n_M}\), soit numériquement en prenant \(n_M\) = 1,5 (verre): \(f'\) = -200 mm.
+        </p>
+        <p>On a déjà déterminé la divergence du faisceau dans la cavité. Combien vaut-elle maintenant en dehors ?
+        </p>
+        <p>On va chercher le nouveau rayon de courbure complexe après le miroir de sortie, soit après une lentille
+            divergente de focale \(f'\). Pour cela, on applique la loi ABCD :
+        </p>
+        <p>\(q(apres)=\frac{Aq(avant)+B}{Cq(avant)+D}\) en notant \(q(avant)\) le rayon de courbure complexe avant
+            traversée du miroir de sortie et \(q(apres)\) le rayon de
+            courbure complexe après traversée de ce même miroir.
+        </p>
+        <p>
+            Les coefficients ABCD sont ceux de la matrice de transfert d'une lentille :
+            \[T= \begin{pmatrix}
+            1 & 0 \\
+            -\frac 1f & 1
+            \end{pmatrix}\]
+        </p>
+        <p>On en déduit que :
+            \[\frac 1{q(apres)}=\frac 1{q(avant)}-\frac 1{f'}\]
+        </p>
+        <p>NB : c'est une formule utile dans bien des cas lorsque l'on transforme un faisceau gaussien via une lentille.
+        </p>
+        <p>On a également \(\frac 1{q(avant)}=\frac 1R-i\frac \lambda{\pi w_1^2}\) et \(\frac 1{q(apres)}=\frac
+            1{R'}-i\frac \lambda{\pi w_1^2}\) (la taille du faisceau ne change pas entre les deux faces de la lentille
+            dans l'hypothèse « lentille mince »).
+        </p>
+        <p>On en déduit que par identification que \(R'=\frac R{n_M}\).
+        </p>
+        <p>En utilisant la formule du cours :
+            \[w_0^2 = \frac {w^2}{1+\left(\frac{\pi w^2}{\lambda R}\right)^2}\]
+            avec la nouvelle valeur de R', on trouve le « waist effectif » pour le faisceau sortant de la cavité:
+            \[w_0'^2 = \frac {w_1^2}{1+\left(\frac{\pi w_1^2n_M}{\lambda R}\right)^2}\]
+        </p>
+        <p>En remplaçant \(w_1\) par sa valeur en fonction de \(w_0\) trouvée précédemment, soit
+            \(w_1=\sqrt{\frac{\lambda R}\pi}\sqrt[4]\frac d{R-d}\) on trouve:
+            \[w_0'^2 = \frac {w_1^2}{1+\left(\frac{dn_M^2}{R-d}\right)}\]
+        </p>
+        <p>Comme de plus \(w_1=w_0\sqrt{1+\frac {d^2}{Z_R^2}}\) et \(Z_R=\sqrt{d(R-d)}\) on en déduit:
+            \[w_0'^2=\frac {R w_0^2}{R+(n_M^2-1)d}\]
+        </p>
+        <p>On en déduit la nouvelle divergence \(\theta '\):
+            \[\frac {\theta '}\theta = \frac{w_0}{w'_0}=\sqrt{1+(n_M^2-1)\frac dR}\]
+        </p>
+        <p>Numériquement, la nouvelle divergence vaut 1,438 fois celle avant le passage par le miroir de sortie (on a
+            pris ici les valeurs pour \(d\)=85,5 mm – voir figure 4) soit 4,3 mrad.
+        </p>
+    </div>
+</div>
+<footer class="w3-container w3-theme-dark w3-padding-16">
+    <div style="position:relative;bottom:10px;" class="w3-tooltip w3-right w3-theme-dark">
+        <span class="w3-text w3-theme-light w3-padding">Go To Top</span> 
+        <a class="w3-text-white" href="#topofthepop"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+    </div>
+</footer>
+<script>
+    var openInbox = document.getElementById("etudeCasBtn");
+    openInbox.click();
+</script>
 </body>
 </html>
