@@ -146,4 +146,5 @@ body {
     font-style: italic;
     font-weight: bold;
     color: #ffbc00;
+    cursor: pointer;
 }
