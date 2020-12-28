@@ -29,3 +29,25 @@ table{
     -webkit-clip-path: inset(30px 10px 30px 10px);
     clip-path: inset(30px 10px 30px 10px);
 }
+
+.row > .column {
+    padding: 0 8px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+}
+
+.w3-sidebar {
+    z-index: 3;
+    width: 250px;
+    top: 43px;
+    bottom: 0;
+    height: inherit;
+}
