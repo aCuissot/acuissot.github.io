@@ -8,8 +8,13 @@
 <link rel="stylesheet" href="../style/w3-theme-black.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="../Media/favicon_pine_cone.ico">
+<script src="../scripts/script.js"></script>
 <style>
-    html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+    html, body, h1, h2, h3, h4, h5, h6 {
+        font-family: "Roboto", sans-serif;
+    }
+
     .w3-sidebar {
         z-index: 3;
         width: 250px;
@@ -23,7 +28,8 @@
 <!-- Navbar -->
 <div class="w3-top">
     <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
-        <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+        <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1"
+           href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
         <a href="#" class="w3-bar-item w3-button w3-theme-l1">Logo</a>
         <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
         <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Values</a>
@@ -35,27 +41,170 @@
 </div>
 
 <!-- Sidebar -->
-<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
-        <i class="fa fa-remove"></i>
-    </a>
-    <h4 class="w3-bar-item"><b>Menu</b></h4>
-    <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
-    <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
-    <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
-    <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-white w3-animate-left w3-card" style="z-index:3;width:320px;"
+     id="mySidebar">
+    <a href="#" class="w3-bar-item w3-button w3-border-bottom w3-large"><img
+            src="../Media/wiki_imgs/wikiAccueilBtn.jpg" title="Accueil"
+            style="width:100%; display: block; margin-left: auto; margin-right: auto"></a>
+    <h3 class="w3-bar-item w3-button">Genres de pins</h3>
+    <a id="parrysBtn" onclick="funct('parrys')" href="javascript:void(0)" class="w3-bar-item w3-button"><i
+            class="fa fa-tree w3-margin-right"></i>Parrya<i class="fa fa-caret-down w3-margin-left"></i></a>
+    <div id="parrys" class="w3-hide w3-animate-left">
+        <div class="w3-container">
+            <ul>
+                <li><a href=".">Pinus aristata</a></li>
+                <li><a href=".">Pinus balfouriana</a></li>
+                <li><a href=".">Pinus cembroides</a></li>
+                <li><a href=".">Pinus culminicola</a></li>
+                <li><a href=".">Pinus edulis</a></li>
+                <li><a href=".">Pinus pinceana</a></li>
+                <li><a href=".">Pinus johannis</a></li>
+                <li><a href=".">Pinus longaeva</a></li>
+                <li><a href=".">Pinus maximartinezii</a></li>
+                <li><a href=".">Pinus monophylla</a></li>
+                <li><a href=".">Pinus nelsonii</a></li>
+                <li><a href=".">Pinus orizabensis</a></li>
+                <li><a href=".">Pinus quadrifolia</a></li>
+                <li><a href=".">Pinus remota</a></li>
+                <li><a href=".">Pinus rzedowskii</a></li>
+            </ul>
+        </div>
+    </div>
+    <a id="strobusBtn" onclick="funct('strobus')" href="javascript:void(0)" class="w3-bar-item w3-button"><i
+            class="fa fa-tree w3-margin-right"></i>Strobus<i class="fa fa-caret-down w3-margin-left"></i></a>
+    <div id="strobus" class="w3-hide w3-animate-left">
+        <div class="w3-container">
+            <ul>
+                <li><a href=".">Pinus albicaulis</a></li>
+                <li><a href=".">Pinus amamiana</a></li>
+                <li><a href=".">Pinus armandii</a></li>
+                <li><a href=".">Pinus ayacahuite</a></li>
+                <li><a href=".">Pinus bhutanica</a></li>
+                <li><a href=".">Pinus bungeana</a></li>
+                <li><a href=".">Pinus cembra</a></li>
+                <li><a href=".">Pinus dalatensis</a></li>
+                <li><a href=".">Pinus fenzeliana</a></li>
+                <li><a href=".">Pinus flexilis</a></li>
+                <li><a href=".">Pinus gerardiana</a></li>
+                <li><a href=".">Pinus koraiensis</a></li>
+                <li><a href=".">Pinus krempfii</a></li>
+                <li><a href=".">Pinus lambertiana</a></li>
+                <li><a href=".">Pinus monticola</a></li>
+                <li><a href=".">Pinus morrisonicola</a></li>
+                <li><a href=".">Pinus parviflora</a></li>
+                <li><a href=".">Pinus peuce</a></li>
+                <li><a href=".">Pinus pumila</a></li>
+                <li><a href=".">Pinus sibirica</a></li>
+                <li><a href=".">Pinus squamata</a></li>
+                <li><a href=".">Pinus strobiformis</a></li>
+                <li><a href=".">Pinus wallichiana</a></li>
+            </ul>
+        </div>
+    </div>
+    <a id="pinusBtn" onclick="funct('pinus')" href="javascript:void(0)" class="w3-bar-item w3-button"><i
+            class="fa fa-tree w3-margin-right"></i>Pinus<i class="fa fa-caret-down w3-margin-left"></i></a>
+    <div id="pinus" class="w3-hide w3-animate-left">
+        <div class="w3-container">
+            <ul>
+                <li><a href=".">Pinus brutia</a></li>
+                <li><a href=".">Pinus canariensis</a></li>
+                <li><a href=".">Pinus densata</a></li>
+                <li><a href=".">Pinus densiflora</a></li>
+                <li><a href=".">Pinus fragilissima</a></li>
+                <li><a href=".">Pinus halepensis</a></li>
+                <li><a href=".">Pinus heldreichii</a></li>
+                <li><a href=".">Pinus henryi</a></li>
+                <li><a href=".">Pinus hwangshanensis</a></li>
+                <li><a href=".">Pinus kesiya</a></li>
+                <li><a href=".">Pinus latteri</a></li>
+                <li><a href=".">Pinus luchuensis</a></li>
+                <li><a href=".">Pinus massoniana</a></li>
+                <li><a href=".">Pinus merkusii</a></li>
+                <li><a href=".">Pinus mugo</a></li>
+                <li><a href=".">Pinus nigra</a></li>
+                <li><a href=".">Pinus pinea</a></li>
+                <li><a href=".">Pinus pinaster</a></li>
+                <li><a href=".">Pinus resinosa</a></li>
+                <li><a href=".">Pinus roxburghii</a></li>
+                <li><a href=".">Pinus sylvestris</a></li>
+                <li><a href=".">Pinus tabuliformis</a></li>
+                <li><a href=".">Pinus taiwanensis</a></li>
+                <li><a href=".">Pinus thunbergii</a></li>
+                <li><a href=".">Pinus tropicalis</a></li>
+                <li><a href=".">Pinus uncinata</a></li>
+                <li><a href=".">Pinus yunnanensis</a></li>
+            </ul>
+        </div>
+    </div>
+    <a id="trifoliusBtn" onclick="funct('trifolius')" href="javascript:void(0)" class="w3-bar-item w3-button"><i
+            class="fa fa-tree w3-margin-right"></i>Trifolius<i class="fa fa-caret-down w3-margin-left"></i></a>
+    <div id="trifolius" class="w3-hide w3-animate-left">
+        <div class="w3-container">
+            <ul>
+                <li><a href=".">Pinus apulcensis</a></li>
+                <li><a href=".">Pinus arizonica</a></li>
+                <li><a href=".">Pinus attenuata</a></li>
+                <li><a href=".">Pinus banksiana</a></li>
+                <li><a href=".">Pinus caribaea</a></li>
+                <li><a href=".">Pinus clausa</a></li>
+                <li><a href=".">Pinus contorta</a></li>
+                <li><a href=".">Pinus arizonica var. cooperi ou Pinus cooperi</a></li>
+                <li><a href=".">Pinus coulteri</a></li>
+                <li><a href=".">Pinus cubensis</a></li>
+                <li><a href=".">Pinus devoniana</a></li>
+                <li><a href=".">Pinus douglasiana</a></li>
+                <li><a href=".">Pinus durangensis</a></li>
+                <li><a href=".">Pinus echinata</a></li>
+                <li><a href=".">Pinus elliottii</a></li>
+                <li><a href=".">Pinus engelmannii</a></li>
+                <li><a href=".">†Pinus foisyi</a></li>
+                <li><a href=".">Pinus glabra</a></li>
+                <li><a href=".">Pinus greggii</a></li>
+                <li><a href=".">Pinus hartwegii</a></li>
+                <li><a href=".">Pinus herrerae</a></li>
+                <li><a href=".">Pinus jaliscana</a></li>
+                <li><a href=".">Pinus jeffreyi</a></li>
+                <li><a href=".">†Pinus johndayensis</a></li>
+                <li><a href=".">Pinus lawsonii</a></li>
+                <li><a href=".">Pinus leiophylla</a></li>
+                <li><a href=".">Pinus lumholtzii</a></li>
+                <li><a href=".">Pinus luzmariae</a></li>
+                <li><a href=".">Pinus maximinoi</a></li>
+                <li><a href=".">†Pinus matthewsii</a></li>
+                <li><a href=".">Pinus montezumae</a></li>
+                <li><a href=".">Pinus muricata</a></li>
+                <li><a href=".">Pinus occidentalis</a></li>
+                <li><a href=".">Pinus oocarpa</a></li>
+                <li><a href=".">Pinus palustris</a></li>
+                <li><a href=".">Pinus patula</a></li>
+                <li><a href=".">Pinus ponderosa</a></li>
+                <li><a href=".">Pinus praetermissa</a></li>
+                <li><a href=".">Pinus pringlei</a></li>
+                <li><a href=".">Pinus pseudostrobus</a></li>
+                <li><a href=".">Pinus pungens</a></li>
+                <li><a href=".">Pinus radiata</a></li>
+                <li><a href=".">Pinus rigida</a></li>
+                <li><a href=".">Pinus sabiniana</a></li>
+                <li><a href=".">Pinus serotina</a></li>
+                <li><a href=".">Pinus taeda</a></li>
+                <li><a href=".">Pinus tecunumanii</a></li>
+                <li><a href=".">Pinus teocote</a></li>
+                <li><a href=".">Pinus torreyana</a></li>
+                <li><a href=".">Pinus virginiana</a></li>
+            </ul>
+        </div>
+    </div>
 </nav>
 
+
 <!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+     id="myOverlay"></div>
 
 <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
-<div class="w3-main" style="margin-left:250px">
-
-    <div class="w3-row w3-padding-64">
-        <div class="imgHeadContainer">
-            <img id='rectangular' src="../Media/wiki_imgs/wikiAccueil.jpg" width="100%">
-        </div>
+<div class="w3-main" style="margin-left:320px">
+    <div class="imgHeadContainer">
+        <img id='rectangular' src="../Media/wiki_imgs/wikiAccueil.jpg" width="100%">
     </div>
 
     <div class="w3-row">
@@ -63,6 +212,8 @@
             <h1 class="w3-text-teal">Parrya</h1>
             <ul>
                 <li><a href="pinus_aristata.html">Pinus Aristata</a></li>
+                <li><a href="pinus_balfouriana.html">Pinus Balfouriana</a></li>
+                <li><a href="pinus_cembroides.html">Pinus Cembroides</a></li>
                 <li><a href="pinus_balfouriana.html">Pinus Balfouriana</a></li>
             </ul>
         </div>
@@ -94,8 +245,12 @@
     <div class="w3-row w3-padding-64">
         <div class="w3-twothird w3-container">
             <h1 class="w3-text-teal">Heading</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-                dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Lorem ipsum
+                dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.</p>
         </div>
         <div class="w3-third w3-container">
             <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
