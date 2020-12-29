@@ -17,6 +17,10 @@
         line-height: 1.8;
     }
 
+    #moreActu1, #moreActu2 {
+        display: none;
+    }
+
     /* Full height image header */
     .bgimg-1 {
         background-position: center;
@@ -39,6 +43,7 @@
         <div class="w3-right w3-hide-small">
             <a href="#about" class="w3-bar-item w3-button">À Propos</a>
             <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> L'Équipe</a>
+            <a href="#actu" class="w3-bar-item w3-button"><i class="fa fa-info"></i> L'Actu</a>
             <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> Notre Travail</a>
             <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> Shop</a>
             <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Contact</a>
@@ -56,11 +61,12 @@
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none"
      id="mySidebar">
     <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-    <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
-    <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
-    <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">À Propos</a>
+    <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">L'Équipe</a>
+    <a href="#actu" onclick="w3_close()" class="w3-bar-item w3-button">L'Actu</a>
+    <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">Notre Travail</a>
+    <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">Shop</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Contact</a>
 </nav>
 
 <!-- Header with full-height image -->
@@ -230,6 +236,64 @@
     <div class="w3-quarter">
         <span class="w3-xxlarge">150+</span>
         <br>Meetings
+    </div>
+</div>
+
+<div class="w3-container" style="padding:128px 16px" id="actu">
+    <h3 class="w3-center">Quelques actus</h3>
+    <div class="w3-row-padding w3-center" style="margin-top:64px">
+        <div class="w3-quarter">
+            <i class="fa fa-pagelines w3-margin-bottom w3-jumbo w3-center"></i>
+            <p class="w3-large">Gestion durable</p>
+            <p style="text-align: justify">Le pignon de pin, ça rapporte. Deux hommes ont été arrêtés samedi par les douaniers dans l’Aude alors
+                qu’ils transportaient dans leur véhicule… 200 kg de pommes de pin (aussi appelées pignes de pin)<span
+                        id="dots1">...</span><span id="moreActu1">
+            <br>
+                Placés en garde à vue au commissariat de Narbonne, ils ont été renvoyés devant le tribunal correctionnel
+                et seront jugés en février. Deux jours plus tôt, ce sont 600 kg de pignes qui avaient déjà été saisis
+                par les douaniers.
+        <br>
+                Le commerce est lucratif puisque les pignons (la graine à la coquille dure, qui se développe sous chaque
+                écaille du cône du pin) coûtent environ 80 euros le kilo à l’achat en grande surface. Seules les graines
+                de certaines pignes de pin sont comestibles, notamment celles des pins parasols (courants en France), du
+                    pin Gérard, du pin de Corée et du pin de Sibérie. (<a
+                        href="https://www.20minutes.fr/montpellier/1736247-20151123-narbonne-arretes-200-kg-pommes-pin-coffre>">20minutes</a> et <a
+                        href="
+https://www.lindependant.fr/2015/11/23/narbonne-interpelles-avec-200-kg-de-pignes-de-pins-par-les-douaniers,2118015.php">L'indépendant</a>)</span>
+            </p>
+            <button onclick="readMoreLess1()" id="btn1">Lire la suite</button>
+
+        </div>
+        <div class="w3-quarter">
+            <i class="fa fa-tree w3-margin-bottom w3-jumbo"></i>
+            <p class="w3-large">Récolte</p>
+            <p style="text-align: justify">
+                Les seules ressources d'une vallée reculée et pauvre de la région de la Ratcha, en Géorgie, sont les
+                forêts de sapins de Nordmann, au sommet desquels on trouve, l'automne venu, des "hommes-écureuils". Jeko
+                Memanshvili est l'un d'entre eux. À la force de ses bras, il va se hisser jusqu'au sommet d'un
+                sapin<span
+                    id="dots2">...</span><span id="moreActu2">;
+                15 mètres d'effort sans corde. Une fois en haut, il va se harnacher pour récolter librement l'or vert de
+                la forêt de la Ratcha. "On les cueille toutes, ils les prennent pour semer, et même quand il y a un ver
+                dedans, chaque pomme de pin contient encore des graines", explique le cueilleur.
+<br>
+                Pour en ramasser le plus possible, il est prêt à tout, même à une manoeuvre périlleuse : passer d'un
+                arbre à l'autre par la cime. Avec son équipe, il est payé au poids. La saison ne dure que trois semaines
+                pour les 300 à 400 cueilleurs. Chaque équipe collecte quotidiennement jusqu'à 700 kilos de pommes de
+                pin, qui sont ensuite transportées jusqu'à la capitale Tbilissi, où elles sont séchées puis concassées
+                jusqu'à en séparer les précieuses graines convoitées dans toute l'Europe. Le kilo vaut plus de 70
+                euros. (<a
+                        href="https://www.francetvinfo.fr/economie/emploi/metiers/agriculture/georgie-la-recolte-des-graines-precieuses-des-sapins_4222395.html">franceinfo</a>)</span>
+            </p>
+            <button onclick="readMoreLess2()" id="btn2">Lire la suite</button>
+        </div>
+        <div class="w3-half">
+            <i class="fa fa-free-code-camp w3-margin-bottom w3-jumbo"></i>
+            <p class="w3-large">Ouverture d'une pomme de pin</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/bxeejZJDnfk" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+        </div>
     </div>
 </div>
 
@@ -423,6 +487,38 @@
         captionText.innerHTML = element.alt;
     }
 
+    function readMoreLess1() {
+        var dots = document.getElementById("dots1");
+        var moreText = document.getElementById("moreActu1");
+        var btnText = document.getElementById("btn1");
+
+
+        if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Lire la suite";
+            moreText.style.display = "none";
+        } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less";
+            moreText.style.display = "inline";
+        }
+
+    }
+    //AAAAAAAAAAAAA
+    function readMoreLess2() {
+        var dots2 = document.getElementById("dots2");
+        var moreText2 = document.getElementById("moreActu2");
+        var btnText2 = document.getElementById("btn2");
+        if (dots2.style.display === "none") {
+            dots2.style.display = "inline";
+            btnText2.innerHTML = "Lire la suite";
+            moreText2.style.display = "none";
+        } else {
+            dots2.style.display = "none";
+            btnText2.innerHTML = "Read less";
+            moreText2.style.display = "inline";
+        }
+    }
 
     // Toggle between showing and hiding the sidebar when clicking the menu icon
     var mySidebar = document.getElementById("mySidebar");
