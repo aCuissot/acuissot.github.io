@@ -25,6 +25,10 @@ table{
     /*overflow:hidden;*/
 }
 
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
 #rectangular {
     -webkit-clip-path: inset(30px 10px 30px 10px);
     clip-path: inset(30px 10px 30px 10px);
