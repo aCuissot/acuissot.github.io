@@ -4,6 +4,9 @@
 figure{
     display: inline-block;
 }
+figcaption{
+    text-align: center;
+}
 .div-table{
     align-items: center;
     text-align: center;
