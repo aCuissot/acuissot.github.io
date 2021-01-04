@@ -62,194 +62,54 @@ and is wrapped around the whole page content, except for the footer in this exam
             <div class="w3-card-4 w3-margin w3-white">
                 <img src="Media/screenCapture.jpg" alt="newScreenRecorder" style="width:100%">
                 <div class="w3-container dark3">
-                    <h3><b>Capture d'écran vidéo sous linux</b></h3>
+                    <h3><b>Lire des fichiers audio ou vidéo en ligne de commande avec VLC</b></h3>
                     <h5>Title description, <span class="w3-opacity">31/12/2020</span></h5>
                 </div>
 
                 <div class="w3-container dark3">
                     <h4>Prérequis:</h4>
                     <ul>
-                        <li>Une distribution linux possèdant l'environnement de bureau GNOME (ou pouvant au moins
-                            utiliser la commande <span class="codeAAA">gnome-screenshot</span>).
+                        <li>Une distribution linux avec <a href="https://www.videolan.org/vlc/index.fr.html">VLC</a>
+                            installé.
                         </li>
                         <li>C'est tout : )</li>
                     </ul>
-                    <p>L'essentiel de la capture sera faite grace à l'élément <span
-                            class="codeAAA">gnome-screenshot</span>, nous allons procéder ainsi:</p>
-                    <ul>
-                        <li>Choisir un dossier dans lequel effectuer la capture, ici: <span
-                                class="codeAAA">capturePath</span></li>
-                        <li>Choisir un nom pour cette capture, ici: <span
-                                class="codeAAA">mycapture</span></li>
-                    </ul>
-                    <pre class="line-numbers"><code class="language-bash">count=1;
-while (true);
-do gnome-screenshot -f "capturePath/mycapture-"$count".jpg";
-count=$((count+1));
-done</code></pre>
-                    <p>Je vous recommande comme dans le script ci-dessus d'enregistrer au format jpg car le format png
-                        est beaucoup plus lourd. Il est également recommendé de le faire dans un répertoire crée pour
-                        cet effet.</p>
-                    <p>
-                        C'est bien beau une ligne de commande mais c'est pas très pratique, faisons plutôt un script qui
-                        va s'occuper de cela, vous pouvez bien entendu l'adapter et ajouter des fonctionnalités.
-                    </p>
-                    <pre class="line-numbers"><code class="language-bash">#!/bin/bash
+                    <p>Comme vous l'avez sans doutes déjà compris, on va utiliser VLC en ligne de commande afin de lire
+                        des fichiers vidéo ou audio qu'ils se trouvent sur votre machine ou qu'ils soient sur le
+                        web.</p>
+                    <p>Voyons tout d'abord comment utiliser VLC en ligne de commande pour lire des fichiers.</p>
+                    <pre class="command-line language-bash" data-user="axxa" data-host="localhost"
+                         data-output="2-3"><code class=" language-bash"><span class="command-line-prompt"><span
+                            data-user="chris" data-host="localhost"></span><span></span><span data-user="axxa"
+                                                                                              data-host="localhost"></span><span></span><span></span><span></span><span></span><span></span></span><span
+                            class="token builtin class-name">cvlc</span> Videos/Asteroid.mp4
+VLC media player 3.0.11.1 Vetinari (revision )
+[0000000001296f20] dummy interface: using the dummy interface module...</code></pre>
+                    <p>Ici on utilise <span class="codeAAA">cvlc</span>, on a donc une fenêtre qui s'ouvre avec la vidéo
+                        mais aucune interface pour interagire avec elle, si nous avions un fichier audio, nous n'aurions
+                        même pas de fenêtre et seulement le son. Pour avoir l'interface de VLC il faut utiliser <span
+                                class="codeAAA">vlc</span> au lieu de <span class="codeAAA">cvlc</span>, toutefois nous
+                        continuerons ici avec <span class="codeAAA">cvlc</span></p>
+                    <p>Ici nous avions un fichier local, mais on peut egalement utiliser un URL:</p>
+                    <pre class="command-line language-bash" data-user="axxa" data-host="localhost"
+                         data-output="2-3"><code class=" language-bash"><span class="command-line-prompt"><span
+                            data-user="chris" data-host="localhost"></span><span></span><span data-user="axxa"
+                                                                                              data-host="localhost"></span><span></span><span></span><span></span><span></span><span></span></span><span
+                            class="token builtin class-name">cvlc</span> https://acuissot.github.io/France_Imper/Shannon/Media/violinDrum.mp3
+VLC media player 3.0.11.1 Vetinari (revision )
+[0000000001296f20] dummy interface: using the dummy interface module...</code></pre>
+                    <p>et nous pouvons même utiliser des URL youtube par exemple, on notera que beaucoup de vidéo
+                        (surtout musicales) ne sont pas accessible via cette méthode.</p>
+                    <pre class="command-line language-bash" data-user="axxa" data-host="localhost"
+                         data-output="2-3"><code class=" language-bash"><span class="command-line-prompt"><span
+                            data-user="chris" data-host="localhost"></span><span></span><span data-user="axxa"
+                                                                                              data-host="localhost"></span><span></span><span></span><span></span><span></span><span></span></span><span
+                            class="token builtin class-name">cvlc</span> https://www.youtube.com/watch?v=kID5ugIuHig
+VLC media player 3.0.11.1 Vetinari (revision )
+[0000000001296f20] dummy interface: using the dummy interface module...</code></pre>
+                    <p>C'est bien gentil tout ça mais on va regarder un peu les options que propose VLC afin d'avoir un
+                        lecteur sur mesure et de pouvoir utiliser des playlists</p>
 
-# Default values
-path=$HOME"/Videos/MyCaptures"
-mkdir -p $path
-maxTime=3
-name="mycapture"
-doThePythonProcess=false
-extension=".jpg"
-
-# Get the options flags
-while getopts t:p:f:F: option
-do
-case "${option}"
-in
-t) maxTime=${OPTARG};;
-p) path=${OPTARG};;
-f) name=${OPTARG};;
-F) extension="."${OPTARG};;
-esac
-done
-
-start=$SECONDS
-count=1
-while ((maxTime > ((SECONDS - start))));
-do gnome-screenshot -f $path"/"$name"-"$count$extension;
-count=$(($count+1));
-done
-</code></pre>
-                    <p>Comme on va faire la suite en python, on peut en profiter pour lancer le code python depuis ce
-                        script</p>
-                    <pre class="line-numbers"><code class="language-bash">#!/bin/bash
-
-# Default values
-path=$HOME"/Videos/MyCaptures"
-mkdir -p $path
-maxTime=3
-name="mycapture"
-doThePythonProcess=false
-extension=".jpg"
-
-# Get the options flags
-while getopts t:p:f:F:P option
-do
-case "${option}"
-in
-t) maxTime=${OPTARG};;
-p) path=${OPTARG};;
-f) name=${OPTARG};;
-F) extension="."${OPTARG};;
-P) doThePythonProcess=true;;
-esac
-done
-
-start=$SECONDS
-count=1
-while ((maxTime > ((SECONDS - start))));
-do gnome-screenshot -f $path"/"$name"-"$count$extension;
-count=$(($count+1));
-done
-
-if $doThePythonProcess
-then echo "run the python script here"
-# qqch comme python pythonscript.py dir outName
-fi</code></pre>
-                    <p>Maintenant on va passer au code en Python qui va faire de ces images une video extremement fluide
-                        et qualitative que même Spielberg vous enviera.</p>
-                    <p>Pour ce faire, vous aurez besoin de:</p>
-                    <ul>
-                        <li>Python 3.X</li>
-                        <li>La bibliothèque OpenCV</li>
-                    </ul>
-                    <p>Et là c'est très simple, nous allons simplement 'coller' les images à la suite pour en faire une
-                        vidéo.</p>
-                    <pre class="line-numbers"><code class="language-python">fourcc = cv.VideoWriter_fourcc(*'XVID')  # => .avi
-out = cv.VideoWriter('../Data/a.avi', fourcc, 5, (width, lenght))
-for imageIn in imagesIn:
-    print(imageIn)
-    frame = cv.imread(os.path.join(pathIn, imageIn))
-    frame = cv.resize(frame, (width, lenght))
-    out.write(frame)
-
-# Release everything if job is finished
-out.release()</code></pre>
-                    <p>Nous allons donc réccupérer les images portant le bon nom, les ranger dans le bon sens et
-                        enregistrer cela en vidéo. On va passer tout ce dont on a besoin en argument pour pouvoir
-                        appeler le Python depuis notre code bash.</p>
-                    <pre class="line-numbers"><code class="language-python">import argparse
-import os
-
-import cv2 as cv
-
-possible_extension = [".jpg", ".png"]
-
-
-def get_extension(filename):
-    _, ext = os.path.splitext(filename)
-    return ext
-
-
-def sort(imgList):
-    extSize = len(get_extension(imgList[0]))
-    beginIndex = imgList[0].index('-')
-    tmp = []
-    for i in imgList:
-        tmp.append((i, int(i[beginIndex + 1:-extSize])))
-    tmp = sorted(tmp, key=lambda tup: tup[1])
-    return [f[0] for f in tmp]
-
-
-ap = argparse.ArgumentParser()
-ap.add_argument("-i", "--input", required=True,
-                help="path to input directory containing the images")
-ap.add_argument("-p", "--prefix", default="",
-                help="prefix images from capture should have, to let the other ones if there is")
-ap.add_argument("-o", "--output", required=True,
-                help="path to output video file")
-ap.add_argument("-f", "--fps", type=int, default=5,
-                help="FPS of output video")
-ap.add_argument("-c", "--codec", type=str, default="MJPG",
-                help="codec of output video")
-args = vars(ap.parse_args())
-
-pathIn = args["input"]
-name_prefix = args["prefix"]
-# /!\ don't give a name containing '-' or adapt the script!
-if name_prefix != "":
-    imagesIn = [f for f in os.listdir(pathIn) if
-                (os.path.isfile(os.path.join(pathIn, f)) and
-                 f.split('-')[0] == name_prefix and
-                 get_extension(os.path.join(pathIn, f)) in possible_extension)]
-else:
-    imagesIn = [f for f in os.listdir(pathIn) if
-                (os.path.isfile(os.path.join(pathIn, f)) and
-                 get_extension(os.path.join(pathIn, f)) in possible_extension)]
-
-imagesIn = sort(imagesIn)
-# Define the codec and create VideoWriter object
-fourcc = cv.VideoWriter_fourcc(*args["codec"])
-# fourcc = cv.VideoWriter_fourcc(*'XVID')  # => .avi
-# We will suppose that the resolution is the same for all images and is the wanted video
-# resolution so we don't have to resize images
-lenght, width, _ = cv.imread(os.path.join(pathIn, imagesIn[0])).shape
-print(width, lenght)
-# out = cv.VideoWriter('../Data/a.avi', fourcc, 5, (width, lenght))
-out = cv.VideoWriter(args["output"], fourcc, args["fps"], (width, lenght))
-
-for imageIn in imagesIn:
-    print(imageIn)
-    frame = cv.imread(os.path.join(pathIn, imageIn))
-    # frame = cv.resize(frame, (width, lenght))
-    out.write(frame)
-
-# Release everything if job is finished
-out.release()
-</code></pre>
                 </div>
 
             </div>
