@@ -6,39 +6,11 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="../Styles/prism.css">
+<link rel="shortcut icon" href="Media/bO.ico">
+<link rel="stylesheet" href="style.css">
+
 <style>
-    body, h1, h2, h3, h4, h5 {
-        font-family: "Raleway", sans-serif
-    }
 
-    #typewriter {
-        font-family: "Courier New", Courier, monospace;
-        color: #00BB33;
-    }
-
-    .dark1 {
-        background-color: #2b2b2b;
-        color: lightgray;
-    }
-
-    .dark2 {
-        background-color: #343434;
-        color: lightgray;
-    }
-
-    .dark3 {
-        background-color: #3c3c3c;
-        color: lightgray;
-    }
-
-    .dark4 {
-        background-color: #434343;
-        color: lightgray;
-    }
-
-    .codeAAA {
-        font-family: "Courier New", Courier, monospace;
-    }
 </style>
 <body class="w3-light-grey dark4">
 
@@ -63,7 +35,7 @@ and is wrapped around the whole page content, except for the footer in this exam
                 <img src="Media/screenCapture.jpg" alt="newScreenRecorder" style="width:100%">
                 <div class="w3-container dark3">
                     <h3><b>Capture d'écran vidéo sous linux</b></h3>
-                    <h5>Title description, <span class="w3-opacity">31/12/2020</span></h5>
+                    <h5>Rédigé le <span class="w3-opacity">31/12/2020</span></h5>
                 </div>
 
                 <div class="w3-container dark3">
@@ -72,6 +44,7 @@ and is wrapped around the whole page content, except for the footer in this exam
                         <li>Une distribution linux possèdant l'environnement de bureau GNOME (ou pouvant au moins
                             utiliser la commande <span class="codeAAA">gnome-screenshot</span>).
                         </li>
+                        <li>Python 3 avec la bibliothèque OpenCV</li>
                         <li>C'est tout : )</li>
                     </ul>
                     <p>L'essentiel de la capture sera faite grace à l'élément <span
@@ -94,6 +67,15 @@ done</code></pre>
                         C'est bien beau une ligne de commande mais c'est pas très pratique, faisons plutôt un script qui
                         va s'occuper de cela, vous pouvez bien entendu l'adapter et ajouter des fonctionnalités.
                     </p>
+                    <p>N'oublier pas de vous donner les droits d'execution pour pouvoir lancer le script bash, pour
+                        rappel:</p>
+                    <pre class="command-line language-bash" data-user="axxa" data-host="localhost"><code
+                            class=" language-bash"><span class="command-line-prompt"><span
+                            data-user="axxa" data-host="localhost"></span><span></span><span data-user="axxa"
+                                                                                             data-host="localhost"></span><span></span><span></span><span></span><span></span><span></span></span><span
+                            class="token builtin class-name">chmod</span> u+x script.sh
+./script.sh</code></pre>
+                    <p>et nous pouvons même utiliser des URL youtube par exemple, on noter
                     <pre class="line-numbers"><code class="language-bash">#!/bin/bash
 
 # Default values
@@ -123,7 +105,7 @@ do gnome-screenshot -f $path"/"$name"-"$count$extension;
 count=$(($count+1));
 done
 </code></pre>
-                    <p>Comme on va faire la suite en python, on peut en profiter pour lancer le code python depuis ce
+                    <p>Comme on va faire la suite en Python, on peut en profiter pour lancer le code python depuis ce
                         script</p>
                     <pre class="line-numbers"><code class="language-bash">#!/bin/bash
 
@@ -164,10 +146,10 @@ fi</code></pre>
                     <p>Pour ce faire, vous aurez besoin de:</p>
                     <ul>
                         <li>Python 3.X</li>
-                        <li>La bibliothèque OpenCV</li>
+                        <li>La bibliothèque <a href="https://opencv.org/">OpenCV</a></li>
                     </ul>
                     <p>Et là c'est très simple, nous allons simplement 'coller' les images à la suite pour en faire une
-                        vidéo.</p>
+                        vidéo comme sur le modèle suivant:</p>
                     <pre class="line-numbers"><code class="language-python">fourcc = cv.VideoWriter_fourcc(*'XVID')  # => .avi
 out = cv.VideoWriter('../Data/a.avi', fourcc, 5, (width, lenght))
 for imageIn in imagesIn:
@@ -181,7 +163,7 @@ out.release()</code></pre>
                     <p>Nous allons donc réccupérer les images portant le bon nom, les ranger dans le bon sens et
                         enregistrer cela en vidéo. On va passer tout ce dont on a besoin en argument pour pouvoir
                         appeler le Python depuis notre code bash.</p>
-                    <pre class="line-numbers"><code class="language-python">import argparse
+                    <pre data-src="Downloads/screen_capture/script.py" data-download-link class="line-numbers"><code class="language-python">import argparse
 import os
 
 import cv2 as cv
@@ -211,8 +193,8 @@ ap.add_argument("-p", "--prefix", default="",
                 help="prefix images from capture should have, to let the other ones if there is")
 ap.add_argument("-o", "--output", required=True,
                 help="path to output video file")
-ap.add_argument("-f", "--fps", type=int, default=5,
-                help="FPS of output video")
+ap.add_argument("-l", "--lenght", type=int, default=5,
+                help="lenght of output video (in s)")
 ap.add_argument("-c", "--codec", type=str, default="MJPG",
                 help="codec of output video")
 args = vars(ap.parse_args())
@@ -238,11 +220,10 @@ fourcc = cv.VideoWriter_fourcc(*args["codec"])
 # resolution so we don't have to resize images
 lenght, width, _ = cv.imread(os.path.join(pathIn, imagesIn[0])).shape
 print(width, lenght)
-# out = cv.VideoWriter('../Data/a.avi', fourcc, 5, (width, lenght))
-out = cv.VideoWriter(args["output"], fourcc, args["fps"], (width, lenght))
+out = cv.VideoWriter(args["output"], fourcc, len(imagesIn)/args["lenght"], (width, lenght))
 
 for imageIn in imagesIn:
-    print(imageIn)
+    # print(imageIn)
     frame = cv.imread(os.path.join(pathIn, imageIn))
     # frame = cv.resize(frame, (width, lenght))
     out.write(frame)
@@ -250,6 +231,44 @@ for imageIn in imagesIn:
 # Release everything if job is finished
 out.release()
 </code></pre>
+                    <p>Maintenant il suffit d'appeler le script Python depuis notre script en Bash avec cette ligne:</p>
+                    <pre class="line-numbers"><code class="language-bash">python script.py -i $path -p $name -o $name".mp4" -l $((SECONDS-start))
+</code></pre>
+                    <p>ce qui donne finalement</p>
+                    <pre data-src="Downloads/screen_capture/script.sh" data-download-link class="line-numbers"><code
+                            class="language-bash">#!/bin/bash
+
+# Default values
+path=$HOME"/Videos/MyCaptures"
+mkdir -p $path
+maxTime=3
+name="mycapture"
+doThePythonProcess=false
+extension=".jpg"
+
+# Get the options flags
+while getopts t:p:f:F:P option
+do
+case "${option}"
+in
+t) maxTime=${OPTARG};;
+p) path=${OPTARG};;
+f) name=${OPTARG};;
+F) extension="."${OPTARG};;
+P) doThePythonProcess=true;;
+esac
+done
+
+start=$SECONDS
+count=1
+while ((maxTime > ((SECONDS - start))));
+do gnome-screenshot -f $path"/"$name"-"$count$extension;
+count=$(($count+1));
+done
+
+if $doThePythonProcess
+then python script.py -i $path -p $name -o $name".mp4" -l $((SECONDS-start))
+fi</code></pre>
                 </div>
 
             </div>
@@ -276,9 +295,9 @@ out.release()
         <div class="w3-col l4">
             <!-- About Card -->
             <div class="w3-card w3-margin w3-margin-top">
-                <img src="/w3images/avatar_g.jpg" style="width:100%">
+                <img src="../Media/" style="width:100%">
                 <div class="w3-container w3-white">
-                    <h4><b>My Name</b></h4>
+                    <h4><b>AxxA</b></h4>
                     <p>Ce tutoriel est le resultat d'heures d'ennui il y a quelques années, je tennais à faire partager
                         cette avancée majeure.</p>
                 </div>

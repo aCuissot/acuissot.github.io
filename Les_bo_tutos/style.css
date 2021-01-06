@@ -1,0 +1,39 @@
+body, h1, h2, h3, h4, h5 {
+    font-family: "Raleway", sans-serif;
+}
+
+p {
+    text-align: justify;
+}
+
+#typewriter {
+    font-family: "Courier New", Courier, monospace;
+    color: #00BB33;
+}
+
+.dark1 {
+    background-color: #2b2b2b;
+    color: lightgray;
+}
+
+.dark2 {
+    background-color: #343434;
+    color: lightgray;
+}
+
+.dark3 {
+    background-color: #3c3c3c;
+    color: lightgray;
+}
+
+.dark4 {
+    background-color: #434343;
+    color: lightgray;
+}
+.darkH {
+    background-color: #2b2b2b;
+    color: lightgray;
+}
+.codeAAA {
+    font-family: "Courier New", Courier, monospace;
+}

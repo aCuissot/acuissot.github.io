@@ -6,40 +6,8 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="../Styles/prism.css">
-<style>
-    body, h1, h2, h3, h4, h5 {
-        font-family: "Raleway", sans-serif
-    }
-
-    #typewriter {
-        font-family: "Courier New", Courier, monospace;
-        color: #00BB33;
-    }
-
-    .dark1 {
-        background-color: #2b2b2b;
-        color: lightgray;
-    }
-
-    .dark2 {
-        background-color: #343434;
-        color: lightgray;
-    }
-
-    .dark3 {
-        background-color: #3c3c3c;
-        color: lightgray;
-    }
-
-    .dark4 {
-        background-color: #434343;
-        color: lightgray;
-    }
-
-    .codeAAA {
-        font-family: "Courier New", Courier, monospace;
-    }
-</style>
+<link rel="shortcut icon" href="Media/bO.ico">
+<link rel="stylesheet" href="style.css">
 <body class="w3-light-grey dark4">
 
 <!-- w3-content defines a container for fixed size centered content,
@@ -112,8 +80,23 @@ VLC media player 3.0.11.1 Vetinari (revision )
                     <p>C'est bien gentil tout ça mais on va regarder un peu les options que propose VLC afin d'avoir un
                         lecteur sur mesure et de pouvoir utiliser des playlists. Nous ne verrons pas toutes les options
                         mais sachez qu'il y en a pour afficher des sous titres, changer de langue (si vous avez
-                        plusieurs pistes audio) et beaucoup d'autres, n'hésitez pas a utiliser <span class="codeAAA">vlc -h</span>
-                        pour avoir la liste exhaustive de ces options.</p>
+                        plusieurs pistes audio) et beaucoup d'autres, n'hésitez pas a utiliser <span class="codeAAA">vlc -h</span>pour
+                        la page d'aide, <span class="codeAAA">vlc -H</span>
+                        pour avoir la liste exhaustive de ces options et modules, <span class="codeAAA">vlc -l</span>
+                        pour la liste
+                        des modules disponible (ou <span class="codeAAA">vlc --list-verbose</span> pour avoir également
+                        une description de ces module) <span class="codeAAA">vlc -p moduleName</span> pour une aide sur
+                        un module en particulier. Les modules peuvent servir à différentes choses comme ajouter des
+                        filtres audio ou video, utiliser des fonctions d'encodage ou de décodage particulière, importer
+                        une playlist iTunes et bien d'autres.</p>
+                    <p>L'option <span class="codeAAA">--no-audio</span> permet bien évidément de ne pas lancer la partie
+                        audio du fichier.</p>
+                    <p>L'option <span class="codeAAA">-f</span> lance la fenêtre en mode plein écran</p>
+                    <p>Les options <span class="codeAAA">-Z</span>, <span class="codeAAA">-L</span> et <span
+                            class="codeAAA">-R</span> permettent respectivement d'activer la lecture aléatoire, la
+                        lecture en boucle de la liste et la lecture en boucle du fichier actuellement lu.</p>
+                    <p>Nous allons ici utiliser l'option <span class="codeAAA">--play-and-exit</span> pour fermer
+                        l'application une fois la lecture terminée mais libre à vous de ne pas l'utiliser.</p>
 
                 </div>
 
@@ -144,8 +127,9 @@ VLC media player 3.0.11.1 Vetinari (revision )
                 <img src="/w3images/avatar_g.jpg" style="width:100%">
                 <div class="w3-container w3-white">
                     <h4><b>My Name</b></h4>
-                    <p>Ce tutoriel est le resultat d'heures d'ennui il y a quelques années, je tennais à faire partager
-                        cette avancée majeure.</p>
+                    <p>Ce tutoriel est le résultat de ... je ne sais plus trop, mais je pensais savoir ou j'allais et
+                        finalement j'ai du oublié le point essentiel et fun que je voulais aborder parce que c'est pas
+                        fou : ).</p>
                 </div>
             </div>
             <hr>
