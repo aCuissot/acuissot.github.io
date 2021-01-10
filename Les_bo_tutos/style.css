@@ -37,3 +37,9 @@ p {
 .codeAAA {
     font-family: "Courier New", Courier, monospace;
 }
+
+.remarque {
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+}
