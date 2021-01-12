@@ -31,14 +31,14 @@ and is wrapped around the whole page content, except for the footer in this exam
                 <img src="Media/protips.jpg" alt="newScreenRecorder" style="width:100%">
                 <div class="w3-container dark3">
                     <h3><b>Nos meilleurs astuces pour bien configurer son CSGO</b></h3>
-                    <h5>Title description, <span class="w3-opacity">10/01/2021</span></h5>
+                    <h5><span class="w3-opacity">10/01/2021</span></h5>
                 </div>
 
                 <div class="w3-container dark3">
                     <p>Avant toutes choses, je vous recommande d'activer la console dans les paramètres du jeu, que ce
                         soit pour utiliser certaines de ces astuces ou simplement savoir par exemple les dégats infligés
                         pendant le round, ...</p>
-                    <h4>1. Le viseur</h4>
+                    <h2>1. Le viseur</h2>
                     <p>Vous l'avez peut être remarqué, mais sur Counter-Strike, il y a presque autant de cheater... euh,
                         de viseurs que de joueurs. Cette partie va vous aider à choisir celui qui vous correspond le
                         plus.</p>
@@ -92,8 +92,63 @@ and is wrapped around the whole page content, except for the footer in this exam
                     <p>
                         Voir même celui là élaboré à l'aide d'un bouchon.
                     </p>
-
-
+                    <h2>2. Amélioration des performances</h2>
+                    <p>Console:</p>
+                    <ul>
+                        <li><span class="codeAAA">cl_forcepreload 1</span> (Précharge les textures de la carte, utile si
+                            vous avez du mal à charger
+                            les maps au lancement de la partie)
+                        </li>
+                        <li><span class="codeAAA">func_break_max_pieces 0</span> (Supprime les éclats des objetx comme
+                            les bouteilles, etc.)
+                        </li>
+                        <li><span class="codeAAA">cl_foot_contact_shadows 0</span> (Réduit la qualité des ombres)</li>
+                        <li><span class="codeAAA">r_eyemove 0</span> et <span class="codeAAA">r_eyeglow 0</span>
+                            (Supprime le mouvement et l'éclat des yeux du joueur)
+                        </li>
+                    </ul>
+                    <p>Options de lancement:</p>
+                    <ul>
+                        <li><span class="codeAAA">-novid</span> (supprime l'écran initial lorsque le jeu démarre)</li>
+                        <li><span class="codeAAA">-nojoy</span> (désactive la prise en charge de la manette de jeu dans
+                            le jeu)
+                        </li>
+                        <li><span class="codeAAA">-high</span> (Donne au jeu une priorité élevée)</li>
+                        <li><span class="codeAAA">-freq 60</span> (Ici, nous enregistrons le nombre de Hz de notre
+                            moniteur, par exemple 60)
+                        </li>
+                        <li><span class="codeAAA">-dxlevel 81</span> (Exécute le jeu sur directX 8.1)</li>
+                        <li>vous pouvez aussi jouer avec -threads ou -heapsize si vous souhaitez allouer des ressources
+                            partiulière au jeu
+                        </li>
+                    </ul>
+                    <p>La plupart de ces options vous feront gagner un peu en performance, mais si vous avez un PC
+                        correct, la majorité d'entre elles ne serviront pas à grand chose.</p>
+                    <h2>3. Quelques bindings</h2>
+                    <p>Changer l'arme de côté:</p>
+                    <pre class="line-numbers"><code class="language-bash">bind x "toggle cl_righthand 0 1"
+</code></pre>
+                    <p>Changer l'arme automatiquement en fonction du côté où vous vous déplacez:</p>
+                    <pre class="line-numbers"><code class="language-bash">bind q "+moveleft ; cl_righthand 1";bind d "+moveright ; cl_righthand 0"
+</code></pre>
+                    <p>Avoir une touche par grenade:</p>
+                    <pre class="line-numbers"><code class="language-bash">bind z "use weapon_flashbang";bind x "use weapon_smokegrenade";bind c "use weapon_hegrenade";bind v "use weapon_molotov;use weapon_incgrenade"
+</code></pre>
+                    <p>Nettoyer les graffitis et le sang:</p>
+                    <pre class="line-numbers"><code class="language-bash">bind m "r_cleardecals"
+</code></pre>
+                    <p>Cela peut servir si les graffitis ou taches de sang vous empechent de voir clairement un
+                        emplacement.</p>
+                    <p>Droper la bombe</p>
+                    <pre class="line-numbers"><code class="language-bash">bind b "use weapon_knife; use weapon_c4; drop; slot1"
+</code></pre>
+                    <p>Muter/Demuter le chat global</p>
+                    <pre class="line-numbers"><code class="language-bash">bindtoggle j voice_enable
+</code></pre>
+                    <p>Avoir un crosshair pour aligner ses grenades:</p>
+                    <pre class="line-numbers"><code class="language-bash">bind 1 "slot1 ; cl_crosshairsize 3"; bind 2 "slot2 ; cl_crosshairsize 3"; bind 3 "slot3 ; cl_crosshairsize 3"; bind 4 "slot8 ; cl_crosshairsize 1000"
+</code></pre>
+                    <p>Il faut remplacer par 3 la taille de votre viseur actuel.</p>
                 </div>
 
             </div>

@@ -81,7 +81,7 @@ done</code></pre>
 # Default values
 path=$HOME"/Videos/MyCaptures"
 mkdir -p $path
-maxTime=3
+maxTime=3600
 name="mycapture"
 doThePythonProcess=false
 extension=".jpg"
@@ -112,7 +112,7 @@ done
 # Default values
 path=$HOME"/Videos/MyCaptures"
 mkdir -p $path
-maxTime=3
+maxTime=3600
 name="mycapture"
 doThePythonProcess=false
 extension=".jpg"
@@ -234,7 +234,7 @@ out.release()
                     <p>Maintenant il suffit d'appeler le script Python depuis notre script en Bash avec cette ligne:</p>
                     <pre class="line-numbers"><code class="language-bash">python script.py -i $path -p $name -o $name".mp4" -l $((SECONDS-start))
 </code></pre>
-                    <p>ce qui donne finalement</p>
+                    <p>On en profite pour pouvoir stoper la capture avec Ctrl+C, ce qui donne finalement</p>
                     <pre data-src="Downloads/screen_capture/script.sh" data-download-link class="line-numbers"><code
                             class="language-bash">#!/bin/bash
 
@@ -245,6 +245,14 @@ maxTime=3
 name="mycapture"
 doThePythonProcess=false
 extension=".jpg"
+
+trap createVideo SIGINT
+createVideo() {
+   if $doThePythonProcess
+   then python script.py -i $path -p $name -o $name".mp4" -l $((SECONDS-start))
+   fi
+   exit
+}
 
 # Get the options flags
 while getopts t:p:f:F:P option
@@ -265,6 +273,8 @@ while ((maxTime > ((SECONDS - start))));
 do gnome-screenshot -f $path"/"$name"-"$count$extension;
 count=$(($count+1));
 done
+
+echo "fin de la capture"
 
 if $doThePythonProcess
 then python script.py -i $path -p $name -o $name".mp4" -l $((SECONDS-start))
