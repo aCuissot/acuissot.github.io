@@ -43,3 +43,9 @@ p {
     font-style: italic;
     font-weight: bold;
 }
+
+.center_img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

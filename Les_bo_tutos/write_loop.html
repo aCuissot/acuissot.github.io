@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>Screen Recorder</title>
+<title>Écrire la même chose en boucle</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -34,48 +34,80 @@ and is wrapped around the whole page content, except for the footer in this exam
             <div class="w3-card-4 w3-margin w3-white">
                 <img src="Media/screenCapture.jpg" alt="newScreenRecorder" style="width:100%">
                 <div class="w3-container dark3">
-                    <h3><b>Capture d'écran vidéo sous linux</b></h3>
-                    <h5>Rédigé le <span class="w3-opacity">31/12/2020</span></h5>
+                    <h3><b>Écrire la même chose en boucle</b></h3>
+                    <h5>Rédigé le <span class="w3-opacity">15/01/2021</span></h5>
                 </div>
 
                 <div class="w3-container dark3">
-                    <h4>Prérequis:</h4>
-                    <ul>
-                        <li>Une distribution linux possèdant l'environnement de bureau GNOME (ou pouvant au moins
-                            utiliser la commande <span class="codeAAA">gnome-screenshot</span>).
-                        </li>
-                        <li>Python 3 avec la bibliothèque OpenCV</li>
-                        <li>C'est tout : )</li>
-                    </ul>
-                    <p>L'essentiel de la capture sera faite grace à l'élément <span
-                            class="codeAAA">gnome-screenshot</span>, nous allons procéder ainsi:</p>
-                    <ul>
-                        <li>Choisir un dossier dans lequel effectuer la capture, ici: <span
-                                class="codeAAA">capturePath</span></li>
-                        <li>Choisir un nom pour cette capture, ici: <span
-                                class="codeAAA">mycapture</span></li>
-                    </ul>
-                    <pre class="line-numbers"><code class="language-bash">count=1;
-while (true);
-do gnome-screenshot -f "capturePath/mycapture-"$count".jpg";
-count=$((count+1));
-done</code></pre>
-                    <p>Je vous recommande comme dans le script ci-dessus d'enregistrer au format jpg car le format png
-                        est beaucoup plus lourd. Il est également recommendé de le faire dans un répertoire crée pour
-                        cet effet.</p>
+                    <p>Petit bonus à la fin de l'article</p>
+                    <h2>1. Cas d'un unique caractère</h2>
+                    <p>Une première solution, celle à laquelle vous avez sans doutes déjà pensé, c'est de resster appuyé
+                        sur cette touche, cependant pour des soucis d'efficacité, je vous recommande de verifier que le
+                        caractère sera répété au plus vite, pour cela allez dans le panneau de configuration chercher
+                        les propriété du clavier et mettez la cadence de répétition au maximum (je vous conseil
+                        également de mettre au maximum les autres curseurs c'est plus sympatique ainsi)</p>
+                    <img src="Media/keyboardSettings.png" style="width:60%" class="center_img">
+                    <p>Ensuite choisissez quelques chose pour appuyer sur votre touche, cela peut être votre doigt, un
+                        cailloux, ... j'ai pour ma part utilisé la manivelle du volet qui était parfaite pour ma
+                        configuration.</p>
+                    <img src="Media/AAAAAAAAvolet.jpg" style="width:100%">
+                    <p>Pour une répetition encore plus rapide, vous pouvez utiliser des macros via votre logiciel de
+                        macro préféré.</p>
+                    <p>Une solution assez puissante mais qui peut manquer de flexibilité est d'acheter un clavier
+                        spécialisé dans le caractère que vous souhaitez reproduire</p>
+                    <img src="Media/AAA_keyboard.jpg" style="width:100%">
+                    <p>Cette solution est sans doute la plus onéreuse mais le clavier en question restera un objet de
+                        curiosité et de décoration (remarque: vous pouvez seulement acheter les touches si vous voulez
+                        conserver votre clavier).</p>
+
+                    <h2>2. Cas général</h2>
+                    <p>Passons aux choses serieuses, nous allons utiliser Python afin de produire ce que nous voulons
+                        depuis le début, dans un premier temps avec Python seulement puis avec une librairie pour une
+                        simplicité d'execution.</p>
+                    <pre class="line-numbers"><code class="language-python">>>> 'A'*9
+'AAAAAAAAA'</code></pre>
+                    <pre class="line-numbers"><code class="language-python">>>> 'Aaaa aa'*9
+'Aaaa aaAaaa aaAaaa aaAaaa aaAaaa aaAaaa aaAaaa aaAaaa aaAaaa aa'</code></pre>
+                    <p>Je vais utiliser beaucoup de A aaaaaaaaaaaaaaaaaaaaaaa mais vous pouvez choisir ce que vous
+                        voulez, même des lettres différentes les unes des autres si vous l'osez.</p>
                     <p>
-                        C'est bien beau une ligne de commande mais c'est pas très pratique, faisons plutôt un script qui
-                        va s'occuper de cela, vous pouvez bien entendu l'adapter et ajouter des fonctionnalités.
+                        Comme on est en Python, on peut faire bien plus, comme ne pas répeter exactement la même chose:
                     </p>
-                    <p>N'oublier pas de vous donner les droits d'execution pour pouvoir lancer le script bash, pour
-                        rappel:</p>
-                    <pre class="command-line language-bash" data-user="axxa" data-host="localhost"><code
-                            class=" language-bash"><span class="command-line-prompt"><span
-                            data-user="axxa" data-host="localhost"></span><span></span><span data-user="axxa"
-                                                                                             data-host="localhost"></span><span></span><span></span><span></span><span></span><span></span></span><span
-                            class="token builtin class-name">chmod</span> u+x script.sh
-./script.sh</code></pre>
-                    <p>et nous pouvons même utiliser des URL youtube par exemple, on noter
+                    <pre class="line-numbers"><code class="language-python">>>> s=''
+for i in range (8):
+...     s+='A' + i*'a'
+...
+>>> s
+'AAaAaaAaaaAaaaaAaaaaaAaaaaaaAaaaaaaa'</code></pre>
+                    <pre class="line-numbers"><code class="language-python">>>> s=''
+for i in range (8):
+...     s+='A' + i*'a' + str(i)
+...
+>>> s
+'A0Aa1Aaa2Aaaa3Aaaaa4Aaaaaa5Aaaaaaa6Aaaaaaaa7'</code></pre>
+                    <pre class="line-numbers"><code class="language-python">>>> L=['aaAa', 'aAAa', 'a'*4, 'AAAAAAAaa']
+>>> n=len(L)
+>>> s=''
+>>> for i in range(12):
+...     s+=L[i%n]+'aA a'*(i//n)
+...
+>>> s
+'aaAaaAAaaaaaAAAAAAAaaaaAaaA aaAAaaA aaaaaaA aAAAAAAAaaaA aaaAaaA aaA aaAAaaA aaA aaaaaaA aaA aAAAAAAAaaaA aaA a'</code></pre>
+                    <p>Ou même en utilisant le code ASCII pour changer de lettre au fur et a mesure.</p>
+                    <pre class="line-numbers"><code class="language-python">>>> a = ord('a')
+>>> z = ord('z')
+>>> s=''
+>>> for i in range(16):
+...     s+= chr(a + i)*i
+...
+>>> s
+'bccdddeeeefffffgggggghhhhhhhiiiiiiiijjjjjjjjjkkkkkkkkkklllllllllllmmmmmmmmmmmmnnnnnnnnnnnnnooooooooooooooppppppppppppppp'</code></pre>
+                    <p>Vous le comprennez sans doutes, le champ des possibilité est fou, quasi infini.</p>
+
+                    <p>Mais vous me direz bien entendu "C'est bien gentil mais une fois que j'ai généré ma chaine en
+                        python, il faut que j'aille faire moi même un copié collé dans le champ qui m'interesse". C'est
+                        là qu'intervient la bibliothèque <a href="https://pypi.org/project/PyAutoGUI/">pyautogui</a>.
+                    </p>
                     <pre class="line-numbers"><code class="language-bash">#!/bin/bash
 
 # Default values
@@ -163,7 +195,8 @@ out.release()</code></pre>
                     <p>Nous allons donc réccupérer les images portant le bon nom, les ranger dans le bon sens et
                         enregistrer cela en vidéo. On va passer tout ce dont on a besoin en argument pour pouvoir
                         appeler le Python depuis notre code bash.</p>
-                    <pre data-src="Downloads/screen_capture/script.py" data-download-link class="line-numbers"><code class="language-python">import argparse
+                    <pre data-src="Downloads/screen_capture/script.py" data-download-link class="line-numbers"><code
+                            class="language-python">import argparse
 import os
 
 import cv2 as cv

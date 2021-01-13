@@ -38,6 +38,4 @@ done
 
 echo "fin de la capture"
 
-if $doThePythonProcess
-then python script.py -i $path -p $name -o $name".mp4" -l $((SECONDS-start))
-fi
+createVideo
