@@ -32,7 +32,7 @@ and is wrapped around the whole page content, except for the footer in this exam
         <div class="w3-col l8 s12 dark2">
             <!-- Blog entry -->
             <div class="w3-card-4 w3-margin w3-white">
-                <img src="Media/screenCapture.jpg" alt="newScreenRecorder" style="width:100%">
+                <!--<img src="Media/screenCapture.jpg" alt="newScreenRecorder" style="width:100%">-->
                 <div class="w3-container dark3">
                     <h3><b>Écrire la même chose en boucle</b></h3>
                     <h5>Rédigé le <span class="w3-opacity">15/01/2021</span></h5>
@@ -74,13 +74,13 @@ and is wrapped around the whole page content, except for the footer in this exam
                         Comme on est en Python, on peut faire bien plus, comme ne pas répeter exactement la même chose:
                     </p>
                     <pre class="line-numbers"><code class="language-python">>>> s=''
-for i in range (8):
+>>> for i in range (8):
 ...     s+='A' + i*'a'
 ...
 >>> s
 'AAaAaaAaaaAaaaaAaaaaaAaaaaaaAaaaaaaa'</code></pre>
                     <pre class="line-numbers"><code class="language-python">>>> s=''
-for i in range (8):
+>>> for i in range (8):
 ...     s+='A' + i*'a' + str(i)
 ...
 >>> s
@@ -93,8 +93,8 @@ for i in range (8):
 ...
 >>> s
 'aaAaaAAaaaaaAAAAAAAaaaaAaaA aaAAaaA aaaaaaA aAAAAAAAaaaA aaaAaaA aaA aaAAaaA aaA aaaaaaA aaA aAAAAAAAaaaA aaA a'</code></pre>
-                    <p>Ou même en utilisant le code ASCII pour changer de lettre au fur et a mesure.</p>
-                    <pre class="line-numbers"><code class="language-python">>>> a = ord('a')
+                    <p>Ou même en utilisant le code ASCII (par exemple) pour changer de lettre au fur et a mesure.</p>
+                    <pre class="line-numbers"><code class="language-python">>>> a = ord('a')  # donne la valeur numérique de 'a' dans le code ascii, chr() est la fonction reciproque
 >>> z = ord('z')
 >>> s=''
 >>> for i in range(16):
@@ -108,208 +108,7 @@ for i in range (8):
                         python, il faut que j'aille faire moi même un copié collé dans le champ qui m'interesse". C'est
                         là qu'intervient la bibliothèque <a href="https://pypi.org/project/PyAutoGUI/">pyautogui</a>.
                     </p>
-                    <pre class="line-numbers"><code class="language-bash">#!/bin/bash
 
-# Default values
-path=$HOME"/Videos/MyCaptures"
-mkdir -p $path
-maxTime=3600
-name="mycapture"
-doThePythonProcess=false
-extension=".jpg"
-
-# Get the options flags
-while getopts t:p:f:F: option
-do
-case "${option}"
-in
-t) maxTime=${OPTARG};;
-p) path=${OPTARG};;
-f) name=${OPTARG};;
-F) extension="."${OPTARG};;
-esac
-done
-
-start=$SECONDS
-count=1
-while ((maxTime > ((SECONDS - start))));
-do gnome-screenshot -f $path"/"$name"-"$count$extension;
-count=$(($count+1));
-done
-</code></pre>
-                    <p>Comme on va faire la suite en Python, on peut en profiter pour lancer le code python depuis ce
-                        script</p>
-                    <pre class="line-numbers"><code class="language-bash">#!/bin/bash
-
-# Default values
-path=$HOME"/Videos/MyCaptures"
-mkdir -p $path
-maxTime=3600
-name="mycapture"
-doThePythonProcess=false
-extension=".jpg"
-
-# Get the options flags
-while getopts t:p:f:F:P option
-do
-case "${option}"
-in
-t) maxTime=${OPTARG};;
-p) path=${OPTARG};;
-f) name=${OPTARG};;
-F) extension="."${OPTARG};;
-P) doThePythonProcess=true;;
-esac
-done
-
-start=$SECONDS
-count=1
-while ((maxTime > ((SECONDS - start))));
-do gnome-screenshot -f $path"/"$name"-"$count$extension;
-count=$(($count+1));
-done
-
-if $doThePythonProcess
-then echo "run the python script here"
-# qqch comme python pythonscript.py dir outName
-fi</code></pre>
-                    <p>Maintenant on va passer au code en Python qui va faire de ces images une video extremement fluide
-                        et qualitative que même Spielberg vous enviera.</p>
-                    <p>Pour ce faire, vous aurez besoin de:</p>
-                    <ul>
-                        <li>Python 3.X</li>
-                        <li>La bibliothèque <a href="https://opencv.org/">OpenCV</a></li>
-                    </ul>
-                    <p>Et là c'est très simple, nous allons simplement 'coller' les images à la suite pour en faire une
-                        vidéo comme sur le modèle suivant:</p>
-                    <pre class="line-numbers"><code class="language-python">fourcc = cv.VideoWriter_fourcc(*'XVID')  # => .avi
-out = cv.VideoWriter('../Data/a.avi', fourcc, 5, (width, lenght))
-for imageIn in imagesIn:
-    print(imageIn)
-    frame = cv.imread(os.path.join(pathIn, imageIn))
-    frame = cv.resize(frame, (width, lenght))
-    out.write(frame)
-
-# Release everything if job is finished
-out.release()</code></pre>
-                    <p>Nous allons donc réccupérer les images portant le bon nom, les ranger dans le bon sens et
-                        enregistrer cela en vidéo. On va passer tout ce dont on a besoin en argument pour pouvoir
-                        appeler le Python depuis notre code bash.</p>
-                    <pre data-src="Downloads/screen_capture/script.py" data-download-link class="line-numbers"><code
-                            class="language-python">import argparse
-import os
-
-import cv2 as cv
-
-possible_extension = [".jpg", ".png"]
-
-
-def get_extension(filename):
-    _, ext = os.path.splitext(filename)
-    return ext
-
-
-def sort(imgList):
-    extSize = len(get_extension(imgList[0]))
-    beginIndex = imgList[0].index('-')
-    tmp = []
-    for i in imgList:
-        tmp.append((i, int(i[beginIndex + 1:-extSize])))
-    tmp = sorted(tmp, key=lambda tup: tup[1])
-    return [f[0] for f in tmp]
-
-
-ap = argparse.ArgumentParser()
-ap.add_argument("-i", "--input", required=True,
-                help="path to input directory containing the images")
-ap.add_argument("-p", "--prefix", default="",
-                help="prefix images from capture should have, to let the other ones if there is")
-ap.add_argument("-o", "--output", required=True,
-                help="path to output video file")
-ap.add_argument("-l", "--lenght", type=int, default=5,
-                help="lenght of output video (in s)")
-ap.add_argument("-c", "--codec", type=str, default="MJPG",
-                help="codec of output video")
-args = vars(ap.parse_args())
-
-pathIn = args["input"]
-name_prefix = args["prefix"]
-# /!\ don't give a name containing '-' or adapt the script!
-if name_prefix != "":
-    imagesIn = [f for f in os.listdir(pathIn) if
-                (os.path.isfile(os.path.join(pathIn, f)) and
-                 f.split('-')[0] == name_prefix and
-                 get_extension(os.path.join(pathIn, f)) in possible_extension)]
-else:
-    imagesIn = [f for f in os.listdir(pathIn) if
-                (os.path.isfile(os.path.join(pathIn, f)) and
-                 get_extension(os.path.join(pathIn, f)) in possible_extension)]
-
-imagesIn = sort(imagesIn)
-# Define the codec and create VideoWriter object
-fourcc = cv.VideoWriter_fourcc(*args["codec"])
-# fourcc = cv.VideoWriter_fourcc(*'XVID')  # => .avi
-# We will suppose that the resolution is the same for all images and is the wanted video
-# resolution so we don't have to resize images
-lenght, width, _ = cv.imread(os.path.join(pathIn, imagesIn[0])).shape
-print(width, lenght)
-out = cv.VideoWriter(args["output"], fourcc, len(imagesIn)/args["lenght"], (width, lenght))
-
-for imageIn in imagesIn:
-    # print(imageIn)
-    frame = cv.imread(os.path.join(pathIn, imageIn))
-    # frame = cv.resize(frame, (width, lenght))
-    out.write(frame)
-
-# Release everything if job is finished
-out.release()
-</code></pre>
-                    <p>Maintenant il suffit d'appeler le script Python depuis notre script en Bash avec cette ligne:</p>
-                    <pre class="line-numbers"><code class="language-bash">python script.py -i $path -p $name -o $name".mp4" -l $((SECONDS-start))
-</code></pre>
-                    <p>On en profite pour pouvoir stoper la capture avec Ctrl+C, ce qui donne finalement</p>
-                    <pre data-src="Downloads/screen_capture/script.sh" data-download-link class="line-numbers"><code
-                            class="language-bash">#!/bin/bash
-
-# Default values
-path=$HOME"/Videos/MyCaptures"
-mkdir -p $path
-maxTime=3
-name="mycapture"
-doThePythonProcess=false
-extension=".jpg"
-
-trap createVideo SIGINT
-createVideo() {
-   if $doThePythonProcess
-   then python script.py -i $path -p $name -o $name".mp4" -l $((SECONDS-start))
-   fi
-   exit
-}
-
-# Get the options flags
-while getopts t:p:f:F:P option
-do
-case "${option}"
-in
-t) maxTime=${OPTARG};;
-p) path=${OPTARG};;
-f) name=${OPTARG};;
-F) extension="."${OPTARG};;
-P) doThePythonProcess=true;;
-esac
-done
-
-start=$SECONDS
-count=1
-while ((maxTime > ((SECONDS - start))));
-do gnome-screenshot -f $path"/"$name"-"$count$extension;
-count=$(($count+1));
-done
-
-echo "fin de la capture"
-
-createVideo</code></pre>
                 </div>
 
             </div>
@@ -324,8 +123,9 @@ createVideo</code></pre>
                 </div>
                 <div class="dark4">
 
-                    <p>Vidéo un peu trop sacadée à mon gout, mais parfait pour des timelapses par exemple. Bon tuto! :
-                        )</p>
+                    <p>
+                        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+                    </p>
                 </div>
 
             </div>
@@ -348,60 +148,32 @@ createVideo</code></pre>
             <!-- Posts -->
             <div class="w3-card w3-margin">
                 <div class="w3-container w3-padding">
-                    <h4>Popular Posts</h4>
+                    <h4>D'autres articles:</h4>
                 </div>
                 <ul class="w3-ul w3-hoverable w3-white">
-                    <li class="w3-padding-16">
-                        <img src="/w3images/workshop.jpg" alt="Image" class="w3-left w3-margin-right"
+                    <li class="w3-padding-16" onclick="window.open('screen_capture_linux.html')">
+                        <img src="Media/screenCapture.jpg" alt="Image" class="w3-left w3-margin-right"
                              style="width:50px">
-                        <span class="w3-large">Lorem</span><br>
-                        <span>Sed mattis nunc</span>
+                        <span class="w3-large">Capture vidéo sous Linux</span>
                     </li>
-                    <li class="w3-padding-16">
-                        <img src="/w3images/gondol.jpg" alt="Image" class="w3-left w3-margin-right"
+                    <li class="w3-padding-16" onclick="window.open('lire_audio_video_ligne_de_commande_vlc.html')">
+                        <img src="Media/nvlc.jpg" alt="Image" class="w3-left w3-margin-right"
                              style="width:50px">
-                        <span class="w3-large">Ipsum</span><br>
-                        <span>Praes tinci sed</span>
+                        <span class="w3-large">Lecture multimédia depuis le terminal</span>
                     </li>
-                    <li class="w3-padding-16">
-                        <img src="/w3images/skies.jpg" alt="Image" class="w3-left w3-margin-right"
+                    <li class="w3-padding-16" onclick="window.open('liberer.html')">
+                        <img src="Media/camionette.jpg" alt="Image" class="w3-left w3-margin-right"
                              style="width:50px">
-                        <span class="w3-large">Dorum</span><br>
-                        <span>Ultricies congue</span>
+                        <span class="w3-large">Libérons cette caisse</span>
                     </li>
-                    <li class="w3-padding-16 w3-hide-medium w3-hide-small">
-                        <img src="/w3images/rock.jpg" alt="Image" class="w3-left w3-margin-right"
+                    <li class="w3-padding-16" onclick="window.open('csgo_pro_tips.html')">
+                        <img src="Media/protips.jpg" alt="Image" class="w3-left w3-margin-right"
                              style="width:50px">
-                        <span class="w3-large">Mingsum</span><br>
-                        <span>Lorem ipsum dipsum</span>
+                        <span class="w3-large">Écriture en boucle</span>
                     </li>
                 </ul>
             </div>
             <hr>
-
-            <!-- Labels / tags -->
-            <div class="w3-card w3-margin">
-                <div class="w3-container w3-padding">
-                    <h4>Tags</h4>
-                </div>
-                <div class="w3-container w3-white">
-                    <p><span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span
-                            class="w3-tag w3-light-grey w3-small w3-margin-bottom">New York</span> <span
-                            class="w3-tag w3-light-grey w3-small w3-margin-bottom">London</span>
-                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">IKEA</span> <span
-                                class="w3-tag w3-light-grey w3-small w3-margin-bottom">NORWAY</span> <span
-                                class="w3-tag w3-light-grey w3-small w3-margin-bottom">DIY</span>
-                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ideas</span> <span
-                                class="w3-tag w3-light-grey w3-small w3-margin-bottom">Baby</span> <span
-                                class="w3-tag w3-light-grey w3-small w3-margin-bottom">Family</span>
-                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">News</span> <span
-                                class="w3-tag w3-light-grey w3-small w3-margin-bottom">Clothing</span> <span
-                                class="w3-tag w3-light-grey w3-small w3-margin-bottom">Shopping</span>
-                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sports</span> <span
-                                class="w3-tag w3-light-grey w3-small w3-margin-bottom">Games</span>
-                    </p>
-                </div>
-            </div>
 
             <!-- END Introduction Menu -->
         </div>

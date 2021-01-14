@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<title>Liberons la Jeep</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="../Styles/prism.css">
+<link rel="shortcut icon" href="Media/bO.ico">
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+</style>
+<body class="w3-light-grey dark4">
+
+<!-- w3-content defines a container for fixed size centered content,
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+    <!-- Header -->
+    <header class="w3-container w3-center w3-padding-32 dark1">
+        <h1><b>Les bO tutos</b></h1>
+        <!--<p>Welcome to the blog of <span class="w3-tag">unknown</span></p>-->
+        <p id="typewriter"></p>
+    </header>
+
+    <!-- Grid -->
+    <div class="w3-row">
+
+        <!-- Blog entries -->
+        <div class="w3-col l8 s12 dark2">
+            <!-- Blog entry -->
+            <div class="w3-card-4 w3-margin w3-white">
+                <img src="Media/camionette.jpg" alt="newScreenRecorder" style="width:100%">
+                <div class="w3-container dark3">
+                    <h3><b>Ne vous inquièté pas, aucune Jeep n'a été maltraitée durant cet article</b></h3>
+                    <h5>Rédigé le <span class="w3-opacity">15/01/2021</span></h5>
+                </div>
+
+                <div class="w3-container dark3">
+                    <p>Pour commencer, sachez que la marque et le modèle du véhicule ont finalement que peu
+                        d'importance, sa couleur peu en avoir par contre (suivant la méthode que l'on utilisera)</p>
+                    <h2>1. Approche informatique</h2>
+
+                </div>
+
+            </div>
+            <hr>
+
+            <!-- Commentaires -->
+            <div class="w3-card-4 w3-margin w3-white">
+                <div class="w3-container dark3">
+                    <h3><b>Commentaires</b></h3>
+                    <p><span class="w3-padding-large"><b>Comments </b> <span
+                            class="w3-tag">3</span></span></p>
+                </div>
+                <div class="dark4">
+
+                    <p>
+                        Liberée, délivrée, en Jeep je m'en irai.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Introduction menu -->
+        <div class="w3-col l4">
+            <!-- About Card -->
+            <div class="w3-card w3-margin w3-margin-top">
+                <img src="../Media/Avatar.png" style="width:100%">
+                <div class="w3-container w3-white">
+                    <h4><b>AxxA</b></h4>
+                    <p>Ce tutoriel est le resultat d'heures d'ennui il y a quelques années, je tennais à faire partager
+                        cette avancée majeure.</p>
+                </div>
+            </div>
+            <hr>
+
+            <!-- Posts -->
+            <div class="w3-card w3-margin">
+                <div class="w3-container w3-padding">
+                    <h4>D'autres articles:</h4>
+                </div>
+                <ul class="w3-ul w3-hoverable w3-white">
+                    <li class="w3-padding-16" onclick="window.open('screen_capture_linux.html')">
+                        <img src="Media/screenCapture.jpg" alt="Image" class="w3-left w3-margin-right"
+                             style="width:50px">
+                        <span class="w3-large">Capture vidéo sous Linux</span>
+                    </li>
+                    <li class="w3-padding-16" onclick="window.open('lire_audio_video_ligne_de_commande_vlc.html')">
+                        <img src="Media/nvlc.jpg" alt="Image" class="w3-left w3-margin-right"
+                             style="width:50px">
+                        <span class="w3-large">Lecture multimédia depuis le terminal</span>
+                    </li>
+                    <li class="w3-padding-16" onclick="window.open('write_loop.html')">
+                        <img src="Media/ecrire.jpg" alt="Image" class="w3-left w3-margin-right"
+                             style="width:50px">
+                        <span class="w3-large">Écriture en boucle</span>
+                    </li>
+                    <li class="w3-padding-16" onclick="window.open('csgo_pro_tips.html')">
+                        <img src="Media/protips.jpg" alt="Image" class="w3-left w3-margin-right"
+                             style="width:50px">
+                        <span class="w3-large">Écriture en boucle</span>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+
+            <!-- END Introduction Menu -->
+        </div>
+
+        <!-- END GRID -->
+    </div>
+    <br>
+
+    <!-- END w3-content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+<script>
+    var i = 0;
+    var txt = 'Bienvenue sur les bO tutos, j\'espère que vous trouverez de quoi résoudre vos soucis grace à notre contenu qualitatif';
+    /* The text */
+    var speed = 50;
+
+    /* The speed/duration of the effect in milliseconds */
+
+    function typeWriter() {
+        if (i < txt.length) {
+            document.getElementById("typewriter").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+    }
+
+    setInterval(typeWriter, 3000);
+
+
+</script>
+<script src="../Scripts/prism.js"></script>
+</body>
+</html>
