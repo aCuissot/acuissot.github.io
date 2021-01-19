@@ -3,6 +3,11 @@
 <title>Screen Recorder</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Les bO tutos - Capture vidéo sous Linux">
+<meta property="og:description"
+      content="Vous travaillez sous linux et voulez faire une capture vidéo de votre écran sans installer de logiciel lourd? Ce tutoriel est fait pour vous!">
+<meta property="og:image" content="https://acuissot.github.io/Les_bo_tutos/Media/screenCapture.jpg">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="../Styles/prism.css">
@@ -163,7 +168,8 @@ out.release()</code></pre>
                     <p>Nous allons donc réccupérer les images portant le bon nom, les ranger dans le bon sens et
                         enregistrer cela en vidéo. On va passer tout ce dont on a besoin en argument pour pouvoir
                         appeler le Python depuis notre code bash.</p>
-                    <pre data-src="Downloads/screen_capture/script.py" data-download-link class="line-numbers"><code class="language-python">import argparse
+                    <pre data-src="Downloads/screen_capture/script.py" data-download-link class="line-numbers"><code
+                            class="language-python">import argparse
 import os
 
 import cv2 as cv
