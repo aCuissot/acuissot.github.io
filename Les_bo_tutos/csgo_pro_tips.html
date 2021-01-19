@@ -95,12 +95,13 @@ and is wrapped around the whole page content, except for the footer in this exam
                     <h2>2. Amélioration des performances</h2>
                     <p>Console:</p>
                     <ul>
-                        <li><span class="codeAAA">cl_forcepreload 1</span> (Précharge les textures de la carte, utile si
-                            vous avez du mal à charger
-                            les maps au lancement de la partie)
+                        <li><span class="codeAAA">cl_forcepreload 1</span> (Charge la map et les sons avant de joindre
+                            le serveur. Peut augmenter le temps de chargement.)
                         </li>
-                        <li><span class="codeAAA">func_break_max_pieces 0</span> (Supprime les éclats des objetx comme
-                            les bouteilles, etc.)
+                        <li><span class="codeAAA">cl_forcepreload 1</span> (Charge la map et les sons avant de joindre
+                            le serveur. Peut augmenter le temps de chargement.)
+                        </li>
+                        <li><span class="codeAAA">cl_disablehtmlmotd 1</span> (Désactive le message du jour des serveurs)
                         </li>
                         <li><span class="codeAAA">cl_foot_contact_shadows 0</span> (Réduit la qualité des ombres)</li>
                         <li><span class="codeAAA">r_eyemove 0</span> et <span class="codeAAA">r_eyeglow 0</span>
@@ -119,7 +120,7 @@ and is wrapped around the whole page content, except for the footer in this exam
                         </li>
                         <li><span class="codeAAA">-dxlevel 81</span> (Exécute le jeu sur directX 8.1)</li>
                         <li>vous pouvez aussi jouer avec -threads ou -heapsize si vous souhaitez allouer des ressources
-                            partiulière au jeu
+                            partiulière au jeu.
                         </li>
                     </ul>
                     <p>Pour utiliser des options de lancement, aller depuis Steam dans les propriétés de CSGO (clic
@@ -151,7 +152,20 @@ and is wrapped around the whole page content, except for the footer in this exam
                     <p>Avoir un crosshair pour aligner ses grenades:</p>
                     <pre class="line-numbers"><code class="language-bash">bind 1 "slot1 ; cl_crosshairsize 3"; bind 2 "slot2 ; cl_crosshairsize 3"; bind 3 "slot3 ; cl_crosshairsize 3"; bind 4 "slot8 ; cl_crosshairsize 1000"
 </code></pre>
-                    <p>Il faut remplacer par 3 la taille de votre viseur actuel.</p>
+                    <p>Il faut remplacer 3 par la taille de votre viseur actuel.</p>
+                    <p>Avoir différent niveau de zoom sur la map</p>
+                    <pre class="line-numbers"><code class="language-bash">bind o "incrementvar cl_radar_scale 0 1 0.25"
+</code></pre>
+                    <p>Avoir un HUD stylé</p>
+                    <pre class="line-numbers"><code class="language-bash">bind q "+moveleft; cl_hud_color 3"
+bind z "+forward; cl_hud_color 8"
+bind d "+moveright; cl_hud_color 5"
+bind s "+back; cl_hud_color 4"
+bind space "+jump; cl_hud_color 2"
+</code></pre>
+                    <p>Vous pouvez ajouter des couleurs sur d'autre touches pour parfaire et personnaliser cet ultime
+                        config. Vous pouvez en profiter pour jouer sur la couleur (ou un autre paramètre) du viseur et
+                        non uniquemenet sur le HUD.</p>
                 </div>
 
             </div>
