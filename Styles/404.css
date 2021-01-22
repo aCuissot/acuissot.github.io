@@ -1,0 +1,106 @@
+body, html {
+    height: 100%
+}
+
+*, :after, :before {
+    box-sizing: border-box
+}
+
+body, html {
+    font-size: 16px
+}
+
+body {
+    background: #fff;
+    color: #3c3947;
+    cursor: auto;
+    font-family: "RobotoDraft", "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    margin: 0;
+    padding: 0;
+    position: relative
+}
+
+a:hover {
+    cursor: pointer
+}
+
+.cadre_top {
+    background-color: #203961;
+    color: #feffe1;
+    margin: 5px 10px 20px;
+    text-align: left;
+}
+
+.center_img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.legend {
+    text-align: center;
+    color: #81877e;
+}
+
+.textCenter{
+    text-align: center;
+}
+
+.ctamwa {
+    display: inline-block;
+    position: relative;
+    transition: background-color .25s ease-in-out, color .25s ease-in-out;
+    margin: 0;
+    text-align: center
+}
+
+.btn-ctagrey {
+
+    background-color: #a3aab4;
+    color: #162133
+}
+
+.btn-ctaa {
+    margin-bottom: 15px;
+    border: 0 none;
+    border-bottom: 3px solid transparent;
+    background-color: #b1b1b1;
+    padding: 0 20px;
+    min-width: 115px;
+    max-width: 250px;
+    min-height: 47px;
+    line-height: 47px;
+    font-size: .75rem
+}
+
+.tabu {
+    padding-left: 1em;
+}
+
+.addmargin {
+    padding-left: 20%;
+}
+
+.SiCon {
+    margin: 0 auto;
+    max-width: 80rem
+}
+
+.row {
+    margin: 0 auto;
+    max-width: 80rem;
+    width: 100%
+}
+
+.dark3D{
+    background-color: #828784;
+}
+
+.seulLinkPeutVaincreGannon {
+    padding: 3px 10px 0;
+    display: block;
+    line-height: 2em
+}
