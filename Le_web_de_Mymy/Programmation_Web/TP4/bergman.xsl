@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:template match="/">
-        <html>
+        <html lang="fr">
             <body>
                 <h2>
                     <a href="https://fr.wikipedia.org/wiki/Sept_et_Demi" style="text-decoration:none">Bergman</a>

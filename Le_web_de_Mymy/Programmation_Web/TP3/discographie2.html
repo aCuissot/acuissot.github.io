@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="fr">
 	<head>
 		<!-- CUISSOT.html -->
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -22,7 +22,7 @@
 	<body>
 
 		<h1><a style="text-decoration:none" href="https://fr.wikipedia.org/wiki/Sept_et_Demi">7.5</a></h1>
-		<select id="selector">
+		<label for="selector"></label><select id="selector">
 			<option value="1970" id="b70">Avant 1970</option>
 			<option value="1980" id="b80">Avant 1980</option>
 			<option value="2100" id="all">Tous les albums</option>
@@ -35,7 +35,7 @@
 		function loadDoc() {
 			var xhttp = new XMLHttpRequest();
 			xhttp.onreadystatechange = function() {
-				if (this.readyState == 4 && this.status == 200) {
+				if (this.readyState === 4 && this.status === 200) {
 				  myFunction(this);
 				}
 			};
@@ -51,11 +51,11 @@
 			for (i = 0; i <x.length; i++) {
 				gr = x[i];
 				table += "<tr><td>" +	"<a href=\"" + 	gr._url + "\">"+		gr.__text + "</a><br>" +
-				"<img src=img_disco/" +	gr._img + " style=\"width:128px;\">" +
+				"<img alt=\"groupe\" src=img_disco/" +	gr._img + " style=\"width:128px;\">" +
 				"</td><td><ul>";
 				for (j=0; j<gr.musiciens.musicien.length; j++){
 				table += "<li>" + gr.musiciens.musicien[j].__text + ", "+ gr.musiciens.musicien[j].instruments  + ", " + gr.musiciens.musicien[j].bio._naissance;
-				if (gr.musiciens.musicien[j].bio._mort!="-"){
+				if (gr.musiciens.musicien[j].bio._mort!=="-"){
 					table+="-"+gr.musiciens.musicien[j].bio._mort;
 				}
 				table+="</li>";
@@ -66,7 +66,7 @@
 					var e=document.getElementById("selector");
 					if (gr.disques.disque[j]._annee<=e.options[e.selectedIndex].value){
 
-						table += "<img src=img_disco/" + gr.disques.disque[j]._img + " style=\"width:128px;\">" + "<figcaption>"+ gr.disques.disque[j].__text +", " + gr.disques.disque[j]._annee + "</figcaption>";
+						table += "<img alt=\"pochette\" src=img_disco/" + gr.disques.disque[j]._img + " style=\"width:128px;\">" + "<figcaption>"+ gr.disques.disque[j].__text +", " + gr.disques.disque[j]._annee + "</figcaption>";
 					}
 				}
 				"</td></tr>";

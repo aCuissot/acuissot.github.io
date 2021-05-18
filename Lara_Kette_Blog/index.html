@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <title>Lara Kette Blog</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -326,21 +326,21 @@ and is wrapped around the whole page content, except for the footer in this exam
                 <ul class="w3-ul w3-hoverable w3-white">
                     <li class="w3-padding-16">
                         <img src="Media/or.jpg" title="or JO 2018" class="w3-left w3-margin-right"
-                             style="width:50px">
+                             style="width:50px" alt="or">
                         <span class="w3-large">Jeux Olympiques de Rio 2018</span>
                         <br>
                         <span>Médaille d'or en simple</span>
                     </li>
                     <li class="w3-padding-16">
                         <img src="Media/bronze.jpg" title="bronze JO 2018" class="w3-left w3-margin-right"
-                             style="width:50px">
+                             style="width:50px" alt="bronzzz">
                         <span class="w3-large">Jeux Olympiques de Rio 2018</span>
                         <br>
                         <span>Médaille de bronze en double</span>
                     </li>
                     <li class="w3-padding-16">
                         <img src="Media/orFrance.jpg" title="or france 2019" class="w3-left w3-margin-right"
-                             style="width:50px">
+                             style="width:50px" alt="or">
                         <span class="w3-large">Championnats de France 2019</span>
                         <br>
                         <span>Médaille d'or simple et double mixte</span>
@@ -356,7 +356,7 @@ and is wrapped around the whole page content, except for the footer in this exam
                 </div>
                 <div class="w3-container w3-white">
                     <div class="w3-container w3-display-container w3-light-grey w3-section" style="height:200px">
-                        <img width="100%" src="Media/PUB.png">
+                        <img width="100%" src="Media/PUB.png" alt="pubvolan">
                     </div>
                 </div>
             </div>
@@ -371,14 +371,14 @@ and is wrapped around the whole page content, except for the footer in this exam
                 <div class="w3-row-padding w3-white">
                     <div class="w3-col s6">
                         <p><a href="../France_Imper/Shannon/index.html">
-                            <img src="../Media/shannon.jpg" title="Mon groupe de Rock préféré" style="width:100%"> </a>
+                            <img src="../Media/shannon.jpg" title="Mon groupe de Rock préféré" style="width:100%" alt="shannon"> </a>
                         </p>
                         <p><img src="Media/Wilson.jpg" title="Une marque que j'apprécie presque autant que Artengo"
-                                style="width:100%"></p>
+                                style="width:100%" alt="wilson"></p>
                     </div>
                     <div class="w3-col s6">
                         <p><img src="Media/lee.jpg" title="Lee Chong Wei" style="width:100%"
-                                class="w3-grayscale"></p>
+                                class="w3-grayscale" alt="lee"></p>
                         <p>
                             <a href="https://asstpantaleon.footeo.com/">
                                 <img src="Media/foot.jpg" alt="Le club de Saint-Pantaléon-de-Larche" style="width:100%">
@@ -406,7 +406,9 @@ and is wrapped around the whole page content, except for the footer in this exam
                class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
             <h2 class="w3-wide">SUBSCRIBE</h2>
             <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
-            <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+            <p><label>
+                <input class="w3-input w3-border" type="text" placeholder="Enter e-mail">
+            </label></p>
             <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom"
                     onclick="document.getElementById('subscribe').style.display='none'">Subscribe
             </button>
@@ -425,7 +427,7 @@ and is wrapped around the whole page content, except for the footer in this exam
     }
     showIT()">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a> and a kiwi
         which won a battle against a peruvian coconut and use his nutshell since this tragic even</p>
-    <img id="jaajkiwi" src="Media/kiwinut.png" height="100px" width="130px" hidden="hidden">
+    <img id="jaajkiwi" src="Media/kiwinut.png" height="100px" width="130px" hidden="hidden" alt="jaajkiwi">
 </footer>
 
 <script>
@@ -434,7 +436,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
     function myFunction(id) {
         var x = document.getElementById(id);
-        if (x.className.indexOf("w3-show") == -1) {
+        if (x.className.indexOf("w3-show") === -1) {
             x.className += " w3-show";
         } else {
             x.className = x.className.replace(" w3-show", "");

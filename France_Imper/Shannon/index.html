@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <title>La Bande de Shannon</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -87,14 +87,14 @@
 
     <!-- Automatic Slideshow Images -->
     <div class="mySlides w3-display-container w3-center">
-        <img src="Media/CShannon.jpg" style="width:100%">
+        <img src="Media/CShannon.jpg" style="width:100%" alt="shannon">
         <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
             <h3>Claude Shannon</h3>
             <p><b>Respecté dans le monde de l'audio, il revient sur le devant de la scène</b></p>
         </div>
     </div>
     <div class="mySlides w3-display-container w3-center">
-        <img src="Media/rock.jpg" style="width:100%">
+        <img src="Media/rock.jpg" style="width:100%" alt="rock">
         <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
             <h3>La bande de Shannon</h3>
             <p><b>$$ f_{max} \in \mathopen{[}{-f_{sample} \over 2}; {f_{sample} \over 2}\mathclose{]} $$ parfois associé
@@ -204,9 +204,13 @@
             </header>
             <div class="w3-container">
                 <p><label><i class="fa fa-shopping-cart"></i> Places à 15$ par personne</label></p>
-                <input class="w3-input w3-border" type="text" placeholder="Combien de places?">
+                <label>
+                    <input class="w3-input w3-border" type="text" placeholder="Combien de places?">
+                </label>
                 <p><label><i class="fa fa-user"></i> Envoyer à</label></p>
-                <input class="w3-input w3-border" type="text" placeholder="Entrez votre email">
+                <label>
+                    <input class="w3-input w3-border" type="text" placeholder="Entrez votre email">
+                </label>
                 <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAYER <i
                         class="fa fa-check"></i></button>
                 <button class="w3-button w3-red w3-section"
@@ -231,13 +235,19 @@
                 <form action="mailto:la.bande.de.shannon.officiel@gmail.com?subject=MSGFROMWEBSITE">
                     <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
                         <div class="w3-half">
-                            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                            <label>
+                                <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                            </label>
                         </div>
                         <div class="w3-half">
-                            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                            <label>
+                                <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                            </label>
                         </div>
                     </div>
-                    <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+                    <label>
+                        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+                    </label>
                     <input class="w3-button w3-black w3-section w3-right" type="submit" action="mailto:la.bande.de.shannon.officiel@gmail.com?subject=MSGFROMWEBSITE" value="Envoyer">
 
                     <!--<button class="w3-button w3-black w3-section w3-right" type="submit" action="mailto:la.bande.de.shannon@gmail.fr?subject=MSGFROMWEBSITE">SEND</button>-->
@@ -335,7 +345,7 @@
 </div>
 
 <!-- Image of location/map -->
-<img src="Media/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+<img src="Media/map.jpg" class="w3-image w3-greyscale-min" style="width:100%" alt="map">
 <!--La musique-->
 <audio id="myAudio">
     <source src="Media/violinDrum.mp3" type="audio/mpeg">
@@ -388,7 +398,7 @@
     // Used to toggle the menu on small screens when clicking on the menu button
     function myFunction() {
         var x = document.getElementById("navDemo");
-        if (x.className.indexOf("w3-show") == -1) {
+        if (x.className.indexOf("w3-show") === -1) {
             x.className += " w3-show";
         } else {
             x.className = x.className.replace(" w3-show", "");
@@ -398,7 +408,7 @@
     // When the user clicks anywhere outside of the modal, close it
     var modal = document.getElementById('ticketModal');
     window.onclick = function (event) {
-        if (event.target == modal) {
+        if (event.target === modal) {
             modal.style.display = "none";
         }
     }

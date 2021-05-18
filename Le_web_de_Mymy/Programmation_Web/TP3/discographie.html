@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="fr">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<title> Bonjoir </title>
@@ -26,7 +26,7 @@
 	<body>
 
 		<h1><a href="https://fr.wikipedia.org/wiki/Sept_et_Demi">Sept et demi</a></h1>
-		<select id="selector">
+		<label for="selector"></label><select id="selector">
 			<option value="1970" id="b70">Avant 1970</option>
 			<option value="1980" id="b80">Avant 1980</option>
 			<option value="2100" id="all">Tous les albums</option>
@@ -39,7 +39,7 @@
 		function loadDoc() {
 			var xhttp = new XMLHttpRequest();
 			xhttp.onreadystatechange = function() {
-				if (this.readyState == 4 && this.status == 200) {
+				if (this.readyState === 4 && this.status === 200) {
 				  myFunction(this);
 				}
 			};
@@ -55,11 +55,11 @@
 			for (i = 0; i <x.length; i++) {
 				gr = x[i];
 				table += "<tr><td>" +	"<a href=\"" + 	gr.getAttribute("url") + "\">"+		gr.childNodes[0].nodeValue + "</a><br>" +
-				"<img src=img_disco/" +	gr.getAttribute("img") + " style=\"width:128px;\">" +
+				"<img alt='group' src=img_disco/" +	gr.getAttribute("img") + " style=\"width:128px;\">" +
 				"</td><td><ul>";
 				for (j=0; j<gr.getElementsByTagName("musicien").length; j++){
 				table += "<li>" + gr.getElementsByTagName("musicien")[j].childNodes[0].nodeValue + ", "+ gr.getElementsByTagName("instruments")[j].childNodes[0].nodeValue  + ", " + gr.getElementsByTagName("bio")[j].getAttribute("naissance");
-				if (gr.getElementsByTagName("bio")[j].getAttribute("mort")!="-"){
+				if (gr.getElementsByTagName("bio")[j].getAttribute("mort")!=="-"){
 					table+="-"+gr.getElementsByTagName("bio")[j].getAttribute("mort");
 				}
 				table+="</li>";
@@ -70,7 +70,7 @@
 					var e=document.getElementById("selector");
 					if (gr.getElementsByTagName("disque")[j].getAttribute("annee")<=e.options[e.selectedIndex].value){
 
-						table += "<img src=img_disco/" + gr.getElementsByTagName("disque")[j].getAttribute("img") + " style=\"width:128px;\">" + "<figcaption>"+ gr.getElementsByTagName("disque")[j].childNodes[0].nodeValue +", " + gr.getElementsByTagName("disque")[j].getAttribute("annee") + "</figcaption>";
+						table += "<img alt='disque' src=img_disco/" + gr.getElementsByTagName("disque")[j].getAttribute("img") + " style=\"width:128px;\">" + "<figcaption>"+ gr.getElementsByTagName("disque")[j].childNodes[0].nodeValue +", " + gr.getElementsByTagName("disque")[j].getAttribute("annee") + "</figcaption>";
 					}
 				}
 				"</td></tr>";
