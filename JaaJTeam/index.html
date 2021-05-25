@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="JÀÁJ Team - Accueil">
+    <meta property="og:description"
+          content="Bienvenue le site de la JÀÁJ Team">
+    <meta property="og:image" content="https://acuissot.github.io/Media/jaaj.png">
+    <title>Accueil</title>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:regular,bold">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+
+</head>
+<body>
+<!--<div id="compte_a_rebours"><noscript>Fin de l'évènement le 1er janvier 2018.</noscript></div>-->
+<!--<script type="text/javascript">-->
+<!--    function compte_a_rebours()-->
+<!--    {-->
+<!--        const compte_a_rebours = document.getElementById("compte_a_rebours");-->
+
+<!--        const date_actuelle = new Date();-->
+<!--        const date_evenement = new Date("Jan 1 23:00:00 2022");-->
+<!--        let total_secondes = (date_evenement - date_actuelle) / 1000;-->
+
+<!--        let prefixe = "Compte à rebours terminé dans ";-->
+<!--        if (total_secondes < 0)-->
+<!--        {-->
+<!--            prefixe = "Compte à rebours terminé il y a "; // On modifie le préfixe si la différence est négatif-->
+<!--            total_secondes = Math.abs(total_secondes); // On ne garde que la valeur absolue-->
+<!--        }-->
+
+<!--        let secondes;-->
+<!--        let minutes;-->
+<!--        if (total_secondes > 0) {-->
+<!--            let jours = Math.floor(total_secondes / (60 * 60 * 24));-->
+<!--            let heures = Math.floor((total_secondes - (jours * 60 * 60 * 24)) / (60 * 60));-->
+<!--            minutes = Math.floor((total_secondes - ((jours * 60 * 60 * 24 + heures * 60 * 60))) / 60);-->
+<!--            secondes = Math.floor(total_secondes - ((jours * 60 * 60 * 24 + heures * 60 * 60 + minutes * 60)));-->
+
+<!--            let et = "et";-->
+<!--            let mot_jour = "jours,";-->
+<!--            let mot_heure = "heures,";-->
+<!--            let mot_minute = "minutes,";-->
+<!--            var mot_seconde = "secondes";-->
+
+<!--            if (jours === 0) {-->
+<!--                jours = '';-->
+<!--                mot_jour = '';-->
+<!--            } else if (jours === 1) {-->
+<!--                mot_jour = "jour,";-->
+<!--            }-->
+
+<!--            if (heures === 0) {-->
+<!--                heures = '';-->
+<!--                mot_heure = '';-->
+<!--            } else if (heures === 1) {-->
+<!--                mot_heure = "heure,";-->
+<!--            }-->
+
+<!--            if (minutes === 0) {-->
+<!--                minutes = '';-->
+<!--                mot_minute = '';-->
+<!--            } else if (minutes === 1) {-->
+<!--                mot_minute = "minute,";-->
+<!--            }-->
+
+<!--            if (secondes === 0) {-->
+<!--                secondes = '';-->
+<!--                mot_seconde = '';-->
+<!--                et = '';-->
+<!--            } else if (secondes === 1) {-->
+<!--                mot_seconde = "seconde";-->
+<!--            }-->
+
+<!--            if (minutes === 0 && heures === 0 && jours === 0) {-->
+<!--                et = "";-->
+<!--            }-->
+
+<!--            compte_a_rebours.innerHTML = prefixe + jours + ' ' + mot_jour + ' ' + heures + ' ' + mot_heure + ' ' + minutes + ' ' + mot_minute + ' ' + et + ' ' + secondes + ' ' + mot_seconde;-->
+<!--        } else {-->
+<!--            compte_a_rebours.innerHTML = 'Compte à rebours terminé.';-->
+<!--        }-->
+
+<!--        const actualisation = setTimeout("compte_a_rebours();", 1000);-->
+<!--    }-->
+<!--    compte_a_rebours();-->
+<!--</script>-->
+<script>
+    function fun() {
+        let sum = document.getElementById("sum").value
+        if (sum >= 1){
+            alert("Merci pour les " + sum + "€");
+        }
+    }
+</script>
+
+<div id="Header">
+    <div class="wrapper">
+        <h1 style="color: #ff0a03">JAAJ Team</h1>
+    </div>
+</div>
+<div id="Content" class="wrapper">
+    <div class="countdown styled"></div>
+    <h2 class="intro">Site web en construXion. reViendez + tard</h2>
+    <h2 class="intro">En attendant, vous pouvez nous retrouver sur youtube: <a href="https://www.youtube.com/channel/UCblK-xqtM6bhIKQG5Qd4vwA">JÀÁJ Team</a></h2>
+    <div id="subscribe">
+        <form>
+            <p><input name="sum" placeholder="Faites un don c'est gratuit : )" type="number" id="sum" min="1"/>
+                <input type="button" value="Submit" onclick="fun()"></p>
+        </form>
+        <div id="socialIcons">
+            <ul>
+                <li><a href="" title="Twitter" class="twitterIcon"></a></li>
+                <li><a href="" title="facebook" class="facebookIcon"></a></li>
+                <li><a href="" title="linkedIn" class="linkedInIcon"></a></li>
+                <li><a href="" title="Pintrest" class="pintrestIcon"></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="overlay"></div>
+
+<!--Scripts-->
+<script type="text/javascript" src="scripts/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="scripts/Backstretch.js"></script>
+<script type="text/javascript" src="scripts/jquery.countdown.js"></script>
+<script type="text/javascript" src="scripts/global.js"></script>
+
+</body>
+</html>
