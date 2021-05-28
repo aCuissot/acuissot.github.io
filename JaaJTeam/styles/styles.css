@@ -221,14 +221,7 @@ a:hover {
 .styled div:last-child{
     border:none;
 }
-#overlay{
-    background: rgba(0, 0, 0, 0.04) url(https://webthemez.com/demo/coming-soon-responsive-web-template-trendset/images/overlays/06.png) top left repeat;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    bottom: 0;
-    opacity:0.8;
-}
+
 /* IE7 inline-block hack */
 *+html .styled div{
     display: inline;
