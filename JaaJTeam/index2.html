@@ -1,174 +1,879 @@
+<!-- =================================================
+Theme Name: Party Bootstrap Theme
+Author: WebThemez.com
+License: https://webthemez.com/license
+======================================================= -->
+
 <!DOCTYPE html>
-<html>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
-<style>
-    body, html {
-        height: 100%;
-        font-family: "RobotoDraft", "Roboto", sans-serif
-    }
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Party Bootstrap 4 Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <meta content="Author" name="WebThemez">
+    <!-- Favicons -->
+    <link href="img/favicon.png" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
-    .bgimg {
-        background-position: center;
-        background-size: cover;
-        background-image: url("Media/TEAM.png");
-        min-height: 75%;
-    }
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+    <!-- Bootstrap CSS File -->
+    <link href="styles/bootstrap.min.css" rel="stylesheet">
 
-    .menu {
-        display: none;
-    }
-</style>
-<body>
+    <!-- Libraries CSS Files -->
+    <link href="styles/font-awesome.min.css" rel="stylesheet">
+    <link href="styles/animate.min.css" rel="stylesheet">
+    <link href="styles/ionicons.min.css" rel="stylesheet">
+    <link href="styles/owl.carousel.min.css" rel="stylesheet">
+    <link href="styles/magnific-popup.css" rel="stylesheet">
+    <link href="styles/ionicons.min.css" rel="stylesheet">
 
-<!-- Links (sit on top) -->
-<div class="w3-top">
-    <div class="w3-row w3-padding w3-black">
-        <div class="w3-col s3">
-            <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    <!-- Main Stylesheet File -->
+    <link href="styles/style.css" rel="stylesheet">
+</head>
+
+<body id="body">
+
+<!--==========================
+  Top Bar
+============================-->
+<section id="topbar" class="d-none d-lg-block">
+    <div class="container clearfix">
+        <div class="contact-info float-left">
+            <i class="fa fa-envelope-o"></i> <a href="mailto:contact@example.com">name@websitename.com</a>
+            <i class="fa fa-phone"></i> +1 2345 67855 22
         </div>
-        <div class="w3-col s3">
-            <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
-        </div>
-        <div class="w3-col s3">
-            <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
-        </div>
-        <div class="w3-col s3">
-            <a href="#where" class="w3-button w3-block w3-black">WHERE</a>
+        <div class="social-links float-right">
+            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
         </div>
     </div>
-</div>
+</section>
 
-<!-- Header with image -->
-<header class="bgimg w3-display-container" id="home">
-    <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
-        <span class="w3-tag">Open from 6am to 5pm</span>
-    </div>
-    <div class="w3-display-middle w3-center">
-        <span style="font-size:90px; color: yellow">JÀÁJ<br>Team</span>
-    </div>
-    <div class="w3-display-bottomright w3-center w3-padding-large">
-        <span class="w3-text-white">15 Adr street, 5015</span>
-    </div>
-</header>
+<!--==========================
+  Header
+============================-->
+<header id="header">
+    <div class="container">
 
-<!-- Add a background color and large text to the whole page -->
-<div class="w3-sand w3-grayscale w3-large">
+        <div id="logo" class="pull-left">
+            <h1><a href="#body" class="scrollto"><span><i class="fa fa-bolt" aria-hidden="true"></i></span>JÀÁJ</a></h1>
+            <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
+        </div>
 
-    <!-- About Container -->
-    <div class="w3-container" id="about">
-        <div class="w3-content" style="max-width:700px">
-            <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE CAFE</span></h5>
-            <p>The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <p>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
-            <div class="w3-panel w3-leftbar w3-light-grey">
-                <p><i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</i></p>
-                <p>Chef, Coffeeist and Owner: Liam Brown</p>
+        <nav id="nav-menu-container">
+            <ul class="nav-menu">
+                <li class="menu-active"><a href="#body">Home</a></li>
+                <li><a href="#services">We Do</a></li>
+                <li><a href="#about">Who We</a></li>
+                <li><a href="#portfolio">Gallery</a></li>
+                <li><a href="#event">Events</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#price">Price</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav><!-- #nav-menu-container -->
+    </div>
+</header><!-- #header -->
+
+<!--==========================
+  Intro Section
+============================-->
+<section id="intro">
+
+    <div class="intro-content">
+        <h2><span>Party Night</span><br>Crazy Non-Stop Music Reload</h2>
+        <div>
+            <a href="#about" class="btn-get-started scrollto">Book Now</a>
+        </div>
+    </div>
+    <div class="item" style="background-image: url('media/TEAM.png');"></div>
+</section><!-- #intro -->
+
+<main id="main">
+
+
+    <!--==========================
+      Services Section
+    ============================-->
+    <section id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>We Do</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam,
+                    incidunt fugiat culpa esse aute nulla. malis nulla duis fugiat culpa esse aute nulla ipsum velit
+                    export irure minim illum fore</p>
             </div>
-            <img src="/w3images/coffeeshop.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
-            <p><strong>Opening hours:</strong> everyday from 6am to 5pm.</p>
-            <p><strong>Address:</strong> 15 Adr street, 5015, NY</p>
-        </div>
-    </div>
 
-    <!-- Menu Container -->
-    <div class="w3-container" id="menu">
-        <div class="w3-content" style="max-width:700px">
+            <div class="row">
 
-            <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
+                <div class="col-lg-4">
+                    <div class="box wow fadeInLeft">
+                        <div class="icon"><i class="fa fa-diamond"></i></div>
+                        <h4 class="title"><a href="">Organisation</a></h4>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae
+                            porro consequatur aliquam, incidunt fugiat culpa esse aute nulla.</p>
+                    </div>
+                </div>
 
-            <div class="w3-row w3-center w3-card w3-padding">
-                <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
-                    <div class="w3-col s6 tablink">Eat</div>
-                </a>
-                <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
-                    <div class="w3-col s6 tablink">Drink</div>
-                </a>
+                <div class="col-lg-4">
+                    <div class="box wow fadeInRight">
+                        <div class="icon"><i class="fa fa-hand-pointer-o"></i></div>
+                        <h4 class="title"><a href="">Event Party</a></h4>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae
+                            porro consequatur aliquam, incidunt fugiat culpa esse aute nulla.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="box wow fadeInLeft" data-wow-delay="0.2s">
+                        <div class="icon"><i class="fa fa-music"></i></div>
+                        <h4 class="title"><a href="">Music Galla</a></h4>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae
+                            porro consequatur aliquam, incidunt fugiat culpa esse aute nulla.</p>
+                    </div>
+                </div>
+
             </div>
 
-            <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
-                <h5>Bread Basket</h5>
-                <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+        </div>
+    </section><!-- #services -->
+    <!--==========================
+      About Section
+    ============================-->
+    <section id="about" class="wow fadeInUp">
+        <div class="container">
+            <div class="section-header">
+                <h2>Who We Are</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam,
+                    incidunt eius magni provident, doloribus omnis minus ovident, doloribus omnis minus temporibus
+                    perferendis nesciunt..</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 content">
+                    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing</h2>
+                    <h3>Dolores quae porro consequatur aliquam, incidunt eius magni provident, doloribus omnis minus
+                        ovident</h3>
+                    <p>Consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt fugiat. Dolores
+                        quae porro consequatur aliquam, incidunt fugiat culpa esse aute nulla. malis nulla duis
+                        fugiat</p>
+                    <ul>
+                        <li><i class="icon ion-ios-checkmark-outline"></i> Dolores quae porro consequatur aliquam,
+                            incidunt fugiat culpa.
+                        </li>
+                        <li><i class="icon ion-ios-checkmark-outline"></i> Dolores quae porro consequatur aliquam, culpa
+                            esse aute nulla.
+                        </li>
+                        <li><i class="icon ion-ios-checkmark-outline"></i> Dolores quae porro esse aute nulla. malis
+                            nulla duis fugiat
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 about-img">
+                    <img src="img/about-img.png" alt="">
+                </div>
 
-                <h5>Honey Almond Granola with Fruits</h5>
-                <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
-
-                <h5>Belgian Waffle</h5>
-                <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
-
-                <h5>Scrambled eggs</h5>
-                <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
-
-                <h5>Blueberry Pancakes</h5>
-                <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>
             </div>
 
-            <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
-                <h5>Coffee</h5>
-                <p class="w3-text-grey">Regular coffee 2.50</p><br>
+        </div>
+    </section><!-- #about -->
 
-                <h5>Chocolato</h5>
-                <p class="w3-text-grey">Chocolate espresso with milk 4.50</p><br>
-
-                <h5>Corretto</h5>
-                <p class="w3-text-grey">Whiskey and coffee 5.00</p><br>
-
-                <h5>Iced tea</h5>
-                <p class="w3-text-grey">Hot tea, except not hot 3.00</p><br>
-
-                <h5>Soda</h5>
-                <p class="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
+    <!--==========================
+      Clients Section
+    ============================-->
+    <section id="clients" class="wow fadeInUp">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sponsers</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam,
+                    incidunt fugiat culpa esse aute nulla. duis fugiat culpa esse aute nulla ipsum velit export irure
+                    minim illum fore</p>
             </div>
-            <img src="/w3images/coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+
+            <div class="owl-carousel clients-carousel">
+                <img src="media/jaaj1.0.png" alt="">
+                <img src="media/jaaj2.0.png" alt="">
+                <img src="media/jaaj3.0.png" alt="">
+                <img src="media/jaaj4.0.png" alt="">
+                <img src="media/jaaj5.0.png" alt="">
+                <img src="media/jaaj1.0.png" alt="">
+            </div>
+
+        </div>
+    </section><!-- #clients -->
+
+    <!--==========================
+      Our Portfolio Section
+    ============================-->
+    <section id="portfolio" class="wow fadeInUp">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Gallery</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam,
+                    incidunt fugiat culpa esse aute nulla. nulla duis fugiat culpa esse aute nulla ipsum velit export
+                    irure minim illum fore</p>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row no-gutters">
+
+                <div class="col-lg-3 col-md-4">
+                    <div class="portfolio-item wow fadeInUp">
+                        <a href="img/portfolio/1.jpg" class="portfolio-popup">
+                            <img src="img/portfolio/1.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info"><h2 class="wow fadeInUp">Portfolio Name</h2></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                    <div class="portfolio-item wow fadeInUp">
+                        <a href="img/portfolio/2.jpg" class="portfolio-popup">
+                            <img src="img/portfolio/2.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info"><h2 class="wow fadeInUp">Portfolio Name</h2></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                    <div class="portfolio-item wow fadeInUp">
+                        <a href="img/portfolio/3.jpg" class="portfolio-popup">
+                            <img src="img/portfolio/3.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info"><h2 class="wow fadeInUp">Portfolio Name</h2></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                    <div class="portfolio-item wow fadeInUp">
+                        <a href="img/portfolio/4.jpg" class="portfolio-popup">
+                            <img src="img/portfolio/4.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info"><h2 class="wow fadeInUp">Portfolio Name</h2></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                    <div class="portfolio-item wow fadeInUp">
+                        <a href="img/portfolio/5.jpg" class="portfolio-popup">
+                            <img src="img/portfolio/5.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info"><h2 class="wow fadeInUp">Portfolio Name</h2></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                    <div class="portfolio-item wow fadeInUp">
+                        <a href="img/portfolio/6.jpg" class="portfolio-popup">
+                            <img src="img/portfolio/6.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info"><h2 class="wow fadeInUp">Portfolio Name </h2></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                    <div class="portfolio-item wow fadeInUp">
+                        <a href="img/portfolio/7.jpg" class="portfolio-popup">
+                            <img src="img/portfolio/7.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info"><h2 class="wow fadeInUp">Portfolio Name </h2></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                    <div class="portfolio-item wow fadeInUp">
+                        <a href="img/portfolio/8.jpg" class="portfolio-popup">
+                            <img src="img/portfolio/8.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info"><h2 class="wow fadeInUp">Portfolio Name</h2></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- #portfolio -->
+
+    <!--==========================
+    Event Section
+  ============================-->
+    <section id="event">
+        <div class="container box2-main">
+            <div class="section-header">
+                <h2>Our Events</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam,
+                    incidunt fugiat culpa esse aute nulla. malis nulla duis fugiat culpa esse aute nulla ipsum velit
+                    export irure minim illum fore</p>
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <div class="box2 wow fadeInLeft">
+                        <div class="leftSec">
+                            <p>9.30 - 10.30 AM
+                                <br>Workshop</p>
+                        </div>
+                        <div class="rightSec">
+                            <h4 class="title"><a href="">Marketing</a></h4>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores
+                                quae porro consequatur aliquam, incidunt fugiat culpa esse aute nulla.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="box2 wow fadeInRight">
+                        <div class="leftSec">
+                            <p>9.30 - 10.30 AM
+                                <br>Workshop</p>
+                        </div>
+                        <div class="rightSec">
+                            <h4 class="title"><a href="">Marketing</a></h4>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores
+                                quae porro consequatur aliquam, incidunt fugiat culpa esse aute nulla.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="box2 wow fadeInLeft" data-wow-delay="0.2s">
+                        <div class="leftSec">
+                            <p>9.30 - 10.30 AM
+                                <br>Workshop</p>
+                        </div>
+                        <div class="rightSec">
+                            <h4 class="title"><a href="">Marketing</a></h4>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores
+                                quae porro consequatur aliquam, incidunt fugiat culpa esse aute nulla.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="box2 wow fadeInRight" data-wow-delay="0.2s">
+                        <div class="leftSec">
+                            <p>9.30 - 10.30 AM
+                                <br>Workshop</p>
+                        </div>
+                        <div class="rightSec">
+                            <h4 class="title"><a href="">Marketing</a></h4>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores
+                                quae porro consequatur aliquam, incidunt fugiat culpa esse aute nulla.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-12">
+                    <div class="box2 wow fadeInRight" data-wow-delay="0.2s">
+                        <div class="leftSec">
+                            <p>9.30 - 10.30 AM
+                                <br>Workshop</p>
+                        </div>
+                        <div class="rightSec">
+                            <h4 class="title"><a href="">Marketing</a></h4>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores
+                                quae porro consequatur aliquam, incidunt fugiat culpa esse aute nulla.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section><!-- #services -->
+
+    <!--==========================
+      Testimonials Section
+    ============================-->
+    <section id="testimonials" class="wow fadeInUp">
+        <div class="container">
+            <div class="section-header">
+                <h2>Testimonials</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam,
+                    incidunt fugiat culpa esse aute nulla. duis fugiat culpa esse aute nulla ipsum velit export irure
+                    minim illum fore</p>
+            </div>
+            <div class="owl-carousel testimonials-carousel">
+
+                <div class="testimonial-item">
+                    <p>Dolores quae porro consequatur aliquam, incidunt fugiat culpa esse aute nulla. duis fugiat culpa
+                        esse aute nulla ipsum velit export irure minim illum fore
+
+                    </p>
+                    <h3>Mrio James</h3>
+                    <h4>CEO &amp; Founder</h4>
+                </div>
+
+                <div class="testimonial-item">
+                    <p>
+                        Dolores quae porro consequatur aliquam, incidunt fugiat culpa esse aute nulla. duis fugiat culpa
+                        esse aute nulla ipsum velit export irure minim illum fore
+
+                    </p>
+                    <h3>Finton Gofnes</h3>
+                    <h4>CTO</h4>
+                </div>
+
+                <div class="testimonial-item">
+                    <p>
+                        Dolores quae porro consequatur aliquam, incidunt fugiat culpa esse aute nulla. duis fugiat culpa
+                        esse aute nulla ipsum velit export irure minim illum fore
+
+                    </p>
+                    <h3>Marcus Kell</h3>
+                    <h4>Marketing</h4>
+                </div>
+
+                <div class="testimonial-item">
+                    <p>
+                        Dolores quae porro consequatur aliquam, incidunt fugiat culpa esse aute nulla. duis fugiat culpa
+                        esse aute nulla ipsum velit export irure minim illum fore
+
+                    </p>
+                    <h3>Williams Belly</h3>
+                    <h4>Accounts</h4>
+                </div>
+
+                <div class="testimonial-item">
+                    <p>
+                        Dolores quae porro consequatur aliquam, incidunt fugiat culpa esse aute nulla. duis fugiat culpa
+                        esse aute nulla ipsum velit export irure minim illum fore
+
+                    </p>
+                    <h3>Larry Hanson</h3>
+                    <h4>Investor</h4>
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- #testimonials -->
+
+    <!--==========================
+      Call To Action Section
+    ============================-->
+    <section id="call-to-action" class="wow fadeInUp">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-center text-lg-left">
+                    <h3 class="cta-title">Get Our Service</h3>
+                    <p class="cta-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro
+                        consequatur aliquam, incidunt fugiat culpa esse aute nulla cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum.</p>
+                    <a class="cta-btn align-middle" href="#contact">Contact Us</a>
+                </div>
+                <div class="col-lg-6 cta-btn-container text-center">
+                    <img src="img/action-img.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+    </section><!-- #call-to-action -->
+
+    <!--==========================
+      Our Team Section
+    ============================-->
+    <section id="team" class="wow fadeInUp">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Team</h2>
+            </div>
+            <div class="row">
+
+                <div class="col-lg-custom col-md-6">
+                    <div class="member">
+                        <div class="pic"><img src="media/jaaj2.0.png" alt=""></div>
+                        <div class="details">
+                            <h4>PiiP</h4>
+                            <span>Chief Executive Officer</span>
+                            <div class="social">
+                                <a href=""><i class="fa fa-twitter"></i></a>
+                                <a href=""><i class="fa fa-facebook"></i></a>
+                                <a href=""><i class="fa fa-google-plus"></i></a>
+                                <a href=""><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-custom col-md-6">
+                    <div class="member">
+                        <div class="pic"><img src="media/jaaj3.0.png" alt=""></div>
+                        <div class="details">
+                            <h4>JuuJ</h4>
+                            <span>Technical Manager</span>
+                            <div class="social">
+                                <a href=""><i class="fa fa-twitter"></i></a>
+                                <a href=""><i class="fa fa-facebook"></i></a>
+                                <a href=""><i class="fa fa-google-plus"></i></a>
+                                <a href=""><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-custom col-md-6">
+                    <div class="member">
+                        <div class="pic"><img src="media/jaaj5.0.png" alt=""></div>
+                        <div class="details">
+                            <h4>FeeF</h4>
+                            <span>Financial Manager</span>
+                            <div class="social">
+                                <a href=""><i class="fa fa-twitter"></i></a>
+                                <a href=""><i class="fa fa-facebook"></i></a>
+                                <a href=""><i class="fa fa-google-plus"></i></a>
+                                <a href=""><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-custom col-md-6">
+                    <div class="member">
+                        <div class="pic"><img src="media/jaaj4.0.png" alt=""></div>
+                        <div class="details">
+                            <h4>YaaY</h4>
+                            <span>Accountant</span>
+                            <div class="social">
+                                <a href=""><i class="fa fa-twitter"></i></a>
+                                <a href=""><i class="fa fa-facebook"></i></a>
+                                <a href=""><i class="fa fa-google-plus"></i></a>
+                                <a href=""><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-custom col-md-6">
+                    <div class="member">
+                        <div class="pic"><img src="media/jaaj1.0.png" alt=""></div>
+                        <div class="details">
+                            <h4>AxxA</h4>
+                            <span>Accountant</span>
+                            <div class="social">
+                                <a href=""><i class="fa fa-twitter"></i></a>
+                                <a href=""><i class="fa fa-facebook"></i></a>
+                                <a href=""><i class="fa fa-google-plus"></i></a>
+                                <a href=""><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--<div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="member">
+                        <div class="pic"><img src="img/team1.jpg" alt=""></div>
+                        <div class="details">
+                            <h4>James Smith</h4>
+                            <span>Chief Executive Officer</span>
+                            <div class="social">
+                                <a href=""><i class="fa fa-twitter"></i></a>
+                                <a href=""><i class="fa fa-facebook"></i></a>
+                                <a href=""><i class="fa fa-google-plus"></i></a>
+                                <a href=""><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="member">
+                        <div class="pic"><img src="img/team2.jpg" alt=""></div>
+                        <div class="details">
+                            <h4>Michell Kellon</h4>
+                            <span>Technical Manager</span>
+                            <div class="social">
+                                <a href=""><i class="fa fa-twitter"></i></a>
+                                <a href=""><i class="fa fa-facebook"></i></a>
+                                <a href=""><i class="fa fa-google-plus"></i></a>
+                                <a href=""><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="member">
+                        <div class="pic"><img src="img/team3.jpg" alt=""></div>
+                        <div class="details">
+                            <h4>French Lincon</h4>
+                            <span>Financial Manager</span>
+                            <div class="social">
+                                <a href=""><i class="fa fa-twitter"></i></a>
+                                <a href=""><i class="fa fa-facebook"></i></a>
+                                <a href=""><i class="fa fa-google-plus"></i></a>
+                                <a href=""><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="member">
+                        <div class="pic"><img src="img/team4.jpg" alt=""></div>
+                        <div class="details">
+                            <h4>Amanda Jepson</h4>
+                            <span>Accountant</span>
+                            <div class="social">
+                                <a href=""><i class="fa fa-twitter"></i></a>
+                                <a href=""><i class="fa fa-facebook"></i></a>
+                                <a href=""><i class="fa fa-google-plus"></i></a>
+                                <a href=""><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="member">
+                        <div class="pic"><img src="img/team4.jpg" alt=""></div>
+                        <div class="details">
+                            <h4>Amanda Jepson</h4>
+                            <span>Accountant</span>
+                            <div class="social">
+                                <a href=""><i class="fa fa-twitter"></i></a>
+                                <a href=""><i class="fa fa-facebook"></i></a>
+                                <a href=""><i class="fa fa-google-plus"></i></a>
+                                <a href=""><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+
+        </div>
+    </section><!-- #team -->
+    <!--==================
+    Price
+    ======================-->
+    <section id="price" class="wow fadeInUp">
+        <div class="container">
+            <div class="section-header">
+                <h2>Price</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam,
+                    incidunt fugiat culpa esse aute nulla. malis nulla duis fugiat culpa esse aute nulla ipsum velit
+                    export irure minim illum fore</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="pricing-wrap">
+                        <div class="row">
+                            <div class="col-7">
+                                <span>Per Day</span>
+                                <h4>Basic</h4>
+                            </div>
+                            <div class="col-5">
+                                <h3>$15</h3>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum proin gravida nibh vel velit auctor aliquet. Aeneansollicitudin, lorem quis
+                            bibendum auctonisi elit consequat ipsum nec sagittis sem nibh id elit. Duis sed odio sit
+                            amet nibh vulputate cursusa sit amet mauris. </p>
+                        <ul>
+                            <li>Entrance</li>
+                            <li>Lunch &amp; Snacks</li>
+                            <li>Custom Badge</li>
+                            <li>Certificate</li>
+                        </ul>
+                        <div class="registarbtn text-center">
+                            <button>Register</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="pricing-wrap">
+                        <div class="row">
+                            <div class="col-7">
+                                <span>Per Day</span>
+                                <h4>Standard</h4>
+                            </div>
+                            <div class="col-5">
+                                <h3>$45</h3>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum proin gravida nibh vel velit auctor aliquet. Aeneansollicitudin, lorem quis
+                            bibendum auctonisi elit consequat ipsum nec sagittis sem nibh id elit. Duis sed odio sit
+                            amet nibh vulputate cursusa sit amet mauris. </p>
+                        <ul>
+                            <li>Entrance</li>
+                            <li>Lunch &amp; Snacks</li>
+                            <li>Custom Badge</li>
+                            <li>Certificate</li>
+                        </ul>
+                        <div class="registarbtn text-center">
+                            <button>Register</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="pricing-wrap">
+                        <div class="row">
+                            <div class="col-7">
+                                <span>Per Day</span>
+                                <h4>Premium</h4>
+                            </div>
+                            <div class="col-5">
+                                <h3>$85</h3>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum proin gravida nibh vel velit auctor aliquet. Aeneansollicitudin, lorem quis
+                            bibendum auctonisi elit consequat ipsum nec sagittis sem nibh id elit. Duis sed odio sit
+                            amet nibh vulputate cursusa sit amet mauris. </p>
+                        <ul>
+                            <li>Entrance</li>
+                            <li>Lunch &amp; Snacks</li>
+                            <li>Custom Badge</li>
+                            <li>Certificate</li>
+                        </ul>
+                        <div class="registarbtn text-center">
+                            <button>Register</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact" class="wow fadeInUp">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam,
+                    incidunt fugiat culpa esse aute nulla. malis nulla duis fugiat culpa esse aute nulla ipsum velit
+                    export irure minim illum fore</p>
+            </div>
+
+            <div class="row contact-info">
+                <div class="col-lg-5">
+                    <div class="contact-address">
+                        <i class="ion-ios-location-outline"></i>
+                        <h3>Address</h3>
+                        <address>MN-12 Lincon Street, NewYork 12356, USA</address>
+                    </div>
+                    <div class="contact-phone">
+                        <i class="ion-ios-telephone-outline"></i>
+                        <h3>Phone Number</h3>
+                        <p><a href="tel:+155895548855">+1 2345 67890 12</a></p>
+                    </div>
+                    <div class="contact-email">
+                        <i class="ion-ios-email-outline"></i>
+                        <h3>Email</h3>
+                        <p><a href="mailto:info@example.com">name@website.com</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="container">
+                        <div class="form">
+
+                            <!-- Form itself -->
+                            <form name="sentMessage" class="well" id="contactForm" novalidate>
+                                <div class="control-group">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control"
+                                               placeholder="Full Name" id="name" required
+                                               data-validation-required-message="Please enter your name"/>
+                                        <p class="help-block"></p>
+
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="controls">
+                                        <input type="email" class="form-control" placeholder="Email"
+                                               id="email" required
+                                               data-validation-required-message="Please enter your email"/>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="controls">
+				 <textarea rows="10" cols="100" class="form-control"
+                           placeholder="Message" id="message" required
+                           data-validation-required-message="Please enter your message" minlength="5"
+                           data-validation-minlength-message="Min 5 characters"
+                           maxlength="999" style="resize:none"></textarea>
+                                    </div>
+                                </div>
+                                <div id="success"></div> <!-- For success/fail messages -->
+                                <button type="submit" class="btn btn-primary pull-right">Send</button>
+                                <br/>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="container mb-4 map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d387191.33750346623!2d-73.979681!3d40.6974881!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sin!4v1541477355474"
+                    width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+
+    </section><!-- #contact -->
+
+</main>
+
+<!--==========================
+  Footer
+============================-->
+<footer id="footer">
+    <div class="container">
+        <div class="copyright">
+            &copy; Copyright <strong>Party</strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+            Template by <a href="https://webthemez.com/music/">WebThemez</a>
         </div>
     </div>
+</footer><!-- #footer -->
 
-    <!-- Contact/Area Container -->
-    <div class="w3-container" id="where" style="padding-bottom:32px;">
-        <div class="w3-content" style="max-width:700px">
-            <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
-            <p>Find us at some address at some place.</p>
-            <img src="/w3images/map.jpg" class="w3-image" style="width:100%">
-            <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
-            <p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
-            <form action="/action_page.php" target="_blank">
-                <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
-                <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
-                <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
-                <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
-                <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
-            </form>
-        </div>
-    </div>
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
-    <!-- End page content -->
-</div>
-
-<!-- Footer -->
-<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
-    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-</footer>
-
-<script>
-    // Tabbed Menu
-    function openMenu(evt, menuName) {
-        var i, x, tablinks;
-        x = document.getElementsByClassName("menu");
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablink");
-        for (i = 0; i < x.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
-        }
-        document.getElementById(menuName).style.display = "block";
-        evt.currentTarget.firstElementChild.className += " w3-dark-grey";
-    }
-    document.getElementById("myLink").click();
-</script>
+<!-- JavaScript  -->
+<script src="scripts/jquery.min.js"></script>
+<script src="scripts/jquery-migrate.min.js"></script>
+<script src="scripts/bootstrap.bundle.min.js"></script>
+<script src="scripts/easing.min.js"></script>
+<script src="scripts/hoverIntent.js"></script>
+<script src="scripts/superfish.min.js"></script>
+<script src="scripts/wow.min.js"></script>
+<script src="scripts/owl.carousel.min.js"></script>
+<script src="scripts/magnific-popup.min.js"></script>
+<script src="scripts/sticky.js"></script>
+<script src="scripts/jqBootstrapValidation.js"></script>
+<script src="scripts/contact_me.js"></script>
+<script src="scripts/main.js"></script>
 
 </body>
 </html>
