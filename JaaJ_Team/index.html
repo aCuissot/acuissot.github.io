@@ -42,16 +42,16 @@
         };
         !function (a, b, c) {
             function d(a, b) {
-                var c = String.fromCharCode;
+                const c = String.fromCharCode;
                 l.clearRect(0, 0, k.width, k.height), l.fillText(c.apply(this, a), 0, 0);
-                var d = k.toDataURL();
+                const d = k.toDataURL();
                 l.clearRect(0, 0, k.width, k.height), l.fillText(c.apply(this, b), 0, 0);
-                var e = k.toDataURL();
+                const e = k.toDataURL();
                 return d === e
             }
 
             function e(a) {
-                var b;
+                let b;
                 if (!l || !l.fillText) return !1;
                 switch (l.textBaseline = "top", l.font = "600 32px Arial", a) {
                     case"flag":
@@ -63,7 +63,7 @@
             }
 
             function f(a) {
-                var c = b.createElement("script");
+                const c = b.createElement("script");
                 c.src = a, c.defer = c.type = "text/javascript", b.getElementsByTagName("head")[0].appendChild(c)
             }
 
@@ -161,7 +161,7 @@
     <script type="text/javascript" src="./accueil/jquery-migrate.min.js.téléchargement"></script>
     <script type="text/javascript">
         /* <![CDATA[ */
-        var wpgmza_google_api_status = {"message": "Enqueued", "code": "ENQUEUED"};
+        const wpgmza_google_api_status = {"message": "Enqueued", "code": "ENQUEUED"};
         /* ]]> */
     </script>
     <script type="text/javascript" src="./accueil/wpgmza_data.js.téléchargement"></script>
@@ -2023,7 +2023,7 @@
     class_loaded: "lazyloaded",
     threshold: 300,
     callback_loaded: function (element) {
-        if (element.tagName === "IFRAME" && element.dataset.rocketLazyload == "fitvidscompatible") {
+        if (element.tagName === "IFRAME" && element.dataset.rocketLazyload === "fitvidscompatible") {
             if (element.classList.contains("lazyloaded")) {
                 if (typeof window.jQuery != "undefined") {
                     if (jQuery.fn.fitVids) {
@@ -2036,13 +2036,13 @@
     use_native: true
 };
 window.addEventListener('LazyLoad::Initialized', function (e) {
-    var lazyLoadInstance = e.detail.instance;
+    const lazyLoadInstance = e.detail.instance;
 
     if (window.MutationObserver) {
-        var observer = new MutationObserver(function (mutations) {
-            var image_count = 0;
-            var iframe_count = 0;
-            var rocketlazy_count = 0;
+        const observer = new MutationObserver(function (mutations) {
+            let image_count = 0;
+            let iframe_count = 0;
+            let rocketlazy_count = 0;
 
             mutations.forEach(function (mutation) {
                 for (i = 0; i < mutation.addedNodes.length; i++) {
@@ -2055,9 +2055,9 @@ window.addEventListener('LazyLoad::Initialized', function (e) {
                     }
 
                     images = mutation.addedNodes[i].getElementsByTagName('img');
-                    is_image = mutation.addedNodes[i].tagName == "IMG";
+                    is_image = mutation.addedNodes[i].tagName === "IMG";
                     iframes = mutation.addedNodes[i].getElementsByTagName('iframe');
-                    is_iframe = mutation.addedNodes[i].tagName == "IFRAME";
+                    is_iframe = mutation.addedNodes[i].tagName === "IFRAME";
                     rocket_lazy = mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');
 
                     image_count += images.length;
@@ -2079,27 +2079,29 @@ window.addEventListener('LazyLoad::Initialized', function (e) {
             }
         });
 
-        var b = document.getElementsByTagName("body")[0];
-        var config = {childList: true, subtree: true};
+        const b = document.getElementsByTagName("body")[0];
+        const config = {childList: true, subtree: true};
 
         observer.observe(b, config);
     }
 }, false);</script>
 <script data-no-minify="1" async="" src="./accueil/lazyload.min.js.téléchargement"></script>
 <script>function lazyLoadThumb(e) {
-    var t = '<img loading="lazy" data-lazy-src="https://i.ytimg.com/vi/ID/maxresdefault.jpg" alt="" width="1280" height="720"><noscript><img src="https://i.ytimg.com/vi/ID/maxresdefault.jpg" alt="" width="1280" height="720"></noscript>',
+    const t = '<img loading="lazy" data-lazy-src="https://i.ytimg.com/vi/ID/maxresdefault.jpg" alt="" width="1280" height="720"><noscript><img src="https://i.ytimg.com/vi/ID/maxresdefault.jpg" alt="" width="1280" height="720"></noscript>',
         a = '<div class="play"></div>';
     return t.replace("ID", e) + a
 }
 
 function lazyLoadYoutubeIframe() {
-    var e = document.createElement("iframe"), t = "https://www.youtube.com/embed/ID?autoplay=1";
+    const e = document.createElement("iframe");
+    let t = "https://www.youtube.com/embed/ID?autoplay=1";
     t += 0 === this.dataset.query.length ? '' : '&' + this.dataset.query;
     e.setAttribute("src", t.replace("ID", this.dataset.id)), e.setAttribute("frameborder", "0"), e.setAttribute("allowfullscreen", "1"), e.setAttribute("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"), this.parentNode.replaceChild(e, this)
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    var e, t, a = document.getElementsByClassName("rll-youtube-player");
+    let e, t;
+    const a = document.getElementsByClassName("rll-youtube-player");
     for (t = 0; t < a.length; t++) e = document.createElement("div"), e.setAttribute("data-id", a[t].dataset.id), e.setAttribute("data-query", a[t].dataset.query), e.innerHTML = lazyLoadThumb(a[t].dataset.id), e.onclick = lazyLoadYoutubeIframe, a[t].appendChild(e)
 });</script>
 
