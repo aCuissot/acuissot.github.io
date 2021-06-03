@@ -8,7 +8,7 @@ License: https://webthemez.com/license
 --------------------------------------------------------------*/
 body {
     background: #1f1f1f;
-    color: #fdcd33;
+    color: #ffc53d;
     font-family: "Open Sans", sans-serif;
 }
 
@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
 .back-to-top {
     position: fixed;
     display: none;
-    background: #fdcd33;
+    background: #ffc53d;
     color: #fff;
     padding: 6px 12px 9px 12px;
     font-size: 16px;
@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6 {
 # Top Bar
 --------------------------------------------------------------*/
 #topbar {
-    background: linear-gradient(45deg, #fdcd33 -132%, #0c2e8a 100%);
+    background: linear-gradient(45deg, #ffc53d -132%, #0c2e8a 100%);
     padding: 10px 0;
     border-bottom: 1px solid #eee;
     font-size: 14px;
@@ -83,11 +83,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #topbar .contact-info a:hover {
-    color: #fdcd33;
+    color: #ffc53d;
 }
 
 #topbar .contact-info i {
-    color: #fdcd33;
+    color: #ffc53d;
     padding: 4px;
 }
 .contact-info.float-left {
@@ -100,7 +100,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #topbar .social-links a {
-    color: #fdcd33;
+    color: #ffc53d;
     padding: 4px 12px;
     display: inline-block;
     line-height: 1px;
@@ -108,7 +108,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #topbar .social-links a:hover {
-    color: #fdcd33;
+    color: #ffc53d;
 }
 
 #topbar .social-links a:first-child {
@@ -137,7 +137,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header #logo h1 a {
-    color: #fdcd33;
+    color: #ffc53d;
     line-height: 1;
     display: inline-block;
 }
@@ -174,6 +174,13 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     background: url("../media/TEAM-Copy.png") no-repeat;
     background-size: cover;
+}
+
+#ensiTurnament{
+    background: url("../media/LogoENSICAEN.jpg") no-repeat;
+    background-size: contain;
+    background-position: center;
+    text-shadow:0 0 5px #000000;
 }
 
 #intro .intro-content {
@@ -230,25 +237,25 @@ h1, h2, h3, h4, h5, h6 {
 
 #intro .intro-content .btn-get-started {
     background: transparent;
-    border: 2px solid #fdcd33;
-    color: #fdcd33;
+    border: 2px solid #ffc53d;
+    color: #ffc53d;
 }
 
 #intro .intro-content .btn-get-started:hover {
     background: none;
     color: #fff;
-    background: #fdcd33;
-    border: 2px solid #fdcd33;
+    background: #ffc53d;
+    border: 2px solid #ffc53d;
 }
 
 #intro .intro-content .btn-projects {
-    background: #fdcd33;
-    border: 2px solid #fdcd33;
+    background: #ffc53d;
+    border: 2px solid #ffc53d;
 }
 
 #intro .intro-content .btn-projects:hover {
     background: none;
-    color: #fdcd33;
+    color: #ffc53d;
 }
 
 #intro #intro-carousel {
@@ -354,7 +361,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 10px 8px;
     text-decoration: none;
     display: inline-block;
-    color: #fdcd33;
+    color: #ffc53d;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 14px;
@@ -390,7 +397,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu ul li:hover > a {
-    color: #fdcd33;
+    color: #ffc53d;
 }
 
 .nav-menu ul ul {
@@ -435,7 +442,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 260px;
     overflow-y: auto;
     transition: 0.4s;
-    background: linear-gradient(45deg, #fdcd33 -200%, #2b0077 100%);
+    background: linear-gradient(45deg, #ffc53d -200%, #2b0077 100%);
 }
 
 #mobile-nav ul {
@@ -478,11 +485,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #mobile-nav ul .menu-has-children i.fa-chevron-up {
-    color: #fdcd33;
+    color: #ffc53d;
 }
 
 #mobile-nav ul .menu-item-active {
-    color: #fdcd33;
+    color: #ffc53d;
 }
 
 #mobile-body-overly {
@@ -537,7 +544,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     height: 3px;
     bottom: 0;
     left: 0;
-    border-top: #fdcd33 solid 2px;
+    border-top: #ffc53d solid 2px;
     right: 0;
     text-align: center;
     margin: 0 auto;
@@ -599,7 +606,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #about .content i {
     font-size: 20px;
     padding-right: 4px;
-    color: #fdcd33;
+    color: #ffc53d;
 }
 
 #about .content ul {
@@ -661,7 +668,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #services .box .icon i:before {
     background: #c3c3c3;
-    /* background: linear-gradient(45deg, #fdcd33 0%, #405ece 100%); */
+    /* background: linear-gradient(45deg, #ffc53d 0%, #405ece 100%); */
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -702,7 +709,7 @@ Events*/
 }
 .box2{
 
-    border: 1px solid #fdcd33;
+    border: 1px solid #ffc53d;
 
     display: inline-block;
 
@@ -711,7 +718,7 @@ Events*/
 .leftSec{
     float:left;
     width: 22%;
-    background: #fdcd33;
+    background: #ffc53d;
     color: #fff;
     text-align: center;
     padding: 15px;
@@ -769,7 +776,7 @@ Events*/
 }
 
 #clients .owl-dot.active {
-    background-color: #fdcd33;
+    background-color: #ffc53d;
 }
 
 /* Our Portfolio Section
@@ -811,7 +818,7 @@ Events*/
     background: #00000085;
     /* border: 1px solid #fff; */
     padding: 25px;
-    /* background: linear-gradient(45deg, #fdcd3357 0%, #405ece91 100%); */
+    /* background: linear-gradient(45deg, #ffc53d57 0%, #405ece91 100%); */
     display: none;
 }
 
@@ -1063,7 +1070,7 @@ Events*/
 }
 
 #testimonials .owl-dot.active {
-    background-color: #fdcd33;
+    background-color: #ffc53d;
 }
 .map{
 
@@ -1091,7 +1098,7 @@ p.help-block li {
 }
 
 #call-to-action .cta-title {
-    color: #fdcd33;
+    color: #ffc53d;
     font-size: 28px;
     font-weight: 700;
     margin-top: 62px;
@@ -1121,13 +1128,13 @@ p.help-block li {
     border-radius: 3px;
     transition: 0.5s;
     margin: 0;
-    border: 2px solid #fdcd33;
-    color: #fdcd33;
+    border: 2px solid #ffc53d;
+    color: #ffc53d;
 }
 
 #call-to-action .cta-btn:hover {
-    background: #fdcd33;
-    border: 3px solid #fdcd33;
+    background: #ffc53d;
+    border: 3px solid #ffc53d;
     color: #fff;
 }
 
@@ -1150,22 +1157,37 @@ p.help-block li {
 
 #team .member .pic img {
     max-width: 100%;
-    border-bottom: 4px solid #fdcd33;
+    border-bottom: 4px solid #ffc53d;
     /* padding: 20px 20px 0; */
+}
+
+#team .member .details2 {
+    background: #303030;
+    color: #ffc53d;
+    padding: 15px 0;
+    border-radius: 0 0 3px 3px;
+    border: #ffc53d 1px solid;
 }
 
 #team .member .details {
     background: #fff;
-    color: #fdcd33;
+    color: #ffc53d;
     padding: 15px 0;
     border-radius: 0 0 3px 3px;
-    border: #fdcd33 1px solid;
+    border: #ffc53d 1px solid;
 }
+
 
 #team .member h4 {
     font-weight: 700;
     margin-bottom: 2px;
     font-size: 18px;
+}
+
+.goldPlace {
+    color: #ffd700;
+    font-size: larger;
+    font-weight: bolder;
 }
 
 #juuj {
@@ -1188,6 +1210,14 @@ p.help-block li {
     color: #fff200;
 }
 
+#coach {
+    color: #7f7f7f;
+}
+
+.rempla {
+    color: #ffffff;
+}
+
 #team .member span {
     font-style: italic;
     display: block;
@@ -1201,9 +1231,9 @@ p.help-block li {
 }
 
 #team .member .social a {
-    color: #fdcd33;
+    color: #ffc53d;
     margin: 2px 6px;
-    border: 1px solid #fdcd33;
+    border: 1px solid #ffc53d;
     width: 42px;
     display: inline-block;
     opacity: .4;
@@ -1211,9 +1241,9 @@ p.help-block li {
 #team .member .social a:hover{
     color: #fff;
     margin: 2px 6px;
-    border: 1px solid #fdcd33;
+    border: 1px solid #ffc53d;
     opacity: 1;
-    background: #fdcd33;
+    background: #ffc53d;
 }
 #team .member .social i {
     font-size: 16px;
@@ -1235,9 +1265,10 @@ p.help-block li {
     font-size: 24px;
     display: inline-block;
     margin-bottom: 0;
-    color: #fdcd33;
+    color: #ffc53d;
     float: left;
 }
+
 
 #contact .contact-info address, #contact .contact-info p {
     margin-bottom: 0;
@@ -1257,7 +1288,7 @@ p.help-block li {
     margin-bottom: 15px;
     font-weight: bold;
     text-transform: uppercase;
-    color: #fdcd33;
+    color: #ffc53d;
     float: left;
     margin: 8px 15px;
 }
@@ -1267,7 +1298,7 @@ p.help-block li {
 }
 
 #contact .contact-info a:hover {
-    color: #fdcd33;
+    color: #ffc53d;
 }
 
 #contact .contact-address, #contact .contact-phone, #contact .contact-email {
@@ -1298,8 +1329,8 @@ p.help-block li {
 }
 
 #contact .form #sendmessage {
-    color: #fdcd33;
-    border: 1px solid #fdcd33;
+    color: #ffc53d;
+    border: 1px solid #ffc53d;
     display: none;
     text-align: center;
     padding: 15px;
@@ -1338,7 +1369,7 @@ p.help-block li {
 }
 
 #contact .form button[type="submit"] {
-    background: #fdcd33;
+    background: #ffc53d;
     border: 0;
     border-radius: 3px;
     padding: 10px 30px;
@@ -1375,7 +1406,7 @@ p.help-block li {
 }
 
 #footer .credits a {
-    color: #fdcd33;
+    color: #ffc53d;
 }
 .owl-carousel .owl-item img {
     display: block;
