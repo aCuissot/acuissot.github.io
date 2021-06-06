@@ -183,6 +183,13 @@ h1, h2, h3, h4, h5, h6 {
     text-shadow:0 0 5px #000000;
 }
 
+#faceitTurnaments{
+    background: url("../media/faceit.jpg") no-repeat;
+    background-size: contain;
+    background-position: center;
+    text-shadow:0 0 5px #000000;
+}
+
 #intro .intro-content {
     position: absolute;
     bottom: 0;
@@ -1186,6 +1193,12 @@ p.help-block li {
 
 .goldPlace {
     color: #ffd700;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.badPlace {
+    color: #ffffff;
     font-size: larger;
     font-weight: bolder;
 }
