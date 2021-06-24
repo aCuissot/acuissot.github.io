@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link href='https://fonts.googleapis.com/css?family=RobotoDraft' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="Media/logo.ico">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Club Jeux de Mots - Mails">
+<meta property="og:description"
+      content="Voici le club jeux de mots, vous trouverez ici les archives de nos mails.">
+<meta property="og:image" content="https://acuissot.github.io/Club_Jeux_De_Mots/Media/CJM_reduit.jpg">
 <style>
     html, body, h1, h2, h3, h4, h5 {
         font-family: "RobotoDraft", "Roboto", sans-serif
@@ -21,13 +27,13 @@
 <nav class="w3-sidebar w3-bar-block w3-collapse w3-white w3-animate-left w3-card" style="z-index:3;width:320px;"
      id="mySidebar">
     <a id="myBtn" onclick="myFunc('Demo1')" href="javascript:void(0)" class="w3-bar-item w3-button"><i
-            class="fa fa-inbox w3-margin-right"></i>Mails (3)<i class="fa fa-caret-down w3-margin-left"></i></a>
+            class="fa fa-inbox w3-margin-right"></i>Mails (60)<i class="fa fa-caret-down w3-margin-left"></i></a>
     <div id="Demo1" class="w3-hide w3-animate-left">
         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey"
            onclick="openMail('Borge');w3_close();" id="firstTab">
             <div class="w3-container">
-                <img class="w3-round w3-margin-right" src="/w3images/avatar3.png" style="width:15%;"><span
-                    class="w3-opacity w3-large">Borge Refsnes</span>
+                <img alt="cjm_avatar" class="w3-round w3-margin-right" src="Media/CJM_avatar.png" style="width:15%;"><span
+                    class="w3-opacity w3-large">Club Jeux de Mots</span>
                 <h6>Subject: Remember Me</h6>
                 <p>Hello, i just wanted to let you know that i'll be home at...</p>
             </div>
@@ -35,8 +41,8 @@
         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey"
            onclick="openMail('28052019');w3_close();">
             <div class="w3-container">
-                <img class="w3-round w3-margin-right" src="/w3images/avatar5.png" style="width:15%;"><span
-                    class="w3-opacity w3-large">Jane Doe</span>
+                <img alt="cjm_avatar"  class="w3-round w3-margin-right" src="Media/CJM_avatar.png" style="width:15%;"><span
+                    class="w3-opacity w3-large">Club Jeux de Mots</span>
                 <p>Bonjour à tous,<br>
 
                     Après avoir entendu des gens dire "j'en ai marre dis, ...</p>
@@ -45,8 +51,8 @@
         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey"
            onclick="openMail('20052019_7');w3_close();">
             <div class="w3-container">
-                <img class="w3-round w3-margin-right" src="/w3images/avatar5.png" style="width:15%;"><span
-                    class="w3-opacity w3-large">Jane Doe</span>
+                <img alt="cjm_avatar" class="w3-round w3-margin-right" src="Media/CJM_avatar.png" style="width:15%;"><span
+                    class="w3-opacity w3-large">Club Jeux de Mots</span>
                 <p>Bonjour a tous,<br>
 
                     Petite information : dernièrement nous avions dit que le mail
@@ -56,32 +62,32 @@
         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey"
            onclick="openMail('20052019_6');w3_close();">
             <div class="w3-container">
-                <img class="w3-round w3-margin-right" src="/w3images/avatar5.png" style="width:15%;"><span
-                    class="w3-opacity w3-large">Jane Doe</span>
+                <img alt="cjm_avatar" class="w3-round w3-margin-right" src="Media/CJM_avatar.png" style="width:15%;"><span
+                    class="w3-opacity w3-large">Club Jeux de Mots</span>
                 <p>Enfin, un mail animalier. On le sait peu mais le Viêt Nam regorge d’espèces de chez...</p>
             </div>
         </a>
         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey"
            onclick="openMail('20052019_5');w3_close();">
             <div class="w3-container">
-                <img class="w3-round w3-margin-right" src="/w3images/avatar5.png" style="width:15%;"><span
-                    class="w3-opacity w3-large">Jane Doe</span>
+                <img alt="cjm_avatar" class="w3-round w3-margin-right" src="Media/CJM_avatar.png" style="width:15%;"><span
+                    class="w3-opacity w3-large">Club Jeux de Mots</span>
                 <p>Petite information : dernièrement nous avions dit que le mail était « le mail...</p>
             </div>
         </a>
         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey"
            onclick="openMail('20052019_4');w3_close();">
             <div class="w3-container">
-                <img class="w3-round w3-margin-right" src="/w3images/avatar5.png" style="width:15%;"><span
-                    class="w3-opacity w3-large">Jane Doe</span>
+                <img alt="cjm_avatar" class="w3-round w3-margin-right" src="Media/CJM_avatar.png" style="width:15%;"><span
+                    class="w3-opacity w3-large">Club Jeux de Mots</span>
                 <p>Petite information : dernièrement nous avions dit que le mail était « le mail...</p>
             </div>
         </a>
         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey"
            onclick="openMail('20052019_3');w3_close();">
             <div class="w3-container">
-                <img class="w3-round w3-margin-right" src="/w3images/avatar5.png" style="width:15%;"><span
-                    class="w3-opacity w3-large">Jane Doe</span>
+                <img alt="cjm_avatar" class="w3-round w3-margin-right" src="Media/CJM_avatar.png" style="width:15%;"><span
+                    class="w3-opacity w3-large">Club Jeux de Mots</span>
                 <p>Bonjour a tous,<br>
 
                     Hier, des Andes je reviens après avoir enquêté ...</p>
@@ -90,8 +96,8 @@
         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey"
            onclick="openMail('20052019_2');w3_close();">
             <div class="w3-container">
-                <img class="w3-round w3-margin-right" src="/w3images/avatar5.png" style="width:15%;"><span
-                    class="w3-opacity w3-large">Jane Doe</span>
+                <img alt="cjm_avatar" class="w3-round w3-margin-right" src="Media/CJM_avatar.png" style="width:15%;"><span
+                    class="w3-opacity w3-large">Club Jeux de Mots</span>
                 <p>Bonjour à tous,<br>
                     Un jour d’école comme un autre...
                 </p>
@@ -100,8 +106,8 @@
         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey"
            onclick="openMail('20052019_1');w3_close();">
             <div class="w3-container">
-                <img class="w3-round w3-margin-right" src="/w3images/avatar5.png" style="width:15%;"><span
-                    class="w3-opacity w3-large">Jane Doe</span>
+                <img alt="cjm_avatar" class="w3-round w3-margin-right" src="Media/CJM_avatar.png" style="width:15%;"><span
+                    class="w3-opacity w3-large">Club Jeux de Mots</span>
                 <p>Bonjour a tous,<br>
                     Cette fois, abordons un thème un peu plus...</p>
             </div>
@@ -109,8 +115,8 @@
         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey"
            onclick="openMail('08042019');w3_close();">
             <div class="w3-container">
-                <img class="w3-round w3-margin-right" src="/w3images/avatar5.png" style="width:15%;"><span
-                    class="w3-opacity w3-large">Jane Doe</span>
+                <img alt="cjm_avatar" class="w3-round w3-margin-right" src="Media/CJM_avatar.png" style="width:15%;"><span
+                    class="w3-opacity w3-large">Club Jeux de Mots</span>
                 <p>On a remarqué qu’il y avait pas mal de gens mécontents des mails club jeux de mots, on fait le
                     nécessaire pour rev...</p>
             </div>
@@ -118,8 +124,8 @@
         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey"
            onclick="openMail('01042019');w3_close();">
             <div class="w3-container">
-                <img class="w3-round w3-margin-right" src="/w3images/avatar5.png" style="width:15%;"><span
-                    class="w3-opacity w3-large">Jane Doe</span>
+                <img alt="cjm_avatar" class="w3-round w3-margin-right" src="Media/CJM_avatar.png" style="width:15%;"><span
+                    class="w3-opacity w3-large">Club Jeux de Mots</span>
                 <p>Bonjour à tous,<br>
 
                     Je me baladais comme tous les dimanches...</p>
@@ -128,8 +134,8 @@
         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey"
            onclick="openMail('25032019');w3_close();">
             <div class="w3-container">
-                <img class="w3-round w3-margin-right" src="/w3images/avatar5.png" style="width:15%;"><span
-                    class="w3-opacity w3-large">Jane Doe</span>
+                <img alt="cjm_avatar" class="w3-round w3-margin-right" src="Media/CJM_avatar.png" style="width:15%;"><span
+                    class="w3-opacity w3-large">Club Jeux de Mots</span>
                 <p>bonsoir à tous,<br>
 
                     Faisons la fierté des routes du pays en prenant...
@@ -139,8 +145,8 @@
         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey"
            onclick="openMail('18032019');w3_close();">
             <div class="w3-container">
-                <img class="w3-round w3-margin-right" src="/w3images/avatar5.png" style="width:15%;"><span
-                    class="w3-opacity w3-large">Jane Doe</span>
+                <img alt="cjm_avatar" class="w3-round w3-margin-right" src="Media/CJM_avatar.png" style="width:15%;"><span
+                    class="w3-opacity w3-large">Club Jeux de Mots</span>
                 <p>Bonsoir à tous,<br>
 
                     Si l’Indre-et-Loire ne manque pas de dealers...</p>
@@ -149,8 +155,8 @@
         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey"
            onclick="openMail('11032019');w3_close();">
             <div class="w3-container">
-                <img class="w3-round w3-margin-right" src="/w3images/avatar5.png" style="width:15%;"><span
-                    class="w3-opacity w3-large">Jane Doe</span>
+                <img alt="cjm_avatar" class="w3-round w3-margin-right" src="Media/CJM_avatar.png" style="width:15%;"><span
+                    class="w3-opacity w3-large">Club Jeux de Mots</span>
                 <p>Bonjour a tous,<br>
 
                     Alors qu’André écoutait les faits divers de façon ...</p>
@@ -159,8 +165,8 @@
         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey"
            onclick="openMail('04032019');w3_close();">
             <div class="w3-container">
-                <img class="w3-round w3-margin-right" src="/w3images/avatar5.png" style="width:15%;"><span
-                    class="w3-opacity w3-large">Jane Doe</span>
+                <img alt="cjm_avatar" class="w3-round w3-margin-right" src="Media/CJM_avatar.png" style="width:15%;"><span
+                    class="w3-opacity w3-large">Club Jeux de Mots</span>
                 <p>Bonjour à tous,<br>
                     Vous l’avez vu dans le titre, c’est aujourd’hui la...</p>
             </div>
@@ -168,8 +174,8 @@
         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey"
            onclick="openMail('25022019');w3_close();">
             <div class="w3-container">
-                <img class="w3-round w3-margin-right" src="/w3images/avatar5.png" style="width:15%;"><span
-                    class="w3-opacity w3-large">Jane Doe</span>
+                <img alt="cjm_avatar" class="w3-round w3-margin-right" src="Media/CJM_avatar.png" style="width:15%;"><span
+                    class="w3-opacity w3-large">Club Jeux de Mots</span>
                 <p>Cher lecteurs<br>
 
                     J’étais avec Bob et Paul, en train d’escalader ...</p>
@@ -178,8 +184,8 @@
         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey"
            onclick="openMail('11022019');w3_close();">
             <div class="w3-container">
-                <img class="w3-round w3-margin-right" src="/w3images/avatar5.png" style="width:15%;"><span
-                    class="w3-opacity w3-large">Jane Doe</span>
+                <img alt="cjm_avatar" class="w3-round w3-margin-right" src="Media/CJM_avatar.png" style="width:15%;"><span
+                    class="w3-opacity w3-large">Club Jeux de Mots</span>
                 <p>Oyez oyez, braves gens,<br>
 
                     Avant de vous narrer une histoire, nous ...</p>
@@ -188,8 +194,8 @@
         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey"
            onclick="openMail('04022019');w3_close();">
             <div class="w3-container">
-                <img class="w3-round w3-margin-right" src="/w3images/avatar5.png" style="width:15%;"><span
-                    class="w3-opacity w3-large">Jane Doe</span>
+                <img alt="cjm_avatar" class="w3-round w3-margin-right" src="Media/CJM_avatar.png" style="width:15%;"><span
+                    class="w3-opacity w3-large">Club Jeux de Mots</span>
                 <p>Salut Blo<br>
 
                     Vous ai-je raconté la fois où j’ai pris le large av...</p>
@@ -198,8 +204,8 @@
         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey"
            onclick="openMail('28012019');w3_close();">
             <div class="w3-container">
-                <img class="w3-round w3-margin-right" src="/w3images/avatar5.png" style="width:15%;"><span
-                    class="w3-opacity w3-large">Jane Doe</span>
+                <img alt="cjm_avatar" class="w3-round w3-margin-right" src="Media/CJM_avatar.png" style="width:15%;"><span
+                    class="w3-opacity w3-large">Club Jeux de Mots</span>
                 <p>Cher brumisateur et ratés,<br>
                     Petit point sur les tapins qui nous...</p>
             </div>
@@ -207,8 +213,8 @@
         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey"
            onclick="openMail('21012019');w3_close();">
             <div class="w3-container">
-                <img class="w3-round w3-margin-right" src="/w3images/avatar5.png" style="width:15%;"><span
-                    class="w3-opacity w3-large">Jane Doe</span>
+                <img alt="cjm_avatar" class="w3-round w3-margin-right" src="Media/CJM_avatar.png" style="width:15%;"><span
+                    class="w3-opacity w3-large">Club Jeux de Mots</span>
                 <p>Bonjour à tous !
                     <br>
                     Aujourd'hui c'est la saint Agnès, pour les éner ...</p>
@@ -217,8 +223,8 @@
         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey"
            onclick="openMail('14012019');w3_close();">
             <div class="w3-container">
-                <img class="w3-round w3-margin-right" src="/w3images/avatar5.png" style="width:15%;"><span
-                    class="w3-opacity w3-large">Jane Doe</span>
+                <img alt="cjm_avatar" class="w3-round w3-margin-right" src="Media/CJM_avatar.png" style="width:15%;"><span
+                    class="w3-opacity w3-large">Club Jeux de Mots</span>
                 <p>Salut mes p’tits bouts,<br>
 
                     Aujourd’hui j’écris ce mail alors que je suis en train...</p>
@@ -227,8 +233,8 @@
         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey"
            onclick="openMail('07012019');w3_close();">
             <div class="w3-container">
-                <img class="w3-round w3-margin-right" src="/w3images/avatar5.png" style="width:15%;"><span
-                    class="w3-opacity w3-large">Jane Doe</span>
+                <img alt="cjm_avatar" class="w3-round w3-margin-right" src="Media/CJM_avatar.png" style="width:15%;"><span
+                    class="w3-opacity w3-large">Club Jeux de Mots</span>
                 <p>Sur cette fin d’année nous étions aux jeux de mots-tard, passons aux jeux de mots tôt!!<br>
                     Pour le coup je vous re-narre ...</p>
             </div>
@@ -236,8 +242,8 @@
         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey"
            onclick="openMail('25122018');w3_close();">
             <div class="w3-container">
-                <img class="w3-round w3-margin-right" src="/w3images/avatar5.png" style="width:15%;"><span
-                    class="w3-opacity w3-large">Jane Doe</span>
+                <img alt="cjm_avatar" class="w3-round w3-margin-right" src="Media/CJM_avatar.png" style="width:15%;"><span
+                    class="w3-opacity w3-large">Club Jeux de Mots</span>
                 <p>Le Club jeux de mots vous souhaite de Joyeuses fêtes de fin damné,<br>
 
                     Une attention particul...</p>
@@ -246,8 +252,8 @@
         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey"
            onclick="openMail('17122018');w3_close();">
             <div class="w3-container">
-                <img class="w3-round w3-margin-right" src="/w3images/avatar5.png" style="width:15%;"><span
-                    class="w3-opacity w3-large">Jane Doe</span>
+                <img alt="cjm_avatar" class="w3-round w3-margin-right" src="Media/CJM_avatar.png" style="width:15%;"><span
+                    class="w3-opacity w3-large">Club Jeux de Mots</span>
                 <p>125 cc (ça fait beaucoup d’oise au m²),<br>
                     Parlons actualité, parlons de Gille et John...</p>
             </div>
@@ -255,8 +261,8 @@
         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey"
            onclick="openMail('10122018');w3_close();">
             <div class="w3-container">
-                <img class="w3-round w3-margin-right" src="/w3images/avatar5.png" style="width:15%;"><span
-                    class="w3-opacity w3-large">Jane Doe</span>
+                <img alt="cjm_avatar" class="w3-round w3-margin-right" src="Media/CJM_avatar.png" style="width:15%;"><span
+                    class="w3-opacity w3-large">Club Jeux de Mots</span>
                 <p>Bonjour à tous,<br>
                     Malheureusement il n’y aura pas de club jm cette ...</p>
             </div>
@@ -264,8 +270,8 @@
         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey"
            onclick="openMail('03122018');w3_close();">
             <div class="w3-container">
-                <img class="w3-round w3-margin-right" src="/w3images/avatar5.png" style="width:15%;"><span
-                    class="w3-opacity w3-large">Jane Doe</span>
+                <img alt="cjm_avatar" class="w3-round w3-margin-right" src="Media/CJM_avatar.png" style="width:15%;"><span
+                    class="w3-opacity w3-large">Club Jeux de Mots</span>
                 <p>Coucou atouts, mais pas comme au tarot,<br>
                     Cette semaine nous sommes fascinés par la mathématique...</p>
             </div>
@@ -273,8 +279,8 @@
         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey"
            onclick="openMail('26112018');w3_close();">
             <div class="w3-container">
-                <img class="w3-round w3-margin-right" src="/w3images/avatar5.png" style="width:15%;"><span
-                    class="w3-opacity w3-large">Jane Doe</span>
+                <img alt="cjm_avatar" class="w3-round w3-margin-right" src="Media/CJM_avatar.png" style="width:15%;"><span
+                    class="w3-opacity w3-large">Club Jeux de Mots</span>
                 <p>Comme la semaine dernière, restons dans le domaine des vaisseaux, mais cette fois-ci pas ceux sans
                     gains...</p>
             </div>
@@ -282,8 +288,8 @@
         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey"
            onclick="openMail('19112018');w3_close();">
             <div class="w3-container">
-                <img class="w3-round w3-margin-right" src="/w3images/avatar5.png" style="width:15%;"><span
-                    class="w3-opacity w3-large">Jane Doe</span>
+                <img alt="cjm_avatar" class="w3-round w3-margin-right" src="Media/CJM_avatar.png" style="width:15%;"><span
+                    class="w3-opacity w3-large">Club Jeux de Mots</span>
                 <p>Bonjour les gens !<br>
 
                     Cela vous a plu la semaine dernière, nous continuons donc avec nos petites ânes et gdottes...</p>
@@ -292,8 +298,8 @@
         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey"
            onclick="openMail('12112018');w3_close();">
             <div class="w3-container">
-                <img class="w3-round w3-margin-right" src="/w3images/avatar5.png" style="width:15%;"><span
-                    class="w3-opacity w3-large">Jane Doe</span>
+                <img alt="cjm_avatar" class="w3-round w3-margin-right" src="Media/CJM_avatar.png" style="width:15%;"><span
+                    class="w3-opacity w3-large">Club Jeux de Mots</span>
                 <p>Bonjour les gens et légendes,<br>
 
                     Aujourd’hui un el un peu « pour la spécialité cial » ...</p>
@@ -302,8 +308,8 @@
         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey"
            onclick="openMail('05112018');w3_close();">
             <div class="w3-container">
-                <img class="w3-round w3-margin-right" src="/w3images/avatar5.png" style="width:15%;"><span
-                    class="w3-opacity w3-large">Jane Doe</span>
+                <img alt="cjm_avatar" class="w3-round w3-margin-right" src="Media/CJM_avatar.png" style="width:15%;"><span
+                    class="w3-opacity w3-large">Club Jeux de Mots</span>
                 <p>ça lu les gens !<br>
 
                     De retour de nos vacances sur l’huile Maurice ...
@@ -313,8 +319,8 @@
         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey"
            onclick="openMail('22102018');w3_close();">
             <div class="w3-container">
-                <img class="w3-round w3-margin-right" src="/w3images/avatar5.png" style="width:15%;"><span
-                    class="w3-opacity w3-large">Jane Doe</span>
+                <img alt="cjm_avatar" class="w3-round w3-margin-right" src="Media/CJM_avatar.png" style="width:15%;"><span
+                    class="w3-opacity w3-large">Club Jeux de Mots</span>
                 <p>Bonjour les JENZ HEM 593 Z,<br>
 
                     Ça commence fort. Merci beauco ....</p>
@@ -323,8 +329,8 @@
         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey"
            onclick="openMail('15102018');w3_close();">
             <div class="w3-container">
-                <img class="w3-round w3-margin-right" src="/w3images/avatar2.png" style="width:15%;"><span
-                    class="w3-opacity w3-large">John Doe</span>
+                <img alt="cjm_avatar" class="w3-round w3-margin-right" src="Media/CJM_avatar.png" style="width:15%;"><span
+                    class="w3-opacity w3-large">Club Jeux de Mots</span>
                 <p>Bonjour les gens, et même ceux qui ne s’appellent pas Jean !<br>
 
 
@@ -375,9 +381,9 @@
 
     <div id="Borge" class="w3-container person">
         <br>
-        <img class="w3-round  w3-animate-top" src="/w3images/avatar3.png" style="width:20%;">
+        <img alt="cjm_avatar" class="w3-round  w3-animate-top" src="Media/CJM_avatar.png" style="width:20%;">
         <h5 class="w3-opacity">Subject: Remember Me</h5>
-        <h4><i class="fa fa-clock-o"></i> From Borge Refsnes, Sep 27, 2015.</h4>
+        <h4><i class="fa fa-clock-o"></i> From Club Jeux de Mots, Sep 27, 2015.</h4>
         <a class="w3-button w3-light-grey" href="#">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
         <a class="w3-button w3-light-grey" href="#">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
         <hr>
@@ -393,13 +399,13 @@
             anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
             aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
             consequat.</p>
-        <p>Best Regards, <br>Borge Refsnes</p>
+        <p>Best Regards, <br>Club Jeux de Mots</p>
     </div>
     <div id="28052019" class="w3-container person">
         <br>
-        <img class="w3-round w3-animate-top" src="/w3images/avatar5.png" style="width:20%;">
+        <img alt="cjm_avatar" class="w3-round w3-animate-top" src="Media/CJM_avatar.png" style="width:20%;">
         <h5 class="w3-opacity">Sujet: du roi: Club Jeux de Mots</h5>
-        <h4><i class="fa fa-clock-o"></i> From Jane Doe, Sep 25, 2015.</h4>
+        <h4><i class="fa fa-clock-o"></i> From Club Jeux de Mots, Sep 25, 2015.</h4>
         <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
         <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
         <hr>
@@ -440,9 +446,9 @@
     </div>
     <div id="20052019_7" class="w3-container person">
         <br>
-        <img class="w3-round w3-animate-top" src="/w3images/avatar5.png" style="width:20%;">
+        <img alt="cjm_avatar" class="w3-round w3-animate-top" src="Media/CJM_avatar.png" style="width:20%;">
         <h5 class="w3-opacity">Sujet: du roi: Club Jeux de Mots</h5>
-        <h4><i class="fa fa-clock-o"></i> From Jane Doe, Sep 25, 2015.</h4>
+        <h4><i class="fa fa-clock-o"></i> From Club Jeux de Mots, Sep 25, 2015.</h4>
         <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
         <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
         <hr>
@@ -479,9 +485,9 @@
     </div>
     <div id="20052019_6" class="w3-container person">
         <br>
-        <img class="w3-round w3-animate-top" src="/w3images/avatar5.png" style="width:20%;">
+        <img alt="cjm_avatar" class="w3-round w3-animate-top" src="Media/CJM_avatar.png" style="width:20%;">
         <h5 class="w3-opacity">Sujet: du roi: Club Jeux de Mots</h5>
-        <h4><i class="fa fa-clock-o"></i> From Jane Doe, Sep 25, 2015.</h4>
+        <h4><i class="fa fa-clock-o"></i> From Club Jeux de Mots, Sep 25, 2015.</h4>
         <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
         <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
         <hr>
@@ -507,9 +513,9 @@
     </div>
     <div id="20052019_5" class="w3-container person">
         <br>
-        <img class="w3-round w3-animate-top" src="/w3images/avatar5.png" style="width:20%;">
+        <img alt="cjm_avatar" class="w3-round w3-animate-top" src="Media/CJM_avatar.png" style="width:20%;">
         <h5 class="w3-opacity">Sujet: du roi: Club Jeux de Mots</h5>
-        <h4><i class="fa fa-clock-o"></i> From Jane Doe, Sep 25, 2015.</h4>
+        <h4><i class="fa fa-clock-o"></i> From Club Jeux de Mots, Sep 25, 2015.</h4>
         <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
         <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
         <hr>
@@ -541,9 +547,9 @@
     </div>
     <div id="20052019_4" class="w3-container person">
         <br>
-        <img class="w3-round w3-animate-top" src="/w3images/avatar5.png" style="width:20%;">
+        <img alt="cjm_avatar" class="w3-round w3-animate-top" src="Media/CJM_avatar.png" style="width:20%;">
         <h5 class="w3-opacity">Sujet: du roi: Club Jeux de Mots</h5>
-        <h4><i class="fa fa-clock-o"></i> From Jane Doe, Sep 25, 2015.</h4>
+        <h4><i class="fa fa-clock-o"></i> From Club Jeux de Mots, Sep 25, 2015.</h4>
         <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
         <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
         <hr>
@@ -586,9 +592,9 @@
     </div>
     <div id="20052019_3" class="w3-container person">
         <br>
-        <img class="w3-round w3-animate-top" src="/w3images/avatar5.png" style="width:20%;">
+        <img alt="cjm_avatar" class="w3-round w3-animate-top" src="Media/CJM_avatar.png" style="width:20%;">
         <h5 class="w3-opacity">Sujet: Trouvez le fil rouge… et trouvez le!</h5>
-        <h4><i class="fa fa-clock-o"></i> From Jane Doe, Sep 25, 2015.</h4>
+        <h4><i class="fa fa-clock-o"></i> From Club Jeux de Mots, Sep 25, 2015.</h4>
         <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
         <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
         <hr>
@@ -628,9 +634,9 @@
     </div>
     <div id="20052019_2" class="w3-container person">
         <br>
-        <img class="w3-round w3-animate-top" src="/w3images/avatar5.png" style="width:20%;">
+        <img alt="cjm_avatar" class="w3-round w3-animate-top" src="Media/CJM_avatar.png" style="width:20%;">
         <h5 class="w3-opacity">Sujet: du roi: Club Jeux de Mots</h5>
-        <h4><i class="fa fa-clock-o"></i> From Jane Doe, Sep 25, 2015.</h4>
+        <h4><i class="fa fa-clock-o"></i> From Club Jeux de Mots, Sep 25, 2015.</h4>
         <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
         <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
         <hr>
@@ -666,9 +672,9 @@
     </div>
     <div id="20052019_1" class="w3-container person">
         <br>
-        <img class="w3-round w3-animate-top" src="/w3images/avatar5.png" style="width:20%;">
+        <img alt="cjm_avatar" class="w3-round w3-animate-top" src="Media/CJM_avatar.png" style="width:20%;">
         <h5 class="w3-opacity">Sujet: du roi: Club Jeux de Mots</h5>
-        <h4><i class="fa fa-clock-o"></i> From Jane Doe, Sep 25, 2015.</h4>
+        <h4><i class="fa fa-clock-o"></i> From Club Jeux de Mots, Sep 25, 2015.</h4>
         <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
         <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
         <hr>
@@ -707,9 +713,9 @@
     </div>
     <div id="08042019" class="w3-container person">
         <br>
-        <img class="w3-round w3-animate-top" src="/w3images/avatar5.png" style="width:20%;">
+        <img alt="cjm_avatar" class="w3-round w3-animate-top" src="Media/CJM_avatar.png" style="width:20%;">
         <h5 class="w3-opacity">Sujet: Pas de mail cette semaine</h5>
-        <h4><i class="fa fa-clock-o"></i> From Jane Doe, Sep 25, 2015.</h4>
+        <h4><i class="fa fa-clock-o"></i> From Club Jeux de Mots, Sep 25, 2015.</h4>
         <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
         <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
         <hr>
@@ -733,9 +739,9 @@
     </div>
     <div id="01042019" class="w3-container person">
         <br>
-        <img class="w3-round w3-animate-top" src="/w3images/avatar5.png" style="width:20%;">
+        <img alt="cjm_avatar" class="w3-round w3-animate-top" src="Media/CJM_avatar.png" style="width:20%;">
         <h5 class="w3-opacity">Sujet: parc d’horreur vestimentaire...</h5>
-        <h4><i class="fa fa-clock-o"></i> From Jane Doe, Sep 25, 2015.</h4>
+        <h4><i class="fa fa-clock-o"></i> From Club Jeux de Mots, Sep 25, 2015.</h4>
         <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
         <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
         <hr>
@@ -773,9 +779,9 @@
     </div>
     <div id="25032019" class="w3-container person">
         <br>
-        <img class="w3-round w3-animate-top" src="/w3images/avatar5.png" style="width:20%;">
+        <img alt="cjm_avatar" class="w3-round w3-animate-top" src="Media/CJM_avatar.png" style="width:20%;">
         <h5 class="w3-opacity">Sujet: du roi: Club Jeux de Mots</h5>
-        <h4><i class="fa fa-clock-o"></i> From Jane Doe, Sep 25, 2015.</h4>
+        <h4><i class="fa fa-clock-o"></i> From Club Jeux de Mots, Sep 25, 2015.</h4>
         <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
         <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
         <hr>
@@ -819,9 +825,9 @@
     </div>
     <div id="18032019" class="w3-container person">
         <br>
-        <img class="w3-round w3-animate-top" src="/w3images/avatar5.png" style="width:20%;">
+        <img alt="cjm_avatar" class="w3-round w3-animate-top" src="Media/CJM_avatar.png" style="width:20%;">
         <h5 class="w3-opacity">Sujet: Club jeux de moteur</h5>
-        <h4><i class="fa fa-clock-o"></i> From Jane Doe, Sep 25, 2015.</h4>
+        <h4><i class="fa fa-clock-o"></i> From Club Jeux de Mots, Sep 25, 2015.</h4>
         <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
         <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
         <hr>
@@ -864,9 +870,9 @@
     </div>
     <div id="11032019" class="w3-container person">
         <br>
-        <img class="w3-round w3-animate-top" src="/w3images/avatar5.png" style="width:20%;">
+        <img alt="cjm_avatar" class="w3-round w3-animate-top" src="Media/CJM_avatar.png" style="width:20%;">
         <h5 class="w3-opacity">Sujet: Le temps d'un mail</h5>
-        <h4><i class="fa fa-clock-o"></i> From Jane Doe, Sep 25, 2015.</h4>
+        <h4><i class="fa fa-clock-o"></i> From Club Jeux de Mots, Sep 25, 2015.</h4>
         <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
         <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
         <hr>
@@ -908,9 +914,9 @@
     </div>
     <div id="04032019" class="w3-container person">
         <br>
-        <img class="w3-round w3-animate-top" src="/w3images/avatar5.png" style="width:20%;">
+        <img alt="cjm_avatar" class="w3-round w3-animate-top" src="Media/CJM_avatar.png" style="width:20%;">
         <h5 class="w3-opacity">Sujet: Fermeture du club jeux de mots</h5>
-        <h4><i class="fa fa-clock-o"></i> From Jane Doe, Sep 25, 2015.</h4>
+        <h4><i class="fa fa-clock-o"></i> From Club Jeux de Mots, Sep 25, 2015.</h4>
         <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
         <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
         <hr>
@@ -954,9 +960,9 @@
 
     <div id="25022019" class="w3-container person">
         <br>
-        <img class="w3-round w3-animate-top" src="/w3images/avatar5.png" style="width:20%;">
+        <img alt="cjm_avatar" class="w3-round w3-animate-top" src="Media/CJM_avatar.png" style="width:20%;">
         <h5 class="w3-opacity">Sujet: Note a spam</h5>
-        <h4><i class="fa fa-clock-o"></i> From Jane Doe, Sep 25, 2015.</h4>
+        <h4><i class="fa fa-clock-o"></i> From Club Jeux de Mots, Sep 25, 2015.</h4>
         <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
         <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
         <hr>
@@ -1002,9 +1008,9 @@
     </div>
     <div id="11022019" class="w3-container person">
         <br>
-        <img class="w3-round w3-animate-top" src="/w3images/avatar5.png" style="width:20%;">
+        <img alt="cjm_avatar" class="w3-round w3-animate-top" src="Media/CJM_avatar.png" style="width:20%;">
         <h5 class="w3-opacity">Sujet: Moyen âge, et oui, on a plus d’une corde à monarque</h5>
-        <h4><i class="fa fa-clock-o"></i> From Jane Doe, Sep 25, 2015.</h4>
+        <h4><i class="fa fa-clock-o"></i> From Club Jeux de Mots, Sep 25, 2015.</h4>
         <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
         <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
         <hr>
@@ -1014,7 +1020,7 @@
             détentes pour le petit déjeuner de notre liste: les Caenping même si le peu de visiteurs ne nous a pas
             permis de faire le barbecue à midi</p>
 
-        <img class="w3-round w3-animate-top" src="media/detente.jpg" style="width:50%;">
+        <img alt="cjm_avatar" class="w3-round w3-animate-top" src="Media/detente.jpg" style="width:50%;">
 
         <p>Une fois n’est pas coutume, nous allons vous conter une histoire qui se passait au moyen âge. La duchesse de
             Pepinburg, grandement malade, était alitée depuis quelques jours, emmitouflée sous sa couverture. Le lit
@@ -1052,9 +1058,9 @@
     </div>
     <div id="04022019" class="w3-container person">
         <br>
-        <img class="w3-round w3-animate-top" src="/w3images/avatar5.png" style="width:20%;">
+        <img alt="cjm_avatar" class="w3-round w3-animate-top" src="Media/CJM_avatar.png" style="width:20%;">
         <h5 class="w3-opacity">Sujet: du roi: Club Jeux de Mots</h5>
-        <h4><i class="fa fa-clock-o"></i> From Jane Doe, Sep 25, 2015.</h4>
+        <h4><i class="fa fa-clock-o"></i> From Club Jeux de Mots, Sep 25, 2015.</h4>
         <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
         <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
         <hr>
@@ -1103,9 +1109,9 @@
     </div>
     <div id="28012019" class="w3-container person">
         <br>
-        <img class="w3-round w3-animate-top" src="/w3images/avatar5.png" style="width:20%;">
+        <img alt="cjm_avatar" class="w3-round w3-animate-top" src="Media/CJM_avatar.png" style="width:20%;">
         <h5 class="w3-opacity">Sujet: du roi: Club Jeux de Mots</h5>
-        <h4><i class="fa fa-clock-o"></i> From Jane Doe, Sep 25, 2015.</h4>
+        <h4><i class="fa fa-clock-o"></i> From Club Jeux de Mots, Sep 25, 2015.</h4>
         <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
         <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
         <hr>
@@ -1142,7 +1148,7 @@
         </p>
         <p> Signé (voir l’image jointe)
         </p>
-        <img class="w3-round w3-animate-top" src="media/tintin.jpg" style="width:50%;">
+        <img alt="tintin" class="w3-round w3-animate-top" src="Media/tintin.jpg" style="width:50%;">
         <p>
             PS: excusez nous pour les quelques minutes de retard (mais pas pour la piètre qualité du mail), mais
             maintenant que les pendules sont remises à l'heure ça devrais mieux se passer
@@ -1152,9 +1158,9 @@
     </div>
     <div id="21012022" class="w3-container person">
         <br>
-        <img class="w3-round w3-animate-top" src="/w3images/avatar5.png" style="width:20%;">
+        <img alt="cjm_avatar" class="w3-round w3-animate-top" src="Media/CJM_avatar.png" style="width:20%;">
         <h5 class="w3-opacity">Sujet: Club jeux de mots Bilette</h5>
-        <h4><i class="fa fa-clock-o"></i> From Jane Doe, Sep 25, 2015.</h4>
+        <h4><i class="fa fa-clock-o"></i> From Club Jeux de Mots, Sep 25, 2015.</h4>
         <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
         <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
         <hr>
@@ -1195,9 +1201,9 @@
     </div>
     <div id="14012019" class="w3-container person">
         <br>
-        <img class="w3-round w3-animate-top" src="/w3images/avatar5.png" style="width:20%;">
+        <img alt="cjm_avatar" class="w3-round w3-animate-top" src="Media/CJM_avatar.png" style="width:20%;">
         <h5 class="w3-opacity">Sujet: du roi: Club Jeux de Mots</h5>
-        <h4><i class="fa fa-clock-o"></i> From Jane Doe, Sep 25, 2015.</h4>
+        <h4><i class="fa fa-clock-o"></i> From Club Jeux de Mots, Sep 25, 2015.</h4>
         <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
         <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
         <hr>
@@ -1210,7 +1216,7 @@
             voulait pas y aller donc je m’en suis chargé. Il eut peur pour moi: “gare à toi !” me dit-il, “qu’elle en
             ait ou pas je prends ma bille et j’y vais”.</p>
 
-        <p>Suite sous forme de mail à choix multiples :
+        <p>Suite sous forme de mail à choix multiples :</p>
         <ul>
             <li>C’est alors que j’aperçu l’homme de métal. Ses bras, jambes étaient de cuivre, genoux, coudes, de
                 platine, manches, mains de fer.
@@ -1224,7 +1230,7 @@
                 main-de-fer...
             </li>
         </ul>
-        <br>Fin de la suite de choix multiples</p>
+        <p>Fin de la suite de choix multiples</p>
 
         <p>Il n’a pas plu de tout le trajet, c’est normal il ne pleut jamais dans le train n°3353, c’en est une
             propriété intrinsèque.</p>
@@ -1244,9 +1250,9 @@
     </div>
     <div id="07012019" class="w3-container person">
         <br>
-        <img class="w3-round w3-animate-top" src="/w3images/avatar5.png" style="width:20%;">
+        <img alt="cjm_avatar" class="w3-round w3-animate-top" src="Media/CJM_avatar.png" style="width:20%;">
         <h5 class="w3-opacity">Sujet: du roi: Club Jeux de Mots</h5>
-        <h4><i class="fa fa-clock-o"></i> From Jane Doe, Sep 25, 2015.</h4>
+        <h4><i class="fa fa-clock-o"></i> From Club Jeux de Mots, Sep 25, 2015.</h4>
         <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
         <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
         <hr>
@@ -1289,9 +1295,9 @@
     </div>
     <div id="25122018" class="w3-container person">
         <br>
-        <img class="w3-round w3-animate-top" src="/w3images/avatar5.png" style="width:20%;">
+        <img alt="cjm_avatar" class="w3-round w3-animate-top" src="Media/CJM_avatar.png" style="width:20%;">
         <h5 class="w3-opacity">Sujet: Noyeux Joël</h5>
-        <h4><i class="fa fa-clock-o"></i> From Jane Doe, Sep 25, 2015.</h4>
+        <h4><i class="fa fa-clock-o"></i> From Club Jeux de Mots, Sep 25, 2015.</h4>
         <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
         <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
         <hr>
@@ -1320,9 +1326,9 @@
     </div>
     <div id="17122018" class="w3-container person">
         <br>
-        <img class="w3-round w3-animate-top" src="/w3images/avatar5.png" style="width:20%;">
+        <img alt="cjm_avatar" class="w3-round w3-animate-top" src="Media/CJM_avatar.png" style="width:20%;">
         <h5 class="w3-opacity">Sujet: du roi: Mail JM</h5>
-        <h4><i class="fa fa-clock-o"></i> From Jane Doe, Sep 25, 2015.</h4>
+        <h4><i class="fa fa-clock-o"></i> From Club Jeux de Mots, Sep 25, 2015.</h4>
         <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
         <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
         <hr>
@@ -1359,9 +1365,9 @@
     </div>
     <div id="10122018" class="w3-container person">
         <br>
-        <img class="w3-round w3-animate-top" src="/w3images/avatar5.png" style="width:20%;">
+        <img alt="cjm_avatar" class="w3-round w3-animate-top" src="Media/CJM_avatar.png" style="width:20%;">
         <h5 class="w3-opacity">Sujet: [CJM]Quota disque dépassé ou sur le point d'être dépassé</h5>
-        <h4><i class="fa fa-clock-o"></i> From Jane Doe, Sep 25, 2015.</h4>
+        <h4><i class="fa fa-clock-o"></i> From Club Jeux de Mots, Sep 25, 2015.</h4>
         <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
         <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
         <hr>
@@ -1381,9 +1387,9 @@
     </div>
     <div id="03122018" class="w3-container person">
         <br>
-        <img class="w3-round w3-animate-top" src="/w3images/avatar5.png" style="width:20%;">
+        <img alt="cjm_avatar" class="w3-round w3-animate-top" src="Media/CJM_avatar.png" style="width:20%;">
         <h5 class="w3-opacity">Sujet: du roi: Club Jeux de Mots</h5>
-        <h4><i class="fa fa-clock-o"></i> From Jane Doe, Sep 25, 2015.</h4>
+        <h4><i class="fa fa-clock-o"></i> From Club Jeux de Mots, Sep 25, 2015.</h4>
         <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
         <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
         <hr>
@@ -1419,10 +1425,10 @@
     </div>
     <div id="26112018" class="w3-container person">
         <br>
-        <img class="w3-round w3-animate-top" src="/w3images/avatar5.png" style="width:20%;">
+        <img alt="cjm_avatar" class="w3-round w3-animate-top" src="Media/CJM_avatar.png" style="width:20%;">
         <h5 class="w3-opacity">Sujet: Les Extra-terrestres.
         </h5>
-        <h4><i class="fa fa-clock-o"></i> From Jane Doe, Sep 25, 2015.</h4>
+        <h4><i class="fa fa-clock-o"></i> From Club Jeux de Mots, Sep 25, 2015.</h4>
         <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
         <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
         <hr>
@@ -1454,9 +1460,9 @@
     </div>
     <div id="19112018" class="w3-container person">
         <br>
-        <img class="w3-round w3-animate-top" src="/w3images/avatar5.png" style="width:20%;">
+        <img alt="cjm_avatar" class="w3-round w3-animate-top" src="Media/CJM_avatar.png" style="width:20%;">
         <h5 class="w3-opacity">Sujet: Club jeux de m'hôpital</h5>
-        <h4><i class="fa fa-clock-o"></i> From Jane Doe, Sep 25, 2015.</h4>
+        <h4><i class="fa fa-clock-o"></i> From Club Jeux de Mots, Sep 25, 2015.</h4>
         <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
         <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
         <hr>
@@ -1481,9 +1487,9 @@
     </div>
     <div id="12112018" class="w3-container person">
         <br>
-        <img class="w3-round w3-animate-top" src="/w3images/avatar5.png" style="width:20%;">
+        <img alt="cjm_avatar" class="w3-round w3-animate-top" src="Media/CJM_avatar.png" style="width:20%;">
         <h5 class="w3-opacity">Sujet: Club Jeux de Mots</h5>
-        <h4><i class="fa fa-clock-o"></i> From Jane Doe, Sep 25, 2015.</h4>
+        <h4><i class="fa fa-clock-o"></i> From Club Jeux de Mots, Sep 25, 2015.</h4>
         <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
         <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
         <hr>
@@ -1514,9 +1520,9 @@
     </div>
     <div id="05112018" class="w3-container person">
         <br>
-        <img class="w3-round w3-animate-top" src="/w3images/avatar5.png" style="width:20%;">
+        <img alt="cjm_avatar" class="w3-round w3-animate-top" src="Media/CJM_avatar.png" style="width:20%;">
         <h5 class="w3-opacity">Sujet: Club Jeux de Mots</h5>
-        <h4><i class="fa fa-clock-o"></i> From Jane Doe, Sep 25, 2015.</h4>
+        <h4><i class="fa fa-clock-o"></i> From Club Jeux de Mots, Sep 25, 2015.</h4>
         <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
         <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
         <hr>
@@ -1539,15 +1545,15 @@
         <p>
             Axel et Félix qui n’a pas fait l’X
         </p>
-        <img class="w3-round w3-animate-top" src="media/huile.jpg.jpg" style="width:20%;" alt="huile maurice">
+        <img class="w3-round w3-animate-top" src="Media/huile.jpg" style="width:20%;" alt="huile maurice">
 
 
     </div>
     <div id="22102018" class="w3-container person">
         <br>
-        <img class="w3-round w3-animate-top" src="/w3images/avatar5.png" style="width:20%;">
+        <img alt="cjm_avatar" class="w3-round w3-animate-top" src="Media/CJM_avatar.png" style="width:20%;">
         <h5 class="w3-opacity">Sujet: du roi: Club Jeux de Mots</h5>
-        <h4><i class="fa fa-clock-o"></i> From Jane Doe, Sep 25, 2015.</h4>
+        <h4><i class="fa fa-clock-o"></i> From Club Jeux de Mots, Sep 25, 2015.</h4>
         <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
         <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
         <hr>
@@ -1574,15 +1580,15 @@
         </p>
         <p>
             Axel et Félix</p>
-        <img class="w3-round w3-animate-top" src="media/miel.jpg" style="width:20%;" alt="miel">
+        <img class="w3-round w3-animate-top" src="Media/miel.jpg" style="width:20%;" alt="miel">
 
 
     </div>
     <div id="15102018" class="w3-container person">
         <br>
-        <img class="w3-round w3-animate-top" src="/w3images/avatar2.png" style="width:20%;">
+        <img alt="cjm_avatar" class="w3-round w3-animate-top" src="Media/CJM_avatar.png" style="width:20%;" >
         <h5 class="w3-opacity">Sujet: Club jeux de mots</h5>
-        <h4><i class="fa fa-clock-o"></i> From John Doe, Sep 23, 2015.</h4>
+        <h4><i class="fa fa-clock-o"></i> From Club Jeux de Mots, Sep 23, 2015.</h4>
         <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
         <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
         <hr>
@@ -1634,7 +1640,7 @@
 
     function myFunc(id) {
         var x = document.getElementById(id);
-        if (x.className.indexOf("w3-show") == -1) {
+        if (x.className.indexOf("w3-show") === -1) {
             x.className += " w3-show";
             x.previousElementSibling.className += " w3-red";
         } else {
