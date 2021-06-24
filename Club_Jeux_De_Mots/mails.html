@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href='https://fonts.googleapis.com/css?family=RobotoDraft' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    html, body, h1, h2, h3, h4, h5 {
+        font-family: "RobotoDraft", "Roboto", sans-serif
+    }
+
+    .w3-bar-block .w3-bar-item {
+        padding: 16px
+    }
+</style>
+<body>
+
+<!-- Side Navigation -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-white w3-animate-left w3-card" style="z-index:3;width:320px;"
+     id="mySidebar">
+    <a id="myBtn" onclick="myFunc('Demo1')" href="javascript:void(0)" class="w3-bar-item w3-button"><i
+            class="fa fa-inbox w3-margin-right"></i>Mails (3)<i class="fa fa-caret-down w3-margin-left"></i></a>
+    <div id="Demo1" class="w3-hide w3-animate-left">
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey"
+           onclick="openMail('Borge');w3_close();" id="firstTab">
+            <div class="w3-container">
+                <img class="w3-round w3-margin-right" src="/w3images/avatar3.png" style="width:15%;"><span
+                    class="w3-opacity w3-large">Borge Refsnes</span>
+                <h6>Subject: Remember Me</h6>
+                <p>Hello, i just wanted to let you know that i'll be home at...</p>
+            </div>
+        </a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey"
+           onclick="openMail('10122018');w3_close();">
+            <div class="w3-container">
+                <img class="w3-round w3-margin-right" src="/w3images/avatar5.png" style="width:15%;"><span
+                    class="w3-opacity w3-large">Jane Doe</span>
+                <p>Bonjour à tous,<br>
+                    Malheureusement il n’y aura pas de club jm cette ...</p>
+            </div>
+        </a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey"
+           onclick="openMail('10122018');w3_close();">
+            <div class="w3-container">
+                <img class="w3-round w3-margin-right" src="/w3images/avatar5.png" style="width:15%;"><span
+                    class="w3-opacity w3-large">Jane Doe</span>
+                <p>Bonjour à tous,<br>
+                    Malheureusement il n’y aura pas de club jm cette ...</p>
+            </div>
+        </a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey"
+           onclick="openMail('07012019');w3_close();">
+            <div class="w3-container">
+                <img class="w3-round w3-margin-right" src="/w3images/avatar5.png" style="width:15%;"><span
+                    class="w3-opacity w3-large">Jane Doe</span>
+                <p>Sur cette fin d’année nous étions aux jeux de mots-tard, passons aux jeux de mots tôt!!<br>
+                    Pour le coup je vous re-narre ...</p>
+            </div>
+        </a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey"
+           onclick="openMail('25122018');w3_close();">
+            <div class="w3-container">
+                <img class="w3-round w3-margin-right" src="/w3images/avatar5.png" style="width:15%;"><span
+                    class="w3-opacity w3-large">Jane Doe</span>
+                <p>Le Club jeux de mots vous souhaite de Joyeuses fêtes de fin damné,<br>
+
+                    Une attention particul...</p>
+            </div>
+        </a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey"
+           onclick="openMail('17122018');w3_close();">
+            <div class="w3-container">
+                <img class="w3-round w3-margin-right" src="/w3images/avatar5.png" style="width:15%;"><span
+                    class="w3-opacity w3-large">Jane Doe</span>
+                <p>125 cc (ça fait beaucoup d’oise au m²),<br>
+                    Parlons actualité, parlons de Gille et John...</p>
+            </div>
+        </a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey"
+           onclick="openMail('10122018');w3_close();">
+            <div class="w3-container">
+                <img class="w3-round w3-margin-right" src="/w3images/avatar5.png" style="width:15%;"><span
+                    class="w3-opacity w3-large">Jane Doe</span>
+                <p>Bonjour à tous,<br>
+                    Malheureusement il n’y aura pas de club jm cette ...</p>
+            </div>
+        </a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey"
+           onclick="openMail('03122018');w3_close();">
+            <div class="w3-container">
+                <img class="w3-round w3-margin-right" src="/w3images/avatar5.png" style="width:15%;"><span
+                    class="w3-opacity w3-large">Jane Doe</span>
+                <p>Coucou atouts, mais pas comme au tarot,<br>
+                    Cette semaine nous sommes fascinés par la mathématique...</p>
+            </div>
+        </a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey"
+           onclick="openMail('26112018');w3_close();">
+            <div class="w3-container">
+                <img class="w3-round w3-margin-right" src="/w3images/avatar5.png" style="width:15%;"><span
+                    class="w3-opacity w3-large">Jane Doe</span>
+                <p>Comme la semaine dernière, restons dans le domaine des vaisseaux, mais cette fois-ci pas ceux sans gains...</p>
+            </div>
+        </a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey"
+           onclick="openMail('19112018');w3_close();">
+            <div class="w3-container">
+                <img class="w3-round w3-margin-right" src="/w3images/avatar5.png" style="width:15%;"><span
+                    class="w3-opacity w3-large">Jane Doe</span>
+                <p>Bonjour les gens !<br>
+
+                    Cela vous a plu la semaine dernière, nous continuons donc avec nos petites ânes et gdottes...</p>
+            </div>
+        </a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey"
+           onclick="openMail('12112018');w3_close();">
+            <div class="w3-container">
+                <img class="w3-round w3-margin-right" src="/w3images/avatar5.png" style="width:15%;"><span
+                    class="w3-opacity w3-large">Jane Doe</span>
+                <p>Bonjour les gens et légendes,<br>
+
+                    Aujourd’hui un el un peu « pour la spécialité cial » ...</p>
+            </div>
+        </a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey"
+           onclick="openMail('05112018');w3_close();">
+            <div class="w3-container">
+                <img class="w3-round w3-margin-right" src="/w3images/avatar5.png" style="width:15%;"><span
+                    class="w3-opacity w3-large">Jane Doe</span>
+                <p>ça lu les gens !<br>
+
+                    De retour de nos vacances sur l’huile Maurice ...
+                </p>
+            </div>
+        </a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey"
+           onclick="openMail('22102018');w3_close();">
+            <div class="w3-container">
+                <img class="w3-round w3-margin-right" src="/w3images/avatar5.png" style="width:15%;"><span
+                    class="w3-opacity w3-large">Jane Doe</span>
+                <p>Bonjour les JENZ HEM 593 Z,<br>
+
+                    Ça commence fort. Merci beauco ....</p>
+            </div>
+        </a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey"
+           onclick="openMail('15102018');w3_close();">
+            <div class="w3-container">
+                <img class="w3-round w3-margin-right" src="/w3images/avatar2.png" style="width:15%;"><span
+                    class="w3-opacity w3-large">John Doe</span>
+                <p>Bonjour les gens, et même ceux qui ne s’appellent pas Jean !<br>
+
+
+                    Nous sommes le club jeu...
+                </p>
+            </div>
+        </a>
+    </div>
+</nav>
+
+<!-- Modal that pops up when you click on "New Message" -->
+<div id="id01" class="w3-modal" style="z-index:4">
+    <div class="w3-modal-content w3-animate-zoom">
+        <div class="w3-container w3-padding w3-red">
+       <span onclick="document.getElementById('id01').style.display='none'"
+             class="w3-button w3-red w3-right w3-xxlarge"><i class="fa fa-remove"></i></span>
+            <h2>Send Mail</h2>
+        </div>
+        <div class="w3-panel">
+            <label>To</label>
+            <input class="w3-input w3-border w3-margin-bottom" type="text">
+            <label>From</label>
+            <input class="w3-input w3-border w3-margin-bottom" type="text">
+            <label>Subject</label>
+            <input class="w3-input w3-border w3-margin-bottom" type="text">
+            <input class="w3-input w3-border w3-margin-bottom" style="height:150px" placeholder="What's on your mind?">
+            <div class="w3-section">
+                <a class="w3-button w3-red" onclick="document.getElementById('id01').style.display='none'">Cancel  <i
+                        class="fa fa-remove"></i></a>
+                <a class="w3-button w3-light-grey w3-right"
+                   onclick="document.getElementById('id01').style.display='none'">Send  <i
+                        class="fa fa-paper-plane"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Overlay effect when opening the side navigation on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
+     title="Close Sidemenu" id="myOverlay"></div>
+
+<!-- Page content -->
+<div class="w3-main" style="margin-left:320px;">
+    <i class="fa fa-bars w3-button w3-white w3-hide-large w3-xlarge w3-margin-left w3-margin-top"
+       onclick="w3_open()"></i>
+    <a href="javascript:void(0)" class="w3-hide-large w3-red w3-button w3-right w3-margin-top w3-margin-right"
+       onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-pencil"></i></a>
+
+    <div id="Borge" class="w3-container person">
+        <br>
+        <img class="w3-round  w3-animate-top" src="/w3images/avatar3.png" style="width:20%;">
+        <h5 class="w3-opacity">Subject: Remember Me</h5>
+        <h4><i class="fa fa-clock-o"></i> From Borge Refsnes, Sep 27, 2015.</h4>
+        <a class="w3-button w3-light-grey" href="#">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
+        <a class="w3-button w3-light-grey" href="#">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
+        <hr>
+        <p>Hello, i just wanted to let you know that i'll be home at lorem ipsum dolor sit amet, consectetur adipiscing
+            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing
+            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.</p>
+        <p>Best Regards, <br>Borge Refsnes</p>
+    </div>
+
+
+    <div id="22102018" class="w3-container person">
+        <br>
+        <img class="w3-round w3-animate-top" src="/w3images/avatar5.png" style="width:20%;">
+        <h5 class="w3-opacity">Sujet: du roi: Club Jeux de Mots</h5>
+        <h4><i class="fa fa-clock-o"></i> From Jane Doe, Sep 25, 2015.</h4>
+        <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
+        <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
+        <hr>
+        <p>Bonjour les JENZ HEM 593 Z,</p>
+        <p>
+
+            Ça commence fort. Merci beaucoup pour vos réponses, ça nous a mis l’alarme à l’œil. Nous sommes 13 heureux
+            de reccueillir tant de bien cuit (pour ne pas dire sans frais!). 7 semaines, si certains importent du el
+            chinois chez moi, sachant que ce n’est pas du tout du el, c’est que l’actualité est compliquée.
+            <br>On voudrait par foi un terre-à-gire avec vous, on a donc ouvert un 10-cordes. En vois-ci le lien
+            :https://discord.gg/csFmHMy
+            <br>En parlant d’internet, j’espère qu’ML n’est pas trop cher, car je dois HTML !
+        </p>
+        <p>
+            Une touche d’humour pour finir, et d’entomologie, si on coupe ses ailes à une coccinelle, ce n’est plus une
+            coccinelle, par contre si l’on retire ses ailes à un papillon, ça reste un papion auquel on n’apprendra pas
+            à faire la limace.
+        </p>
+        <p>
+            Allez, nous avons du pain sur la planche, et je parle pas de planche neige (et ses sept pains !) ,
+        </p>
+        <p>
+            Salmigondis,
+        </p>
+        <p>
+            Axel et Félix</p>
+        <img class="w3-round w3-animate-top" src="media/miel.jpg" style="width:20%;">
+
+
+    </div>
+    <div id="22102018" class="w3-container person">
+        <br>
+        <img class="w3-round w3-animate-top" src="/w3images/avatar5.png" style="width:20%;">
+        <h5 class="w3-opacity">Sujet: du roi: Club Jeux de Mots</h5>
+        <h4><i class="fa fa-clock-o"></i> From Jane Doe, Sep 25, 2015.</h4>
+        <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
+        <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
+        <hr>
+        <p>Bonjour les JENZ HEM 593 Z,</p>
+        <p>
+
+            Ça commence fort. Merci beaucoup pour vos réponses, ça nous a mis l’alarme à l’œil. Nous sommes 13 heureux
+            de reccueillir tant de bien cuit (pour ne pas dire sans frais!). 7 semaines, si certains importent du el
+            chinois chez moi, sachant que ce n’est pas du tout du el, c’est que l’actualité est compliquée.
+            <br>On voudrait par foi un terre-à-gire avec vous, on a donc ouvert un 10-cordes. En vois-ci le lien
+            :https://discord.gg/csFmHMy
+            <br>En parlant d’internet, j’espère qu’ML n’est pas trop cher, car je dois HTML !
+        </p>
+        <p>
+            Une touche d’humour pour finir, et d’entomologie, si on coupe ses ailes à une coccinelle, ce n’est plus une
+            coccinelle, par contre si l’on retire ses ailes à un papillon, ça reste un papion auquel on n’apprendra pas
+            à faire la limace.
+        </p>
+        <p>
+            Allez, nous avons du pain sur la planche, et je parle pas de planche neige (et ses sept pains !) ,
+        </p>
+        <p>
+            Salmigondis,
+        </p>
+        <p>
+            Axel et Félix</p>
+        <img class="w3-round w3-animate-top" src="media/miel.jpg" style="width:20%;">
+
+
+    </div>
+    <div id="22102018" class="w3-container person">
+        <br>
+        <img class="w3-round w3-animate-top" src="/w3images/avatar5.png" style="width:20%;">
+        <h5 class="w3-opacity">Sujet: du roi: Club Jeux de Mots</h5>
+        <h4><i class="fa fa-clock-o"></i> From Jane Doe, Sep 25, 2015.</h4>
+        <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
+        <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
+        <hr>
+        <p>Bonjour les JENZ HEM 593 Z,</p>
+        <p>
+
+            Ça commence fort. Merci beaucoup pour vos réponses, ça nous a mis l’alarme à l’œil. Nous sommes 13 heureux
+            de reccueillir tant de bien cuit (pour ne pas dire sans frais!). 7 semaines, si certains importent du el
+            chinois chez moi, sachant que ce n’est pas du tout du el, c’est que l’actualité est compliquée.
+            <br>On voudrait par foi un terre-à-gire avec vous, on a donc ouvert un 10-cordes. En vois-ci le lien
+            :https://discord.gg/csFmHMy
+            <br>En parlant d’internet, j’espère qu’ML n’est pas trop cher, car je dois HTML !
+        </p>
+        <p>
+            Une touche d’humour pour finir, et d’entomologie, si on coupe ses ailes à une coccinelle, ce n’est plus une
+            coccinelle, par contre si l’on retire ses ailes à un papillon, ça reste un papion auquel on n’apprendra pas
+            à faire la limace.
+        </p>
+        <p>
+            Allez, nous avons du pain sur la planche, et je parle pas de planche neige (et ses sept pains !) ,
+        </p>
+        <p>
+            Salmigondis,
+        </p>
+        <p>
+            Axel et Félix</p>
+        <img class="w3-round w3-animate-top" src="media/miel.jpg" style="width:20%;">
+
+
+    </div>
+    <div id="22102018" class="w3-container person">
+        <br>
+        <img class="w3-round w3-animate-top" src="/w3images/avatar5.png" style="width:20%;">
+        <h5 class="w3-opacity">Sujet: du roi: Club Jeux de Mots</h5>
+        <h4><i class="fa fa-clock-o"></i> From Jane Doe, Sep 25, 2015.</h4>
+        <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
+        <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
+        <hr>
+        <p>Bonjour les JENZ HEM 593 Z,</p>
+        <p>
+
+            Ça commence fort. Merci beaucoup pour vos réponses, ça nous a mis l’alarme à l’œil. Nous sommes 13 heureux
+            de reccueillir tant de bien cuit (pour ne pas dire sans frais!). 7 semaines, si certains importent du el
+            chinois chez moi, sachant que ce n’est pas du tout du el, c’est que l’actualité est compliquée.
+            <br>On voudrait par foi un terre-à-gire avec vous, on a donc ouvert un 10-cordes. En vois-ci le lien
+            :https://discord.gg/csFmHMy
+            <br>En parlant d’internet, j’espère qu’ML n’est pas trop cher, car je dois HTML !
+        </p>
+        <p>
+            Une touche d’humour pour finir, et d’entomologie, si on coupe ses ailes à une coccinelle, ce n’est plus une
+            coccinelle, par contre si l’on retire ses ailes à un papillon, ça reste un papion auquel on n’apprendra pas
+            à faire la limace.
+        </p>
+        <p>
+            Allez, nous avons du pain sur la planche, et je parle pas de planche neige (et ses sept pains !) ,
+        </p>
+        <p>
+            Salmigondis,
+        </p>
+        <p>
+            Axel et Félix</p>
+        <img class="w3-round w3-animate-top" src="media/miel.jpg" style="width:20%;">
+
+
+    </div>
+    <div id="22102018" class="w3-container person">
+        <br>
+        <img class="w3-round w3-animate-top" src="/w3images/avatar5.png" style="width:20%;">
+        <h5 class="w3-opacity">Sujet: du roi: Club Jeux de Mots</h5>
+        <h4><i class="fa fa-clock-o"></i> From Jane Doe, Sep 25, 2015.</h4>
+        <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
+        <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
+        <hr>
+        <p>Bonjour les JENZ HEM 593 Z,</p>
+        <p>
+
+            Ça commence fort. Merci beaucoup pour vos réponses, ça nous a mis l’alarme à l’œil. Nous sommes 13 heureux
+            de reccueillir tant de bien cuit (pour ne pas dire sans frais!). 7 semaines, si certains importent du el
+            chinois chez moi, sachant que ce n’est pas du tout du el, c’est que l’actualité est compliquée.
+            <br>On voudrait par foi un terre-à-gire avec vous, on a donc ouvert un 10-cordes. En vois-ci le lien
+            :https://discord.gg/csFmHMy
+            <br>En parlant d’internet, j’espère qu’ML n’est pas trop cher, car je dois HTML !
+        </p>
+        <p>
+            Une touche d’humour pour finir, et d’entomologie, si on coupe ses ailes à une coccinelle, ce n’est plus une
+            coccinelle, par contre si l’on retire ses ailes à un papillon, ça reste un papion auquel on n’apprendra pas
+            à faire la limace.
+        </p>
+        <p>
+            Allez, nous avons du pain sur la planche, et je parle pas de planche neige (et ses sept pains !) ,
+        </p>
+        <p>
+            Salmigondis,
+        </p>
+        <p>
+            Axel et Félix</p>
+        <img class="w3-round w3-animate-top" src="media/miel.jpg" style="width:20%;">
+
+
+    </div>
+    <div id="22102018" class="w3-container person">
+        <br>
+        <img class="w3-round w3-animate-top" src="/w3images/avatar5.png" style="width:20%;">
+        <h5 class="w3-opacity">Sujet: du roi: Club Jeux de Mots</h5>
+        <h4><i class="fa fa-clock-o"></i> From Jane Doe, Sep 25, 2015.</h4>
+        <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
+        <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
+        <hr>
+        <p>Bonjour les JENZ HEM 593 Z,</p>
+        <p>
+
+            Ça commence fort. Merci beaucoup pour vos réponses, ça nous a mis l’alarme à l’œil. Nous sommes 13 heureux
+            de reccueillir tant de bien cuit (pour ne pas dire sans frais!). 7 semaines, si certains importent du el
+            chinois chez moi, sachant que ce n’est pas du tout du el, c’est que l’actualité est compliquée.
+            <br>On voudrait par foi un terre-à-gire avec vous, on a donc ouvert un 10-cordes. En vois-ci le lien
+            :https://discord.gg/csFmHMy
+            <br>En parlant d’internet, j’espère qu’ML n’est pas trop cher, car je dois HTML !
+        </p>
+        <p>
+            Une touche d’humour pour finir, et d’entomologie, si on coupe ses ailes à une coccinelle, ce n’est plus une
+            coccinelle, par contre si l’on retire ses ailes à un papillon, ça reste un papion auquel on n’apprendra pas
+            à faire la limace.
+        </p>
+        <p>
+            Allez, nous avons du pain sur la planche, et je parle pas de planche neige (et ses sept pains !) ,
+        </p>
+        <p>
+            Salmigondis,
+        </p>
+        <p>
+            Axel et Félix</p>
+        <img class="w3-round w3-animate-top" src="media/miel.jpg" style="width:20%;">
+
+
+    </div>
+    <div id="07012019" class="w3-container person">
+        <br>
+        <img class="w3-round w3-animate-top" src="/w3images/avatar5.png" style="width:20%;">
+        <h5 class="w3-opacity">Sujet: du roi: Club Jeux de Mots</h5>
+        <h4><i class="fa fa-clock-o"></i> From Jane Doe, Sep 25, 2015.</h4>
+        <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
+        <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
+        <hr>
+        <p>Bonjour,</p>
+
+        <p>Sur cette fin d’année nous étions aux jeux de mots-tard, passons aux jeux de mots tôt!!</p>
+
+        <p>Pour le coup je vous re-narre une petite histoire: Cette semaine partons à l’abordage de l’arche de Noé.
+        <br>Noé et Raph, deux super amis qui voulaient créer une embarcation. Raph étant menuisier, ils n’eurent aucun mal à créer une bonne structure, surtout pour le nid de pie (il était un peu perché), pendant que Noé l’a peint. Quand Noé repartait en ville, les gens lui posaient plein de questions, ils cherchaient la petite bête: “Vous savez, tant que Raph, à l’arche y m’aide, y a pas de lézards.” disait-il tout en souriant, “mais c’est vachement intéressant” ajoutait-il puis comme il ne voulait pas trop en parler, il sautait du coq à l’âne. Ils arrivèrent à monter la proue, la poupe, le mât, tout ce qui était indispensable, mais arriva un accident tragique et Raph mourut. Noé arrêta de travailler quelques temps, créant une sépulture en y écrivant “Cît-git, Raph”, puis en mémoire de son fidèle compagnon repris les travaux. Il eut alors l’idée de rassembler quelques animaux et fit avec ce qu’il avait sous la main: cerfs, paons et les faons. Il s’occupa des voiles puis transporta l’arche jusqu’au port le plus proche. La mise à l’eau se fit à l’aide des deux grosses grues commandés par Nicolas. Une fois à l’eau Nico alla vérifier l’étanchéité (?). Il montra à Noé une petite flaque qui s’était formée au fond “Mate l’eau, il y a une légère fuite”. Puis il la combla avec une colle à base d’argile.
+        <br>Cette aventure était risqué, mais Noé n’était pas une poule mouillé, il était de plus têtu comme un âne et malin comme un singe. Il passa voir son ami Bernard, l’hermite, qui malgré son caractère de cochon, accepta de l’aider.
+        <br>Bernard était cependant un peu *INSÉRER JEU DE MOTS*, mais Noé eut vite fait de voir qu’il y avait anguille sous roche. Heureusement car elle était électrique et aurait pû lui faire un mal de chien. On arrête d’utiliser les expressions, les jeux de mots qu’on en tire sont un peu bateaux...</p>
+
+        <p>Un dernier point, sur l’actualité, faut-il que ceux qui nous gouvernent aillent plus loin ? On vous laisse en débattre dans les commentaires. N’oubliez pas de vous abonner à Bsan pour recevoir nos prochains mails. <a href="https://www.youtube.com/channel/UCIASoON3cFD6E21jXX41Fbw/channels?disable_polymer=1">S'abonner</a></p>
+
+
+        <p>allez je vous laisse, parce qu’on a du pain sur la planche.</p>
+
+        <p>Axel et Félix</p>
+
+
+    </div>
+    <div id="25122018" class="w3-container person">
+        <br>
+        <img class="w3-round w3-animate-top" src="/w3images/avatar5.png" style="width:20%;">
+        <h5 class="w3-opacity">Sujet: Noyeux Joël</h5>
+        <h4><i class="fa fa-clock-o"></i> From Jane Doe, Sep 25, 2015.</h4>
+        <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
+        <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
+        <hr>
+        <p>Le Club jeux de mots vous souhaite de Joyeuses fêtes de fin damné,</p>
+
+        <p>Une attention particulière au très notable club peinture, parce que pour Noël ça peint !
+            <br>C’est le moment de pardonner à ceux qui nous ont enguirlandé à chaque mail, ce qui nous a bouleversé, puis nous nous sommes résolus à ne pas pouvoir contenter tout le monde. Nous avons un peu bûché sur ce mail, cherché à mettre un niveau d’humour croissant, crescendo comme on dit en italien (pays ou certains envoient des kart à l’arrivée des fêtes, ce qui n’est pas commun comme transport), sans y parvenir.
+        <br>Passons au repas, comme les jours sont courts, il faut se ramener extrême manteau car, ascii parait, il fait froid (et pas à cause de la ventilation cette fois). Une note d’originalité sera donnée par la viande: de la chèvre, pas celle de M Seguin, bien que son diagramme de Bode sera de -20dB/décade au minimum, ni le Julbock, mais une viande de chèvre tendre, du moins une partie hors dur, comme la cuisse.
+            <br>Mais voilà qu’à la télé arrive jean pierre pernaut hélitreuillé par l’hélico de la reine d’angleterre, offrant 4 boîtes de Mikado (soit 2(2 Mikado) ou un cadeau complet) au premier téléspectateur appelant. Il se pointait toujours avec des nains dans la blanche neige, ils chantaient presque tous en coeur, sauf un: grincheux minait du bitcoin de façon très déterminée.</p>
+
+        <p>Je ne sais plus quelle connerie faire, donc même si ce mail épineux manque de piquant je vous laisse la dessus car on a du pain - et des jeux (de mots bien entendu) - sur la planche.</p>
+
+        <p>Axel et Félix
+        </p>
+
+    </div>
+    <div id="17122018" class="w3-container person">
+        <br>
+        <img class="w3-round w3-animate-top" src="/w3images/avatar5.png" style="width:20%;">
+        <h5 class="w3-opacity">Sujet: du roi: Mail JM</h5>
+        <h4><i class="fa fa-clock-o"></i> From Jane Doe, Sep 25, 2015.</h4>
+        <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
+        <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
+        <hr>
+        <p>125 cc (ça fait beaucoup d’oise au m²),</p>
+
+        <p>Parlons actualité, parlons de Gille et John.</p>
+        <p> On a pas plus de blagues sur ce sujet.</p>
+
+        <p>Lâchons prise, et contons vous cette histoire sans prise de tête (oui celui-ci est tête pas top [bien qu’il soit en haut du mail]).
+            <br>Ce n’est pas la reprise (de poids) des longs mails à thème, ne vous méprenez pas nous nous sommes libérés de leur emprise (de la bastille).</p>
+
+        <p>Du coup on va travailler très fort pour vous faire de belles surprises (de courant), n’en déplaisent à ceux qui nous méprisent (de catch), cela ne nous arrêtera pas dans notre entreprise (de conscience). On remarque que notre vision du monde reste pour le moins incomprise (de pêche à la ligne \n
+        [ALO {comme le poisson pêché}]).</p>
+
+        <p>Savez-vous que le 5 mai les niais se font tous attraper et juger pour leur crimes ? C’est la prise aux niais</p>
+
+        <p>On voulait faire comme le club de musique qui fait du air-guitar mais le air-blague est déjà dans mon volant que je serre… Ca serait dommage de se prendre un vent.</p>
+
+        <p>Bon allez on vous laisse, parce qu’on a du pain sur l’épice, et à régler (oulah n’y retournons pas sur ces jeux de mots d’arbres),</p>
+
+        <p>Le mail de noël arrivement,</p>
+
+        <p>Axel et Félix
+        </p>
+
+
+    </div>
+    <div id="10122018" class="w3-container person">
+        <br>
+        <img class="w3-round w3-animate-top" src="/w3images/avatar5.png" style="width:20%;">
+        <h5 class="w3-opacity">Sujet: [CJM]Quota disque dépassé ou sur le point d'être dépassé</h5>
+        <h4><i class="fa fa-clock-o"></i> From Jane Doe, Sep 25, 2015.</h4>
+        <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
+        <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
+        <hr>
+        <p>Bonjour à tous,</p>
+
+        <p>Malheureusement il n’y aura pas de club jm cette semaine (et demie), parce qu’il y a les exams des STAPS.</p>
+
+            <p>Tristement,</p>
+
+        <p>Axel et Félix</p>
+
+            <p>PS: voici les résultats du dernier sondages <a href="https://docs.google.com/forms/d/1UsL9wkKZ7Qy0FWUIydXDygjSJd2DypuhOqewu0H1tsk/edit?usp=sharing">Résultats</a>
+
+        </p>
+
+    </div>
+    <div id="03122018" class="w3-container person">
+        <br>
+        <img class="w3-round w3-animate-top" src="/w3images/avatar5.png" style="width:20%;">
+        <h5 class="w3-opacity">Sujet: du roi: Club Jeux de Mots</h5>
+        <h4><i class="fa fa-clock-o"></i> From Jane Doe, Sep 25, 2015.</h4>
+        <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
+        <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
+        <hr>
+        <p>Coucou atouts, mais pas comme au tarot,</p>
+
+        <p>Cette semaine nous sommes fascinés par la mathématique, surtout quand les décimales de pie jonglent. Mais ne hérons pas plus longtemps dans ce sombre endroit, et partons vers de plus chouettes horizons, loins de cette mathématique et de tous ces cygnes complexes que les professeurs vous faisaient apprendre sous la menace d’un martinet
+        <br>Si vous faites partie des haineux qui n’aiment pas nos mails, ne vous inquiétez pas, on en a encore beaucoup sous l’aile. Ne vous faisans pas plus attendre, rentrons dans le vif du sujet, faucon s’y attelle au plus vite…
+        <br>C’est dans un profond monastère, ou les moines aux cheveux tonsus étaient plus oie zifs que sérieux chantaient d’étranges quantiques - “pinsons nous geai ment” qu’ils disaient - que se débute notre effrayante histoire. Je demandai mon chemin a un homme (j’avais peur de me perdre, y me guida) survaillant une marmite de lait, il me répondit ‘suis ce paon de route et tourne au rond point, tu verras le maire, le monsieur manchot habillé comme un pingouin avec une veste en queue de pie, qui est constamment à faire le pied de grue près du silo de seigle’ ‘- CE N’EST PAS DU SEIGLE, ce sont des épices d’Inde !’ rétorqua sa femme, occupée à surveiller le lait qui bout déjà à ce point de notre histoire. Il fit la moue, était pas convaincu par cette dernière, je dirais même qu’il nid croyait pas…
+        <br>Brr dépêchons-nous, je revenais tout juste du mont Tation, “ça caille” me dis-je. En croisant le maire et ses pairs, Vier et Jacob, les adjoints au maire Simpson, je lui demandais sous quel arbre poser ma tente, “en pin t’as de bons candidats”, répondit-il</p>
+
+        <p>C’est toux pour cette semaine, on vous laisse car on a du pain sur Laplanche et je ne parle pas du psychanalyste.</p>
+
+        <p>Nous nous somme aussi dit que vous étiez probablement en manque de sondage donc en voici un, il vaul’tour: <a href="https://goo.gl/forms/HbSh60jtzWf0bkQ22">Sondage</a></p>
+
+            <p>Axel et Félix</p>
+
+    </div>
+    <div id="26112018" class="w3-container person">
+        <br>
+        <img class="w3-round w3-animate-top" src="/w3images/avatar5.png" style="width:20%;">
+        <h5 class="w3-opacity">Sujet: Les Extra-terrestres.
+        </h5>
+        <h4><i class="fa fa-clock-o"></i> From Jane Doe, Sep 25, 2015.</h4>
+        <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
+        <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
+        <hr>
+        <p>Comme la semaine dernière, restons dans le domaine des vaisseaux, mais cette fois-ci pas ceux sans gains ! Nous allons vers les histoires d’espace, mais vous ne serez pas déçus du voyage !
+        <br>Les gens m’oublient souvent, j’ai une fois croisé un astronome qui me dit : « c’est toi le gars comète tout le temps les autres ? ». «Non au contraire, j’éclipse tout le monde ». Mais cela me vexât. Pour braver ma solitude, je partis grimper le mont Tassion, et je gravit Tassion. Une fois là-haut, il n’y avait pas beaucoup d’oxygène : « oulalah, ça turne » m’exclamât-je. Lune hiver semblait plat de ce point de vue, et très net (pour ne pas dire plat-net). Je me mis sur la pointe des pieds, c’était encore plus net ! Je pensais à ces pommes empoisonnées, l’une était verte l’autre était jaune, mais elle ne voulaient que plaire.
+        </p>
+        <p>Par la suite je croisât mon ami qui m’attendait de puis longtemps dans sa ferme. « Ah ! Voilà qu’t’es là toi ! Explique moi pourquoi en face de l’ouest c’est l’est ». Expliquant ma théorie à mon ami, je vis qu’il me ne croyait pas : « mes théories te plaisent pas ? », lui rétorquât-je.</p>
+
+        <p>Nous nous arrêtons là pour les jeux de mots sur l’espace, faire des jeux d’espace si tôt ?</p>
+
+        <p>Je dois vous avouer qu’au départ nous ne voulions pas faire ce club mais un club de golf, cependant nous ne trouvions pas les fonds nécessaires. Je ne vous ballade (voir l’image ci dessous, si cela ne vous emploie pas trop de temps) pas plus longtemps sur cette anecdote, it’s tee-time !</p>
+
+        <p>Allez on vous laisse, parce qu'on a du planche sur la pin, et je parle pas du <a href="https://fr.wikipedia.org/wiki/Brachylagus">Brachylagus</a></p>
+
+        <p>Axel et Félix</p>
+
+
+    </div>
+    <div id="19112018" class="w3-container person">
+        <br>
+        <img class="w3-round w3-animate-top" src="/w3images/avatar5.png" style="width:20%;">
+        <h5 class="w3-opacity">Sujet: Club jeux de m'hôpital</h5>
+        <h4><i class="fa fa-clock-o"></i> From Jane Doe, Sep 25, 2015.</h4>
+        <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
+        <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
+        <hr>
+        <p>Bonjour les gens !</p>
+        <p>Cela vous a plu la semaine dernière, nous continuons donc avec nos petites ânes et gdottes.</p>
+
+        <p>Je vais vous raconter la foie où je me suis retrouvé coincé dans un hôpital plutôt étrange… Ses médecins
+            ayant pourtant fait le serment d’hypoque ratte, et les infirmes y errent le serment d’Épicûres.
+            <br>Un homme dont la voiture venait d’être volée y piquait une crise car-jack, et des amoureux de la bière y
+            étaient pour des pressions. Venue l’heure de me soigner, je vis que mes médicaments, y compris mes
+            antidouleurs, s’étaient cachets, mais après maints et maints tests, un infirmier me les rapportât.
+            <br>A l’extérieur, une manifestation de néo-nazis était en cours, un gros tas de manifestants tenta bien de
+            rentrer, mais ce fut impossible, car le tas nazi était interdite dans cet hôpital.
+            <br>J’ai lu le plan d’organisation des médecins (que je n’ai pas fait refaire car la chirurgie coûte un
+            bras), pis lu le blog de l’hôpital, c’est là que j’ai compris, mais un peu tard, que mon séjour était fini.
+        </p>
+
+        <p>Sur ce, on vous laisse,</p>
+
+        <p>parce qu’on a du pain sur la planche, et je parle pas du pin parasol</p>
+
+    </div>
+    <div id="12112018" class="w3-container person">
+        <br>
+        <img class="w3-round w3-animate-top" src="/w3images/avatar5.png" style="width:20%;">
+        <h5 class="w3-opacity">Sujet: Club Jeux de Mots</h5>
+        <h4><i class="fa fa-clock-o"></i> From Jane Doe, Sep 25, 2015.</h4>
+        <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
+        <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
+        <hr>
+        <p>Bonjour les gens et légendes,</p>
+
+        <p>Aujourd’hui un el un peu « pour la spécialité cial » (spé. cial), puisqu’il s’agit d’une petite histoire.</p>
+
+        <p>« Sans vouloir vous prendre en grippe, nous tenions à vous informer de l'affolement excessif des espagnols
+            qu'hispanique pour un rien, et ce depuis l'antiquité où l'on leur disait "laisse pagne ici et habille-toi
+            plus chaudement froussard". Cela me rappelle ce pêcheur espagnol auquel je demanda pourquoi il n'avait qu'un
+            hameçon… "t'inquiète, la paella" ré pondit-il, alors qu'il s'entortilla les doigts avec son fil de pêche.
+            Restant dans le domaine gastronomique, il ajouta ’Habits t’as mi s sur la peau, laine t’as mis sur le do s’.
+            Il pêcha ensuite une sol e.<br>
+            Je n'avais pas riz ce jour là (oui, comme vous maintenant, je ne trouvais déjà pas ça drôle à l'époque) il
+            me lança donc un 't'es qui là pour ne pas rire à mes blagues?' ne sachant par quelle raie pondre (étant
+            humain je ne suis pas familier avec ces choses là, bien qu'en tant que musicien j'ai composé des milliers de
+            fa) j'ai décidé de changer de sujet (et donc de le tutoyer) et lui ai proposé de passer l'éponge au sens
+            propre comme au figuré, je prends donc une assiette du tas de vaisselle présent et lui demande: "C'est sale
+            ça?" »<br>
+            Si vous ne trouvez pas cette histoire passionnante sachez qu'elle peut l'hêtre (si on commence avec des
+            blagues d'arbre y a du bouleau) si on scie une Tresse (ou un Tress, je ne cèpe plus, sève qui peut).</p>
+
+        <p>Allez on vous laisse, parce qu’on a du pain sur la planche (et je parle pas de l’affluent du Trieux en
+            Dordogne),</p>
+
+        <p>Axel et Félix</p>
+
+    </div>
+    <div id="05112018" class="w3-container person">
+        <br>
+        <img class="w3-round w3-animate-top" src="/w3images/avatar5.png" style="width:20%;">
+        <h5 class="w3-opacity">Sujet: Club Jeux de Mots</h5>
+        <h4><i class="fa fa-clock-o"></i> From Jane Doe, Sep 25, 2015.</h4>
+        <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
+        <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
+        <hr>
+        <p>ça lu les gens !</p>
+        <p>
+            De retour de nos vacances sur l’huile Maurice, où l’actualité a fait grimper le prix du cré-oil, nous et
+            Spéron que vous avez bon lait (excusez-moi: vous a lait bien). On rigole on a eu plus froid, mais on a pas
+            chaud mais.
+            <br> Nous sommes énormément reux (soit plus que reux, ou encore treize… euh.. reux) d’être déjà 16 à
+            partager la de passion la langue (n’y voyez rien de déplacé) sur notre serveur dix-cordes, nez y t’es pas à
+            nous mettre en joint de nouveau (pour ne pas dire rejoindre) : https://discord.gg/csFmHMy vous êtes tous les
+            arrivés ! (pour le pas dire bien venus).
+            <br> Veuillez utiliser le lien pour ne pas vous retrouver sur le serveur d’un petit facteur (ou nain
+            posteur)
+
+        </p>
+        <p>
+            Allez, on a du pain sur la planche, et je parle pas de <a href="https://goo.gl/maps/MptnqqByyjF2">https://goo.gl/maps/MptnqqByyjF2</a>
+        </p>
+        <p>
+            Axel et Félix qui n’a pas fait l’X
+        </p>
+        <img class="w3-round w3-animate-top" src="media/huile.jpg.jpg" style="width:20%;" alt="huile maurice">
+
+
+    </div>
+    <div id="22102018" class="w3-container person">
+        <br>
+        <img class="w3-round w3-animate-top" src="/w3images/avatar5.png" style="width:20%;">
+        <h5 class="w3-opacity">Sujet: du roi: Club Jeux de Mots</h5>
+        <h4><i class="fa fa-clock-o"></i> From Jane Doe, Sep 25, 2015.</h4>
+        <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
+        <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
+        <hr>
+        <p>Bonjour les JENZ HEM 593 Z,</p>
+        <p>
+
+            Ça commence fort. Merci beaucoup pour vos réponses, ça nous a mis l’alarme à l’œil. Nous sommes 13 heureux
+            de reccueillir tant de bien cuit (pour ne pas dire sans frais!). 7 semaines, si certains importent du el
+            chinois chez moi, sachant que ce n’est pas du tout du el, c’est que l’actualité est compliquée.
+            <br>On voudrait par foi un terre-à-gire avec vous, on a donc ouvert un 10-cordes. En vois-ci le lien
+            :https://discord.gg/csFmHMy
+            <br>En parlant d’internet, j’espère qu’ML n’est pas trop cher, car je dois HTML !
+        </p>
+        <p>
+            Une touche d’humour pour finir, et d’entomologie, si on coupe ses ailes à une coccinelle, ce n’est plus une
+            coccinelle, par contre si l’on retire ses ailes à un papillon, ça reste un papion auquel on n’apprendra pas
+            à faire la limace.
+        </p>
+        <p>
+            Allez, nous avons du pain sur la planche, et je parle pas de planche neige (et ses sept pains !) ,
+        </p>
+        <p>
+            Salmigondis,
+        </p>
+        <p>
+            Axel et Félix</p>
+        <img class="w3-round w3-animate-top" src="media/miel.jpg" style="width:20%;" alt="miel">
+
+
+    </div>
+    <div id="15102018" class="w3-container person">
+        <br>
+        <img class="w3-round w3-animate-top" src="/w3images/avatar2.png" style="width:20%;">
+        <h5 class="w3-opacity">Sujet: Club jeux de mots</h5>
+        <h4><i class="fa fa-clock-o"></i> From John Doe, Sep 23, 2015.</h4>
+        <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
+        <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
+        <hr>
+        <p>Bonjour les gens, et même ceux qui ne s’appellent pas Jean !</p>
+
+
+        <p>Nous sommes le club jeux de mots (et jeux parle pas de scrabble!), et nous faisons les plus violets jeux de
+            mots. Pardon, mauvés. Bien que v ne soit pas un mot….
+
+        </p>
+        <p>Vous le savez peut-être (épithète que non), une fois par semaine (et mêmes pour les autre fonctions de votre
+            programme), nous enverrons nos perles.
+
+        </p>
+        <p>Cependant, besoin d’aide se fait sans tir, nous ne trouvons plus de jeux de mots, aidez nous ! Nous avons
+            besoin de 109. Qui est d’ailleurs sans doute un nombre premier.
+
+        </p>
+        <p>Si vous ne voyez pas encore nos noms en haut des affiches, ni même sur des écriteaux tôt, c’est que cette
+            blague est trop longue pour ce qu’est la porte.
+
+        </p>
+        <p>Parce qu’on a du pain sur la planche, et je parle pas de la planche de surf !
+
+
+            Jeux du moment,</p>
+        <p>
+
+            Exel et Falix, pardon, Félix et Axel
+        </p>
+
+    </div>
+
+</div>
+
+<script>
+    var openInbox = document.getElementById("myBtn");
+    openInbox.click();
+
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+    }
+
+    function myFunc(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+            x.previousElementSibling.className += " w3-red";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+            x.previousElementSibling.className =
+                x.previousElementSibling.className.replace(" w3-red", "");
+        }
+    }
+
+    openMail("Borge")
+
+    function openMail(personName) {
+        var i;
+        var x = document.getElementsByClassName("person");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x = document.getElementsByClassName("test");
+        for (i = 0; i < x.length; i++) {
+            x[i].className = x[i].className.replace(" w3-light-grey", "");
+        }
+        document.getElementById(personName).style.display = "block";
+        event.currentTarget.className += " w3-light-grey";
+    }
+</script>
+
+<script>
+    var openTab = document.getElementById("firstTab");
+    openTab.click();
+</script>
+
+</body>
+</html>
