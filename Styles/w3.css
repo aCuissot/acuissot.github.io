@@ -1162,6 +1162,16 @@ a {
     filter: grayscale(50%)
 }
 
+.my-greyscale{
+    filter: grayscale(75%);
+    -webkit-filter: grayscale(75%);
+}
+
+.my-greyscale:hover{
+    filter: none;
+    -webkit-filter: grayscale(0%);
+}
+
 .w3-sepia {
     filter: sepia(75%)
 }

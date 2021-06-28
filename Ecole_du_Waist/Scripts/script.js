@@ -12,7 +12,7 @@ function w3_close() {
 
 function funcCours(id) {
     var x = document.getElementById(id);
-    if (x.className.indexOf("w3-show") == -1) {
+    if (x.className.indexOf("w3-show") === -1) {
         x.className += " w3-show";
         x.previousElementSibling.className += " w3-red";
     } else {
@@ -24,7 +24,7 @@ function funcCours(id) {
 
 function funcEC(id) {
     var x = document.getElementById(id);
-    if (x.className.indexOf("w3-show") == -1) {
+    if (x.className.indexOf("w3-show") === -1) {
         x.className += " w3-show";
         x.previousElementSibling.className += " w3-green";
     } else {
@@ -36,7 +36,7 @@ function funcEC(id) {
 
 function funcEx(id) {
     var x = document.getElementById(id);
-    if (x.className.indexOf("w3-show") == -1) {
+    if (x.className.indexOf("w3-show") === -1) {
         x.className += " w3-show";
         x.previousElementSibling.className += " w3-blue";
     } else {
@@ -48,7 +48,7 @@ function funcEx(id) {
 
 function funcShowSolution(id){
     var x = document.getElementById(id);
-    if (x.className.indexOf("w3-show") == -1) {
+    if (x.className.indexOf("w3-show") === -1) {
         x.className += " w3-show";
     } else {
         x.className = x.className.replace(" w3-show", "");
