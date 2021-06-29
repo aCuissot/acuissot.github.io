@@ -24,8 +24,15 @@
     html, body, h1, h2, h3, h4, h5 {
         font-family: "Open Sans", sans-serif
     }
-
-
+    img {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    #Container {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    #noShadow{
+        box-shadow: none;
+    }
 </style>
 <body class="w3-theme-l5">
 
@@ -381,7 +388,7 @@
                     nous même une base (VGGFace2) puis lancer différent réseaux (VGG16, ResNet, MobileNet, VGGFace).
                     Cela m'a permis d'utiliser des bibliothèques de deep learning pour la première fois.</p>
 
-                <img src="Media/preprocessing.png" style="width:100%" title="screen de l'application"
+                <img id="noShadow" src="Media/preprocessing.png" style="width:100%" title="screen de l'application"
                      class="w3-margin-bottom" alt="preproc">
 
                 <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>
