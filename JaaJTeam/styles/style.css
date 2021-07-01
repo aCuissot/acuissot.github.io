@@ -1176,6 +1176,10 @@ p.help-block li {
     border: #ffc53d 1px solid;
 }
 
+.dateV {
+    color: #837d88;
+}
+
 #team .member .details {
     background: #fff;
     color: #ffc53d;
