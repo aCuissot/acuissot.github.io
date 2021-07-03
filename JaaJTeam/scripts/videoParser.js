@@ -5,7 +5,7 @@ function loadDoc() {
             myFunction(this);
         }
     };
-    xhttp.open("GET", "media/videos.json", true);
+    xhttp.open("GET", "media/search.json", true);
     xhttp.send();
 }
 
@@ -13,7 +13,7 @@ function myFunction(json) {
     var i;
     var jsonDoc = JSON.parse(json.responseText);
     var table="";
-    var x = jsonDoc.videos;
+    var x = jsonDoc.items;
     var gr;
     for (i = 0; i <x.length; i++) {
         gr = x[i];
