@@ -190,6 +190,20 @@ h1, h2, h3, h4, h5, h6 {
     text-shadow:0 0 5px #000000;
 }
 
+#ensiTurnament_draw{
+    background: url("../media/ensi_draw.png") no-repeat;
+    background-size: contain;
+    background-position: center;
+    text-shadow:0 0 5px #000000;
+}
+
+#faceitTurnaments_draw{
+    background: url("../media/faceit_draw.png") no-repeat;
+    background-size: contain;
+    background-position: center;
+    text-shadow:0 0 5px #000000;
+}
+
 #intro .intro-content {
     position: absolute;
     bottom: 0;
