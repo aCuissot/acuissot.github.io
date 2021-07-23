@@ -20,12 +20,81 @@
     .w3-bar-block .w3-bar-item {
         padding: 16px
     }
+
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+    }
+
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    input:checked + .slider {
+        background-color: #2196F3;
+    }
+
+    input:focus + .slider {
+        box-shadow: 0 0 1px #2196F3;
+    }
+
+    input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+    }
+
+    /* Rounded sliders */
+    .slider.round {
+        border-radius: 34px;
+    }
+
+    .slider.round:before {
+        border-radius: 50%;
+    }
 </style>
 <body>
 
 <!-- Side Navigation -->
 <nav class="w3-sidebar w3-bar-block w3-collapse w3-white w3-animate-left w3-card" style="z-index:3;width:320px;"
      id="mySidebar">
+    <div style="padding-bottom: 10px">
+        <h3 style="text-align: center"
+            title="Certains jeux de mots sont un peu compliqué à avoir, si vous avez besoin d'un peu d'aide, n'hesitez pas (il y en restera quand même de nombreux à trouver par vous même)">
+            AIDE</h3>
+        <label style="display: block; margin-left: auto; margin-right: auto" class="switch">
+            <input id="jaaj" type="checkbox" onchange="updateDisplay(this)">
+            <span class="slider round"></span>
+        </label>
+    </div>
     <a id="myBtn" onclick="myFunc('Demo1')" href="javascript:void(0)" class="w3-bar-item w3-button"><i
             class="fa fa-inbox w3-margin-right"></i>Mails (60)<i class="fa fa-caret-down w3-margin-left"></i></a>
     <div id="Demo1" class="w3-hide w3-animate-left">
@@ -402,7 +471,7 @@
         <a class="w3-button w3-light-grey" href="#">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
         <a class="w3-button w3-light-grey" href="#">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
         <hr>
-        <p>Coucou a tous,
+        <p>Coucou à tous,
         </p>
         <p>
             Pour ceux qui nous auraient oublié, on est le club jeux de mots et ceci est notre ultime mail à moins que
@@ -425,7 +494,7 @@
             Notre histoire commence avec Sylvain, qui après avoir passé des heures à la dérive, s’est échoué sur les
             côtes lointaines de Mathématica. Comprenant qu’il ne pourrait pas sortir de là rapidement, il partit à la
             rencontre des habitants pour s'intégrer. Il approchait d’un vieillard et commença par lui parler du temps
-            couvert ce jour-ci. “Oui, il faisait plus clair hier, le soleil. Vous ne me semblez pas d’ici, d’où venez
+            couvert ce jour-ci. “Oui, il faisait plus <span class="jdm"> clair hier</span>, le soleil. Vous ne me semblez pas d’ici, d’où venez
             vous?”
             Pendant une fraction de seconde, Sylvain qui était en train de contempler les quelques bâtiments du
             village, notamment une sorte de temple couvert de symboles mathématiques, ne répondit pas, puis il
@@ -433,16 +502,16 @@
             peuple y est libre et beaucoup de mathématiciens historiques viennent de là.” Le vieil homme sembla un
             peu plus intéressé, ils commencèrent à parler de maths. Avant de partir, l’homme lui demanda ce qu’il
             pensait d’Euler. Sylvain lui expliqua qu’il n’aimait pas trop ce mathématicien, mais voyant que l’homme
-            était attristé de cette réponse et qu’il aurait peut être du s’taire, il ajouta “je vous titille, Euler est
+            était attristé de cette réponse et qu’il aurait peut être du s’taire, il ajouta “je vous ti<span class="jdm">tille, Eu</span>ler est
             un
-            surhomme, c’est sans doutes le mathématicien le plus prolifique que je connaisse“. Puis il demanda
+            <span class="jdm">surho</span>mme, c’est sans doutes le mathématicien le plus prolifique que je connaisse“. Puis il demanda
             comment atteindre la ville. Ni une, ni deux, il se retrouva au volant de la voiture du vieil homme qui
             profitait de l’occasion pour se faire emmener en ville. Sylvain voulu changer de sujet et commença à
             parler de sport. Ceci ne plut pas au vieil inconnu ‘Pendant que tu parles de spores, appuis sur le
             champignon.’ lança-t-il. Arrivés en villes ils se quittèrent, Sylvain parti vers le centre pour trouver de
             l’aide
             pour rentrer chez lui. Après une mauvaise rencontre, il erra bléssé dans les rues cherchant de l’aide, il
-            tenta d’abord sa chance auprès d’un gosse mais celui-ci lui Fermat la porte au nez. Finalement il fut
+            tenta d’abord sa chance auprès d’un <span class="jdm">gosse</span> mais celui-ci lui Fermat la porte au nez. Finalement il fut
             recueilli par une association qui l’aida à entrer sans embûches.
         </p>
         <p>
@@ -1560,7 +1629,7 @@
         }
     }
 
-    openMail("Borge")
+    openMail("01042020")
 
     function openMail(personName) {
         var i;
@@ -1575,11 +1644,21 @@
         document.getElementById(personName).style.display = "block";
         event.currentTarget.className += " w3-light-grey";
     }
-</script>
 
-<script>
     var openTab = document.getElementById("firstTab");
     openTab.click();
+
+    function updateDisplay(checkbox) {
+        if(checkbox.checked) {
+            for (var i =0; i<document.getElementsByClassName("jdm").length; i++){
+                document.getElementsByClassName("jdm")[i].style.fontWeight = 'bold';
+            }
+        } else {
+            for (var i =0; i<document.getElementsByClassName("jdm").length; i++){
+                document.getElementsByClassName("jdm")[i].style.fontWeight = 'normal';
+            }
+        }
+    }
 </script>
 
 </body>
