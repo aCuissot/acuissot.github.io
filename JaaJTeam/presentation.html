@@ -24,6 +24,34 @@
 
     <!-- Main Stylesheet File -->
     <link href="styles/style.css" rel="stylesheet">
+
+    <style>
+        #twitchLayer {
+            position: relative;
+            z-index: 2;
+            padding-top: 200px;
+            padding-left: 200px;
+
+        }
+
+        #juujLayer {
+            position: absolute;
+            z-index: 1;
+        }
+
+        .juuj {
+            display: block;
+            z-index: auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .juujExt {
+            width: 100%;
+
+        }
+
+    </style>
 </head>
 
 <body id="body">
@@ -96,10 +124,18 @@
     <section id="about" class="wow fadeInUp">
         <div class="container">
             <div class="section-header">
-                <h2>Who We Are</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam,
-                    incidunt eius magni provident, doloribus omnis minus ovident, doloribus omnis minus temporibus
-                    perferendis nesciunt..</p>
+                <h2>Présentation</h2>
+                <p>Créée en 2019, la JÀÁJ team s'inscrit dans un nouveau mouvement qui prend à contre pied les codes du
+                    gaming, à tel point qu'on l'inclus non pas dans le club plus trop privé des équipes de e-sport mais
+                    plutôt dans la nouvelle catégorie qu'elle a engendrée: le f-sport. A l'opposée des grandes équipes
+                    qui ont déjà les pieds dans le milieu depuis des années, nous sommes parfois surnommés mortality par
+                    opposition à la célèbre équipe française que l'on ne présente plus.
+                </p>
+                <p>Bien qu'elle ait tenté de se diversifier en essayant Rainbow Six ou même Valorant, c'est sur CSGO que
+                    la JÀÁJ team s'impose comme un incontournable du paysage compétitif (enfin, plus ou moins
+                    compétitif). Elle s'investie également dans un style un peu différent avec Rocket League où un
+                    entrainement régulier a permi d'attendre un niveau stratosphèrique
+                </p>
             </div>
             <div class="row">
                 <div class="col-lg-8 content">
@@ -130,15 +166,58 @@
         </div>
     </section><!-- #about -->
 
+
+    <section id="about" class="wow fadeInUp">
+        <div class="container">
+            <div class="section-header">
+                <h2>Who We Are</h2>
+
+            </div>
+            <div class="row">
+                <div class="col-lg-4 about-img">
+                    <img src="media/jaaj_team.png" alt="">
+                </div>
+                <div class="col-lg-8 content">
+                    <p>Créée en 2019, la JÀÁJ team s'inscrit dans un nouveau mouvement qui prend à contre pied les codes
+                        du gaming, à tel point qu'on l'inclus non pas dans le club plus trop privé des équipes de
+                        e-sport mais plutôt dans la nouvelle catégorie qu'elle a engendrée: le f-sport. A l'opposée des
+                        grandes équipes qui ont déjà les pieds dans le milieu depuis des années, nous sommes parfois
+                        surnommés mortality par opposition à la célèbre équipe française que l'on ne présente plus.
+                    </p>
+                    <p>Bien qu'elle ait tenté de se diversifier en essayant Rainbow Six ou même Valorant, c'est sur CSGO
+                        que la JÀÁJ team s'impose comme un incontournable du paysage compétitif (enfin, plus ou moins
+                        compétitif). Elle s'investie également dans un style un peu différent avec Rocket League où un
+                        entrainement régulier a permi d'attendre un niveau stratosphèrique.
+                    </p>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section><!-- #about -->
+
     <!--==========================
     Event Section
   ============================-->
     <section id="event">
         <div class="container box2-main">
             <div class="section-header">
-                <h2>Notre Palmarès</h2>
-                <p>Bon, on ne va pas se leurrer, on a commencé sur les chapeaux de roue pour misérablement s'écrouler et
-                    pour le moment on joue plutôt sur les matchmakings officiels mais ça risque de revenir bientôt.</p>
+                <h2>Sur les médias</h2>
+                <h3>Le twitch de JuuJ. Qui sait ptet qu'un jour il streamera, et ptet que d'autres gens le suivront dans
+                    l'épopée du live.</h3>
+                <div class="juujExt">
+                    <div class="juuj">
+                        <a href="https://www.twitch.tv/thekurn">
+
+                            <img id="juujLayer" src="media/jaaj3.0.png" alt="image">
+                            <img id="twitchLayer" src="media/Glitch_Purple_RGB.png" width="270" alt="aaaa">
+                        </a>
+                    </div>
+                </div>
+                <hr>
+                <h3>Sinon retrouvez nous sur <a href="https://www.youtube.com/channel/UCblK-xqtM6bhIKQG5Qd4vwA">
+                    Youtube</a>, je vous offre un petit aperçu de nos dernières vidéos:</h3>
             </div>
 
             <div class="row">

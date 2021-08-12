@@ -81,7 +81,7 @@
     <div class="intro-content">
         <h2><span>JÀÁJ</span><br>Not only a Team, a JÀÁJ Team</h2>
         <div>
-            <a href="#about" class="btn-get-started scrollto">Qui sommes nous</a>
+            <a href="#about" class="btn-get-started">Qui sommes nous</a>
         </div>
     </div>
     <div class="item" style="background-image: url('media/TEAM.png');"></div>
@@ -104,7 +104,8 @@
 
                 <div class="col-lg-4">
                     <div class="box wow fadeInLeft">
-                        <div class="icon"><img class="drawable" src="media/csgo.jpg" style="width: 100%" alt="csgo"></div>
+                        <div class="icon"><img class="drawable" src="media/csgo.jpg" style="width: 100%" alt="csgo">
+                        </div>
                         <h4 class="title"><a href="">Counter Strike : Global Offensive</a></h4>
                         <p class="description">C'est sur ce jeu que la JÀÁJ Team s'est formée, et c'est également sur
                             celui-ci qu'elle se rassemble le plus régulièrement au complet.</p>
@@ -123,7 +124,8 @@
 
                 <div class="col-lg-4">
                     <div class="box wow fadeInLeft" data-wow-delay="0.2s">
-                        <div class="icon"><img class="drawable" src="media/rocket_league.png" style="width: 100%" alt="rl"></div>
+                        <div class="icon"><img class="drawable" src="media/rocket_league.png" style="width: 100%"
+                                               alt="rl"></div>
                         <h4 class="title"><a href="">Rocket League</a></h4>
                         <p class="description">Pour les fans de bolides et de football, tout comme R6, ce jeu n'est pas
                             joué par tous les membres même si certains y jouent régulièrement, de toutes façons on ne
@@ -169,16 +171,18 @@
     <section id="about" class="wow fadeInUp">
         <div class="container">
             <div class="section-header">
-                <h2>Who We Are</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam,
-                    incidunt eius magni provident, doloribus omnis minus ovident, doloribus omnis minus temporibus
-                    perferendis nesciunt..</p>
+                <h2>Qui sommes nous?</h2>
+                <p>Une équipe comme il en existe des centaines, pas très organisée et qui joue pour passer le temps et
+                    s'occuper plus que pour la réelle compétition, du moins pour le moment. Ca c'est peu être parce
+                    qu'on est pas forcément très bons ni réguliers...
+                </p>
             </div>
             <div class="row">
                 <div class="col-lg-8 content">
-                    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing</h2>
-                    <h3>Dolores quae porro consequatur aliquam, incidunt eius magni provident, doloribus omnis minus
-                        ovident</h3>
+                    <h2>Sinon vous pouvez nous suivre sur Youtube, et occasionellement sur twitch si ce ne sont-ce des
+                        jerbyles qui dancent et se déchainent sur cette chaine.</h2>
+                    <h3>La victoire n'est que le fruit d'un long travail, et vous savez, on mange au moins 5 fruits par
+                        jours! (Sa veu dir kon gagn bokou) </h3>
                     <p>Consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt fugiat. Dolores
                         quae porro consequatur aliquam, incidunt fugiat culpa esse aute nulla. malis nulla duis
                         fugiat</p>
@@ -811,7 +815,8 @@
                                 </div>
                                 <div class="form-group">
                                     <div class="controls">
-                                        <label for="email"></label><input type="email" class="form-control" placeholder="Email"
+                                        <label for="email"></label><input type="email" class="form-control"
+                                                                          placeholder="Email"
                                                                           id="email" required
                                                                           data-validation-required-message="Please enter your email"/>
                                     </div>
@@ -820,10 +825,13 @@
                                 <div class="form-group">
                                     <div class="controls">
                                         <label for="message"></label><textarea rows="10" cols="100" class="form-control"
-                                                                               placeholder="Message" id="message" required
-                                                                               data-validation-required-message="Please enter your message" minlength="5"
+                                                                               placeholder="Message" id="message"
+                                                                               required
+                                                                               data-validation-required-message="Please enter your message"
+                                                                               minlength="5"
                                                                                data-validation-minlength-message="Min 5 characters"
-                                                                               maxlength="999" style="resize:none"></textarea>
+                                                                               maxlength="999"
+                                                                               style="resize:none"></textarea>
                                     </div>
                                 </div>
                                 <div id="success"></div> <!-- For success/fail messages -->
@@ -839,10 +847,10 @@
             </div>
         </div>
 
-<!--        <div class="container mb-4 map">-->
-<!--            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d387191.33750346623!2d-73.979681!3d40.6974881!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sin!4v1541477355474"-->
-<!--                    width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>-->
-<!--        </div>-->
+        <!--        <div class="container mb-4 map">-->
+        <!--            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d387191.33750346623!2d-73.979681!3d40.6974881!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sin!4v1541477355474"-->
+        <!--                    width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+        <!--        </div>-->
 
     </section><!-- #contact -->
 
@@ -883,14 +891,14 @@
 
     function choosePic() {
         var randomNum = Math.floor(Math.random() * 10);
-        if (randomNum===0){
-        // if (0===0){
+        if (randomNum === 0) {
+            // if (0===0){
             images = document.getElementsByClassName("drawable")
-            for (let i=0; i<images.length; i++){
-                images[i].src=images[i].src.split("JaaJTeam/")[1].split(".")[0] + "_draw.png"
+            for (let i = 0; i < images.length; i++) {
+                images[i].src = images[i].src.split("JaaJTeam/")[1].split(".")[0] + "_draw.png"
             }
-            document.getElementById("ensiTurnament").id="ensiTurnament_draw"
-            document.getElementById("faceitTurnaments").id="faceitTurnaments_draw"
+            document.getElementById("ensiTurnament").id = "ensiTurnament_draw"
+            document.getElementById("faceitTurnaments").id = "faceitTurnaments_draw"
         }
     }
 </script>

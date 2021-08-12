@@ -99,17 +99,17 @@ function myFunction(json, range) {
 
     }
     if (range===5){
-        htmlContent += "            <btn id=\"AAA\" class=\"cta-btn align-middle\" onclick='loadDoc(10)'>Charger plus</btn>\n"
+        htmlContent += "            <a id=\"AAA\" class=\"cta-btn align-middle jaajBtn\" onclick='loadDoc(10)'>Charger plus</a>\n"
     }
     if (range===10){
-        htmlContent += "            <a id=\"AAAA\" class=\"cta-btn align-middle\" onclick='loadDoc(20)'>Charger plus</a>\n"
+        htmlContent += "            <a id=\"AAAA\" class=\"cta-btn align-middle jaajBtn\" onclick='loadDoc(20)'>Charger plus</a>\n"
         document.getElementById("AAA").style.display = 'none';
     }
     if (range===20){
         htmlContent += "       <div id=\"AAAAA\" style='width: 100%'><p>Rendez vous sur notre chaine Youtube pour plus de contenu:</p>\n" +
             "                        <p style='display: block; margin-left: auto;margin-right: auto;'>\n" +
             "                            <a href=\"https://www.youtube.com/channel/UCblK-xqtM6bhIKQG5Qd4vwA\"\n" +
-            "                               target=\"_blank\" title=\"Youtube\" style='margin-left: auto;margin-right: auto;'>\n" +
+            "                               target=\"_blank\" title=\"Youtube\" style='margin-left: auto;margin-right: auto;' class='jaajBtn'>\n" +
             "                                <img src=\"../Media/404images/yt.png\"\n" +
             "                                     alt=\"Youtube\" title=\"Youtube\" style=\"width: 400px;margin-left: auto;margin-right: auto;\">\n" +
             "                            </a>\n" +
