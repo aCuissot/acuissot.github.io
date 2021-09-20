@@ -89,12 +89,11 @@
         <nav id="nav-menu-container">
             <ul class="nav-menu">
                 <li class="menu-active"><a href="#body">Accueil</a></li>
-                <li><a href="#services">Jeux</a></li>
                 <li><a href="#about">Présentation</a></li>
-                <li><a href="#portfolio">Gallerie</a></li>
-                <li><a href="#event">Palmarès</a></li>
-                <li><a href="#team">L'équipe</a></li>
-                <li><a href="#price">Price</a></li>
+                <li><a href="#about2">A propos</a></li>
+                <li><a href="#event">Média</a></li>
+                <li><a href="#testimonials">Remerciement</a></li>
+                <li><a href="#price">Retour sur nos succès</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav><!-- #nav-menu-container -->
@@ -168,9 +167,9 @@
 
 
     <section id="about" class="wow fadeInUp">
-        <div class="container">
+        <div id="about2" class="container">
             <div class="section-header">
-                <h2>Who We Are</h2>
+                <h2>A propos</h2>
 
             </div>
             <div class="row">
@@ -233,60 +232,64 @@
     <section id="testimonials" class="wow fadeInUp">
         <div class="container">
             <div class="section-header">
-                <h2>Testimonials</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam,
-                    incidunt fugiat culpa esse aute nulla. duis fugiat culpa esse aute nulla ipsum velit export irure
-                    minim illum fore</p>
+                <h2>Remerciement</h2>
+                <p>C'est l'heure de remercier toutes ces personnes qui ne nous ont pas aidés à monter cette équipe... Il
+                    y en a beaucoup (plus de 7 milliards à ce qui parait) mais voici les plus importantes malgré tout
+                    car elles nous ont inspirées chacune à leur manière...</p>
             </div>
             <div class="owl-carousel testimonials-carousel">
 
                 <div class="testimonial-item">
-                    <p>Dolores quae porro consequatur aliquam, incidunt fugiat culpa esse aute nulla. duis fugiat culpa
-                        esse aute nulla ipsum velit export irure minim illum fore
+                    <p>Contrairement aux idées reçues, il n'y a pas que les enfants qui jouent aux jeux vidéos; au
+                        contraire même.</p>
+                    <a id="jamyURL" href="https://fr.wikipedia.org/wiki/C%27est_pas_sorcier">
+                        <img src="media/Jamy.jpg" alt="JaaJ">
+                    </a>
+                    <h3>Jamy Gourmaud</h3>
+                    <h4>Présentateur de géni</h4>
+                </div>
 
-                    </p>
-                    <h3>Mrio James</h3>
-                    <h4>CEO &amp; Founder</h4>
+                <div class="testimonial-item">
+                    <p>Vous là, quand je vous regarde, hochez la tête.</p>
+                    <a id="lucURL" href="https://brunl01.users.greyc.fr/">
+                        <img src="media/luc.jpg" alt="LuuL">
+                    </a>
+                    <h3>Luc Brun</h3>
+                    <h4>Enseignant chercheur</h4>
                 </div>
 
                 <div class="testimonial-item">
                     <p>
-                        Dolores quae porro consequatur aliquam, incidunt fugiat culpa esse aute nulla. duis fugiat culpa
-                        esse aute nulla ipsum velit export irure minim illum fore
-
+                        Alors, Imcroyable, en synchronicité j'arrive à Terre Sauvage et les 1ères paroles c'est "Je suis
+                        amoureuse d'une terre sauvage" .. <b>"Je suis amoureuse d'une terre sauvage"</b> 👀
                     </p>
-                    <h3>Finton Gofnes</h3>
-                    <h4>CTO</h4>
+                    <a id="sylvainURL" href="https://www.youtube.com/user/Elvita71258">
+                        <img src="media/sylvain.jpg" alt="syys">
+                    </a>
+                    <h3>Sylvain P Durif</h3>
+                    <h4>Grand monarque, christ cosmique, ...</h4>
                 </div>
 
                 <div class="testimonial-item">
                     <p>
-                        Dolores quae porro consequatur aliquam, incidunt fugiat culpa esse aute nulla. duis fugiat culpa
-                        esse aute nulla ipsum velit export irure minim illum fore
 
                     </p>
-                    <h3>Marcus Kell</h3>
-                    <h4>Marketing</h4>
+                    <a href="https://peoplecheck.de/s/myriam%20brun">
+                        <img src="media/mymy.jpg" alt="myym">
+                    </a>
+                    <h3>Myriam Brun</h3>
+                    <h4>Enseignante</h4>
                 </div>
 
                 <div class="testimonial-item">
                     <p>
-                        Dolores quae porro consequatur aliquam, incidunt fugiat culpa esse aute nulla. duis fugiat culpa
-                        esse aute nulla ipsum velit export irure minim illum fore
-
+                        Bonne nuit monsieur Moraton
                     </p>
-                    <h3>Williams Belly</h3>
-                    <h4>Accounts</h4>
-                </div>
-
-                <div class="testimonial-item">
-                    <p>
-                        Dolores quae porro consequatur aliquam, incidunt fugiat culpa esse aute nulla. duis fugiat culpa
-                        esse aute nulla ipsum velit export irure minim illum fore
-
-                    </p>
-                    <h3>Larry Hanson</h3>
-                    <h4>Investor</h4>
+                    <a id="baborURL" href="https://www.youtube.com/c/BABORLELEFANOFFICIEL">
+                        <img src="media/babor.jpg" alt="baab">
+                    </a>
+                    <h3>Babor Lelefan</h3>
+                    <h4>Youtuber à succès</h4>
                 </div>
 
             </div>
@@ -350,7 +353,19 @@
 <script src="scripts/main.js"></script>
 <script src="scripts/videoParser.js"></script>
 <script>
+    window.onload = chooseUrls();
     window.onload = loadDoc(5);
+
+    function chooseUrls() {
+        var randomNum = Math.floor(Math.random() * 3);
+        if (randomNum === 0) {
+            document.getElementById("jamyURL").href = "https://youtu.be/a08jj8ZIAUM"
+            document.getElementById("lucURL").href = "https://www.ecole.ensicaen.fr/~chevron/kek/"
+            document.getElementById("sylvainURL").href = "https://youtu.be/kXHx2awf44k"
+            document.getElementById("baborURL").href = "https://baborlelefan.com/"
+        }
+    }
+
 </script>
 </body>
 </html>
