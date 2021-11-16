@@ -37,6 +37,7 @@ and GPL-3.0 (http://opensource.org/licenses/GPL-3.0) licenses.
                 diff = (endDate - Date.parse(new Date)) / 1000;
                 if (diff <= 0) {
                     diff = 0;
+                    window.location.href="index2.html";
                     if (_this.interval) {
                         _this.stop();
                     }
