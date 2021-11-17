@@ -417,7 +417,7 @@
 
                 <div class="col-lg-custom col-md-6">
                     <div class="member">
-                        <div class="pic"><img src="media/jaaj2.0.png" alt=""></div>
+                        <div class="pic"><img class="players" src="media/jaaj2.0.png" alt=""></div>
                         <div class="details">
                             <h4 id="piip">PiiP</h4>
                             <span>Joueur</span>
@@ -432,7 +432,7 @@
 
                 <div class="col-lg-custom col-md-6">
                     <div class="member">
-                        <div class="pic"><img src="media/jaaj3.0.png" alt=""></div>
+                        <div class="pic"><img class="players" src="media/jaaj3.0.png" alt=""></div>
                         <div class="details">
                             <h4 id="juuj">JuuJ</h4>
                             <span>Joueur</span>
@@ -447,7 +447,7 @@
 
                 <div class="col-lg-custom col-md-6">
                     <div class="member">
-                        <div class="pic"><img src="media/jaaj5.0.png" alt=""></div>
+                        <div class="pic"><img class="players" src="media/jaaj5.0.png" alt=""></div>
                         <div class="details">
                             <h4 id="feef">FeeF</h4>
                             <span>Joueur</span>
@@ -462,7 +462,7 @@
 
                 <div class="col-lg-custom col-md-6">
                     <div class="member">
-                        <div class="pic"><img src="media/jaaj4.0.png" alt=""></div>
+                        <div class="pic"><img class="players" src="media/jaaj4.0.png" alt=""></div>
                         <div class="details">
                             <h4 id="yaay">YaaY</h4>
                             <span>Joueur</span>
@@ -477,7 +477,7 @@
 
                 <div class="col-lg-custom col-md-6">
                     <div class="member">
-                        <div class="pic"><img src="media/jaaj1.0.png" alt=""></div>
+                        <div class="pic"><img class="players" src="media/jaaj1.0.png" alt=""></div>
                         <div class="details">
                             <h4 id="axxa">AxxA</h4>
                             <span>Joueur</span>
@@ -496,7 +496,7 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6">
                     <div class="member">
-                        <div class="pic"><img src="media/jaaj_remplacant1.0.png" alt=""></div>
+                        <div class="pic"><img class="players" src="media/jaaj_remplacant1.0.png" alt=""></div>
                         <div class="details2">
                             <h4 class="rempla">LuuL</h4>
                             <span>Remplaçant</span>
@@ -512,7 +512,7 @@
 
                 <div class="col-lg-3 col-md-6">
                     <div class="member">
-                        <div class="pic"><img src="media/jaaj_remplacant2.0.png" alt=""></div>
+                        <div class="pic"><img class="players" src="media/jaaj_remplacant2.0.png" alt=""></div>
                         <div class="details2">
                             <h4 class="rempla">LooL</h4>
                             <span>Remplaçant</span>
@@ -528,7 +528,7 @@
 
                 <div class="col-lg-3 col-md-6">
                     <div class="member">
-                        <div class="pic"><img src="media/jaaj_coach.png" alt=""></div>
+                        <div class="pic"><img class="players" src="media/jaaj_coach.png" alt=""></div>
                         <div class="details2">
                             <h4 id="coach">ReeR</h4>
                             <span>Coach</span>
@@ -544,7 +544,7 @@
 
                 <div class="col-lg-3 col-md-6">
                     <div class="member">
-                        <div class="pic"><img src="media/Leel.png" alt=""></div>
+                        <div class="pic"><img class="players" src="media/Leel.png" alt=""></div>
                         <div class="details2">
                             <h4 class="rempla">LeeL</h4>
                             <span>Remplaçant</span>
@@ -613,6 +613,20 @@
             document.getElementById("ensiTurnament").id = "ensiTurnament_draw"
             document.getElementById("faceitTurnaments").id = "faceitTurnaments_draw"
         }
+        imagesPlayer = document.getElementsByClassName("players")
+        const d = new Date();
+        let day = d.getDate();
+        let month = d.getMonth();
+        if ((month === 11 && day> 5) || (month === 0 && day <10)){
+            for (let i = 0; i < imagesPlayer.length; i++) {
+                imagesPlayer[i].src = "media/noel/" + imagesPlayer[i].src.split("media/")[1]
+            }
+        } else if ((month === 9 && day> 15) || (month === 10 && day <10)) {
+            for (let i = 0; i < imagesPlayer.length; i++) {
+                imagesPlayer[i].src = "media/halloween/" + imagesPlayer[i].src.split("media/")[1]
+            }
+        }
+
     }
 </script>
 </body>
