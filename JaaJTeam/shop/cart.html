@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="fr" class="no-js">
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="img/xfav.png.pagespeed.ic.VVulyR7OLy.webp">
+    <meta name="author" content="CodePixar">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta charset="UTF-8">
+    <title>Karma Shop</title>
+    <link rel="stylesheet" href="style/jaaj.css"/>
+    <link rel="stylesheet" href="style/jaaj1css">
+</head>
+<body>
+
+<header class="header_area sticky-header">
+    <div class="main_menu">
+        <nav class="navbar navbar-expand-lg navbar-light main_box">
+            <div class="container">
+
+                <a class="navbar-brand logo_h" href="index.html">
+
+                    <img src="" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav menu_nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item submenu dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true" aria-expanded="false">Shop</a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a class="nav-link" href="category.html">Shop Category</a></li>
+                                <li class="nav-item"><a class="nav-link" href="checkout.html">Product Checkout</a></li>
+                                <li class="nav-item"><a class="nav-link" href="cart.html">Shopping Cart</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="nav-item"><a href="#" class="cart"><span class="ti-bag"></span></a></li>
+                        <li class="nav-item">
+                            <button class="search"><span class="lnr lnr-magnifier" id="search"></span></button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="search_input" id="search_input_box">
+        <div class="container">
+            <form class="d-flex justify-content-between">
+                <input type="text" class="form-control" id="search_input" placeholder="Search Here">
+                <button type="submit" class="btn"></button>
+                <span class="lnr lnr-cross" id="close_search" title="Close Search"></span>
+            </form>
+        </div>
+    </div>
+</header>
+
+
+<section class="banner-area organic-breadcrumb">
+    <div class="container">
+        <div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
+            <div class="col-first">
+                <h1>Shopping Cart</h1>
+                <nav class="d-flex align-items-center">
+                    <a href="index.html">Home<span class="lnr lnr-arrow-right"></span></a>
+                    <a href="category.html">Cart</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="cart_area">
+    <div class="container">
+        <div class="cart_inner">
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th scope="col">Product</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <div class="media">
+                                <div class="d-flex">
+                                    <img src="img/cart.jpg" alt="" data-pagespeed-url-hash="1739756765"
+                                         onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                </div>
+                                <div class="media-body">
+                                    <p>Minimalistic shop for multipurpose use</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <h5>$360.00</h5>
+                        </td>
+                        <td>
+                            <div class="product_count">
+                                <input type="text" name="qty" id="sst" maxlength="12" value="1" title="Quantity:"
+                                       class="input-text qty">
+                                <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;"
+                                        class="increase items-count" type="button"><i class="lnr lnr-chevron-up"></i>
+                                </button>
+                                <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) &amp;&amp; sst > 0 ) result.value--;return false;"
+                                        class="reduced items-count" type="button"><i class="lnr lnr-chevron-down"></i>
+                                </button>
+                            </div>
+                        </td>
+                        <td>
+                            <h5>$720.00</h5>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="media">
+                                <div class="d-flex">
+                                    <img src="img/cart.jpg" alt="" data-pagespeed-url-hash="1739756765"
+                                         onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                </div>
+                                <div class="media-body">
+                                    <p>Minimalistic shop for multipurpose use</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <h5>$360.00</h5>
+                        </td>
+                        <td>
+                            <div class="product_count">
+                                <input type="text" name="qty" id="sst" maxlength="12" value="1" title="Quantity:"
+                                       class="input-text qty">
+                                <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;"
+                                        class="increase items-count" type="button"><i class="lnr lnr-chevron-up"></i>
+                                </button>
+                                <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) &amp;&amp; sst > 0 ) result.value--;return false;"
+                                        class="reduced items-count" type="button"><i class="lnr lnr-chevron-down"></i>
+                                </button>
+                            </div>
+                        </td>
+                        <td>
+                            <h5>$720.00</h5>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="media">
+                                <div class="d-flex">
+                                    <img src="img/cart.jpg" alt="" data-pagespeed-url-hash="1739756765"
+                                         onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                </div>
+                                <div class="media-body">
+                                    <p>Minimalistic shop for multipurpose use</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <h5>$360.00</h5>
+                        </td>
+                        <td>
+                            <div class="product_count">
+                                <input type="text" name="qty" id="sst" maxlength="12" value="1" title="Quantity:"
+                                       class="input-text qty">
+                                <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;"
+                                        class="increase items-count" type="button"><i class="lnr lnr-chevron-up"></i>
+                                </button>
+                                <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) &amp;&amp; sst > 0 ) result.value--;return false;"
+                                        class="reduced items-count" type="button"><i class="lnr lnr-chevron-down"></i>
+                                </button>
+                            </div>
+                        </td>
+                        <td>
+                            <h5>$720.00</h5>
+                        </td>
+                    </tr>
+                    <tr class="bottom_button">
+                        <td>
+                            <a class="gray_btn" href="#">Update Cart</a>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            <div class="cupon_text d-flex align-items-center">
+                                <input type="text" placeholder="Coupon Code">
+                                <a class="primary-btn" href="#">Apply</a>
+                                <a class="gray_btn" href="#">Close Coupon</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            <h5>Subtotal</h5>
+                        </td>
+                        <td>
+                            <h5>$2160.00</h5>
+                        </td>
+                    </tr>
+                    <tr class="shipping_area">
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            <h5>Shipping</h5>
+                        </td>
+                        <td>
+                            <div class="shipping_box">
+                                <ul class="list">
+                                    <li><a href="#">Flat Rate: $5.00</a></li>
+                                    <li><a href="#">Free Shipping</a></li>
+                                    <li><a href="#">Flat Rate: $10.00</a></li>
+                                    <li class="active"><a href="#">Local Delivery: $2.00</a></li>
+                                </ul>
+                                <h6>Calculate Shipping <i class="fa fa-caret-down" aria-hidden="true"></i></h6>
+                                <select class="shipping_select">
+                                    <option value="1">Bangladesh</option>
+                                    <option value="2">India</option>
+                                    <option value="4">Pakistan</option>
+                                </select>
+                                <select class="shipping_select">
+                                    <option value="1">Select a State</option>
+                                    <option value="2">Select a State</option>
+                                    <option value="4">Select a State</option>
+                                </select>
+                                <input type="text" placeholder="Postcode/Zipcode">
+                                <a class="gray_btn" href="#">Update Details</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="out_button_area">
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            <div class="checkout_btn_inner d-flex align-items-center">
+                                <a class="gray_btn" href="#">Continue Shopping</a>
+                                <a class="primary-btn" href="#">Proceed to checkout</a>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer class="footer-area section_gap">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3  col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                    <h6>About Us</h6>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                        ut labore dolore
+                        magna aliqua.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4  col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                    <h6>Newsletter</h6>
+                    <p>Stay update with our latest</p>
+                    <div class="" id="mc_embed_signup">
+                        <form target="_blank" novalidate
+                              action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                              class="form-inline">
+                            <div class="d-flex flex-row">
+                                <input class="form-control" name="EMAIL" placeholder="Enter Email"
+                                       onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '"
+                                       required type="email">
+                                <button class="click-btn btn btn-default"><i class="fa fa-long-arrow-right"
+                                                                             aria-hidden="true"></i></button>
+                                <div style="position: absolute; left: -5000px;">
+                                    <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value=""
+                                           type="text">
+                                </div>
+
+                            </div>
+                            <div class="info"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3  col-md-6 col-sm-6">
+                <div class="single-footer-widget mail-chimp">
+                    <h6 class="mb-20">Instragram Feed</h6>
+                    <ul class="instafeed d-flex flex-wrap">
+                        <li><img
+                                src="data:image/webp;base64,UklGRvwDAABXRUJQVlA4IPADAADQEQCdASo6ADoAPm0ulEekIiIhKBgLUIANiWMAwcQzfanV7ejcU7y5KHdJtavERciHo7lxZX4HaXHUJVNoKNJngy5gfa1YuPnNbsM8Wd71jTBPJufGCJinmfzG9t4PWZLCjLPVok+anQtJJn2Az3MdvyY03OD260lE6AbS2aUm52pU7sS0IVkfcbtqXh/b+dxSz7EoZUDAAP69CXxhspYFApmJB8SCjYUZzkSy/P1BRe3VO42Mk5TFQf0K6B+bxp/6u+dvzraAF8dVou4kjP6x6l6O/OOMemU3uKOrixzBuZDe9ZxpcvISxaYGFiy46mOzXTBEMRIWABTFyjNLPnwrdVdFSb6AWmR/EWa3YT+w7Vws0JVbP8Ar5LPxS8KtrxgydVBk6LmWaPYBr3f2IPCQps+jIug/blnAGDpSNkUHCCLGKHhD80uee4vL8pEdop8uHxK8K+GJbGYvJsSuIu+er3N596s2zRbUFxYns0/veR4/VUHdMH3V5r/V1zZOik3DK9oX+Wdf8jfxkeAy2D3GyNjF7ayC6agobLZ6xPh2WngrNqvaNV/M2jJJEsbO2WCbjYxiEV8DfnlXHiSfQKICpikjDk5xyeDqpSfBsJpir9U3eoPj8cSGElxw92cdt4KDQG812bNmCJCvFBdAoV2O4FWuXTBs48Rp7w3V4BxZLjyk8Km2jeGdkARcxu8b13/Pbw5UH7sQzidWw/U5fBWutn5oUWaJ/OCpWdIYAMyvHn1g10mA4SCTtXlrTuJ4IjKt3myVRLfM0i5sAvdUH57KZC4xEMGI5fnuAOKmgXmF/lWFlGlXma5d6YySGM36L2kth+/WTzlPiyIxNR9lTuAGDlhsmBKnGhqgjvgF2O06XlFQzHGAI6MUq4OTxs6zEA19YDQHlpBk/NBr2aGkgWDJ8ug4Z4SdP79mrWj3vlDmt3iIY0ZCPAed5hlCBfGChLtJ4+fely8/94qJdNdrBn2KBtmneMiM4IxerUVZAz2i0fyPixBsogwAFYfR6DyhEIjZnbnerxCealgvymlyfn9LJHY1QIrVzlA3kXKnkd4oCXQShltAo0nRpY83MTNNlA+mTgjHsuPQr0PmJDcU6KYNFf5II7qs6GIp5uEFrOwl2k8HiurHYWo2SANtP20P/v4mKUrfb24jT2bz0Ep59p02xCREE/KnpOaCsVrrZEZWmYcWJYb1L6gMoszI53Tw57514nxk394CVkvs+QUyrSzEAPH7BhGtwQoST3lQ/MucfWleHO0ZslErqGSNgQDVKw/bOIeOxgvJlojR7WkiaDC3MP5QjS/w3g/e5k0UjTL5XSY4hgPPrJewit0doyOAAAA="
+                                alt="" data-pagespeed-url-hash="53774645"
+                                onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></li>
+                        <li><img
+                                src="data:image/webp;base64,UklGRrwFAABXRUJQVlA4ILAFAACwFgCdASo6ADoAPm0okkakIiGhMBYMAIANiWwAp02N1B4H5h+CVMl4Q/L6KNt55m/Pj9JvnAdRPvM399/6Nq5bwvvXgX5J/x7ROpPvX+LabA4dVfDT/KF9b+waRh4s+hRPEDSys57ewagKNWclLjiEzWmxUJb3WwFFC/3oRMOuFDsASitHM6insE9JB4cbgTUjhMFhhAb98d4+q0cb3WciZR8d6QM/Qh4qOuhsa4kNkhdTdiH+yZCVHh/g2V/AAN/zhR8pXKELCEEfDgfRiaujYy7pB6h/bi915fG2D3+wY5iMIulBe4kfHG68NopB+RasERyj6Gi8UMigYGhDW9yFkrZ0vJdQou/zF+56O5kv1Bn5O1k/++gi+gVymk6NgYzaDMcO8G5weaG6BnRu9aI8uBDuTTAmchadJJ8yXBeJRlftlok+UirW5/CpmEcybRx4bqKfsVlI6J2rTUv16SpHL7z1ZsJIKUw4CeijUmfJ91XbnlFlqIhVvQ4EJDWW0ie3QerW0Dlj7clDgAOYlVLRppB7pfPtgFOQtBRNkeC0EKXcGTXUp+U1hjAMkpAmY23qFtBf/eenqTP+6qEBjOgtDy83tR+x0SF+ZVA/z10X5mH3LlAl6vgOQ5ilnbW9PzKYF1tMmoY5OQCIb5C3t1vkxKx4UfCbyNsj28QDaJfQpjeamNcyz+65FCSodrAg4+FoiOEMY/8sV1jYpW0f2JZAcGlvf1JyyFi8It9W0dLbCSEoHu7Ns0wicCAX5G16q/pCIwDxVE6GuHkG+y5nDFgJemxYl/NEQxMJTvGrBjkFei0ubFyZW61IOW1VTD69jbBQ4/1L/Fm8EeYB17r4dTuKEutSgyyco7ibKeKFTDj7HWMZfvMgEAZ8zc7rmx3DaJof5DbzAQfxt6T6UVozC0ruyzhzuHxXt2HLeo8EtZx3nCv5PjCE76DiMd/pylnGVo50h+DJWiiMKFkPo0TXI28ofmT4m0P1Or4NHhfWWCalGnm8LStei8/h9LT307hkYOu3VmaNgjEgMF4qjOcbU7uhFkSfwHYY1EuS6rYeKy06UiRiRYKEegQL4Ch7a80AQ/swErfU49XpIaUz9UrD7GcgcoM79zZ/LdsVQtpv4btmmkP0WGrtRv1NDsDv6U2G+DEaIugJ9dM0KhjFNDE53LtfNYn1GmzAAYp02yFZPuxpBONxWDVWgYU5iWRMN8B8idzZVvjlj2OLO/Ka2rUHi9WBMw9WTf3VkyD91P+3LO4b3IeQ6/vx/Yk/CGBKHBBkM8dFEDDxDBABZGnLbPvfVIabZCOgmvY4KmoZbM6YRH2JveSI2b2wyXQ/8TMfWqTwoDuz655zs2T1CqvVI9DXpw1Tk8N80Vpsdth2w05cbiQ4G0yRk3LjiEC2yGIyz9FeSNw6oVes79Z+IakIc29OxSaxv2nizA+fOpggdrfO43ScaKW6ucIj/oB4TJXNGik93TbfRblQ2nQVDBAgGHnHP4tcKEzgoKcglc+2/sAomvMGpfkyVxxurxPpd7fLoZB0bvhwRyeTLNCzDJRjsPxhsAJRTnP8UpgDSnIdVNB59AMDwOPZvuqIHrJzIHRMV4VE6CVMy0iSxe/K+q5bTtH5YuePRT92OEKYIhX7mI2+uPmi7cyj8omYywMJ63hng/PxYc9A2N4LbZ/gALUkr40hcVsk7gksTa+RQWkT8CxQJJh9eFUNofc7nsCeuK9UBX38n/G+h8Q93qiOT6/ikH2Fag02Cfv00Xv7WzfjOmD2RlEHXNIT9D8Tuxv9SnJMcUwpeX8nY8w47W/nBotDPXGRJAZtaUB6IVRmmeY4WIoSIt33BmgdLQu19akPRS170yfEz1xhidkFLgzf9icDUt6+JonOoQWNYMvtPdXEttK+c6ncx+rFMECr5qf2JBm4toTADSKF8PtzxD21N4ywbX57QoAA"
+                                alt="" data-pagespeed-url-hash="348274566"
+                                onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></li>
+                        <li><img
+                                src="data:image/webp;base64,UklGRkQDAABXRUJQVlA4IDgDAACQDwCdASo6ADoAPm0wkkckIyGhKhmboIANiWIAzmtoEU6XPqH68EzbPc8JpqL6R/RZob3c0w00rysddZnhmQnQAjLV/Uf1V2p5hhcEOUkn8E2KZdevGWQMWtwKTKb4j5cHth1mxfpZmdVPYY8cTzbxurw4UWnRng4Rkkj6vkTymIVMFyAAAP79wI6iq0ycScH6G+rLlGTqRUqOnbTW7Zibrcjej9jW6mqYjfXiuuQez8HtkFNAv5IbXDNK9fCTzxp7N1NqimtfgWjEBucL1FAO3uRCYgPVkc/jWq9TUXTrWki43XRQZS7lEmdCeqhSi3RVgRcnCF0l2hdzTTSHh23GSGDfzU/rtT4cDE+LvD1zGYAFAqnNaq4NqtZrY/mBHNs/oJmmBaG+vX5CASVvBb+8y21p19s3yap0hxLyMlHkk8mkZLLO7L3EabT99MP2pk0NX+R28Qc9z/+wYoEkg1Op9hd/zY2AeQg9/q/8vC7fgi5oe1yNER9KtCpsNp3BeodEtbqLtc3msgS2FOQ9VTFPZ8EerULdoJEXoZYKV7Fm0eKhiVqk5hmElvYVmGYTEliw/KG8Jd+Esus/4KaVY3yons3QfCPVNV0KEsglAEDXtruB1bMOuQnMqu+gDbXcUFgcrBK9HO48Qs/RGxq1S+5CwdcAjzXd3d15nHsPXgBDIgP761DthPcOv5Bj/WmginfKxScNEKBdwroOdVNh8o44EIHi/fZD+nrefBaAooF2Ti9CW/qIxnnJ70/Q19/VT3faqXaTWsCSpRPCG06mhxeuRd/AC60qR47spQ6F2f03bhBMDcYXpXAI0FuYGoSXwTlX37Tqw8nb25OzINAA6huEp6Ub5BrpB3NaWFctEDMLv5nNVSixSOqjOBqkDTVbEwlgYeSNUbrQvb3BWyufNsq0LithfXBJM8TJjEZfL3UlMLUKCLzu6g8J6Gz47fPT1oCPKJqOUfZpLIH4cTrIAHXL3Sf4U5SefFFN8ymtSB0sectkdfkKdOG3fdKNxMv+CBsbtEJoxZby8lWVVdnwwzzIpYpRLfKDIcLGuXeOJjGPCIKiQf0AoCASgXQh0UHqwgSVu7vBdmTAAA=="
+                                alt="" data-pagespeed-url-hash="642774487"
+                                onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></li>
+                        <li><img
+                                src="data:image/webp;base64,UklGRuoCAABXRUJQVlA4IN4CAABwDgCdASo6ADoAPmkojUWkIqEb+q4AQAaEoAsR/d7szr+f/dzc+LY7dA6yHgCRCRi87hQCQCxGeja11fzXHRYjJea4F3crH2zRC018Xr/rk6xxf+fZblWdyiXVdhTR3oarmdwJuVtPc1iQFXwBI/rciFjdFqjd5KpXszMAAN1xcAdxVJsxbf/zjgS/8KD/8uV3KyeMYlDplPDsaVRBVGIT5kK5LNZ4y/yDcsXnR6Q1JOVtMiXI+hk0mBLue7homIoJsBwztCusJxWHkrRshLca69aUIfB4LIIdsJs6VeryuVdeKsKZQEWKMK8Px3SEUzvKF4w8VgwnIt7qSyffCpZdmmn1bW+1BiOzJQnhrQ3+0ZmRCjyMTx2GdTBXQgdblazj1gHmtWFGiq3w6+qP5Mgo5JU05moNYo+XnBBmSjKZgi1q41Aov7OwJnlzeA284BIdQIGxlUVOclktmDuecS9eGGabGz5BHyQgM4vpDjtVw9YxsivPi3TzAUXn7lrW1w8viWsCCCKFckUdh//fQz0COFvjyscq84kUQ8UsRmLiuQjK9BojmZfgb69O1VeRj3VuGGLhxWOcFfExSs7k01aswUa3gAORMIvq9v+uklPSZoohVWUZhX9/wUiSXMptHBg6+hTflBRQNsKS91G+eDaft3nTjHZMtkHBmv9O15pFaPMP33POwHa4mNXxVTOPaNZCZ++cTMwlvpXksDkHyD0QG7JK4McWzGcQv9PFg5/gmZav9YzlBXJpfbYLXnXiwsvN+TDJrheNMqZl+5BQMgHxVREnVgT+t5Qs45JmnV0PfU1Qfsv2mQSK9wTJo2gbtySfEVhXnYkYRrCMkWlnybg3NN2jEZByQryKDbcpGaDjUKVz4pAxOUvw8vo07Zw8m9wYiD+QVEJDdgKkExOUWO6gstB+cEcjthxHDcYQTS3GSlZEB7b393QRrgE4BHpGVvJcCqanUFW2w0a3qPwAAA=="
+                                alt="" data-pagespeed-url-hash="937274408"
+                                onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></li>
+                        <li><img
+                                src="data:image/webp;base64,UklGRuwCAABXRUJQVlA4IOACAAAQDgCdASo6ADoAPm0ukkWkIqGWCq7MQAbEsbN3qPHVDANR2VmzSbp36oEbdb33B4OJykwKqhNKhBUi0aPaex0qg9+5eoHh7cedFDDp/SB8C5cTTsqk2nQ0gBjjfCIy6wq7GP5TH56Gnqf03vdmwAWb+1z8ER0xsx1QAP7Sv4/GTs3OgE/v/+kcWSlfH5489h4U/yanPfmLom/D2Zuo9+Fni4ub3sO4zkM/L9mIJfzOs4DSwOSk3nr2ULzmkP1jvTADRIHLD+2XiL+Gom2+xs/AOB1g+kY69IH7OoD5FXb6ffsBWrQjPktCyZfTPlSdCNSHa3hFTk937eufe/cdVrLAPPIJb0Igxaq15Xp5BcAsOEmY05/93WcRi8z6f8ugh/D3Y/Af+YL2upHGJbrOFQnpIj205BKA3W4UMT8i++cBYlmtHG45DxRuQI9Pck+u4xDt6b726gFceeOcNLnd//db+8N/sgd+YerWeUrJ1A/+vxoiu9/m2DL3aX9uNHBtoJTxGiCDsW3zKMK/2HVRDp4Q28O/ey1wrmtaHAY3uQmVgIoUt1iNgSSMBLTvc1fyoethOEyrHPYS/zirJ2+jZv+tF4cjp5ArKQeSU9c4tBqCa+EHrhy5wJA6VX3DY0LsnJFQKSTzqo/5PKjpETarQKmfTt65P2s/phDRGtrRYhXyX9M44DHfHEOejtWMI6x/6aSkLIiocGyPzLhi5EXZZmacJx8M6KZrK1rAJOlXjKuQkspNSsxN9vFFBXNpVSHJgWK+k0Zzc0KyLMVdXOQeISaMKHDRooKDBSa+0I9VfEdngE385ad6jsxddASkLLAoqRxBZ4UOGF4CDGFXihfSU4r0YaXNCb42A7JR+6QD8207VsgwhU31T8QNy/dH3xV1UTnlTKLs67Z+rgPRVWuEhRE5PYjABO9ifFGWN3Npfs6/YFXM80gQZdwS7Hhfj5gQcSbOkxa9/+x8BqSErJP0AAAA"
+                                alt="" data-pagespeed-url-hash="1231774329"
+                                onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></li>
+                        <li><img
+                                src="data:image/webp;base64,UklGRsYCAABXRUJQVlA4ILoCAADQDgCdASo6ADoAPm0wk0gkIqGhKBQMAIANiWJpZVAGlMYbar7Klw7e0eb+Gz/+mAb0d/tWEfJaWGuUMwQjHi1FEChy5Qy/GY0H80WJnNT7Gz/lZpb2b6PWZrLspCpkGUDVq/XuGAfowABkCNsh1E94uMhRkXY2ApGQ62TQyZzAAP73G1XVch8O1bdvN5kaT+1P3/5QOfq+YhcV3/5H7Hrm46i20Zk7O3/9BezE6zHzsZwizV/ke2S6WDuR7xSdEf0uOp+OiOA0HVHHE640cK2W8Xuk+o/AMFM+5U8rsX9y04CAgINc+OaAgs02HCNu0KyOxV5B5cy+oSzsQHlAVTK12VuO7qCcMa/0fvux78bKxrc1eqdnii41bnQXJB21Y6nQSnbH/BwrmBZItqLsYeaJLG8gCf8+/6Ockdq+ELkQk86xVoD99J36VbFqMGSmcOXaWwTRHSKMpqUCw0ggdGSTcpt+I0XtdTEyHy5w4+58dQQs+p1BRQFk7L9S7WFCICtR3q6ZgphL1bhY5qfKg5FZVKwbYzA+tZHAdAgn56V2TgGOfT0fpgg85SnmpUde30ZtejGzQdV/Emr3EPSIVuczC2oUxzStU0PInVoh3mM6/sHM0/yBEeIYL+7Np47913mF/zenPDrcpf+t/cH+LFTIRlZDA1yCbI6BDpP83mBHvdXaRpela2Sm+JZorJRWSgKp6lZfJ9q8HYbFE2ykAuk/p9N6fPQ4bjLdh+8i31f+36v/b/YsiXJ+hKf+O7gHJZtVnOn6z5cNg2miLKaaPsnk5ssrwTqmLCHvAgJyinqV5OZi4Q84fq3TvV7MdRC9WO3rOMHCuVeR4vOubqaZklUJ9q+DbZIY8odjH8u+g4oEfLgANB5sWjYKNdR8Wv54Ar1uLvFRP2pzQJULxv4CxTJ/kBJj/it/IAAAAA=="
+                                alt="" data-pagespeed-url-hash="1526274250"
+                                onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></li>
+                        <li><img
+                                src="data:image/webp;base64,UklGRrIEAABXRUJQVlA4IKYEAAAwFACdASo6ADoAPm0qkUWkIqGY/HW0QAbEtABOmUJBZ9k8xOyv53ahSjwudvnz1XpC/xW/D70jZ0jUDRCVPeOubj3hzEr+7+XXw3EzYEbacHJR0Mq8b8Z5dfKiXiagE2Od3trrslJ31MKG+VAoK9TIe98SLLE7PPINdMGgPlFXuQCQLWolhKaHtRpFGy+JR6CsVrZdySj62SXe+EI2+4USkqwKPRE5Omf1wAD+6BI88kJ1LERz7Vfmt32LyTHHnxeNz71mhTBbkRiParZBUs0pvayAcjf6eyV0KZK8R8B27KdGvmWykgnMaAYOXYpfMj1n1sF6Dmys28LNdwVTuvNE1oNOf24U9k6IDj+Ry03UHuOqpNRyJ7C3g4Vp+x5k/uM51TWbPBHI1RB4gQjgGy3Zh5LkwMieESl0yNX0hUBT/VTTsk9sdnUgC0inEIqvXuguK8uPBx4nq4W9wjJKABr6G6OktN4x6NHutCsvcsLPKEa1II3ljOgVxanATrLwLVlx7n40KDmNEeLTQr/rTRHKFaP1XGhkQZPNNSfwoSuH40N08Zx/fad/mls0YCM+dlZcB53zJuU2o7O5MaMZm0nEh60FlYm5/ryWT8RTL8f3HBZr5uc537L4pyFqvy097Qm+DKWC7Qr8KHzHXeq1A8pR0HasDV/KbAhu2tIRYl8E0InPuTgGpWjF2e3dsomc+FmWx6x16kXiEgYoSovSiOslyyK+n5+yencAu2CaGtdKgl0IceDOj1q+l16HnahdE9RcbwxSgrUtIYbX9vWqgA33AGUtYaUriVeu4oTtlGswMAp22CoKGhoqSH/cXCAloMqL0UjGp8AJHfg25RwxY/NlJQl95Ee9hNkaRYAXRlG/Si3jPagCsN3iU1+3XtUqstq+x9GNPkA5h3XNSKZoEdWbpod9JvjDg0shORhRqRskTqiONSeBGxLds7KQ7sofn+UXIJWgc1xjEj0oACt+/tTPlfvXMbF5Lb/88Lw8uJTQANB6Yi62x8j67VKRWDB5Lj890rnQ3n0/QYSEyI1/ZH/eb1mK1fX4mQzUZjJBUduTDUvlycs62qZbRJNhWcx7sA5BLsj7ozKk05JqzKGW/dQSxuTTWs/t298KBwvedvxsc1cWlcNSAzV0QfC0SDv8JPY3scKlc3uLSQKpYv5bA/UtNiKTHDAnLE/51OihZ0ipT2gw4PkWka3b11w7yqFsRN7C/xmshNRzHmtKgKu9sycfX7CHwtl1MbpmY8MkLu5Rc6TFa/NlWE0HTnPgXLJROPy/rmpTR6XAm2i725Vgw2BWL6bwTpzwoUeLYiQtiJqSWbDklb8O3oyN2l3zjbBWKzhLSyu5FRFB+SWwz7lObM9Qj6uq3rKX/zv7twJX1TJR3KpcVmUHYmFQQ/WO+r9IOJAvS5c3uF+dsaddsCInQfjg4t5553w6UIKmZZcJKLovC9OrLc+YM9UYhOAXNrmgH+bd5uI7vRmYwdtIixMt0EqJhcFGWqrQCZk7R2MrYKKsj1EY8o+gbkpC51gR9NuuTe/10bFk3apo/WAP3yIi9n5VP/actV+rXQ4uXzPUCklS7pGxZAAAAA=="
+                                alt="" data-pagespeed-url-hash="1820774171"
+                                onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></li>
+                        <li><img
+                                src="data:image/webp;base64,UklGRnYEAABXRUJQVlA4IGoEAABQFACdASo6ADoAPm00lEekIyIhKBQKqIANiWIAtkfQVDgfOgXF/WrhRmmxxwDwb8m3vGS4cT9eY8d7Xf14T6fiap5S/q32BU5wB+tDf6YZgWl779Chg8qdaHpM+bHGSuk+/l8K5Iz3XQRy5r9EaADU5Yr9ckWLaCDy+Nh/yfxzyyy+PrB6M69pE7HhksBUE7eU3oWjTWMRNBKqkX/kLPL40KOm8H39MGiuUaAA/v8OQRb4AyeeC/w8xTbOk8PjbXxZ8ka2DJmqD8PdtdMV2OULkW/AyiZpn5/mDlCPRYIJ25WOVvb0vCOGZtys9MAAAWHT60I5QhesA0Yrf0pYDgvzZ/DgJteWAJIXre0w5iz81ZyemG7s8gNWUnFtwF3HKNjSB6qc3v8hsfcBiCtOpmYpcy2V5FxwkpdRbSJjHpC6we8k/+ZC3F9zavQDx+XSNiPF6n87YCDc4SexH33Q8xnDB/vdDKRvSZpKVBHsn4x/afFmtul5XL8O0hsk1fIJcxlJDpG+qEbBuj/CRKMYOJRC/Nlox7LVTyEUz5DOoXIeUwnHC5DZ/iqCxMdSDkHZKhSm3tJhd/+LW7lIjgHOKqfEDoTGuDktPZ/rpPzbV7W5Ny+PabHPeNtsfBxih9/LhHakK6TcYcBEl0Rp0gWV3C4woLEstyEMiPBLXEIPTFa9NAdNbGdfSd9s9TuJNDgqg1pMhSdJzp2nK8Obr2iQrDvafU+xsc9Efa5uYnCEUSFHmd5SuQHokgxBjPrI56T5rJYJzZ4an1ZLBxRjTtNdW5syiD/g6EX5v0Dzvls36t7uTgqeNz/u3B090WdvNWUOsg9oQYs2wB+x2SgnrngUfr9bdRdAtWbKIRANSONzXSHCvx6A4AFOCr8tN2bZk5zHamoZxqODCos2itQ7Bfzns29jB2OiH5EXxBdszLtwdHS85WfztuiAzSCmO+eftA2hIZZuRbavqflfAiPRdefVgzB3wmV9fc+FTXDNo50m/RXANLmnP7OQ8Pj4XN7d72mNJTr2BoSBNo3cRkFzrbwbWRsKUQN4fmtTu0b+W82pKcO99j0jnYvGoOhGshfhmtecu48eslO1Kq5zi+MunuRuM1/8Y97mL901bZvMv57/KA1TcQBymdEv2knv3ZvwnazOym+Dh48N1zLTWIrEdHvcgQF30NoFSJdTWWkArQ8/p6dldabsrm9m6BOK2+yDJCjUO6aVjql9Ftw1gKCOY07bxr/89FiFN013ylMZQSz9pLDGEeIs6XHLaR88YoXenlbEsWeowOrRtseXqzPViLhGIRbSpDH0L3dMaZyoQT0BPPmCOqU3imRVWbvFEZ/rz45LzhDz8uIXmaYRQW5c8ObduP1LPfNdJl9YS5zjfP0x7p3IobWU4gNtQ28ohXLLkoxaLWh7xR12pUj5XT0f9RkYYIDnEL18jpAdbf2oQyEaI+6EwOWfPXXNBqoq0L2hfMRTpJ1/iFpdgsvdi9pFBbStxw0UrM5tNBE40ZIAAA=="
+                                alt="" data-pagespeed-url-hash="2115274092"
+                                onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                    <h6>Follow Us</h6>
+                    <p>Let us be social</p>
+                    <div class="footer-social d-flex align-items-center">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-dribbble"></i></a>
+                        <a href="#"><i class="fa fa-behance"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom d-flex justify-content-center align-items-center flex-wrap">
+            <p class="footer-text m-0">
+                Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+                All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a
+                    href="https://colorlib.com" target="_blank">Colorlib</a>
+
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script src="script/jquery-2.2.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+<script src="js/vendor,_bootstrap.min.js+jquery.ajaxchimp.min.js+jquery.nice-select.min.js+jquery.sticky.js+nouislider.min.js.pagespeed.jc.dke5CMRGNG.js"></script>
+<script src="script/jquery.carousel.js"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+<script src="script/gmaps.min.js"></script>
+<script src="script/main.js"></script>
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v64f9daad31f64f81be21cbef6184a5e31634941392597"
+        integrity="sha512-gV/bogrUTVP2N3IzTDKzgP0Js1gg4fbwtYB6ftgLbKQu/V8yH2+lrKCfKHelh4SO3DPzKj4/glTO+tNJGDnb0A=="
+        data-cf-beacon='{"rayId":"6afab270dfffa891","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.11.0","si":100}'
+        crossorigin="anonymous"></script>
+</body>
+</html>
