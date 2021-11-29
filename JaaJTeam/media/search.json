@@ -1,13 +1,81 @@
 {
   "kind": "youtube#searchListResponse",
-  "etag": "pAtlRfkzKZfL7jVep0aGLWrTx8U",
+  "etag": "QFlBY30mdnm1TAjSi89psL9eatM",
   "nextPageToken": "CBQQAA",
   "regionCode": "FR",
   "pageInfo": {
-    "totalResults": 64,
+    "totalResults": 66,
     "resultsPerPage": 20
   },
   "items": [
+    {
+      "kind": "youtube#searchResult",
+      "etag": "_3U2rnJ9IEUGp9rr5zLBlIv1AaE",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "zvOUPZtUMZU"
+      },
+      "snippet": {
+        "publishedAt": "2021-11-26T18:30:30Z",
+        "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
+        "title": "Dernière représentation officielle des jumeaux AWPER - CSGO Highlight #31",
+        "description": "Je pensais pas croiser les jumeaux sur inferno mais bon... Sinon RAS comme dirait mymy Musiques: Intro: Spektrem - Shine Outro: Ahrix - Nova.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/zvOUPZtUMZU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/zvOUPZtUMZU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/zvOUPZtUMZU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "JÀÁJ Team",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-11-26T18:30:30Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "8QFMp942B-Dt0OovSWP8l7zxtDk",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "CC20o-SPwZU"
+      },
+      "snippet": {
+        "publishedAt": "2021-11-19T18:30:06Z",
+        "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
+        "title": "Plus simple en volant? pas sûr... - CSGO Highlights #30",
+        "description": "Encore un p'tit bug pas si ordinaire que nous offre le jeu... Entre ça et la disparition soudaine de l'usp sur cache, ça fait beaucoup pour une seule vidéo non?",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/CC20o-SPwZU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/CC20o-SPwZU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/CC20o-SPwZU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "JÀÁJ Team",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-11-19T18:30:06Z"
+      }
+    },
     {
       "kind": "youtube#searchResult",
       "etag": "2kISzE8qo4Nd30udMTQ-ALbPaas",
@@ -384,7 +452,7 @@
     },
     {
       "kind": "youtube#searchResult",
-      "etag": "jAgT694lXGCBZYCinULhyhAq7DU",
+      "etag": "8IQR9obpIE8LF2SMRHD4Jb46nik",
       "id": {
         "kind": "youtube#video",
         "videoId": "6E0pKDBxlHo"
@@ -618,74 +686,6 @@
         "channelTitle": "JÀÁJ Team",
         "liveBroadcastContent": "none",
         "publishTime": "2021-07-23T17:30:04Z"
-      }
-    },
-    {
-      "kind": "youtube#searchResult",
-      "etag": "9PmMV8JxKYgRqHNO4MiR2xfvSH0",
-      "id": {
-        "kind": "youtube#video",
-        "videoId": "4HZyizzd174"
-      },
-      "snippet": {
-        "publishedAt": "2021-07-16T18:15:01Z",
-        "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
-        "title": "R6 Highlights #23 - Bandit suppressor is OP",
-        "description": "Y a même un ace avec, donc c'est vraiement très fort le suppresseur Musiques: Intro: Spektrem - Shine Outro: Ahrix - Nova.",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/4HZyizzd174/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/4HZyizzd174/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/4HZyizzd174/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          }
-        },
-        "channelTitle": "JÀÁJ Team",
-        "liveBroadcastContent": "none",
-        "publishTime": "2021-07-16T18:15:01Z"
-      }
-    },
-    {
-      "kind": "youtube#searchResult",
-      "etag": "5MuhHt3SaLiYes_AGKOlsUmZp2s",
-      "id": {
-        "kind": "youtube#video",
-        "videoId": "Xtb0eNr0ryM"
-      },
-      "snippet": {
-        "publishedAt": "2021-07-09T17:30:06Z",
-        "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
-        "title": "R6 Highlights #22 - Ce jeu est... toxic",
-        "description": "Étrangement, j'ai l'impression que sur certains clips le son est legerement décalé (d'un ptit dizieme de seconde tout au plus), désolé pour ça. Ptit bonus partie 1 ...",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/Xtb0eNr0ryM/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/Xtb0eNr0ryM/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/Xtb0eNr0ryM/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          }
-        },
-        "channelTitle": "JÀÁJ Team",
-        "liveBroadcastContent": "none",
-        "publishTime": "2021-07-09T17:30:06Z"
       }
     }
   ]
