@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 $( function() {
 // Add background image
     $.backstretch('media/travaillssss.png');
-    var endDate = "December 24, 2022 19:30:00";
+    var endDate = "December 24, 2021 19:30:00";
     $('.countdown.simple').countdown({ date: endDate });
     $('.countdown.styled').countdown({
         date: endDate,
