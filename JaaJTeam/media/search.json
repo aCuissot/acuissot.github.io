@@ -1,16 +1,390 @@
 {
   "kind": "youtube#searchListResponse",
-  "etag": "opteQU3o27MWq95sTvw7KEIgxh8",
+  "etag": "X1Tvt702NGblX6dSpjB6WbpF2_4",
   "nextPageToken": "CBQQAA",
   "regionCode": "FR",
   "pageInfo": {
-    "totalResults": 69,
+    "totalResults": 80,
     "resultsPerPage": 20
   },
   "items": [
     {
       "kind": "youtube#searchResult",
-      "etag": "rrWT5-l8ufIV9AQdHtf6qboJKLY",
+      "etag": "yyLmLirtCG7BXhsiAIq3QmlRxNY",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "atSSddo-S6Q"
+      },
+      "snippet": {
+        "publishedAt": "2022-01-03T18:00:03Z",
+        "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
+        "title": "My best wallbang in 1500 hours",
+        "description": "Celui là devrait sortir avec la vidéo 45 de CSGO : ) Elle est pas prête de sortir alors en attendant...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/atSSddo-S6Q/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/atSSddo-S6Q/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/atSSddo-S6Q/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "JÀÁJ Team",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-01-03T18:00:03Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "FIBnakrexSkp5aShUPqnjfrKQHw",
+      "id": {
+        "kind": "youtube#playlist",
+        "playlistId": "PLBCtISj0lLYsEDLvUK4UGdrqGZnImDqrd"
+      },
+      "snippet": {
+        "publishedAt": "2022-01-01T00:50:15Z",
+        "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
+        "title": "BestOf 2021",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/NrK4nciOK18/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/NrK4nciOK18/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/NrK4nciOK18/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "JÀÁJ Team",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-01-01T00:50:15Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "7OBAgTkUS5e36U_qZBS0Dr0e3Qc",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "XxU_jOKN2iI"
+      },
+      "snippet": {
+        "publishedAt": "2021-12-31T18:30:39Z",
+        "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
+        "title": "Je ace et il turn on le spin - CSGO Highlights #33",
+        "description": "Je me suis essayé au CZ, y a eu quelques trucs pas mal mais pas évident d'être régulier avec... Ce knife qui arrive à point nommé ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/XxU_jOKN2iI/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/XxU_jOKN2iI/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/XxU_jOKN2iI/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "JÀÁJ Team",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-12-31T18:30:39Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "YTIfWma5B1L-Duxn7FCnvYt_eaY",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "NrZKbBO2OsU"
+      },
+      "snippet": {
+        "publishedAt": "2021-12-31T11:00:11Z",
+        "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
+        "title": "Jaajing in music",
+        "description": "Une vidéo un peu plus longue pour conclure et présenter la chaine : ) Musiques: The Glitch Mob - Palace of the innocents Please ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/NrZKbBO2OsU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/NrZKbBO2OsU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/NrZKbBO2OsU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "JÀÁJ Team",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-12-31T11:00:11Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "qmuFd6OWmsQ0IjR2I8PUp-hfL0Q",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "tB8RChwwQXI"
+      },
+      "snippet": {
+        "publishedAt": "2021-12-30T11:00:24Z",
+        "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
+        "title": "Jaaj or not jaaj",
+        "description": "Deuxième et dernier best of 2021 de cette serie sur R6 qui ne sera pas exhaustif vous le comprendrez Musique: Vosai - Young ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/tB8RChwwQXI/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/tB8RChwwQXI/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/tB8RChwwQXI/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "JÀÁJ Team",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-12-30T11:00:24Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "teEdVbQCvN6ikr1iG6lj2xxYJ-Q",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "hmWt1UASHDY"
+      },
+      "snippet": {
+        "publishedAt": "2021-12-29T11:00:23Z",
+        "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
+        "title": "A cap and a jaaj",
+        "description": "Partie 4 pour CSGO : ) Musique: Lost Sky - Fearless pt.II (feat. Chris Linton)",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/hmWt1UASHDY/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/hmWt1UASHDY/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/hmWt1UASHDY/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "JÀÁJ Team",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-12-29T11:00:23Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "zSi67YQ5uwdK6WUTV1o5f-6_7ho",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "3M5wJDbUifg"
+      },
+      "snippet": {
+        "publishedAt": "2021-12-28T11:00:29Z",
+        "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
+        "title": "Jaajin and clipin",
+        "description": "Puisqu'on est bien lancés: 2021 CSGO part 3 Musique: hayve - Red Light.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/3M5wJDbUifg/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/3M5wJDbUifg/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/3M5wJDbUifg/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "JÀÁJ Team",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-12-28T11:00:29Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "8B4V2zuLXtaALmXpNnJUZ8Np71c",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "LPVL2myfgOU"
+      },
+      "snippet": {
+        "publishedAt": "2021-12-27T11:00:15Z",
+        "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
+        "title": "No rage de mon clip jaaj",
+        "description": "Vous avez saisi le délire, donc tout pareil pour la partie 2 sur CSGO Musique: Whales & Joe Cohen - Love is gone.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/LPVL2myfgOU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/LPVL2myfgOU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/LPVL2myfgOU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "JÀÁJ Team",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-12-27T11:00:15Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "9tKVIosw9-uaOV7G42KJLGn2Fgg",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "NrK4nciOK18"
+      },
+      "snippet": {
+        "publishedAt": "2021-12-26T11:00:23Z",
+        "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
+        "title": "JAAJED LIKE A CLIP",
+        "description": "Best of 2021 R6 en musique, partie 1 Musique: Mandrazo the FifthGuys - Burn' Em ft OTG Stiffy.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/NrK4nciOK18/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/NrK4nciOK18/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/NrK4nciOK18/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "JÀÁJ Team",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-12-26T11:00:23Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "a86_jJ-b3C-gFy5eo9IXzPrwYXk",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "a7ujRvS_RN4"
+      },
+      "snippet": {
+        "publishedAt": "2021-12-25T11:00:00Z",
+        "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
+        "title": "CLIPED LIKE A JAAJ",
+        "description": "Best of CSGO 2021 en musique, partie 1 • Song: Extreme Energy (Music Today 80) • Composed & Produced by : Anwar Amr ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/a7ujRvS_RN4/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/a7ujRvS_RN4/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/a7ujRvS_RN4/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "JÀÁJ Team",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-12-25T11:00:00Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "Mx_J9fPt7nP4uvYJPYuOxr9MeYw",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "wMEea2X4gvQ"
+      },
+      "snippet": {
+        "publishedAt": "2021-12-24T18:31:01Z",
+        "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
+        "title": "Ne pas utiliser cette ligne en attaque !!! R6 highlights #31",
+        "description": "Le site web est enfin dispo, mais ouvert à toute idée d'amélioration (rdv sur https://acuissot.github.io/JaaJTeam/ ) Ne pas utiliser ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/wMEea2X4gvQ/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/wMEea2X4gvQ/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/wMEea2X4gvQ/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "JÀÁJ Team",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-12-24T18:31:01Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "o-Fu4uYEc5A_FXxqyu8534tA374",
       "id": {
         "kind": "youtube#video",
         "videoId": "zQte6VsECeo"
@@ -282,7 +656,7 @@
     },
     {
       "kind": "youtube#searchResult",
-      "etag": "V28TUIca_xBkJQMib6H4jkJ8vfY",
+      "etag": "pzscuKKJTFBgXuGdzxx7jccrVQg",
       "id": {
         "kind": "youtube#video",
         "videoId": "YIKxLJ4NP8I"
@@ -312,380 +686,6 @@
         "channelTitle": "JÀÁJ Team",
         "liveBroadcastContent": "none",
         "publishTime": "2021-10-22T17:30:03Z"
-      }
-    },
-    {
-      "kind": "youtube#searchResult",
-      "etag": "h9Y-iLO0XZZJCs-xKVDnNSZ2Mhg",
-      "id": {
-        "kind": "youtube#video",
-        "videoId": "qejJaQ4ZIss"
-      },
-      "snippet": {
-        "publishedAt": "2021-10-15T17:30:06Z",
-        "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
-        "title": "C&#39;est encore pire que la semaine dernière - CSGO Highlights #27",
-        "description": "Mocha c'est une des seules maps fun, mais par contre est ce qu'on peut avoir des games équilibrés? Musiques: Intro: Spektrem ...",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/qejJaQ4ZIss/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/qejJaQ4ZIss/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/qejJaQ4ZIss/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          }
-        },
-        "channelTitle": "JÀÁJ Team",
-        "liveBroadcastContent": "none",
-        "publishTime": "2021-10-15T17:30:06Z"
-      }
-    },
-    {
-      "kind": "youtube#searchResult",
-      "etag": "KkhJ0vu8wc-lU9Pv2EBhTgqYuBQ",
-      "id": {
-        "kind": "youtube#video",
-        "videoId": "rAJe0OKmT6I"
-      },
-      "snippet": {
-        "publishedAt": "2021-10-08T17:30:08Z",
-        "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
-        "title": "Le matchmaking sur les nouvelles maps... - CSGO Highlights #26",
-        "description": "Les nouvelles maps c'est sympa pour changer des classiques, mais comme c'est de la compet' je pense qu'on est en droit de ...",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/rAJe0OKmT6I/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/rAJe0OKmT6I/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/rAJe0OKmT6I/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          }
-        },
-        "channelTitle": "JÀÁJ Team",
-        "liveBroadcastContent": "none",
-        "publishTime": "2021-10-08T17:30:08Z"
-      }
-    },
-    {
-      "kind": "youtube#searchResult",
-      "etag": "OD1cfV3u1VFi26exqa14n56Q8TE",
-      "id": {
-        "kind": "youtube#video",
-        "videoId": "mwAUjpZF2n4"
-      },
-      "snippet": {
-        "publishedAt": "2021-10-03T11:47:24Z",
-        "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
-        "title": "Trop facile en 21/9 - CSGO Highlights  #25",
-        "description": "Première vidéo de PIIP Musiques: Intro: Spektrem - Shine Outro: Ahrix - Nova.",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/mwAUjpZF2n4/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/mwAUjpZF2n4/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/mwAUjpZF2n4/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          }
-        },
-        "channelTitle": "JÀÁJ Team",
-        "liveBroadcastContent": "none",
-        "publishTime": "2021-10-03T11:47:24Z"
-      }
-    },
-    {
-      "kind": "youtube#searchResult",
-      "etag": "ndbnA2rU64zC4QlZ-80ldc_Dj6I",
-      "id": {
-        "kind": "youtube#video",
-        "videoId": "nb3x7h0vGOM"
-      },
-      "snippet": {
-        "publishedAt": "2021-10-01T17:30:10Z",
-        "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
-        "title": "Aruni est trop forte... - R6 Highlights #27",
-        "description": "Aruni c'est un bon gadget et une arme facile à utiliser et efficace... en plus elle peu faire des trous dans les murs, peter des ...",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/nb3x7h0vGOM/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/nb3x7h0vGOM/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/nb3x7h0vGOM/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          }
-        },
-        "channelTitle": "JÀÁJ Team",
-        "liveBroadcastContent": "none",
-        "publishTime": "2021-10-01T17:30:10Z"
-      }
-    },
-    {
-      "kind": "youtube#searchResult",
-      "etag": "7CGdMHntMpJIX5jxS7DOWt69tF0",
-      "id": {
-        "kind": "youtube#video",
-        "videoId": "SQpilfmPVNE"
-      },
-      "snippet": {
-        "publishedAt": "2021-09-23T22:00:11Z",
-        "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
-        "title": "Faire ses lacets sur le champ de bataille ?! - CSGO Highlights  #24",
-        "description": "Au delà de nous prouver que juuj sait faire un noeud même sous pressions, elle nous montre qu'on fait également des grabuges ...",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/SQpilfmPVNE/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/SQpilfmPVNE/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/SQpilfmPVNE/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          }
-        },
-        "channelTitle": "JÀÁJ Team",
-        "liveBroadcastContent": "none",
-        "publishTime": "2021-09-23T22:00:11Z"
-      }
-    },
-    {
-      "kind": "youtube#searchResult",
-      "etag": "XfAduCnpGn2MIM3a47YFKDQDNmg",
-      "id": {
-        "kind": "youtube#video",
-        "videoId": "-5zQYW4rTxo"
-      },
-      "snippet": {
-        "publishedAt": "2021-09-17T17:30:00Z",
-        "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
-        "title": "Les berretas: l&#39;arme ultime au gun round? - CSGO Highlights #23",
-        "description": "Comme on le voit, on est toujours pas mieux servi par le matchmaking, mais avec des berretas, au moins on s'amuse bien ...",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/-5zQYW4rTxo/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/-5zQYW4rTxo/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/-5zQYW4rTxo/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          }
-        },
-        "channelTitle": "JÀÁJ Team",
-        "liveBroadcastContent": "none",
-        "publishTime": "2021-09-17T17:30:00Z"
-      }
-    },
-    {
-      "kind": "youtube#searchResult",
-      "etag": "KL8mrledX4RrjKsokeCI2rrbWbM",
-      "id": {
-        "kind": "youtube#video",
-        "videoId": "ewKY9ZDwRMk"
-      },
-      "snippet": {
-        "publishedAt": "2021-09-10T17:30:05Z",
-        "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
-        "title": "On doit Protèger une plante?!? - R6 Highlights #26",
-        "description": "Nouveau mode de jeu temporaire: Canister... un peu d'innovation ... faudrait penser à garder le peu qu'ils ont pour le jeu et non ...",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/ewKY9ZDwRMk/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/ewKY9ZDwRMk/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/ewKY9ZDwRMk/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          }
-        },
-        "channelTitle": "JÀÁJ Team",
-        "liveBroadcastContent": "none",
-        "publishTime": "2021-09-10T17:30:05Z"
-      }
-    },
-    {
-      "kind": "youtube#searchResult",
-      "etag": "LT9bawYh4-gRDOxU96cQaTJFuAY",
-      "id": {
-        "kind": "youtube#video",
-        "videoId": "6E0pKDBxlHo"
-      },
-      "snippet": {
-        "publishedAt": "2021-09-03T17:30:00Z",
-        "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
-        "title": "On est vraiment pas aidé par les randoms - CSGO Highlights #22",
-        "description": "C'est à croire que le matchmaking de csgo est pas top... sinon on a fait quelques cluchs stylés : ) Sinon petit 1v4 de piip au deagle ...",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/6E0pKDBxlHo/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/6E0pKDBxlHo/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/6E0pKDBxlHo/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          }
-        },
-        "channelTitle": "JÀÁJ Team",
-        "liveBroadcastContent": "none",
-        "publishTime": "2021-09-03T17:30:00Z"
-      }
-    },
-    {
-      "kind": "youtube#searchResult",
-      "etag": "LUOsG5xn8_9D9KyNKa4tlRD1iKo",
-      "id": {
-        "kind": "youtube#video",
-        "videoId": "KXuMDdUFTWg"
-      },
-      "snippet": {
-        "publishedAt": "2021-08-27T17:30:03Z",
-        "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
-        "title": "YaaY ce clutcher professionel - CSGO Highlights #21",
-        "description": "YaaY et son sang froid inébranlable nous fait une petite démonstration par l'exemple du clutch!!! Musiques: Intro: Spektrem ...",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/KXuMDdUFTWg/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/KXuMDdUFTWg/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/KXuMDdUFTWg/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          }
-        },
-        "channelTitle": "JÀÁJ Team",
-        "liveBroadcastContent": "none",
-        "publishTime": "2021-08-27T17:30:03Z"
-      }
-    },
-    {
-      "kind": "youtube#searchResult",
-      "etag": "wmZRTgmGG3AXtq8B_QMyXgTP1Wk",
-      "id": {
-        "kind": "youtube#video",
-        "videoId": "fzn4lg_rSxU"
-      },
-      "snippet": {
-        "publishedAt": "2021-08-20T17:30:05Z",
-        "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
-        "title": "WTF Mira!!/Ash ace rush - R6 Highlights #25",
-        "description": "Ace et clutch avec ce bon vieux lesion, un autre en rush avec ash... L'impression d'être dans 'Edge of tomorrow' en voyant ces 3 ...",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/fzn4lg_rSxU/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/fzn4lg_rSxU/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/fzn4lg_rSxU/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          }
-        },
-        "channelTitle": "JÀÁJ Team",
-        "liveBroadcastContent": "none",
-        "publishTime": "2021-08-20T17:30:05Z"
-      }
-    },
-    {
-      "kind": "youtube#searchResult",
-      "etag": "qOJEEsXGOqkPLXqAafdq1_503fE",
-      "id": {
-        "kind": "youtube#video",
-        "videoId": "K4NBFg_jrfU"
-      },
-      "snippet": {
-        "publishedAt": "2021-08-13T17:30:02Z",
-        "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
-        "title": "La puissance d&#39;AccordeonBoy - CSGO Highlights #20",
-        "description": "On a du pain de M Huron sur la planche !!!! Musiques: Intro: Spektrem - Shine Outro: Ahrix - Nova.",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/K4NBFg_jrfU/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/K4NBFg_jrfU/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/K4NBFg_jrfU/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          }
-        },
-        "channelTitle": "JÀÁJ Team",
-        "liveBroadcastContent": "none",
-        "publishTime": "2021-08-13T17:30:02Z"
       }
     }
   ]
