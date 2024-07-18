@@ -1,692 +1,692 @@
 {
-  "kind": "youtube#searchListResponse",
-  "etag": "eLMM4AyeFUaQrsaQ5_fkBwRDz6c",
-  "nextPageToken": "CBQQAA",
-  "regionCode": "FR",
-  "pageInfo": {
-    "totalResults": 115,
-    "resultsPerPage": 20
-  },
-  "items": [
-    {
-      "kind": "youtube#searchResult",
-      "etag": "3tj7H2vOagAEmcDo-lCvgSFN97M",
-      "id": {
-        "kind": "youtube#video",
-        "videoId": "qwi8MYYAKKs"
-      },
-      "snippet": {
-        "publishedAt": "2022-05-31T17:30:04Z",
-        "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
-        "title": "On est descendu bien bas - R6 Highlights #44",
-        "description": "Entre les ptits bugs, le fait qu'on joue avec et contre des gens que j'ai du mal à comprendre tellement on est descendu en rank et ...",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/qwi8MYYAKKs/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/qwi8MYYAKKs/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/qwi8MYYAKKs/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          }
-        },
-        "channelTitle": "JÀÁJ Team",
-        "liveBroadcastContent": "none",
-        "publishTime": "2022-05-31T17:30:04Z"
-      }
+    "kind": "youtube#searchListResponse",
+    "etag": "qhNDD7AbLTa8ocDN4KNkR55rJpg",
+    "nextPageToken": "CBQQAA",
+    "regionCode": "FR",
+    "pageInfo": {
+      "totalResults": 299,
+      "resultsPerPage": 20
     },
-    {
-      "kind": "youtube#searchResult",
-      "etag": "nTiL-lyxkPsENQZwj90yAgO2YkI",
-      "id": {
-        "kind": "youtube#video",
-        "videoId": "eojrDJxEsFw"
-      },
-      "snippet": {
-        "publishedAt": "2022-05-27T17:30:09Z",
-        "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
-        "title": "Quand on drop l&#39;AK au lieu de la bombe - CSGO Highlights #52",
-        "description": "aaa c'est pas possible.... Musiques: Intro: Spektrem - Shine Outro: Ahrix - Nova.",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/eojrDJxEsFw/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/eojrDJxEsFw/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/eojrDJxEsFw/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          }
+    "items": [
+      {
+        "kind": "youtube#searchResult",
+        "etag": "YdqUaHuTaZQQVXD8U0S02w1wDPE",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "Ye1N9UrVKeY"
         },
-        "channelTitle": "JÀÁJ Team",
-        "liveBroadcastContent": "none",
-        "publishTime": "2022-05-27T17:30:09Z"
-      }
-    },
-    {
-      "kind": "youtube#searchResult",
-      "etag": "-SVfog0-mJ4CDszBoNbG3WCb5hs",
-      "id": {
-        "kind": "youtube#video",
-        "videoId": "m4PmIgLzlZk"
+        "snippet": {
+          "publishedAt": "2024-07-14T08:00:18Z",
+          "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
+          "title": "Le bon boost au bon moment, c&#39;est ça le secret - CS2 Highlights #38",
+          "description": "Beaucoup de lags en début de vidéo, mais après j'ai pu changer de connexion ça va mieux Le wallbang sur mirage en fin de ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/Ye1N9UrVKeY/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/Ye1N9UrVKeY/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/Ye1N9UrVKeY/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "JÀÁJ Team",
+          "liveBroadcastContent": "none",
+          "publishTime": "2024-07-14T08:00:18Z"
+        }
       },
-      "snippet": {
-        "publishedAt": "2022-05-24T17:30:08Z",
-        "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
-        "title": "Quand ça paie de sortir - R6 Highlights #43",
-        "description": "jaaaaj je suiss suisse.",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/m4PmIgLzlZk/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/m4PmIgLzlZk/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/m4PmIgLzlZk/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          }
+      {
+        "kind": "youtube#searchResult",
+        "etag": "LpF7cwr5P4Yqhwq4sdgFJiIAehg",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "hrifhVD_DLI"
         },
-        "channelTitle": "JÀÁJ Team",
-        "liveBroadcastContent": "none",
-        "publishTime": "2022-05-24T17:30:08Z"
-      }
-    },
-    {
-      "kind": "youtube#searchResult",
-      "etag": "x7fE86N3N9lK6cBmHsbIwmQzKE0",
-      "id": {
-        "kind": "youtube#video",
-        "videoId": "7t9WGZ4d0Os"
+        "snippet": {
+          "publishedAt": "2024-07-11T17:30:06Z",
+          "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
+          "title": "Pas d&#39;idée de titre... - CSGO Highlights #107",
+          "description": "De mon côté, rien de foufou, c'est même assez mauvais, FeeF a des problèmes de connection, heureusement qu'on a engagé un ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/hrifhVD_DLI/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/hrifhVD_DLI/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/hrifhVD_DLI/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "JÀÁJ Team",
+          "liveBroadcastContent": "none",
+          "publishTime": "2024-07-11T17:30:06Z"
+        }
       },
-      "snippet": {
-        "publishedAt": "2022-05-20T17:30:00Z",
-        "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
-        "title": "Un triple au R8 revolver pour clutch - CSGO Highlights #51",
-        "description": "Un top 1 sur le fil du rasoir en coopération avec PiiP, un joli wallbang sur Nuke et bien d'autre choses. Bon visionnage Musiques: ...",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/7t9WGZ4d0Os/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/7t9WGZ4d0Os/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/7t9WGZ4d0Os/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          }
+      {
+        "kind": "youtube#searchResult",
+        "etag": "3RpSnRvmY_c7_dqRsjKWIpocWNI",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "fOQAoKJSDeg"
         },
-        "channelTitle": "JÀÁJ Team",
-        "liveBroadcastContent": "none",
-        "publishTime": "2022-05-20T17:30:00Z"
-      }
-    },
-    {
-      "kind": "youtube#searchResult",
-      "etag": "9y852-eRCqxgB_uj0YaXd-9wxL8",
-      "id": {
-        "kind": "youtube#video",
-        "videoId": "zBftLXUUpqg"
+        "snippet": {
+          "publishedAt": "2024-07-07T08:00:31Z",
+          "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
+          "title": "Fell For A Demon - CS2 Bestof en musique",
+          "description": "Bestof des clips CS2 11 à 20 il me semble, enjoy Musique: ROY KNOX & LINKER - Fell For A Demon.",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/fOQAoKJSDeg/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/fOQAoKJSDeg/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/fOQAoKJSDeg/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "JÀÁJ Team",
+          "liveBroadcastContent": "none",
+          "publishTime": "2024-07-07T08:00:31Z"
+        }
       },
-      "snippet": {
-        "publishedAt": "2022-05-17T12:30:15Z",
-        "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
-        "title": "Retour sur BO2, part 2 : )",
-        "description": "Bon c'est pas aussi bien que je l'esperais, mais au moins ça fait jouer la nostalgie, ou ptet pas, à voir... En tous cas, sans doutes ...",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/zBftLXUUpqg/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/zBftLXUUpqg/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/zBftLXUUpqg/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          }
+      {
+        "kind": "youtube#searchResult",
+        "etag": "TM6hchYroOST25tW3nf6VItYBjY",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "Cw8rcDpsedc"
         },
-        "channelTitle": "JÀÁJ Team",
-        "liveBroadcastContent": "none",
-        "publishTime": "2022-05-17T12:30:15Z"
-      }
-    },
-    {
-      "kind": "youtube#searchResult",
-      "etag": "tXe84gZe59szz5ziwKb2XW6mM0U",
-      "id": {
-        "kind": "youtube#video",
-        "videoId": "sr1R9ckzyk4"
+        "snippet": {
+          "publishedAt": "2024-07-04T17:30:03Z",
+          "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
+          "title": "Des kills, des runouts et de la compote - R6 Highlights #106",
+          "description": "Quelques bonnes games, en revoyant ça j'ai un peu de nostalgie parce que ça n'arrive plus très souvent... déjà faut que les ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/Cw8rcDpsedc/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/Cw8rcDpsedc/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/Cw8rcDpsedc/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "JÀÁJ Team",
+          "liveBroadcastContent": "none",
+          "publishTime": "2024-07-04T17:30:03Z"
+        }
       },
-      "snippet": {
-        "publishedAt": "2022-05-13T17:30:33Z",
-        "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
-        "title": "Using AWP as shotgun? - CSGO Highlights #50",
-        "description": "J'ai mis le danger zone à la fin comme ça plus simple de zapper si ça n'interesse personne : ) Par contre j'ai pas pensé à garder ...",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/sr1R9ckzyk4/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/sr1R9ckzyk4/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/sr1R9ckzyk4/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          }
+      {
+        "kind": "youtube#searchResult",
+        "etag": "QA4nWWRB6G-4yKUtgg-zC56WAF0",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "ZIhwoTgKNAU"
         },
-        "channelTitle": "JÀÁJ Team",
-        "liveBroadcastContent": "none",
-        "publishTime": "2022-05-13T17:30:33Z"
-      }
-    },
-    {
-      "kind": "youtube#searchResult",
-      "etag": "jpvNafLcH15g4EYKn71BZDgAMv8",
-      "id": {
-        "kind": "youtube#video",
-        "videoId": "JLCHvkld298"
+        "snippet": {
+          "publishedAt": "2024-06-30T08:00:19Z",
+          "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
+          "title": "Ca shoot les smokes à gogo - CS2 Highlights #37",
+          "description": "Y en a des games différentes là!! Petits soucis de connection donc moins de highlights dans chaque game, on va dire que c'est la ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/ZIhwoTgKNAU/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/ZIhwoTgKNAU/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/ZIhwoTgKNAU/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "JÀÁJ Team",
+          "liveBroadcastContent": "none",
+          "publishTime": "2024-06-30T08:00:19Z"
+        }
       },
-      "snippet": {
-        "publishedAt": "2022-05-10T17:30:02Z",
-        "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
-        "title": "Triple sans bouger... - R6 Highlights #42",
-        "description": "Pour la petite histoire, le clip à 12min20 je fini par tuer un mec qui nous insultait la game d'avant parce qu'on était pas assez bon ...",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/JLCHvkld298/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/JLCHvkld298/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/JLCHvkld298/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          }
+      {
+        "kind": "youtube#searchResult",
+        "etag": "UjL7cPCdUrMD2SDQ7jcdrcsgRc4",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "0pbrkGPcO4s"
         },
-        "channelTitle": "JÀÁJ Team",
-        "liveBroadcastContent": "none",
-        "publishTime": "2022-05-10T17:30:02Z"
-      }
-    },
-    {
-      "kind": "youtube#searchResult",
-      "etag": "87kkQvxO35FS48rjwqci3NMXVmo",
-      "id": {
-        "kind": "youtube#video",
-        "videoId": "XJsD1Pn8xPY"
+        "snippet": {
+          "publishedAt": "2024-06-27T17:30:00Z",
+          "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
+          "title": "Des fails, des rires et des alliés sympas - CSGO Highlights #106",
+          "description": "Quand on joue en étant fatigué, ça ne peut que bien se passer, surtout quand on n'arrive plus à parler : ) En tous cas on a ri, ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/0pbrkGPcO4s/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/0pbrkGPcO4s/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/0pbrkGPcO4s/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "JÀÁJ Team",
+          "liveBroadcastContent": "none",
+          "publishTime": "2024-06-27T17:30:00Z"
+        }
       },
-      "snippet": {
-        "publishedAt": "2022-05-06T17:30:46Z",
-        "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
-        "title": "Quand le Zeus ne tue pas... - CSGO Highlights #49",
-        "description": "Un peu triste, déjà dans la dernière vidéo me semble-t'il, le Zeus m'a fait défaut... si ça continue, je vais devoir le troquer contre un ...",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/XJsD1Pn8xPY/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/XJsD1Pn8xPY/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/XJsD1Pn8xPY/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          }
+      {
+        "kind": "youtube#searchResult",
+        "etag": "LEeJLklXrnO6oA_mj1bgv_7Ljmc",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "J02YF0nuHys"
         },
-        "channelTitle": "JÀÁJ Team",
-        "liveBroadcastContent": "none",
-        "publishTime": "2022-05-06T17:30:46Z"
-      }
-    },
-    {
-      "kind": "youtube#searchResult",
-      "etag": "b2-FHrf9Exjd0h423rMCE5VFsBk",
-      "id": {
-        "kind": "youtube#video",
-        "videoId": "khoF0etXVE8"
+        "snippet": {
+          "publishedAt": "2024-06-23T08:00:18Z",
+          "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
+          "title": "The Calm Before The Storm - CS2 BestOf en musique",
+          "description": "Premier petit best of sur CS2, d'autres arrivent pour résumer les meilleurs frags de cette première année sur le jeu, là on était ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/J02YF0nuHys/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/J02YF0nuHys/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/J02YF0nuHys/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "JÀÁJ Team",
+          "liveBroadcastContent": "none",
+          "publishTime": "2024-06-23T08:00:18Z"
+        }
       },
-      "snippet": {
-        "publishedAt": "2022-05-03T17:30:05Z",
-        "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
-        "title": "L&#39;alliance parfaite en ranked et golden gun - R6 Highlights #41",
-        "description": "Le golden gun c'est vite saoulant mais tellement simpa après une session de ranked plus ou moins frustrante pour se changer les ...",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/khoF0etXVE8/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/khoF0etXVE8/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/khoF0etXVE8/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          }
+      {
+        "kind": "youtube#searchResult",
+        "etag": "wT1sdK7XJLSsISDtrlcPjm_FJME",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "7A4gK4uGs1o"
         },
-        "channelTitle": "JÀÁJ Team",
-        "liveBroadcastContent": "none",
-        "publishTime": "2022-05-03T17:30:05Z"
-      }
-    },
-    {
-      "kind": "youtube#searchResult",
-      "etag": "4EaFBcJreJD0ekSqJGhxJVkAiUE",
-      "id": {
-        "kind": "youtube#video",
-        "videoId": "nyiEzVBApZc"
+        "snippet": {
+          "publishedAt": "2024-06-20T17:30:00Z",
+          "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
+          "title": "Sortie à la fenêtre au shotgun - R6 Highlights #105",
+          "description": "Quelques plays de casu au milieu de la ranked, de temps en temps ça détend Musiques: Intro: Spektrem - Shine Outro: Ahrix ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/7A4gK4uGs1o/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/7A4gK4uGs1o/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/7A4gK4uGs1o/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "JÀÁJ Team",
+          "liveBroadcastContent": "none",
+          "publishTime": "2024-06-20T17:30:00Z"
+        }
       },
-      "snippet": {
-        "publishedAt": "2022-04-29T17:30:04Z",
-        "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
-        "title": "L&#39;AWP ou comment paraître bon quand on ne l&#39;est pas - CSGO Highlights #48",
-        "description": "C'est fou comment avec une awp dans les mains et un peu de réussite, on parrait tout de suite meilleur... pas de recule à ...",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/nyiEzVBApZc/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/nyiEzVBApZc/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/nyiEzVBApZc/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          }
+      {
+        "kind": "youtube#searchResult",
+        "etag": "piJm-yFdt3wARx913274YnKn95E",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "aQDJrp_clDg"
         },
-        "channelTitle": "JÀÁJ Team",
-        "liveBroadcastContent": "none",
-        "publishTime": "2022-04-29T17:30:04Z"
-      }
-    },
-    {
-      "kind": "youtube#searchResult",
-      "etag": "6EnABYrRr_DAp9YRnoMkpo8vnw8",
-      "id": {
-        "kind": "youtube#video",
-        "videoId": "MQNt5LOHXpM"
+        "snippet": {
+          "publishedAt": "2024-06-16T08:00:01Z",
+          "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
+          "title": "Encore, toujours: JuuJ et la banane - CS2 Highlights #36",
+          "description": "Bon, j'ai mal démarré, mais quand le mec veut pas jouer, c'est frustrant... 0:00 Intro 0:05 D2 mais je perds mon sang froid 1:16 ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/aQDJrp_clDg/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/aQDJrp_clDg/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/aQDJrp_clDg/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "JÀÁJ Team",
+          "liveBroadcastContent": "none",
+          "publishTime": "2024-06-16T08:00:01Z"
+        }
       },
-      "snippet": {
-        "publishedAt": "2022-04-26T17:30:04Z",
-        "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
-        "title": "Toujours plus loins dans les bugs... - R6 Highlights #40",
-        "description": "A part ce qu'on voit dans le titre et la miniature, rien d exceptionnel: des tentatives de clutchs, du spawnkill à foison (d'ailleurs je ...",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/MQNt5LOHXpM/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/MQNt5LOHXpM/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/MQNt5LOHXpM/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          }
+      {
+        "kind": "youtube#searchResult",
+        "etag": "tkBX4KfZxhxPJ-2-woyX91zBskw",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "MOZiAAquG3Y"
         },
-        "channelTitle": "JÀÁJ Team",
-        "liveBroadcastContent": "none",
-        "publishTime": "2022-04-26T17:30:04Z"
-      }
-    },
-    {
-      "kind": "youtube#searchResult",
-      "etag": "YIEynrrzvwhrA-QFS4CR5SZ-l0o",
-      "id": {
-        "kind": "youtube#video",
-        "videoId": "kW15CUnfwfE"
+        "snippet": {
+          "publishedAt": "2024-06-13T17:30:01Z",
+          "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
+          "title": "J&#39;ai vraiment raté ça?? - CSGO Highlights #105",
+          "description": "ça commence avec un niveau abyssal, j'ai même fait des dingueries avec l'économie... et puis au fur et à mesure de la vidéo, ça ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/MOZiAAquG3Y/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/MOZiAAquG3Y/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/MOZiAAquG3Y/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "JÀÁJ Team",
+          "liveBroadcastContent": "none",
+          "publishTime": "2024-06-13T17:30:01Z"
+        }
       },
-      "snippet": {
-        "publishedAt": "2022-04-22T17:30:09Z",
-        "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
-        "title": "On joue avec Zaz?? - CSGO Highlights #47",
-        "description": "Y a de la qualité dans le vocal aujourd'hui entre Zaz qui nous interprète son titre phare 'Je veux' et un enfant qui done son avis ...",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/kW15CUnfwfE/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/kW15CUnfwfE/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/kW15CUnfwfE/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          }
+      {
+        "kind": "youtube#searchResult",
+        "etag": "8UcJRW_DxQRNfmENvS5MTyjVoUI",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "Bc3ZaVjx680"
         },
-        "channelTitle": "JÀÁJ Team",
-        "liveBroadcastContent": "none",
-        "publishTime": "2022-04-22T17:30:09Z"
-      }
-    },
-    {
-      "kind": "youtube#searchResult",
-      "etag": "3fkj2UN1uq2VTrtM6SVlHm68BOU",
-      "id": {
-        "kind": "youtube#video",
-        "videoId": "RvfNCvXB7cI"
+        "snippet": {
+          "publishedAt": "2024-06-09T08:00:10Z",
+          "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
+          "title": "Il l&#39;a laissé planter ?!? VRAIMENT?!! - CS2 Highlights #35",
+          "description": "Des fois on se demande quand même dans quels conditions jouent nos alliés... : ( 0:00 Intro 0:05 Inferno 0:56 Overpass 2:23 ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/Bc3ZaVjx680/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/Bc3ZaVjx680/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/Bc3ZaVjx680/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "JÀÁJ Team",
+          "liveBroadcastContent": "none",
+          "publishTime": "2024-06-09T08:00:10Z"
+        }
       },
-      "snippet": {
-        "publishedAt": "2022-04-19T17:30:05Z",
-        "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
-        "title": "On rigole pas avec skyscraper - R6 Highlights #39",
-        "description": "Keskon samuze sur ce jeu vidéo Musiques: Intro: Spektrem - Shine Outro: Ahrix - Nova.",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/RvfNCvXB7cI/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/RvfNCvXB7cI/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/RvfNCvXB7cI/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          }
+      {
+        "kind": "youtube#searchResult",
+        "etag": "mlkB_MQBKXwL9RihinNpOqR9-OM",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "ZJLWKP6MEhg"
         },
-        "channelTitle": "JÀÁJ Team",
-        "liveBroadcastContent": "none",
-        "publishTime": "2022-04-19T17:30:05Z"
-      }
-    },
-    {
-      "kind": "youtube#searchResult",
-      "etag": "bbFcjeyq3Bi56ScYlD4SpgNvHUk",
-      "id": {
-        "kind": "youtube#video",
-        "videoId": "jhkMNR98tEc"
+        "snippet": {
+          "publishedAt": "2024-06-06T17:30:03Z",
+          "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
+          "title": "C&#39;est quoi cette décale? - R6 Highlights #104",
+          "description": "On est agressifs sur l'exté bien comme y faut ! ! Musiques: Intro: Spektrem - Shine Outro: Ahrix - Nova.",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/ZJLWKP6MEhg/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/ZJLWKP6MEhg/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/ZJLWKP6MEhg/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "JÀÁJ Team",
+          "liveBroadcastContent": "none",
+          "publishTime": "2024-06-06T17:30:03Z"
+        }
       },
-      "snippet": {
-        "publishedAt": "2022-04-15T17:30:03Z",
-        "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
-        "title": "Ça Zeus un max : ) - CSGO Highlights #46",
-        "description": "On rigole pas avec l'elec, même pour quelques zeus on Ampère pas une miette Musiques: Intro: Spektrem - Shine Outro: Ahrix ...",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/jhkMNR98tEc/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/jhkMNR98tEc/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/jhkMNR98tEc/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          }
+      {
+        "kind": "youtube#searchResult",
+        "etag": "Pcma8BBb5n77D6cUhRLQDQ5-6g8",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "R4lRDgKG_xU"
         },
-        "channelTitle": "JÀÁJ Team",
-        "liveBroadcastContent": "none",
-        "publishTime": "2022-04-15T17:30:03Z"
-      }
-    },
-    {
-      "kind": "youtube#searchResult",
-      "etag": "2GBl1ccZebXHoAXZfHrxiiTOw-c",
-      "id": {
-        "kind": "youtube#video",
-        "videoId": "-TOHxnshrcg"
+        "snippet": {
+          "publishedAt": "2024-06-02T08:00:14Z",
+          "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
+          "title": "Une game fort sympathique sur la mythique D2 - CS2 Highlights #34",
+          "description": "C'est sympa de voir qu'on peut jouer sans avoir de lags... c'est plus trop le cas en ce moment : ( J'ai quelques clutchs sur anubis ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/R4lRDgKG_xU/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/R4lRDgKG_xU/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/R4lRDgKG_xU/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "JÀÁJ Team",
+          "liveBroadcastContent": "none",
+          "publishTime": "2024-06-02T08:00:14Z"
+        }
       },
-      "snippet": {
-        "publishedAt": "2022-04-12T17:30:01Z",
-        "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
-        "title": "Retour sur BO2, y a toujours des cheaters !!",
-        "description": "Un retour un peu laborieux sur ce jeu, je vais pas y passer beaucoup de temps et j'aurai préféré pouvoir jouer a divers modes de ...",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/-TOHxnshrcg/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/-TOHxnshrcg/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/-TOHxnshrcg/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          }
+      {
+        "kind": "youtube#searchResult",
+        "etag": "39D2HRV9Nt_oQVmV4x_RNZiK-o8",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "1UJ-MfzCZv4"
         },
-        "channelTitle": "JÀÁJ Team",
-        "liveBroadcastContent": "none",
-        "publishTime": "2022-04-12T17:30:01Z"
-      }
-    },
-    {
-      "kind": "youtube#searchResult",
-      "etag": "EpZ5MJkhSNx5DEdiBsicrA-ticg",
-      "id": {
-        "kind": "youtube#video",
-        "videoId": "uATV0Uq_rN4"
+        "snippet": {
+          "publishedAt": "2024-05-30T17:30:00Z",
+          "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
+          "title": "Qui sera le meilleur Kinder? - CSGO Highlights #104",
+          "description": "Pendant que JuuJ recharge en 360 et clutch, y a une hiérarchie du kinder qu'il faut débattre! Musiques: Intro: Spektrem - Shine ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/1UJ-MfzCZv4/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/1UJ-MfzCZv4/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/1UJ-MfzCZv4/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "JÀÁJ Team",
+          "liveBroadcastContent": "none",
+          "publishTime": "2024-05-30T17:30:00Z"
+        }
       },
-      "snippet": {
-        "publishedAt": "2022-04-08T17:30:04Z",
-        "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
-        "title": "Ça wallbang sévère - CSGO Highlights #45",
-        "description": "Enfin la vidéo complète avec ce fameux wallbang : ) Musiques: Intro: Spektrem - Shine Outro: Ahrix - Nova.",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/uATV0Uq_rN4/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/uATV0Uq_rN4/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/uATV0Uq_rN4/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          }
+      {
+        "kind": "youtube#searchResult",
+        "etag": "BRgxKng80dHzMoB7x7pgzDVxaTM",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "iFIRyeZJMBY"
         },
-        "channelTitle": "JÀÁJ Team",
-        "liveBroadcastContent": "none",
-        "publishTime": "2022-04-08T17:30:04Z"
-      }
-    },
-    {
-      "kind": "youtube#searchResult",
-      "etag": "CRr9MHui5byEHHokNR9gx5TQRLY",
-      "id": {
-        "kind": "youtube#video",
-        "videoId": "VPMeT37jPRY"
+        "snippet": {
+          "publishedAt": "2024-05-26T08:00:31Z",
+          "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
+          "title": "Tenir le connecteur avec un pompe? EZ - CS2 Highlights #33",
+          "description": "C'est vraiment une arme à la portée de tous les niveaux ce XM, presque désolant. J'arrive toujours pas à comprendre le fail au ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/iFIRyeZJMBY/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/iFIRyeZJMBY/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/iFIRyeZJMBY/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "JÀÁJ Team",
+          "liveBroadcastContent": "none",
+          "publishTime": "2024-05-26T08:00:31Z"
+        }
       },
-      "snippet": {
-        "publishedAt": "2022-04-05T17:30:07Z",
-        "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
-        "title": "Les meilleurs defenseurs - R6 Highlights #38",
-        "description": "Surtout les meilleurs armes de defense, depuis que le P RONI est mort, c'est clairement 2 des meilleures armes, ptet que la mp5 a ...",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/VPMeT37jPRY/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/VPMeT37jPRY/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/VPMeT37jPRY/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          }
+      {
+        "kind": "youtube#searchResult",
+        "etag": "d5JCJPJP2ajcZzZ_m2oKmOD_T2k",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "C8qZoADeeHM"
         },
-        "channelTitle": "JÀÁJ Team",
-        "liveBroadcastContent": "none",
-        "publishTime": "2022-04-05T17:30:07Z"
-      }
-    },
-    {
-      "kind": "youtube#searchResult",
-      "etag": "-tSl9-AjHttx7uO5aiGyTLYy1YA",
-      "id": {
-        "kind": "youtube#video",
-        "videoId": "qAJutCzM6SQ"
+        "snippet": {
+          "publishedAt": "2024-05-23T17:30:02Z",
+          "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
+          "title": "On a vraiment des alliés de qualité : ) - R6 Highlights #103",
+          "description": "On colle des têtes, on se loupe un peu... comme d'hab. Il s'agirait d'être plus réguilier ! Musiques: Intro: Spektrem - Shine Outro: ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/C8qZoADeeHM/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/C8qZoADeeHM/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/C8qZoADeeHM/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "JÀÁJ Team",
+          "liveBroadcastContent": "none",
+          "publishTime": "2024-05-23T17:30:02Z"
+        }
       },
-      "snippet": {
-        "publishedAt": "2022-04-01T17:30:05Z",
-        "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
-        "title": "Comment faire 20 kills en moyenne par game - R6 HS2",
-        "description": "C'est du véritable gameplay sur R6, je pense que tous le monde comprendra de par la présente vidéo comment simplement ...",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/qAJutCzM6SQ/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/qAJutCzM6SQ/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/qAJutCzM6SQ/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          }
+      {
+        "kind": "youtube#searchResult",
+        "etag": "EO6vABKCvNO7Db6asMMF23GWLIc",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "bVwV0vl_-R0"
         },
-        "channelTitle": "JÀÁJ Team",
-        "liveBroadcastContent": "none",
-        "publishTime": "2022-04-01T17:30:05Z"
-      }
-    },
-    {
-      "kind": "youtube#searchResult",
-      "etag": "6WTFwGbVcBsvjlCvhhUwZQMG92I",
-      "id": {
-        "kind": "youtube#video",
-        "videoId": "ziGOFlVluiE"
+        "snippet": {
+          "publishedAt": "2024-05-22T21:00:22Z",
+          "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
+          "title": "Y a du génie dans le fait d&#39;ête débile #cs2 #rushgameplay #dust2",
+          "description": "Petit push débile sur D2, ça se fini miraculeusement bien : )",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/bVwV0vl_-R0/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/bVwV0vl_-R0/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/bVwV0vl_-R0/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "JÀÁJ Team",
+          "liveBroadcastContent": "none",
+          "publishTime": "2024-05-22T21:00:22Z"
+        }
       },
-      "snippet": {
-        "publishedAt": "2022-03-29T17:30:11Z",
-        "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
-        "title": "Halte, personne ne rentre - R6 Highlight #37",
-        "description": "quad à l'exté!!! : ) Les bugs de son des armes... vraiment exaspérant. Sinon Doktor's curse is back... et ça sent vraiment le ...",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/ziGOFlVluiE/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/ziGOFlVluiE/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/ziGOFlVluiE/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          }
+      {
+        "kind": "youtube#searchResult",
+        "etag": "DWBYMWI8YnUKX9kDYJHYMjVUw-0",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "xZzAsZS7m8Y"
         },
-        "channelTitle": "JÀÁJ Team",
-        "liveBroadcastContent": "none",
-        "publishTime": "2022-03-29T17:30:11Z"
-      }
-    },
-    {
-      "kind": "youtube#searchResult",
-      "etag": "3o270755kiNyTm1Lg-hYxqa9-SQ",
-      "id": {
-        "kind": "youtube#video",
-        "videoId": "QivXSFceTZw"
+        "snippet": {
+          "publishedAt": "2024-05-19T08:00:23Z",
+          "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
+          "title": "Ce push sur D2, stupide ou malin ?- CS2 Highlights #32",
+          "description": "Bon on va pas épiloguer sur les shotguns à travers les smokes, mais c'est quand même surpuissant. On passe la barre des 5000 ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/xZzAsZS7m8Y/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/xZzAsZS7m8Y/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/xZzAsZS7m8Y/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "JÀÁJ Team",
+          "liveBroadcastContent": "none",
+          "publishTime": "2024-05-19T08:00:23Z"
+        }
       },
-      "snippet": {
-        "publishedAt": "2022-03-25T18:30:31Z",
-        "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
-        "title": "Comment lancer parfaitement son stuff à tous les coups - CSGO Highlights #44",
-        "description": "Petites démo de lancer de stuff.... sinon que dire? les russes sont toujours dans le vocal, malgré tout il y a quelques noscop, une ...",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/QivXSFceTZw/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/QivXSFceTZw/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/QivXSFceTZw/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          }
+      {
+        "kind": "youtube#searchResult",
+        "etag": "6nfj_P3XCq_jcutnB9XL2oQKby8",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "kigVpw8l5q4"
         },
-        "channelTitle": "JÀÁJ Team",
-        "liveBroadcastContent": "none",
-        "publishTime": "2022-03-25T18:30:31Z"
+        "snippet": {
+          "publishedAt": "2024-05-16T17:30:05Z",
+          "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
+          "title": "Le jump pour prendre l&#39;info... c&#39;est validé - CSGO Highlights #103",
+          "description": "On a bien rit aussi avec l'allié espagnol sur vertigo! Musiques: Intro: Spektrem - Shine Outro: Ahrix - Nova.",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/kigVpw8l5q4/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/kigVpw8l5q4/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/kigVpw8l5q4/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "JÀÁJ Team",
+          "liveBroadcastContent": "none",
+          "publishTime": "2024-05-16T17:30:05Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "DmzN2n6gm-foFXKfqZs7vqPVRUA",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "u1IkjBkLzyY"
+        },
+        "snippet": {
+          "publishedAt": "2024-05-12T08:00:26Z",
+          "channelId": "UCblK-xqtM6bhIKQG5Qd4vwA",
+          "title": "CptSpade se dessine son JaaJ - CS2 Highlights #31",
+          "description": "Bien entendu, on joue aussi, on va pas rester les bras ballants pendant qu'il s'amuse sur paint ! (d'ailleurs le résultat est visible ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/u1IkjBkLzyY/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/u1IkjBkLzyY/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/u1IkjBkLzyY/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "JÀÁJ Team",
+          "liveBroadcastContent": "none",
+          "publishTime": "2024-05-12T08:00:26Z"
+        }
       }
-    }
-  ]
+    ]
 }
